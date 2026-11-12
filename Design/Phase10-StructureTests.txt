@@ -1,0 +1,26 @@
+PASS forest_stalker selects actual blocking player-built fence
+PASS forest_stalker structure hit amount
+PASS forest_stalker structure cooldown/no repeated damage
+PASS Destruction removes collision and invalidates navigation
+PASS Destroyed target receives no extra damage
+PASS shadow_wolf selects actual blocking player-built fence
+PASS shadow_wolf structure hit amount
+PASS shadow_wolf structure cooldown/no repeated damage
+PASS Destruction removes collision and invalidates navigation
+PASS Destroyed target receives no extra damage
+PASS night_crawler selects actual blocking player-built fence
+PASS night_crawler structure hit amount
+PASS night_crawler structure cooldown/no repeated damage
+PASS Destruction removes collision and invalidates navigation
+PASS Destroyed target receives no extra damage
+PASS forest_brute selects actual blocking player-built fence
+PASS forest_brute structure hit amount
+PASS forest_brute structure cooldown/no repeated damage
+PASS Destruction removes collision and invalidates navigation
+PASS Destroyed target receives no extra damage
+PASS ancient_stalker selects actual blocking player-built fence
+PASS ancient_stalker structure hit amount
+PASS ancient_stalker structure cooldown/no repeated damage
+PASS Destruction removes collision and invalidates navigation
+PASS Destroyed target receives no extra damage
+PASS Non-PlaceableStructure scenery cannot be targeted

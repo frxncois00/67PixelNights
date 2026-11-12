@@ -1,0 +1,47 @@
+Phase 4 | Woodcutting and gathering
+
+The blue worker starts with an axe and an empty shared resource wallet. Face the trunk or rock and tap Space or left-click. An accepted swing plays the existing axe animation and deals one hit on completion. The selection cone follows PlayerMovement.Facing, with side-facing artwork for vertical swings. Trees and rocks flash on hit. On depletion their renderer and solid collider are disabled. Loose drops can be picked up with E. The same E action gathers scrap or feeds the campfire when its prompt is selected.
+
+New files
+Assets/Scripts/Interaction/InteractionTarget.cs
+Assets/Scripts/Interaction/PlayerInteractionController.cs
+Assets/Scripts/Resources/ResourceNode.cs
+Assets/Scripts/Resources/ResourcePickup.cs
+Assets/Scripts/Tools/PlayerToolController.cs
+Assets/Scripts/UI/ResourceUI.cs
+AgentScripts/SetupPhase4.cs and AgentScripts/TestPhase4.cs
+Design/Phase4-1280.png, Phase4-1600.png, Phase4-1920.png
+Unity generated associated metadata. Pre-change scripts and scene archived under Design/Backups/Phase4-*.
+
+Modified files
+Assets/Scenes/SampleScene.unity — connected the player, nodes, prompt, wallet and HUD.
+Assets/Scripts/Inventory/TemporaryResourceWallet.cs — added typed resource balances and checked transactions, retained the wood API and development refill.
+Assets/Scripts/Player/PlayerMovement.cs — exposes the existing facing vector read-only.
+Assets/Scripts/Campfire/CampfireInteraction.cs — exposes a contextual E action, retains U upgrade and the animated wood transfer.
+Assets/Scripts/UI/CampfireUI.cs — relinquishes the E prompt to the player interaction handler.
+
+Scene configuration
+Selected existing Tree_08, Tree_12, Tree_22, Tree_25, Tree_31, Tree_34; Rock_03, Rock_07, Rock_13. All other existing trees and rocks remain permanent. Two test scrap piles near (-3,1) and (3,-4) use the pack's Tool_04 sprite as a placeholder. Five pre-existing loose wood objects are pickups. The old F gathering and WoodSource components were removed from the scene. Campfire stone ring and log seats are decorative.
+Three health per tree/rock; one damage per axe swing; range 1.5, cooldown .5 s plus swing duration. Wood yield 2–4, stone 1–3, scrap 1–2. Tree/stone/scrap regrowth after 120/180/240 seconds, postponed when occupied or a previous drop remains uncollected. Axe compatibility and yield/timing are Inspector settings. Picks use 1.5-unit range; campfire interaction uses its existing 2-unit range.
+E selects nearest available target and breaks equal-distance ties by ordinal object name; all configured targets and generated pickups have distinct names. Resource balances update through wallet events. Existing campfire costs and safety values apply. Resource storage can be adapted to inventory slots later via the typed wallet API.
+Optional audio and extra particles omitted. If a drop cannot find a clear position after bounded placement attempts, it logs a warning. Resources are session-local.
+
+Testing
+1 PASS Unity compilation.
+2 PASS direct swing accepted, immediate repeat rejected, animated completion dealt one damage and released movement. Physical Space/mouse and HUD click blocking UNVERIFIED.
+3–5 PASS live component tests: three hits, depletion, nonblocking tree, four wood pickups within allowed yield.
+6–7 PASS contextual action method collected each pickup once; nearer pickup beside campfire won, fuel unchanged. Physical E UNVERIFIED.
+8–9 PASS collected wood accepted by existing refuel; upgrade spent five from same wallet (wallet supplemented to meet cost).
+10–11 PASS tested three rock hits, three stone pickups, scrap collection and depletion.
+12–13 PASS forced regrowth deadline; occupied footprint prevented restoration; clear footprint restored health and collider. Full wall-clock regrowth delay UNVERIFIED.
+14 PASS wood persisted across two phase changes.
+15 UNVERIFIED full WASD/arrows, collision, camera and animation regression. Axe completion restored enabled movement.
+16 PASS observed timer and Day 2 HUD after phase progression; full natural sunrise/sunset regression UNVERIFIED.
+17 PASS refueling and upgrade API integration using shared wallet. Physical E/U, entire relight/safety/local-light regression UNVERIFIED this phase.
+18 PASS inspected Unity camera renders at 1920x1080, 1280x720 and 1600x900. Bottom resource totals and notifications visible without overlapping the campfire or timer panels.
+19 PASS direct cooldown, zero start, multiple types, pickup at camp and two fresh Play Mode runs. Extended rapid physical input, full-fire and repeated natural regrowth stress UNVERIFIED.
+20 PASS integration compared all pre-existing object positions and sprite references. SampleScene saved. Two scrap piles added intentionally.
+
+Manual acceptance
+Open SampleScene, press Play and focus Game. Travel south from camp to Tree_25 near (-4.3,-5.1). Face the trunk and swing three times, tapping once per animation. Step near each log and tap E. Return to the fire and press E when the add wood prompt appears. Press U with five wood. Try the same axe on Rock_03 near (0.6,-4.1); use E directly on a scrap pile. Watch totals and try holding each key to check for repeats. After collecting the drops, wait out regrowth, first standing over the former trunk and then stepping clear. Check camera, collisions, F6/F7 and the night lighting in your usual play session. No manual Inspector wiring required.
+

@@ -1,0 +1,200 @@
+PHASE 10 — ADVANCED NIGHT MOBS & ENEMY SURVIVAL
+November 7, 2026 (Asia/Shanghai)
+Project: C:\Users\Francis\My project
+Scene: Assets/Scenes/SampleScene.unity
+Unity 6000.6.4f1 | URP17.6.0 | Input System1.20.0 | uGUI2.6.0
+
+A. IMPLEMENTATION SUMMARY — PASS
+Implemented directly in the current scene: five shared-config enemy archetypes, distinct behaviors, progressive night waves, blocking player-built structure attacks, telegraphs, animated existing-art placeholders, hit/death feedback, night HUD, bounded incremental spawning and navigation optimization.
+Existing Forest Stalker remains the introductory enemy. One EnemySpawner, one ForestNavigation, one PlayerHealth and one CampfireSafeZone remain authoritative. No missions/rescues, persistence, new equipment, new regions or external packages were added.
+PASS means the listed implementation/check succeeded, not complete production acceptance. Physical input and exhaustive endurance remain UNVERIFIED.
+
+B. FILES CREATED
+Assets/Scripts/Enemies/EnemyArchetype.cs (includes EnemyBehaviorProfile enum)
+Assets/Scripts/Enemies/EnemyWaveSchedule.cs
+Assets/Scripts/Combat/EnemyAttackTelegraph.cs
+Assets/Enemies/forest_stalker.asset
+Assets/Enemies/shadow_wolf.asset
+Assets/Enemies/night_crawler.asset
+Assets/Enemies/forest_brute.asset
+Assets/Enemies/ancient_stalker.asset
+Assets/Enemies/NightWaves.asset
+Assets/Prefabs/Enemies/ShadowWolf.prefab
+Assets/Prefabs/Enemies/NightCrawler.prefab
+Assets/Prefabs/Enemies/ForestBrute.prefab
+Assets/Prefabs/Enemies/AncientStalker.prefab
+Corresponding Unity .meta files.
+Design/Phase10-Baseline-Report.txt, this report and Phase10 evidence files.
+AgentScripts: Snapshot10, Setup10, Profile10, Markers10, Test10, Waves10, StructureTests10, Specials10, RouteMotion10, WestMotion10, Building10, Storage10, Survival10, Expansion10, Sword10, LungeMotion10, Verify10.
+AgentScripts/Phase10Stage contains staged authoring sources, not runtime assets; final Assets scripts are authoritative.
+
+C. EXISTING FILES MODIFIED
+Assets/Scripts/Enemies/EnemyController.cs — shared archetype application, behavior, safe hit validation, structure targeting, animation and profiler markers.
+Assets/Scripts/Enemies/EnemyHealth.cs — sanitized initialization from archetype; existing death/damage authority retained.
+Assets/Scripts/Enemies/EnemySpawner.cs — single authoritative roster/wave queue, incremental spawn validation, cap and type limits, idempotent callbacks, warning event and blocker query.
+Assets/Scripts/Navigation/ForestNavigation.cs — reusable struct heap, search time/per-frame budgets, revision notification, profiler markers.
+Assets/Scripts/UI/NightThreatUI.cs — wave/count/protection/warnings, throttled text updates and modal hiding.
+Assets/Prefabs/Enemies/ForestStalker.prefab — config reference and footprint alignment; retains existing identity/prefab asset.
+Assets/Scenes/SampleScene.unity — existing spawner references to archetypes/schedule and existing threat-label dimensions.
+No player, inventory, crafting, campfire, terrain, camera or tool scripts changed.
+Exact changed existing-script list: Design/Phase10-ModifiedScripts.txt.
+
+D. ORIGINAL SCENE PRESERVATION — PASS
+Fresh backup path recorded in Design/Phase10-Checkpoint.txt. It includes current scripts, prefabs, items, recipes, animations, packages, settings and SampleScene. Older backups retained.
+Snapshot covers 1609 original transforms/renderers and 10643 Tilemap cells including sprite/tile references, matrices and colors. Final comparison: zero differences.
+Latest pond, bridge, cliffs, terrace, stairs, winding roads, lake shoreline, cabin and environmental scene overrides preserved. No historical scene builder rerun.
+A first tile comparator falsely reported a mismatch because matrix strings contain embedded newlines. Corrected to compare canonical full content; actual tile snapshot/current files match. This was a validator issue, not a restored terrain change.
+One existing EnemySpawner remains. Saved SampleScene is not dirty; Unity is in Edit Mode; no disposable runtime enemies/inventories/obstacles were saved.
+
+E. BODY_A / EQUIPMENT PRESERVATION — PASS STATIC INSPECTION
+Current Body_A animation and equipment files unchanged against backup. Empty inventory startup preserved. Existing three tool pickups remain; no free tools/materials were serialized. Camera zoom remains 5, existing follow settings untouched. Character/environment PPU imports unchanged. Existing movement, tool grips, hotbar assignment and all control bindings retained.
+Physical movement/facing/tool-grip acceptance: UNVERIFIED in this phase.
+
+F. ARCHETYPES — PASS CONFIGURATION AND DIRECT COMBAT CHECKS
+ID                 Unlock  HP   Damage  Chase  Detection Range Cooldown StructureDamage
+forest_stalker       1     30     10     2.0     5.0     1.0    2.0       8
+shadow_wolf          3     40     12     3.0     6.0     1.1    1.6       6
+night_crawler        5     55     15     1.8     5.5     1.2    2.5      10
+forest_brute         7    100     20     1.2     5.0     1.3    3.0      30
+ancient_stalker     10    180     25     1.6     7.0     1.5    3.0      40
+Configurable in Assets/Enemies/*.asset. Numeric inputs sanitized for nonfinite/negative values. Health/damage do not grow unbounded on later nights.
+Sword damage remains15: arithmetic hits-to-defeat are2/3/4/7/12 respectively (without other damage). Actual two-hit Stalker animation regression passed; all-type full sword kill sequences are UNVERIFIED.
+
+G. PREFABS — PASS STATIC CONFIGURATION
+All use EnemyController/EnemyHealth, Kinematic Rigidbody2D, zero gravity, frozen rotation, interpolation, .22-radius footprint, Objects sorting and existing URP-lit material. Unit scale retained.
+Enemy collider offset aligned to the root navigation footprint (previous Stalker offset was .75Y while walkability used the root). No player/environment collider changed.
+World/navigation/safety references come from the authoritative spawner when instantiated; no scene object references are stored inside prefab assets.
+
+H. AI ARCHITECTURE — PASS IMPLEMENTATION; TARGETED TESTS BELOW
+One shared Idle/Patrol/Chase/Search/Attack/Retreat/Dead controller.
+Detection retains pursuit through nearby occlusion and uses the current navigation. Search follows last position. Route retry >=.8 seconds with small stagger; invalidated occupancy cancels stale routes.
+Wolf: .25s yellow anticipation pause, .7s burst at1.4x speed (4.2 units/s), brief post-burst pause,4s cooldown. Uses ordinary physical movement checks.
+Crawler: intermittent cautious pauses, .6s windup, validated lunge up to1.5 units, bounded .35s movement window, .7s recovery. Player/safety/range/occlusion revalidated at hit. No teleport.
+Brute: .8s heavy windup, .7s recovery,60% knockback resistance,30 structure damage.
+Ancient:1s windup,1.6-radius telegraphed slam,1s recovery,75% knockback resistance,40 structure damage. Slam targets player OR selected structure, never double-hits both. Player damage requires actual range and line of sight.
+Death/disable/sunrise cancel pending hit, lunge and telegraph. Trapped safe-zone retreat retains bounded12s dismissal, not teleportation.
+
+I. NIGHT WAVES — PASS DIRECT WAVE TESTS
+EnemySpawner owns the queue; no second wave spawner or independent timer.
+Night1 and2 spawn their whole small budget at start. From Night3, distribute the same total roster across configured fractions0,1/3,2/3 of DayNightCycle.PhaseDuration (40/80 seconds under120s night). Short test nights scale naturally.
+NightWaves asset contains editable count rows for nights1–10, matching the requested proposals:
+1:2 Stalkers;2:3 Stalkers;3:2 Stalkers+2 Wolves;4:3+2;
+5:3 Stalkers+2 Wolves+1 Crawler;6:3+2+2;
+7:3+2+2+1 Brute;8:3+3+2+1;9:3+3+2+2;
+10:2 Stalkers+3 Wolves+2 Crawlers+2 Brutes+1 Ancient.
+Rows are configurable data, not separate hardcoded behavior controllers.
+Repeated night callbacks do not duplicate rosters. Sunrise clears pending work and active enemies. Death cancels pending queues. Restart clears wave state.
+
+J. DIFFICULTY / SPAWN SAFEGUARDS — PASS
+Default total budget=min(2+night-1,10), active cap10. Later nights use weighted eligible configurations; Ancient weight .15, type cap1; Brute cap2, Crawler cap3. Other type caps10. No endless late-night stat growth.
+Spawn work is incremental, at most8 candidate attempts per call and shared search allowance at most2/frame. Each requested mob has <=256 candidate attempts. Failed/capped requests increase SkippedSpawns; valid subset remains tracked.
+Terrain/footprint, existing solid collision, distance>=6, active protection and connected route checks precede instantiation. Scene boundaries and stairs are not bypassed.
+
+K. STRUCTURE ATTACKS — PASS CONTROLLED PLAY MODE TESTS
+Only PlaceableStructure with a definition and live collider can be attacked. First solid obstruction on the ray to the intended player must be that structure. Original houses, cliffs, decorative objects, campfire and workbench lack this damage target.
+Prefer a found detour. Attack allowed when no bounded route succeeds or route length exceeds1.8x direct distance+2 units, and the blocking structure is within attack range. This is the documented bounded detour policy, not optimal path proof.
+Hit rechecks target existence/health, first obstruction, closest-point range, line of sight, night/enemy/player alive and enemy outside protection. Navigation revision during a structure windup cancels the stale attack. Damage uses PlaceableStructure.TakeDamage once per hit.
+Destroying a structure uses existing collider removal/navigation invalidation. Nonempty chest wrecks retain withdraw-only contents. No duplicate structure health or inventory was added.
+Test fixture used a temporary12-unit-wide fence collider to create a reproducible blocked corridor; production footprint remained unchanged. This is not a claim that every hand-built arrangement passed.
+Calculated earliest fence defeat (one enemy, uninterrupted): Stalker12.35s, Wolf13.15s, Crawler10.6s, Brute3.8s, Ancient4s. Brute vs150HP barricade12.8s; Ancient10s. These are arithmetic estimates, not timed endurance measurements. Multi-enemy defense balance still needs manual playtesting.
+
+L. SAFE ZONE — PASS TARGETED CHECKS
+CampfireSafeZone remains the only protection authority. Each hit and movement path checks it. Radii5/7/9 protected-player rejection tested across all archetypes. Relit/expanded protection cancels crawler lunge and normal windups; sunrise/death cancels damage.
+Conservative behavior: when the player is protected, pursuing enemies retreat rather than persistently attacking boundary defenses. No splash damage reaches a protected player.
+Full dynamic level1->2->3 upgrade battles and every extinction/relight timing combination remain UNVERIFIED.
+
+M. PLAYER COMBAT — PASS TARGETED REGRESSION
+PlayerMeleeCombat untouched. Existing owned/equipped sword, directional arc, animation completion hit, busy/input gates and15damage retained. All archetypes use EnemyHealth and honor knockback resistance. Actual animation-callback Stalker two-hit test passed.
+No new input bindings. No axe/pickaxe/sword icon or inventory catalog changes.
+
+N. ANIMATION / FEEDBACK — PASS UNITY RENDERING
+Existing Black-unit idle/run sheets reused: Pawn8/6 frames, Archer6/4, Monk6/4, Warrior8/6, Lancer12/6. Distinct tint and sprite identify each archetype; left/right flip retained. Crawler uses Monk, Wolf uses Archer: these are explicitly humanoid placeholders, NOT dedicated wolf/crawler creature artwork.
+Attack ring, red windup tint, yellow wolf cue, white damage flash and death fade provide temporary feedback. Ring is rendering-only. No matching enemy sound clips identified in imported Assets; no audio added or claimed.
+Existing wood/stone building icons remain labeled placeholders. Inspected imported props did not reveal a suitable already-configured chest/fence set; optional artwork replacement was not allowed to delay core combat. No packs downloaded.
+
+O. NIGHT HUD — PASS SCREENSHOT RENDERING
+Extended existing NightThreatUI with NIGHT/WAVE/ENEMIES REMAINING/CAMPFIRE STATUS and brief wave/archetype/fire-out warnings. Phase and wave warnings are event-driven; text refresh5Hz. Hidden in inventory, crafting/storage modal and death UI; cleared by sunrise. Existing day/night and survival HUDs retained.
+The counter is active living enemies, not the not-yet-spawned queue. Current wave stays visible while the wave is alive; next wave uses clock progress, not clear-to-advance.
+
+P. NAVIGATION — PASS TARGETED MOVEMENT AND SEARCH CHECKS
+Replaced Candidate objects/SortedSet frontier nodes with reusable struct binary heap; reused dictionaries/buffers. No separate navigation manager.
+Bounded cardinal heuristic search retained, no diagonal corner cutting. Default12000visited maximum and4ms soft search limit checked every64cells. Shared AI/spawn allowance2requests/frame and4ms accumulated cost; guard can overshoot by one check block. Building validation calls remain synchronous and independently bounded.
+One-second static samples remain to observe tree depletion/regrowth. Structures invalidate cache immediately; safety changes increment revision. Failed/exhausted routes retry on interval, not every physics tick.
+PASS actual Rigidbody2D movement: pond bridge to cabin stairs, south bridge to east terrace, east staircase, north/east/south roads and west-road rerun from clear ground.
+Initial west test FAIL was a fixture inside Old Stump at(-30,0), not a valid starting point. Rerun(-30,-1)->(-27,1) PASS; stump preserved. Initial evidence retained.
+These seven traversals do not prove every cliff edge, lake perimeter or crowd arrangement. Exhaustive geometry/crowd acceptance UNVERIFIED.
+
+Q. PERFORMANCE — PASS MEASUREMENT; PRODUCTION PERFORMANCE UNVERIFIED
+Actual Windows Unity Editor,120s samples, seed1010, ten enemies requested, health restored by test, night progression held. No standalone build.
+Baseline Stalkers: frame mean2.315ms/p95 4.867ms/max433.179ms; Main Thread mean2.303ms/p95 4.858ms/max108.492ms; GC mean12469bytes/frame,max2950752.1212route searches;10active at end.
+Mixed Phase10 roster: frame mean1.863ms/p95 2.704ms/max150.913ms; Main Thread mean1.858ms/p95 2.701ms/max91.774ms; GC mean10038bytes/frame,max13200118.1203route searches;10active at end.
+After-sample involved screenshots/CLI activity and the player moved from its initial test position during the session. Rosters also differ. Therefore these are observational editor samples, not a controlled causal benchmark or proof that the old164ms spike was eliminated.
+45s component-marker sample (mean/max ms per frame): navigation .01048/4.3661; navigation physics .001395/.7344; enemy AI .01704/4.4076; enemy physics .004461/.2052; animation .006189/.2662. Markers can be nested, so do not sum them. Spawn marker was0 during that interval because no spawns occurred; wave processing was separately exercised but standalone spawn-cost benchmarking remains UNVERIFIED. LastSpawnMilliseconds is exposed for inspection.
+No claim of zero allocations: UI, profiler/editor and other project code continue allocating. Frontier allocation removal is verified by implementation, not whole-game GC elimination.
+
+R. AUTOMATED TEST RESULTS
+PASS Unity compilation; final current Console0errors/0warnings. Historical tool-buffer entries contain resolved compile attempts and existing project deprecation warnings, not current runtime errors.
+PASS Phase10-CombatTests.txt:48 assertions.
+PASS Phase10-WaveTests.txt:93 assertions including actual queued spawning through Night10.
+PASS Phase10-StructureTests.txt:26 assertions (controlled corridor fixture).
+PASS Phase10-SpecialTests.txt:25 assertions.
+PASS Phase10-LungeMotion.txt:3 actual timed lunge/movement/hit assertions.
+PASS Phase10-RestartTests.txt:4 assertions using actual scene restart API.
+PASS Phase10-Preservation.txt:1609transforms/renderers and10643tiles unchanged.
+Movement:6initial PASS,1invalid-fixture FAIL retained; corrected west-only actual movement PASS.
+Most logic checks invoke production methods in paused Play Mode and adjust test-only deadlines. Wave tests manually advance the authoritative clock and reset the request budget to drain queues synchronously; natural frame budgeting was exercised in the live profile.
+
+S. PHASE 1–9 REGRESSION
+PASS rerun Phase10-BuildingTests.txt:24 assertions.
+PASS Phase10-StorageTests.txt:7 assertions.
+PASS Phase10-SurvivalRegression.txt:46 assertions including health/hunger, food, berries, wildlife, cooking cancellation/capacity and drops.
+PASS Phase10-ExpansionTests.txt:15 assertions including loot/discovery/spawns/zoom/resource registration; adapted to incremental spawning.
+PASS Phase10-SwordTests.txt:3 actual animation-callback assertions.
+PASS actual death/restart reset: day1, no enemies, wave0, empty inventory, live player and one spawner.
+UNVERIFIED physical WASD/arrows, axe/pickaxe gathering, campfire upgrade/refuel input, all Body_A directions and all previous phase acceptance cases. Source preservation is not equivalent to physically rerunning all controls.
+
+T. RESOLUTION TESTING — PASS RENDERING
+Unity Game/camera captures visually reviewed:
+Design/Phase10-Night-1280.png
+Design/Phase10-Night-1600.png
+Design/Phase10-Night-1920.png
+Design/Phase10-Archetypes.png (temporary runtime lineup, not production scene objects)
+Wave text/readability and existing HUD placement fit at720p/900p/1080p. No externally generated composite used.
+Mouse hit-testing/resolution-switch interaction at all sizes remains UNVERIFIED.
+
+U. PHYSICAL INPUT ACCEPTANCE — UNVERIFIED
+No physical keyboard/mouse acceptance suite claimed. Tool-driven API tests and runtime renders are separately identified above. Existing live user interaction during a sample was not treated as a structured test pass.
+
+V. EXTENDED NIGHT SURVIVAL — PASS LIMITED RUNTIME SAMPLE; FULL ACCEPTANCE UNVERIFIED
+Two120s runtime samples ran (baseline and after). Clock paused and player health refreshed deliberately; these are duration/performance samples, not successfully surviving a natural night. Natural full-night gameplay, repeated-night stress, moving combat crowds and profiling on target hardware remain UNVERIFIED.
+
+W. KNOWN LIMITATIONS
+- Humanoid tinted enemy placeholders and inherited log/stone building placeholders; no dedicated creature attack/death art or audio.
+- Significant editor frame spikes remain; controlled standalone profiling needed.
+- Failed bounded searches may conservatively report unreachable or trigger structure targeting under documented detour policy.
+- Trapped protected enemies can be dismissed after12s, not teleported.
+- Only first blocking player-built object is eligible; enemies do not seek distant structures for destruction.
+- No loot reward added to enemy defeats, no persistence and no new missions.
+- Full wall-lattice/crowd/repair-under-attack balancing is UNVERIFIED.
+- Configuration type IDs and unlocks are provided correctly; arbitrary user-edited missing prefab/config combinations can skip requests or disable a misconfigured spawner with a diagnostic. Do not remove required scene references.
+- Original Phase9 conservative world-axis path exclusion remains unchanged despite winding visual roads.
+
+X. REQUIRED MANUAL STEPS / HOW TO PLAY
+No mandatory code/Inspector setup remains for SampleScene.
+1. Open SampleScene, Play and click Game view. Confirm Body_A and empty inventory.
+2. Collect the three camp tools with E; Equip / Hotbar assigns axe1,pickaxe2,sword3. Select3.
+3. F6 advances phase. At Night1, wait a few frames for two Stalkers. Leave protection and approach a mob; test pursuit, windup, one hit, sword and return-to-camp safety.
+4. Continue F6 through phases to Night3/5/7/10. New types appear in later waves, normally at40/80seconds. Use the DayNightCycle test toggle for20/15second phases; wave fractions adapt. F7 pauses the clock, not enemy movement.
+5. Wolf: yellow pause then short faster run. Crawler: ring/windup then lunge. Brute: slow heavy attack. Ancient: long ring telegraph and slam; step outside the radius during windup.
+6. Gather and craft a fence/barricade. Equip it, B, place on valid open grass. Close a sufficiently costly enemy approach while keeping allowed player escape routes. Observe blocking-structure attacks, collision removal and resumed pursuit.
+7. Repair during combat; check kit spending. Put items in a chest; if enemies destroy it, E on wreck must recover contents. Dismantling a nonempty chest remains blocked.
+8. Enter active safety during windup; extinguish/relight and upgrade campfire; confirm protection for all types.
+9. Test stairs, bridge approaches, lakes, roads, crowded obstacles and new structures while being pursued.
+10. Reach sunrise: count0, pending waves canceled. Die and use Restart: day1/health/inventory/fire reset, original pickups remain.
+11. Recheck WASD/arrows, all Body_A actions, resource gathering, food/cooking, inventory, exploration and UI at1280x720/1600x900/1920x1080.
+12. Profile a full night in a standalone development build with ten mobs and close combat. Record CPU/GC spikes without CLI captures running.
+
+Y. PHASE 11 READINESS
+PASS Phase10 core implemented/integrated/saved and targeted automated checks completed.
+UNVERIFIED production acceptance. Address performance spikes, placeholder art and the manual combat/crowd suite before declaring Phase10 production-ready. Phase11 scope has not been introduced.
+Use the latest saved scene as baseline. Do not rerun Setup10 or old terrain authoring helpers over user changes. Runtime test helpers mutate disposable state; never save their temporary Play Mode objects.

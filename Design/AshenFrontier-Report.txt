@@ -1,0 +1,324 @@
+================================================================================
+THE ASHEN FRONTIER — EXPANDED DRYLANDS BIOME & ROGUE STRONGHOLD REPORT
+Project: C:\Users\Francis\My project (Unity 6000.6.4f1, 2D URP)
+Scene:   Assets/Scenes/SampleScene.unity
+Date:    2026-11-09
+================================================================================
+
+1. BIOME LOCATION, EXPANDED COVERAGE & WORLD-COORDINATE BOUNDS
+--------------------------------------------------------------------------------
+- Target Region: Southwest / bottom-left wooded region of SampleScene, south of
+  the horizontal dirt road (y ~= -2.5 to +0.5), west of the SW inland pond
+  (x ~= -11.5 to -4.5, y ~= -9.5 to -3.5) and west of the Abandoned Cabin
+  clearing (x ~= -10.5 to -5.5, y ~= -23.0 to -12.0).
+- Expanded Tilemap Cell Bounds:
+  - X cells: -36 to -13 (24 tiles wide)
+  - Y cells: -24 to -2  (23 tiles tall)
+- World-Coordinate Bounds:
+  - Full Terrain & Entrance Trail Envelope: x in [-36.0, -12.5], y in [-24.0, -1.5]
+  - Core Drylands & Stronghold Area:        x in [-35.5, -12.7], y in [-24.5, -4.3]
+  - Narrow Northern Entrance Trail:         x in [-20.0, -19.0], y in [-4.0, -2.0]
+    (connects directly into the existing horizontal dirt road at y = -2)
+- Boundary & Neighbor Protection:
+  - Coastline Buffer: Minimum 3.00 tiles (verified across all painted tiles)
+    from the curved southwest coastline / water boundary.
+  - SW Pond Buffer: Minimum >= 2.65 tiles from the SW inland pond & obstacles.
+  - Abandoned Cabin Buffer: Minimum >= 2.85 tiles from all Abandoned Cabin
+    structures and props; existing forest tree buffer preserved between the
+    Eastern Blacksmith Forge / Captain's Bastion and the Abandoned Cabin.
+  - Northern Forest Border: Preserved along y = -3.5 to -1.5 across the entire
+    northern edge except for the single 2-tile-wide entrance trail at
+    x = -20..-19.
+  - Preserved Existing Landmarks (100% Untouched):
+    - Grid/Tilemaps/Ground (3,587 tiles — 0 tiles removed or altered)
+    - Central Camp, GoblinOutpost, RoadsideRestStop, Hidden Pond Clearing,
+      Abandoned Cabin, Dark Forest Supply Chest (-25, 0), and Dark Forest_28
+      stone node (-34.22, -2.71).
+
+2. HIERARCHY & LANDMARKS CREATED (EXPANDED COVERAGE)
+--------------------------------------------------------------------------------
+All new objects are organized under:
+EnvironmentExpansion/AshenFrontier
+├── Tilemaps           (4 child references)
+├── EntranceCheckpoint (17 children)
+├── RogueCamp          (27 children)
+├── RuinedWatchpost    (14 children)
+├── DryQuarry          (28 children)
+├── DuelClearing       (18 children)
+├── Vegetation         (40 children)
+├── Decorations        (39 children)
+├── Loot               (4 LootChest instances)
+└── SpawnPoints        (16 markers: 13 Rogue SpawnSlots + 3 Night SpawnPoints)
+
+And tilemap layers rendered on the shared Grid under:
+Grid/Tilemaps/AshenFrontier Tilemaps
+├── AshenFrontier Ochre Grass (SortingLayer: Ground, Order: 5 — 345 tiles)
+├── AshenFrontier Dry Soil    (SortingLayer: Ground, Order: 6 — 285 tiles)
+├── AshenFrontier Trails      (SortingLayer: Ground, Order: 7 — 125 tiles)
+└── AshenFrontier Cracked Detail (SortingLayer: Ground, Order: 8 — 30 masonry tiles)
+
+Points of Interest & Sub-Areas:
+A. Abandoned Checkpoint & Ruined Wagon Ambush (x ~= -23.5..-17.5, y ~= -8.5..-4.5)
+   - Narrow trail entrance from the northern horizontal road flanked by
+     Checkpoint Fence West/East, Checkpoint Stake West/East, Frontier Warning
+     Sign, Warning Skull Stake, Checkpoint Lantern, and Checkpoint Banner.
+   - Overturned Supply Cart, Broken Cart Wheel, Spilled Cargo Crate, Spilled
+     Supply Sack, and Checkpoint Barrel.
+   - Western Ruined Wagon Ambush along the Watchpost trail: Ambushed Handcart,
+     Ambush Fallen Log, Ambush Skeleton Remnant (Bone_Ribcage), and gatherable
+     Checkpoint_ScrapPile.
+   - Guarded by 2 Rogue Scouts (Checkpoint_Rogue_01, Checkpoint_Rogue_02).
+
+B. Dry Creek Bed, Plank Bridge & Burned Explorer Campsite (x ~= -26.0..-24.0, y ~= -12.0..-6.4)
+   - Shallow dry creek depression lined with DryCreek_Reeds and DryPebbles,
+     crossed by Dry Creek Plank Bridge (WestBridge).
+   - Burned Explorer Campsite south of the creek: Burned Camp Cold Firepit,
+     Burned Camp Charred Stones, Burned Camp Broken Crate, Burned Camp Bones,
+     and gatherable BurnedCamp_ScrapPile.
+
+C. Ruined Watchpost & NW Hidden Supply Cache (x ~= -34.6..-27.4, y ~= -9.5..-5.2)
+   - Ruined Watchpost Tower (RogueWatchtower — sandstone tower top is purely
+     structural/decorative; no inaccessible enemies are placed on top),
+     Ruined Stone Arch, 3 Crumbling Pillars (NW, SW, SE), weathered stone
+     masonry courtyard (RuinBrick_1/2 & CrackedCobble on Cracked Detail layer),
+     Watchpost Armory Bench, Watchpost Supply Barrel, rubble piles, and torn
+     red banners.
+   - Guarded Chest_AshenWatchpost and 2 melee guards (Watchpost_Rogue_01,
+     Watchpost_Raider_02).
+   - NW Side-Trail Hidden Supply Cache (-33.5, -6.8): Chest_AshenHiddenCache,
+     supply sacks, water jug, and natural boulder/dry-bush cover.
+
+D. Central Rogue Encampment, Eastern Blacksmith Forge & Archery Practice Yard
+   (x ~= -23.8..-13.4, y ~= -16.4..-8.2)
+   - Central Rogue Camp (-20.2, -13.4): 3 Rogue Shelters (Rogue Shelter NW, NE,
+     SW), animated Rogue Camp Bonfire (Fire_01-Sheet_0 with CampfireLoop
+     controller, firewood base, stone ring, and warm Point Light2D), Camp Meat
+     Roasting Spit, Camp Cooking Cauldron, Camp Butcher Table, crates, sacks,
+     banners, and partial timber barricades with 4 wide combat/retreat openings.
+   - Eastern Blacksmith Forge & Armory (-14.8, -14.2): Forge Brick Smelter
+     (Furnace_Brick_Lit), Forge Blacksmith Anvil (Anvil_Forge_Medium), Forge
+     Armory Workbench (Wood_Armory_Large), quench bucket, coal sack, gatherable
+     CampForge_ScrapPile, and guarded Chest_AshenCamp.
+   - NE Archery & Melee Practice Yard (-15.6, -9.8): Practice Archery Range
+     building (hay bullseye targets with arrows), 2 Scarecrow Training Dummies
+     (Practice Yard Dummy 1 & 2), and Practice Weapon Bench.
+   - Guarded by 3 Rogues (Camp_Raider_01, Camp_Scout_02, Camp_Raider_03).
+
+E. Dry Quarry & Smelter Works (x ~= -32.4..-24.8, y ~= -18.0..-11.8)
+   - Excavated basin framed by tall desert-brown and slate-grey rock formations
+     (Quarry Rim Formation NW/N/NE, Quarry West Wall N/S, Quarry South Boulder).
+   - Smelter & Work Area: Quarry Stone Smelter Lit (Furnace_Stone_Lit2), Quarry
+     Ruined Kiln (Furnace_Stone_Ruined), Quarry Stonecutting Table
+     (Stone_Worktable_2), Quarry Timber Worktable, Quarry Tool Anvil
+     (Anvil_Forge_Small), Quarry Ore Cart on 4 timber rail sleepers, Quarry
+     Abandoned Handcart, pickaxe/sledgehammer tool racks, and supply sack.
+   - Resources: 6 mineable Stone nodes (Quarry_StoneNode_01..06) and 2
+     gatherable Scrap piles (Quarry_ScrapPile_01..02).
+   - Guarded by 3 Rogues (Quarry_Raider_01, Quarry_Scout_02, Quarry_Scout_03).
+
+F. Duel Clearing & Captain's Bastion (x ~= -22.2..-13.4, y ~= -23.0..-18.0)
+   - Open boss combat arena ringed by 6 large boulders, 4 timber stakes, war
+     banners, skull totems, ribcage remnant, and Duel Arena Lantern (warm
+     Point Light2D).
+   - Overlooked by Captain Bastion Stronghold (RogueBastionBarracks) and
+     Bastion Supply Crate on the eastern ridge.
+   - Guarded by Ashen_Captain (RogueCaptain, 115 HP, 16 damage, Brute behavior
+     profile) + 2 Rogue Scouts (Duel_Scout_01, Duel_Scout_02) and reward chest
+     Chest_AshenDuel.
+
+3. ASSETS REUSED VS. IMPORTED
+--------------------------------------------------------------------------------
+All textures and sprites match project conventions: 32 PPU, FilterMode.Point,
+Uncompressed, SpriteSortPoint.Pivot, and Sprites-Lit-Default material.
+
+- Reused Existing Project Assets:
+  - Assets/GoblinOutpost/Tiles/DirtEdge_0_3..2_5.asset & OutpostDirt.asset
+  - Assets/GoblinOutpost/Prefabs/TimberFenceSegment.prefab,
+    TimberBarricadeStake.prefab, TrainingDummy.prefab
+  - Assets/GoblinOutpost/Art/Props.png (crates, barrels, carts, sleepers,
+    banners, benches, rubble)
+  - Assets/GoblinOutpost/Animations/CampfireLoop.controller
+  - Assets/RoadsideRestStop/Prefabs/LanternPost.prefab & RestStopProps.png
+  - Assets/PixelCrawler/Bonfire/Fire_01-Sheet.png & Bonfire_05-Sheet.png
+  - Assets/Sprites/Objects/LootChest.prefab & Rock2_1.png
+  - Assets/Tiny Swords/Terrain/Resources/Tools/Tool_01..04.png (ScrapPile icon
+    Tool_04 and quarry tool props)
+  - Assets/Items/{scrap, stone, wood_log, cooked_meat, repair_kit, berry}.asset
+
+- Imported into Assets/AshenFrontier/Art/ (from Downloads/Unity Assets in
+  priority order: Tiny Swords -> Pixel Crawler):
+  - Tiny Swords Buildings (Yellow/Sandstone faction):
+    House1.png, House2.png, House3.png, Tower.png, Archery.png, Barracks.png
+  - Tiny Swords Trees:
+    Stump_01.png, Stump_02.png
+  - Pixel Crawler Environment & Stations:
+    Rocks.png, DryVegetation.png, Farm.png, Floors_Tiles.png, Anvil.png,
+    Furnace.png, CookingStation.png, Stations_Workbench.png, Bone.png
+  - Pixel Crawler Rogue & Captain Sprite Sheets:
+    Rogue_Idle.png, Rogue_Run.png, Rogue_Death.png,
+    Captain_Idle.png, Captain_Run.png, Captain_Death.png
+
+- Created Prefabs & Data Assets in Assets/AshenFrontier/:
+  - Prefabs: RogueScout.prefab, RogueRaider.prefab, RogueCaptain.prefab,
+    RogueShelterHut_1..3.prefab, RogueWatchtower.prefab,
+    RogueArcheryRange.prefab, RogueBastionBarracks.prefab,
+    DeadTree_Large.prefab, DeadTree_Small.prefab, DryTreeStump_1..2.prefab,
+    DryBush_Ochre.prefab, DryBush_Russet.prefab,
+    DesertRock_BrownTall.prefab, DesertRock_BrownLarge.prefab,
+    DesertRock_SlateTall.prefab, DesertRock_SlateLarge.prefab,
+    DesertRock_Charred.prefab, QuarryStoneNode.prefab, ScrapPileNode.prefab
+  - EnemyArchetypes: rogue_scout.asset, rogue_raider.asset, rogue_captain.asset
+  - Tiles & Materials: OchreGrass.asset, DryCrackedEarth.asset,
+    RuinBrick_1.asset, RuinBrick_2.asset, CrackedCobble.asset,
+    OchreGrassTint.mat, DrySoilTint.mat
+
+4. EXISTING TREES OR TERRAIN CHANGED INSIDE THE BOUNDARY
+--------------------------------------------------------------------------------
+- Existing Ground Tilemap (Grid/Tilemaps/Ground): 0 tiles modified or removed
+  (all 3,587 tiles preserved; drylands terrain is non-destructively layered
+  above Ground on sorting orders 5, 6, 7, and 8).
+- Existing Interior Trees: 96 Expansion Tree instances under
+  EnvironmentExpansion/Dark Forest (and 2 overlapping edge trees under
+  Abandoned Cabin) whose trunks or canopies overlapped the interior drylands
+  soil, trails, or clearings were non-destructively deactivated
+  (SetActive(false)) so they can be restored at any time. All coastal buffer
+  trees, northern road border trees, pond border trees, and Cabin trees remain
+  active.
+
+5. ENEMY TYPES, POPULATION LIMITS & SPAWNING BEHAVIOR
+--------------------------------------------------------------------------------
+- Enemy Variants (using existing EnemyController + EnemyHealth + EnemyArchetype):
+  1. Rogue Scout (rogue_scout.asset): 38 HP, 9 dmg, Crawler profile, 1.45 patrol
+     speed, 2.55 chase speed.
+  2. Rogue Raider (rogue_raider.asset): 55 HP, 12 dmg, Stalker profile, 1.35
+     patrol speed, 2.35 chase speed.
+  3. Ashen Captain (rogue_captain.asset): 115 HP, 16 dmg, Brute profile, 1.25
+     patrol speed, 2.20 chase speed, 0.45 knockback resistance, 1.18x scale.
+- Placed Positions (13 total SpawnSlots under AshenFrontier/SpawnPoints):
+  - Entrance Checkpoint (2): Checkpoint_Rogue_01, Checkpoint_Rogue_02
+  - Ruined Watchpost (2):    Watchpost_Rogue_01, Watchpost_Raider_02
+  - Rogue Encampment (3):    Camp_Raider_01, Camp_Scout_02, Camp_Raider_03
+  - Dry Quarry (3):          Quarry_Raider_01, Quarry_Scout_02, Quarry_Scout_03
+  - Duel Clearing (3):       Ashen_Captain, Duel_Scout_01, Duel_Scout_02
+- Population Caps & Spawn Controls (AshenFrontierEncounterController):
+  - Proximity Activation: Enemies do NOT all spawn simultaneously; each slot
+    activates only when the player enters its activationRadius (9.5u - 11.5u).
+  - Local Concurrent Cap: maxConcurrentLocalEnemies = 6.
+  - Global Cap Respect: Checks existingSpawner.ActiveCount + LocalActiveCount
+    against existingSpawner.maxActiveEnemies (10), never exceeding the global
+    cap.
+  - Safe Spawn Validation: Verifies existingSpawner.Walkable, CampfireSafeZone,
+    water avoidance, and minimum player distance before spawning.
+  - Leash & Despawn: Unengaged enemies beyond despawnDistance (26u) despawn
+    cleanly back to their slot so closer encounters can activate; defeated slots
+    stay cleared for the day and reset on DayNightCycle.OnDayStarted.
+  - Night Waves Intact: Existing night-wave schedule and EnemySpawner logic are
+    untouched; 3 walkable open-ground night markers are registered via
+    existingSpawner.RegisterSpawnPoint.
+
+6. LOOT & INTERACTIVE FEATURES
+--------------------------------------------------------------------------------
+- 4 Loot Chests (under AshenFrontier/Loot, wired to LootChest):
+  1. Chest_AshenCamp (-16.2, -14.0): 4-6 Scrap, 4-6 Wood Log, 1-2 Cooked Meat
+  2. Chest_AshenWatchpost (-30.0, -7.6): 5-7 Scrap, 4-7 Stone, 1-2 Repair Kit
+  3. Chest_AshenDuel (-16.2, -20.5): 6-9 Scrap, 2-3 Repair Kit, 2-3 Cooked Meat
+  4. Chest_AshenHiddenCache (-33.5, -6.8): 4-6 Scrap, 4-6 Berry, 3-5 Wood Log
+- 11 Resource Nodes (wired to PlayerToolController.nodes & NearbyStoneIndicator):
+  - 6 Mineable Stone Nodes in Dry Quarry: Quarry_StoneNode_01..06 (ResourceType
+    Stone, mined with Pickaxe, drops Stone pickups).
+  - 5 Gatherable Scrap Nodes across landmarks: Quarry_ScrapPile_01..02,
+    BurnedCamp_ScrapPile, Checkpoint_ScrapPile, CampForge_ScrapPile
+    (ResourceType Scrap, gathered with [E]).
+- Ashen Captain Defeat Spoils:
+  - Defeating Ashen_Captain spawns 4 ResourcePickup bundles around the arena
+    (Scrap, Stone, Repair Kit, Cooked Meat).
+- Biome Discovery:
+  - Registered region "ashen_frontier" ("The Ashen Frontier") in
+    ExplorationManager.regions (6 total regions), displaying
+    "THE ASHEN FRONTIER DISCOVERED! AREAS DISCOVERED: X / 6" upon entry.
+
+7. FILES & SCRIPTS MODIFIED OR CREATED
+--------------------------------------------------------------------------------
+- Backups Created Before Editing:
+  - Design/Backups/AshenFrontier/SampleScene.unity.bak
+  - Design/Backups/AshenFrontier/EnemyController.cs.bak
+  - Design/Backups/AshenFrontier/EnemySpawner.cs.bak
+  - Design/Backups/AshenFrontier/ExplorationManager.cs.bak
+  - Design/Backups/AshenFrontier/PlayerMeleeCombat.cs.bak
+- Scripts Modified (minimal, isolated extensions):
+  - Assets/Scripts/Enemies/EnemyController.cs: Added opt-in activeDuringDaytime,
+    maxChaseDistanceFromOrigin tether, and static ActiveControllers list so
+    proximity-spawned stronghold guards function during daytime and can be hit
+    by PlayerMeleeCombat and WoodArrow without altering night-wave enemies.
+  - Assets/Scripts/Combat/PlayerMeleeCombat.cs: Included
+    EnemyController.ActiveControllers in melee strike target scan so daytime
+    stronghold guards take melee weapon damage.
+  - Assets/Scripts/Exploration/ExplorationManager.cs: Updated region lookup in
+    Update() to select the smallest-area containing Region when regions overlap,
+    allowing sub-biomes inside the southwest quadrant to trigger discovery.
+- Scripts Created:
+  - Assets/Scripts/Environment/AshenFrontierEncounterController.cs
+- Scene Saved:
+  - Assets/Scenes/SampleScene.unity
+
+8. ACTUAL TEST RESULTS & SCREENSHOTS
+--------------------------------------------------------------------------------
+All checks were executed directly inside Unity 6000.6.4f1 in Edit Mode and
+Play Mode:
+- Compilation: PASS (0 errors, 0 warnings via unity recompile).
+- Pathfinding & Walkability (ForestNavigation.Find):
+  - RoadEntry (-19.5, -2.5) -> Checkpoint (-19.5, -6.8):      PASS (8 pts)
+  - RoadEntry (-19.5, -2.5) -> Watchpost (-29.2, -8.0):       PASS (29 pts)
+  - RoadEntry (-19.5, -2.5) -> HiddenCache (-32.8, -7.0):     PASS (35 pts)
+  - RoadEntry (-19.5, -2.5) -> DryQuarry (-28.2, -15.0):      PASS (41 pts)
+  - RoadEntry (-19.5, -2.5) -> RogueCamp (-20.2, -12.8):      PASS (21 pts)
+  - RoadEntry (-19.5, -2.5) -> BlacksmithForge (-15.5, -14.0):PASS (30 pts)
+  - RoadEntry (-19.5, -2.5) -> PracticeYard (-15.8, -10.0):   PASS (21 pts)
+  - RoadEntry (-19.5, -2.5) -> DuelClearing (-18.4, -20.0):   PASS (36 pts)
+  - Loop Routes (Watchpost->Quarry, Quarry->Duel, Duel->Camp, Forge->Duel):
+    ALL PASS (True).
+  - All 16 SpawnPoints verified walkable via EnemySpawner.Walkable (0 blocked).
+- Play Mode Verification:
+  - At Camp start (9.26, 1.16): LocalActiveCount = 0 (no premature spawning).
+  - At Entrance Checkpoint (-19.5, -6.2): Rogues spawned via proximity, pursued
+    and attacked player; melee damage reduced Checkpoint_Rogue_01 HP (38 -> 16).
+  - At Rogue Camp & Forge (-17.2, -13.8): ExplorationManager discovered
+    "The Ashen Frontier" (DiscoveredCount = 3/6); Chest_AshenCamp opened and
+    transferred Scrap, Wood Log, and Cooked Meat to inventory.
+  - At Dry Quarry (-28.0, -14.6): Quarry_StoneNode_01 mined & depleted;
+    Quarry_ScrapPile_01 gathered & depleted (+2 Scrap).
+  - At Duel Clearing (-17.8, -20.2): Ashen_Captain (115 HP, 16 dmg) and Duel
+    Scouts spawned within the 6-enemy local cap; defeating Ashen_Captain
+    spawned 4 Captain spoils pickups.
+  - Console Errors during Play Mode run: 0 errors.
+
+Screenshots Captured & Visually Verified (in Design/Screenshots/):
+- Scene View:
+  - Design/Screenshots/scene_overview_ashen_frontier.png
+  - Design/Screenshots/scene_checkpoint_and_camp.png
+  - Design/Screenshots/scene_watchpost_and_quarry.png
+  - Design/Screenshots/scene_duel_clearing.png
+- Game View (Play Mode):
+  - Design/Screenshots/game_entrance_checkpoint.png
+  - Design/Screenshots/game_rogue_camp.png
+  - Design/Screenshots/game_watchpost_and_quarry.png
+  - Design/Screenshots/game_duel_clearing_captain.png
+
+9. SUBSTITUTIONS, LIMITATIONS & REMAINING WORK
+--------------------------------------------------------------------------------
+- Ranged Enemy AI Substitution: The project has no enemy ranged projectile AI
+  (EnemyController and EnemyArchetype only implement melee chase/lunge/slam
+  profiles). Per instructions ("Ranged guards only if working ranged enemy AI
+  already exists... No inaccessible enemy placed on a purely decorative tower"),
+  the Ruined Watchpost is guarded by accessible ground-level melee Rogues
+  (Watchpost_Rogue_01 and Watchpost_Raider_02), and the Watchtower top is kept
+  purely decorative.
+- Destructible Barriers: The project does not have a world-destructible
+  barricade component for player attacks (PlaceableStructure is for player-built
+  camp defenses). Timber barricades are therefore placed as solid partial cover
+  with wide openings around every landmark so movement and retreat routes are
+  never blocked.
+- Quarry Elevation: Since the project uses flat 2D navigation without multi-
+  level elevation colliders, Quarry rim rock formations provide visual depth
+  around the basin while keeping the entire quarry floor walkable.
+================================================================================

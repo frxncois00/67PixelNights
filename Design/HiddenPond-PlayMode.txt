@@ -1,0 +1,14 @@
+{
+  "playing": true,
+  "roadToCabin": true,
+  "routeSteps": 32,
+  "pondBlocked": true,
+  "southDeckOpen": true,
+  "westDeckOpen": true,
+  "playerColliders": [
+    {
+      "type": "CapsuleCollider2D",
+      "size": "(0.38, 0.30, 0.00)"
+    }
+  ]
+}

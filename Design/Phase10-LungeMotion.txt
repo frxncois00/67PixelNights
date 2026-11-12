@@ -1,0 +1,3 @@
+PASS Observed actual lunge state
+PASS Actual Rigidbody movement distance=1.704939
+PASS Exactly one 15-point hit during first attack; health=85

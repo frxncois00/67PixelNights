@@ -1,0 +1,11 @@
+PASS Chest_SunkenShrine opened=True lootAdded=11 animationPlaying=True
+PASS Chest_MossyRuins opened=True lootAdded=12 animationPlaying=True
+PASS Chest_HermitReward opened=True lootAdded=14 animationPlaying=True
+PASS Cache_HiddenReeds opened=True lootAdded=10 animationPlaying=True
+PASS Landing_Salvage gameplay API depleted=True
+PASS Shrine_Salvage gameplay API depleted=True
+PASS Ruins_MineableStone_01 gameplay API depleted=True
+PASS Ruins_MineableStone_02 gameplay API depleted=True
+PASS boss receives damage 125 -> 115
+PASS boss defeat flag=True reward pickups=4
+Global population=2 local=2 local cap=5

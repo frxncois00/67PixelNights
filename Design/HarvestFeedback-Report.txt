@@ -1,0 +1,58 @@
+RESOURCE HIT AND HARVEST FEEDBACK
+Unity 6000.6.4f1 | SampleScene | 9 November 2026
+
+IMPLEMENTED
+- Trees briefly sway, highlight and shed leaf/wood fragments when struck.
+- Stones briefly jolt, highlight and shed stone fragments when struck.
+- A final hit plays a short fading break/fall reaction.
+- Floating +N WOOD / +N STONE labels pop, rise and fade after depletion.
+  The number is the actual number of pickups successfully created, not a
+  separate random visual number. The smaller DROPPED label distinguishes
+  these ground pickups from resources already collected into inventory.
+- Existing yield settings, pickup controls, regeneration and weapon attacks
+  are retained. Use E to collect the resulting nearby drops as before.
+- The feedback moves only a temporary visual. The resource root and physical
+  collider remain fixed during hits. Depletion disables the original collider
+  through the existing resource logic.
+- Hit feedback is inactive between hits. Seven fragments are reused per struck
+  node; temporary yield labels destroy themselves after 1.25 seconds.
+
+FILES
+Modified: Assets/Scripts/Resources/ResourceNode.cs
+Created: Assets/Scripts/Resources/ResourceHitFeedback.cs (+ Unity .meta)
+Created: Assets/Scripts/UI/HarvestPopup.cs (+ Unity .meta)
+Validation helper: Design/Tools/TestHarvestFeedback.cs (outside runtime Assets)
+Original resource script: Design/Backups/HarvestFeedback/ResourceNode.cs
+No player, weapon-animation, camera or existing HUD-layout changes for this task.
+No manual scene or Inspector setup is needed; ResourceNode attaches feedback
+on the first hit, using its own sprite and material.
+
+ACTUAL UNITY VALIDATION
+PASS: Unity compilation; no new C# errors.
+PASS: Equipped axe and pickaxe tests called the actual PlayerToolController.Swing
+method and its animation impact callback on one tree and two mining rocks.
+PASS: All three hits on each node produced active feedback.
+PASS: Root position, rotation and scale stayed unchanged during hits.
+PASS: On nonfinal hits, original art returned and the collider remained solid.
+PASS: After depletion, original art and collider remained disabled after the effect.
+PASS: Test-only yields of 2, 3 and 4 produced matching pickup counts and labels:
+      +2 WOOD, +3 STONE and +4 STONE.
+PASS: Floating labels cleaned themselves up after their animations.
+PASS: Final Unity Console check returned zero errors; compilationFailed=false.
+The yield overrides, teleports, inventory grants and disabled encounters were
+Play Mode test setup only. Play Mode was stopped and the latest saved SampleScene
+was reloaded without saving test state. Scene is not dirty.
+
+Evidence: Design/HarvestFeedback/Tests.txt
+Actual Unity Game view captures:
+- Design/HarvestFeedback/Tree-Hit.png
+- Design/HarvestFeedback/Stone-Hit.png
+- Design/HarvestFeedback/Yield-2.png
+- Design/HarvestFeedback/Yield-3.png
+- Design/HarvestFeedback/Yield-4.png
+
+LIMITATIONS
+The representative tree and two stones were exercised in the Editor; every
+resource variant and a standalone build were not individually tested.
+The effect uses the existing sprite and simple fragments, not newly drawn
+frame-by-frame tree or stone artwork. Existing ground-pickup behavior remains.

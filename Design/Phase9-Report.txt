@@ -1,0 +1,167 @@
+PHASE 9 IMPLEMENTATION REPORT
+Date: 2026-11-07 (Asia/Shanghai)
+Project: C:\Users\Francis\My project
+Unity: 6000.6.4f1 / URP 17.6.0 / Input System 1.20 / uGUI 2.6
+Scene: Assets/Scenes/SampleScene.unity
+
+STATUS
+Implemented and integrated into SampleScene. Unity compiled the new scripts successfully. Automated Play Mode checks passed as recorded below. Physical input/endurance acceptance is not complete. New structure artwork is explicitly temporary existing-pack art, not finished fence/workbench/chest artwork.
+
+PROTECTION AND CHECKPOINT
+- Non-destructive backup: Design/Backups/Phase9-20261107-002825 (Scripts, Items, Prefabs, SampleScene).
+- Design/Phase9-OriginalSnapshot.txt records original scene transforms/renderers.
+- Comparison: 1,166 originals, zero transform or SpriteRenderer differences.
+- Body_A sprites, animations, original world objects, tool pickups, Tree_30's current position, player spawn and camera zoom were preserved.
+- CameraFollow.cs and existing character animation files were not modified.
+- PlayerMovement.cs changed only to block movement during construction/crafting modal windows.
+- No packages installed in the Unity project; no new Canvas or EventSystem.
+- No starting materials or construction items were saved into the player inventory. Test inventories and runtime structures were temporary Play Mode state.
+
+IMPLEMENTED SYSTEMS
+1. Crafting
+- ScriptableObject recipes reference existing ItemDefinition assets and stable item IDs.
+- Wooden Fence: 3 wood, output 1; stack 20.
+- Reinforced Barricade: 5 wood + 2 stone, output 1; stack 20.
+- Storage Chest: 6 wood + 2 scrap, output 1; stack 10.
+- Repair Kit: 2 wood + 1 scrap, output 1; stack 20.
+- CraftBatch simulates all ingredients and output insertion before committing. Smaller ingredient stacks are consumed first to free output slots. One inventory Changed event is emitted per successful recipe.
+- Insufficient ingredients or output space spends nothing. Rapid duplicate craft requests are throttled.
+- Workbench uses the existing contextual E interaction list, configurable range 2. No independent E listener was added.
+- UI lists recipes, icons, owned/required material counts and craft availability.
+
+2. Placement
+- Equip a crafted building item in hotbar; B toggles placement; left click places; right click or Escape cancels.
+- Maximum range defaults to 3; half-unit position snapping.
+- Green/red translucent sprite plus footprint outline. Ghost has no Collider2D.
+- Preview validation is limited to four checks per second while following the pointer. Click always revalidates the current position synchronously before spending.
+- Rejects water/unsupported footprint, solid overlap/player overlap, excessive range, blocked main cross paths, essential interaction proximity and failed simulated routes.
+- Simulated footprint checks player-to-camp connection, camp-to-region routes and enemy/sheep escape connectivity. It fails closed if the bounded region checks time out.
+- Placement requires the selected owned building item, consumes exactly one, and invalidates navigation.
+- Build mode and crafting/storage modals block world gathering/weapon/food/drop input through existing interaction gates. Building mode still permits movement; modals stop player movement.
+
+3. Structures
+- Fence 50 HP; reinforced barricade 150 HP; chest 50 HP.
+- Static BoxCollider2D footprints; unit GameObject scale; Objects sorting layer and pivot sort point.
+- Damage API with brief white flash and selected-structure health bar/text.
+- Repair restores up to 25 HP for one repair kit; full health spends none.
+- E opens management. Dismantle requires two clicks; no refunds. Nonempty storage cannot be dismantled.
+- Enemy structure attacks are NOT implemented (optional). Enemies use the existing navigation/physical obstacles and do not gain a new damage authority.
+
+4. Storage
+- Twelve independent chest slots; player inventory remains InventoryController.
+- Select a source slot, then deposit/withdraw one or stack.
+- Partial transfer accepts only destination capacity; no overflow deletion.
+- Destroyed nonempty chest becomes a nonblocking, withdraw-only wreck. Contents remain recoverable through E; no requirement for free ground drop space and no silent deletion.
+- Chest destruction currently requires the structure damage API/test; there is no new enemy/player attack targeting of structures.
+- Session-only structures and storage; no persistent save system was requested or added.
+
+SCENE INTEGRATION
+- Added Player.BuildingController with inventory, equipment, action, navigation, exploration, spawner, camera, material, recipes, definitions, UI and structure-parent references assigned.
+- Added root BuildableStructures (empty in the saved scene).
+- Added CraftingWorkbench at (-1.50, 2.00, 0); existing log sprite with distinct tint, no new blocking footprint near camp.
+- Added ConstructionInterface under existing Canvas. It builds its modal window and building hint at runtime.
+- Reused existing scaler, font/UI technology and EventSystem.
+- Appended four item definitions to the existing inventory catalogue.
+- Existing scene saved in Edit Mode. Test-created structures/resources were not saved.
+
+NEW PRODUCTION SCRIPTS
+Assets/Scripts/Crafting/CraftingRecipe.cs
+Assets/Scripts/Crafting/CraftingWorkbench.cs
+Assets/Scripts/Building/BuildingDefinition.cs
+Assets/Scripts/Building/BuildingController.cs
+Assets/Scripts/Building/PlaceableStructure.cs
+Assets/Scripts/Building/StructureStorage.cs
+Assets/Scripts/UI/ConstructionUI.cs
+
+MODIFIED EXISTING FILES
+Assets/Scripts/Enemies/EnemyController.cs — route retry interval.
+Assets/Scripts/Navigation/ForestNavigation.cs — bounded heuristic frontier, metrics, temporary occupancy simulation.
+Assets/Scripts/Interaction/PlayerInteractionController.cs — construction input gates.
+Assets/Scripts/Inventory/EquipmentController.cs — modal selection gate.
+Assets/Scripts/Inventory/InventoryController.cs — atomic multi-ingredient CraftBatch.
+Assets/Scripts/Inventory/ItemDefinition.cs — appended Building/Utility categories.
+Assets/Scripts/Player/PlayerMovement.cs — modal movement gate only.
+Assets/Scripts/UI/InventoryUI.cs — prevent overlapping inventory/construction windows.
+Assets/Scenes/SampleScene.unity — references and new objects described above.
+
+NEW ASSETS (plus Unity .meta files)
+Assets/Items/wooden_fence.asset
+Assets/Items/reinforced_barricade.asset
+Assets/Items/storage_chest.asset
+Assets/Items/repair_kit.asset
+Assets/Crafting/Recipe_wooden_fence.asset
+Assets/Crafting/Recipe_reinforced_barricade.asset
+Assets/Crafting/Recipe_storage_chest.asset
+Assets/Crafting/Recipe_repair_kit.asset
+Assets/Crafting/wooden_fence.asset
+Assets/Crafting/reinforced_barricade.asset
+Assets/Crafting/storage_chest.asset
+Assets/Prefabs/Building/WoodenFence.prefab
+Assets/Prefabs/Building/ReinforcedBarricade.prefab
+Assets/Prefabs/Building/StorageChest.prefab
+Assets/Prefabs/Crafting/CraftingWorkbench.prefab
+
+VALIDATION ACTUALLY RUN
+- Unity compilation completed; current Console ground-truth reported 0 errors and 0 warnings. Historical CLI counters are not current Console results.
+- Phase9-Tests.txt: 24 PASS checks covering workbench opening, missing materials, exact atomic multi-cost craft, duplicate rejection, post-consumption output space, building selection, protected path/range rejection, successful placement cost, duplicate placement, fence HP, repair, dismantling, storage transfers and wreck recovery.
+- Phase9-ExtraTests.txt: 7 PASS checks for full chest/full player retention, invalid removal and indices, partial withdrawal, modal input gate and disable cleanup.
+- Phase9-AttackTests.txt: 6 PASS checks.
+- Phase9-ExpansionTests.txt: 15 PASS checks.
+- Phase9-SurvivalRegression.txt: 46 PASS checks.
+- Phase9-SwordTests.txt: actual animation-callback attack test; inspect its recorded result for the three assertions.
+- All above ran in the actual Unity Editor. Direct production API calls and controlled test transforms/deadlines are not physical input testing.
+- Phase9-Preview.png: actual Unity render after a synthetic Input System pointer update; ghost has zero colliders.
+- Crafting screenshots reviewed at 1280x720, 1600x900 and 1920x1080; no clipped recipe rows or buttons.
+- Storage screenshot reviewed at 1280x720.
+- Short ten-enemy runtime sample and navigation measurements are detailed in Phase7-8-Hardening-Report.txt. A 164 ms maximum observed delta prevents a performance sign-off.
+
+SCREENSHOTS
+Design/Phase9-Crafting-1280.png
+Design/Phase9-Crafting-1600.png
+Design/Phase9-Crafting-1920.png
+Design/Phase9-Storage-1280.png
+Design/Phase9-Preview.png
+All captured through Unity's camera/Game rendering, not generated composite art.
+
+TEST/SETUP HELPERS
+AgentScripts/SetupPhase9.cs (one-time guarded setup; do not rerun on an integrated scene)
+AgentScripts/TestPhase9.cs
+AgentScripts/ExtraPhase9.cs
+AgentScripts/TestAttack9.cs
+AgentScripts/TestExpansion9.cs
+AgentScripts/TestPhase9Survival.cs
+AgentScripts/TestSword9.cs
+AgentScripts/SoakPhase9.cs
+AgentScripts/PreviewPhase9.cs
+AgentScripts/VerifyPreservation9.cs
+AgentScripts/Formatter/ (local source formatting utility, outside Assets; not a runtime dependency)
+Test helpers deliberately modify runtime inventory/player state. Use only disposable Play Mode sessions, then stop without saving runtime changes.
+
+MANUAL TEST / PLAYER INSTRUCTIONS
+1. Open SampleScene and Play. Pick up axe, pickaxe and sword at camp; select the appropriate hotbar tool. Empty starting inventory is intentional.
+2. Gather wood/stone and find scrap in the existing loot system. No free materials were permanently granted.
+3. Approach the tinted log workbench just northwest of the campfire, at (-1.5,2), until [E] Craft Items appears. Press E.
+4. Craft a fence, barricade, chest and repair kit as resources allow. Verify unavailable recipes do not spend materials.
+5. Close crafting. Open inventory, select the crafted building item and use Equip / Hotbar. Select its 1-5 slot, press B.
+6. Move away from protected cross paths and nearby objects; aim at open grass within 3 units. Wait for a green footprint, then click. Water, obstacles and main paths should reject placement without spending.
+7. Escape/right click cancels. Walk into the built footprint and confirm collision. Observe enemies routing around it at night; attempt narrow-gap placement and verify rejection.
+8. Approach structure and press E. Check HP. For controlled damage testing only, select a runtime PlaceableStructure and call its TakeDamage(float) through a Unity script/test helper; then repair with a kit.
+9. Open a chest with E, select a player slot and Deposit One/Stack; select a chest slot and Withdraw One/Stack. Check full inventories and partial stacks.
+10. Try dismantling a nonempty chest (must reject). Empty it and click dismantle twice. Confirm movement/input resumes after closing windows.
+11. Test axe/pickaxe/sword, sheep, eating/cooking, campfire, region discovery, health/death, WASD/arrows and camera follow through a full night.
+12. Stop Play Mode; session-only structures/contents reset by design.
+
+LIMITATIONS / UNVERIFIED
+- Structure/workbench/repair-kit art uses tinted existing wood/stone placeholders; names and item descriptions mark this. Replace sprite references with dedicated compatible art later without replacing the mechanics.
+- Main-route protection is deliberately conservative (world x or y within 2 units); building is not allowed everywhere around camp.
+- Simulated route validation is bounded and conservative, not a mathematical proof against every future crowd/trap configuration. Narrow-route and moving-actor acceptance need physical testing.
+- Navigation creates search candidate objects; allocations and prolonged ten-enemy performance were not profiled. A short sample showed a 164 ms frame delta.
+- No complete physical keyboard/mouse playthrough, full-night stress test, runtime resolution-switch interaction test, or exhaustive death/restart regression was performed.
+- Runtime screenshots verify rendering, not mouse hit-testing at every resolution.
+- Optional enemy attacks on structures, dismantling refunds, new art, rotation tools and persistence are not implemented.
+- No inventory, food, enemy, camera or world redesign was introduced.
+
+HANDOFF
+Core Phase 9 is implemented, scene-integrated and compilation-verified with targeted Unity runtime checks. Finish the listed manual acceptance and performance profiling before treating it as production-ready.
+
+FINAL CHECK: 101 recorded assertions PASS, 0 FAIL across the six result files. Sword animation callback checks: all 3 PASS. Final scene preservation comparison still reports zero differences. Unity left in Edit Mode; current Console has zero errors/warnings.

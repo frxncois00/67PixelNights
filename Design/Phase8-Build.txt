@@ -1,0 +1,3 @@
+Added 1344 ground cells; original 268 occupied cells unchanged; 396 edge segments; 25 new resource nodes.
+Abandoned Cabin Supply Chest (Wooden Cache Placeholder) (2.00, -20.00, 0.00)
+Dark Forest Supply Chest (Wooden Cache Placeholder) (-25.00, 0.00, 0.00)

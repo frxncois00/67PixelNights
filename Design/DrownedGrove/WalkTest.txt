@@ -1,0 +1,12 @@
+PASS actual keyboard/physics leg 0 -> (-27.00, 8.00) at (-27.00, 7.36)
+PASS actual keyboard/physics leg 1 -> (-24.50, 15.50) at (-24.52, 14.88)
+PASS actual keyboard/physics leg 2 -> (-27.00, 16.00) at (-26.40, 15.95)
+PASS actual keyboard/physics leg 3 -> (-22.00, 19.00) at (-22.55, 18.87)
+PASS actual keyboard/physics leg 4 -> (-23.00, 21.00) at (-22.55, 20.87)
+PASS actual keyboard/physics leg 5 -> (-15.00, 21.00) at (-15.61, 20.93)
+PASS actual keyboard/physics leg 6 -> (-12.00, 17.00) at (-12.05, 17.61)
+PASS actual keyboard/physics leg 7 -> (-12.00, 11.00) at (-11.35, 11.04)
+PASS actual keyboard/physics leg 8 -> (-16.00, 6.50) at (-15.37, 6.54)
+PASS actual keyboard/physics leg 9 -> (-23.00, 7.00) at (-22.36, 6.97)
+PASS actual keyboard/physics leg 10 -> (-27.00, 2.00) at (-26.43, 2.12)
+PASS complete loop, WASD + arrows, camera follow Z unchanged; frames=8508

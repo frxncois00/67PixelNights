@@ -1,0 +1,6 @@
+wood_hammer: 0.739 units (112% of animation size)
+wood_longsword: 0.806 units (112% of animation size)
+wood_spear: 1.030 units (112% of animation size)
+wood_knife: 0.448 units (112% of animation size)
+wood_shovel: 0.650 units (112% of animation size)
+wood_bow: 0.616 units (112% of animation size)

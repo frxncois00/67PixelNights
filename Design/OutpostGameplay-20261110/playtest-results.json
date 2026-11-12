@@ -1,0 +1,183 @@
+{
+  "complete": true,
+  "success": true,
+  "fail": null,
+  "stage": 8,
+  "frameStart": 22646,
+  "frame": 31108,
+  "maxLocal": 5,
+  "maxGlobal": 10,
+  "safeViolations": 0,
+  "results": [
+    {
+      "pass": true,
+      "name": "Merchant prompt selected in safe market",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Marketplace is locally safe",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Valid trade commits exact payment/output/stock",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Insufficient payment preserves entire inventory",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Insufficient capacity preserves payment and stock",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Exchange uses slot freed by payment",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Sold-out offer does not debit payment",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Input lock prevents trade",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "E key completes merchant trade",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Closed hidden barrier blocks navigation",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Concealed chest cannot be looted through closed barrier",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Cabin entrance is discoverable by proximity",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "E opens hidden route and reveals cache",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Opened gate updates navigation collision",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Player route found",
+      "data": "(15.50, 25.50)"
+    },
+    {
+      "pass": true,
+      "name": "Walked physically through hidden gate",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Hidden chest loot collected",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Camp guards spawn within local cap",
+      "data": 5
+    },
+    {
+      "pass": true,
+      "name": "At least three guards visibly follow patrols",
+      "data": 4
+    },
+    {
+      "pass": true,
+      "name": "No guard enters marketplace/cabin/pond",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Guard chases and lands attack in hostile camp",
+      "data": {
+        "healthBefore": 100.0,
+        "after": 64.0,
+        "state": "Chase"
+      }
+    },
+    {
+      "pass": true,
+      "name": "Guard returns to assigned route after player retreats",
+      "data": "Patrol"
+    },
+    {
+      "pass": true,
+      "name": "Captain present by central structure",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Captain drops configured rewards once",
+      "data": 3
+    },
+    {
+      "pass": true,
+      "name": "Refresh/adoption cannot duplicate captain rewards",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Guarded chest retains uncollected loot when full",
+      "data": 6
+    },
+    {
+      "pass": true,
+      "name": "Chest remainder can be collected later",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Original Ashen Frontier encounter still spawns",
+      "data": 6
+    },
+    {
+      "pass": true,
+      "name": "Existing encounters retain unassigned/random patrol behavior",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Existing night waves still spawn",
+      "data": {
+        "ActiveCount": 2,
+        "PendingCount": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "Night spawns avoid exploration refuges",
+      "data": null
+    },
+    {
+      "pass": true,
+      "name": "Encounter and global population caps hold",
+      "data": {
+        "maxLocal": 5,
+        "maxGlobal": 10
+      }
+    }
+  ]
+}

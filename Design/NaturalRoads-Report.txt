@@ -1,0 +1,1 @@
+Replaced 277 solid dirt tile surfaces with native textured trails, gentle bends and irregular pixel edges. Preserved all existing colliders and ground occupancy. Original center path tiles retained with renderer hidden.

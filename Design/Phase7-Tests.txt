@@ -1,0 +1,18 @@
+PASS Night 1 spawns two
+PASS Spawn outside protection
+PASS Spawn player clearance
+PASS Enemy initial health
+PASS Spawn outside protection
+PASS Spawn player clearance
+PASS Enemy initial health
+PASS Bounded difficulty
+PASS First 15 damage hit
+PASS Second hit single death
+PASS No repeated death
+PASS Dead enemy excluded from count
+PASS Empty hands cannot sword attack
+PASS Protected player cannot be hit
+PASS Sunrise cleanup
+PASS Rapid complete cycles leave no daytime hostiles
+PASS Three original pickups retained
+PASS Camera zoom retained

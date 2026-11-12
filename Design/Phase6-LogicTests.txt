@@ -1,0 +1,46 @@
+PASS Live starting health and early hunger
+PASS New health and hunger initialize at 100
+PASS Hunger decreases 0.2 per second
+PASS No starvation damage before interval
+PASS Five damage after five seconds
+PASS Large delta processes two more starvation intervals
+PASS Recovery resets starvation timer
+PASS Crossing zero counts only starvation portion of long frame
+PASS Invalid damage and healing rejected
+PASS Health clamps to maximum
+PASS Death once, no damage or healing after death
+PASS Berry spends one and restores hunger only
+PASS Cooked meat restores hunger and health
+PASS Healing food works at full hunger
+PASS Full stats reject food without spending
+PASS Raw meat cannot be eaten
+PASS Food clamps benefit at maximum
+PASS Inventory Use consumes selected food
+PASS Berry partial acceptance preserves remaining yield
+PASS Full inventory does not deplete berry bush
+PASS Remaining berries collected exactly once
+PASS Depleted bush cannot duplicate berries
+PASS Berry regrowth resets only after depletion
+PASS Food world pickup retains overflow
+PASS Bounded initial wildlife count is three
+PASS Animals start on valid clear ground
+PASS Wildlife first hit
+PASS Harvest creates one raw-meat stack
+PASS Repeated harvest cannot duplicate drops
+PASS Raw meat enters authoritative inventory
+PASS Cooking rejects missing raw meat
+PASS Cooking rejects out-of-range player
+PASS Cooking starts one job only
+PASS Cooking does not spend ingredients early
+PASS Cooking atomically exchanges one meat
+PASS Second cooking job starts
+PASS Extinguished fire pauses without spending
+PASS Relighting resumes cooking
+PASS Leaving cooking range cancels with no ingredient loss
+PASS Cooking starts with output space
+PASS Full output at completion preserves ingredient
+PASS Atomic recipe can reuse consumed singleton slot
+PASS Food supports ordinary item dropping
+PASS Dropped food recollects without duplication
+PASS Stats and food survive phase changes
+PASS Hunger continues while inventory open

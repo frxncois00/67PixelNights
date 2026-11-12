@@ -1,0 +1,9 @@
+x,y,worldX,worldY,tile,collider
+-13,13,-12.5,13.5,RampCenter,None
+-12,13,-11.5,13.5,RampCenter,None
+-13,14,-12.5,14.5,RampCenter,None
+-12,14,-11.5,14.5,RampCenter,None
+-23,17,-22.5,17.5,RampCenter,None
+-22,17,-21.5,17.5,RampCenter,None
+-23,18,-22.5,18.5,RampCenter,None
+-22,18,-21.5,18.5,RampCenter,None

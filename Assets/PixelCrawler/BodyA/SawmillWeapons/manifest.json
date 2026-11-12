@@ -1,0 +1,496 @@
+{
+  "cellSize": 96,
+  "ppu": 32,
+  "pivot": [
+    0.5,
+    0.3333333333333333
+  ],
+  "sequences": [
+    {
+      "item": "wood_knife",
+      "mode": "Idle",
+      "direction": "Down",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_knife/Idle_Down-Sheet.png"
+    },
+    {
+      "item": "wood_knife",
+      "mode": "Idle",
+      "direction": "Up",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_knife/Idle_Up-Sheet.png"
+    },
+    {
+      "item": "wood_knife",
+      "mode": "Idle",
+      "direction": "Side",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_knife/Idle_Side-Sheet.png"
+    },
+    {
+      "item": "wood_knife",
+      "mode": "Walk",
+      "direction": "Down",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_knife/Walk_Down-Sheet.png"
+    },
+    {
+      "item": "wood_knife",
+      "mode": "Walk",
+      "direction": "Up",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_knife/Walk_Up-Sheet.png"
+    },
+    {
+      "item": "wood_knife",
+      "mode": "Walk",
+      "direction": "Side",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_knife/Walk_Side-Sheet.png"
+    },
+    {
+      "item": "wood_knife",
+      "mode": "Attack",
+      "direction": "Down",
+      "count": 8,
+      "duration": 0.32,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_knife/Attack_Down-Sheet.png"
+    },
+    {
+      "item": "wood_knife",
+      "mode": "Attack",
+      "direction": "Up",
+      "count": 8,
+      "duration": 0.32,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_knife/Attack_Up-Sheet.png"
+    },
+    {
+      "item": "wood_knife",
+      "mode": "Attack",
+      "direction": "Side",
+      "count": 8,
+      "duration": 0.32,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_knife/Attack_Side-Sheet.png"
+    },
+    {
+      "item": "wood_spear",
+      "mode": "Idle",
+      "direction": "Down",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_spear/Idle_Down-Sheet.png"
+    },
+    {
+      "item": "wood_spear",
+      "mode": "Idle",
+      "direction": "Up",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_spear/Idle_Up-Sheet.png"
+    },
+    {
+      "item": "wood_spear",
+      "mode": "Idle",
+      "direction": "Side",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_spear/Idle_Side-Sheet.png"
+    },
+    {
+      "item": "wood_spear",
+      "mode": "Walk",
+      "direction": "Down",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_spear/Walk_Down-Sheet.png"
+    },
+    {
+      "item": "wood_spear",
+      "mode": "Walk",
+      "direction": "Up",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_spear/Walk_Up-Sheet.png"
+    },
+    {
+      "item": "wood_spear",
+      "mode": "Walk",
+      "direction": "Side",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_spear/Walk_Side-Sheet.png"
+    },
+    {
+      "item": "wood_spear",
+      "mode": "Attack",
+      "direction": "Down",
+      "count": 8,
+      "duration": 0.52,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_spear/Attack_Down-Sheet.png"
+    },
+    {
+      "item": "wood_spear",
+      "mode": "Attack",
+      "direction": "Up",
+      "count": 8,
+      "duration": 0.52,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_spear/Attack_Up-Sheet.png"
+    },
+    {
+      "item": "wood_spear",
+      "mode": "Attack",
+      "direction": "Side",
+      "count": 8,
+      "duration": 0.52,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_spear/Attack_Side-Sheet.png"
+    },
+    {
+      "item": "wood_shovel",
+      "mode": "Idle",
+      "direction": "Down",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_shovel/Idle_Down-Sheet.png"
+    },
+    {
+      "item": "wood_shovel",
+      "mode": "Idle",
+      "direction": "Up",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_shovel/Idle_Up-Sheet.png"
+    },
+    {
+      "item": "wood_shovel",
+      "mode": "Idle",
+      "direction": "Side",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_shovel/Idle_Side-Sheet.png"
+    },
+    {
+      "item": "wood_shovel",
+      "mode": "Walk",
+      "direction": "Down",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_shovel/Walk_Down-Sheet.png"
+    },
+    {
+      "item": "wood_shovel",
+      "mode": "Walk",
+      "direction": "Up",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_shovel/Walk_Up-Sheet.png"
+    },
+    {
+      "item": "wood_shovel",
+      "mode": "Walk",
+      "direction": "Side",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_shovel/Walk_Side-Sheet.png"
+    },
+    {
+      "item": "wood_shovel",
+      "mode": "Attack",
+      "direction": "Down",
+      "count": 8,
+      "duration": 0.5,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_shovel/Attack_Down-Sheet.png"
+    },
+    {
+      "item": "wood_shovel",
+      "mode": "Attack",
+      "direction": "Up",
+      "count": 8,
+      "duration": 0.5,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_shovel/Attack_Up-Sheet.png"
+    },
+    {
+      "item": "wood_shovel",
+      "mode": "Attack",
+      "direction": "Side",
+      "count": 8,
+      "duration": 0.5,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_shovel/Attack_Side-Sheet.png"
+    },
+    {
+      "item": "wood_longsword",
+      "mode": "Idle",
+      "direction": "Down",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_longsword/Idle_Down-Sheet.png"
+    },
+    {
+      "item": "wood_longsword",
+      "mode": "Idle",
+      "direction": "Up",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_longsword/Idle_Up-Sheet.png"
+    },
+    {
+      "item": "wood_longsword",
+      "mode": "Idle",
+      "direction": "Side",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_longsword/Idle_Side-Sheet.png"
+    },
+    {
+      "item": "wood_longsword",
+      "mode": "Walk",
+      "direction": "Down",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_longsword/Walk_Down-Sheet.png"
+    },
+    {
+      "item": "wood_longsword",
+      "mode": "Walk",
+      "direction": "Up",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_longsword/Walk_Up-Sheet.png"
+    },
+    {
+      "item": "wood_longsword",
+      "mode": "Walk",
+      "direction": "Side",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_longsword/Walk_Side-Sheet.png"
+    },
+    {
+      "item": "wood_longsword",
+      "mode": "Attack",
+      "direction": "Down",
+      "count": 8,
+      "duration": 0.46,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_longsword/Attack_Down-Sheet.png"
+    },
+    {
+      "item": "wood_longsword",
+      "mode": "Attack",
+      "direction": "Up",
+      "count": 8,
+      "duration": 0.46,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_longsword/Attack_Up-Sheet.png"
+    },
+    {
+      "item": "wood_longsword",
+      "mode": "Attack",
+      "direction": "Side",
+      "count": 8,
+      "duration": 0.46,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_longsword/Attack_Side-Sheet.png"
+    },
+    {
+      "item": "wood_hammer",
+      "mode": "Idle",
+      "direction": "Down",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_hammer/Idle_Down-Sheet.png"
+    },
+    {
+      "item": "wood_hammer",
+      "mode": "Idle",
+      "direction": "Up",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_hammer/Idle_Up-Sheet.png"
+    },
+    {
+      "item": "wood_hammer",
+      "mode": "Idle",
+      "direction": "Side",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_hammer/Idle_Side-Sheet.png"
+    },
+    {
+      "item": "wood_hammer",
+      "mode": "Walk",
+      "direction": "Down",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_hammer/Walk_Down-Sheet.png"
+    },
+    {
+      "item": "wood_hammer",
+      "mode": "Walk",
+      "direction": "Up",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_hammer/Walk_Up-Sheet.png"
+    },
+    {
+      "item": "wood_hammer",
+      "mode": "Walk",
+      "direction": "Side",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_hammer/Walk_Side-Sheet.png"
+    },
+    {
+      "item": "wood_hammer",
+      "mode": "Attack",
+      "direction": "Down",
+      "count": 8,
+      "duration": 0.72,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_hammer/Attack_Down-Sheet.png"
+    },
+    {
+      "item": "wood_hammer",
+      "mode": "Attack",
+      "direction": "Up",
+      "count": 8,
+      "duration": 0.72,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_hammer/Attack_Up-Sheet.png"
+    },
+    {
+      "item": "wood_hammer",
+      "mode": "Attack",
+      "direction": "Side",
+      "count": 8,
+      "duration": 0.72,
+      "impactFrame": 3,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_hammer/Attack_Side-Sheet.png"
+    },
+    {
+      "item": "wood_bow",
+      "mode": "Idle",
+      "direction": "Down",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 5,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_bow/Idle_Down-Sheet.png"
+    },
+    {
+      "item": "wood_bow",
+      "mode": "Idle",
+      "direction": "Up",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 5,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_bow/Idle_Up-Sheet.png"
+    },
+    {
+      "item": "wood_bow",
+      "mode": "Idle",
+      "direction": "Side",
+      "count": 4,
+      "duration": 0.6,
+      "impactFrame": 5,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_bow/Idle_Side-Sheet.png"
+    },
+    {
+      "item": "wood_bow",
+      "mode": "Walk",
+      "direction": "Down",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 5,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_bow/Walk_Down-Sheet.png"
+    },
+    {
+      "item": "wood_bow",
+      "mode": "Walk",
+      "direction": "Up",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 5,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_bow/Walk_Up-Sheet.png"
+    },
+    {
+      "item": "wood_bow",
+      "mode": "Walk",
+      "direction": "Side",
+      "count": 6,
+      "duration": 0.6,
+      "impactFrame": 5,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_bow/Walk_Side-Sheet.png"
+    },
+    {
+      "item": "wood_bow",
+      "mode": "Attack",
+      "direction": "Down",
+      "count": 8,
+      "duration": 0.56,
+      "impactFrame": 5,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_bow/Attack_Down-Sheet.png"
+    },
+    {
+      "item": "wood_bow",
+      "mode": "Attack",
+      "direction": "Up",
+      "count": 8,
+      "duration": 0.56,
+      "impactFrame": 5,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_bow/Attack_Up-Sheet.png"
+    },
+    {
+      "item": "wood_bow",
+      "mode": "Attack",
+      "direction": "Side",
+      "count": 8,
+      "duration": 0.56,
+      "impactFrame": 5,
+      "path": "Assets/PixelCrawler/BodyA/SawmillWeapons/wood_bow/Attack_Side-Sheet.png"
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+fileFormatVersion: 2
+guid: bf9007345379b0046a3d7d9c67e62470
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6687420581752210828
+    second: WesternHouseRuinsLayered_0
+  - first:
+      213: 6658635022629040005
+    second: WesternHouseRuinsLayered_1
+  - first:
+      213: 2332173991867562561
+    second: WesternHouseRuinsLayered_2
+  - first:
+      213: 7592569925704173319
+    second: WesternHouseRuinsLayered_3
+  - first:
+      213: -6683581151112520157
+    second: WesternHouseRuinsLayered_4
+  - first:
+      213: 381553992885076774
+    second: WesternHouseRuinsLayered_5
+  - first:
+      213: 4163823461945333716
+    second: WesternHouseRuinsLayered_6
+  - first:
+      213: 7485872339243475442
+    second: WesternHouseRuinsLayered_7
+  - first:
+      213: -353577004234397630
+    second: WesternHouseRuinsLayered_8
+  - first:
+      213: -736892195635745041
+    second: WesternHouseRuinsLayered_9
+  - first:
+      213: 4098686507649632087
+    second: WesternHouseRuinsLayered_10
+  - first:
+      213: 6270299992238090065
+    second: WesternRuins_WaterRipples
+  - first:
+      213: -1625182854103792023
+    second: WesternRuins_Row0_Bottom
+  - first:
+      213: -344637466777267051
+    second: WesternRuins_Row1_Side1
+  - first:
+      213: 2572817091038829707
+    second: WesternRuins_Row2_Side2
+  - first:
+      213: -1856524668184936360
+    second: WesternRuins_Row3_Side3
+  - first:
+      213: -645075036947118285
+    second: WesternRuins_CentralPillar
+  - first:
+      213: 3679070027562396143
+    second: WesternRuins_Row4_North
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WesternRuins_WaterRipples
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1576c781f94940750800000000000000
+      internalID: 6270299992238090065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternRuins_Row0_Bottom
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96686160ec03279e0800000000000000
+      internalID: -1625182854103792023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternRuins_Row1_Side1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5945378cc0a973bf0800000000000000
+      internalID: -344637466777267051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternRuins_Row2_Side2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c5c6f438b74b320800000000000000
+      internalID: 2572817091038829707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternRuins_Row3_Side3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850461c86ac4c36e0800000000000000
+      internalID: -1856524668184936360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternRuins_CentralPillar
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3378b41fbab3c07f0800000000000000
+      internalID: -645075036947118285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternRuins_Row4_North
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9a4a092beae0330800000000000000
+      internalID: 3679070027562396143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WesternHouseRuinsLayered_0: 6687420581752210828
+      WesternHouseRuinsLayered_1: 6658635022629040005
+      WesternHouseRuinsLayered_10: 4098686507649632087
+      WesternHouseRuinsLayered_2: 2332173991867562561
+      WesternHouseRuinsLayered_3: 7592569925704173319
+      WesternHouseRuinsLayered_4: -6683581151112520157
+      WesternHouseRuinsLayered_5: 381553992885076774
+      WesternHouseRuinsLayered_6: 4163823461945333716
+      WesternHouseRuinsLayered_7: 7485872339243475442
+      WesternHouseRuinsLayered_8: -353577004234397630
+      WesternHouseRuinsLayered_9: -736892195635745041
+      WesternRuins_CentralPillar: -645075036947118285
+      WesternRuins_Row0_Bottom: -1625182854103792023
+      WesternRuins_Row1_Side1: -344637466777267051
+      WesternRuins_Row2_Side2: 2572817091038829707
+      WesternRuins_Row3_Side3: -1856524668184936360
+      WesternRuins_Row4_North: 3679070027562396143
+      WesternRuins_WaterRipples: 6270299992238090065
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

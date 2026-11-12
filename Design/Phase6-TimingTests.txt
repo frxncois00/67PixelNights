@@ -1,0 +1,4 @@
+PASS Natural cooking completes exactly one exchange
+PASS Wildlife remains on valid ground across 45 samples
+PASS Wildlife moved during observation
+PASS Scaled gameplay clock advanced during test

@@ -1,0 +1,25 @@
+PASS Expansion Tree 22 actual Swing impact health=2 reaction=True root unchanged; collider=True
+PASS source renderer restored; collider still solid
+PASS Expansion Tree 22 actual Swing impact health=1 reaction=True root unchanged; collider=True
+PASS source renderer restored; collider still solid
+PASS Expansion Tree 22 actual Swing impact health=0 reaction=True root unchanged; collider=False
+PASS actual drops=2 popup=+2 WOOD <size=14>DROPPED</size>
+PASS depleted node remains hidden / non-solid after effect
+PASS popup cleaned up
+PASS Ruins_MineableStone_01 actual Swing impact health=2 reaction=True root unchanged; collider=True
+PASS source renderer restored; collider still solid
+PASS Ruins_MineableStone_01 actual Swing impact health=1 reaction=True root unchanged; collider=True
+PASS source renderer restored; collider still solid
+PASS Ruins_MineableStone_01 actual Swing impact health=0 reaction=True root unchanged; collider=False
+PASS actual drops=3 popup=+3 STONE <size=14>DROPPED</size>
+PASS depleted node remains hidden / non-solid after effect
+PASS popup cleaned up
+PASS Ruins_MineableStone_02 actual Swing impact health=2 reaction=True root unchanged; collider=True
+PASS source renderer restored; collider still solid
+PASS Ruins_MineableStone_02 actual Swing impact health=1 reaction=True root unchanged; collider=True
+PASS source renderer restored; collider still solid
+PASS Ruins_MineableStone_02 actual Swing impact health=0 reaction=True root unchanged; collider=False
+PASS actual drops=4 popup=+4 STONE <size=14>DROPPED</size>
+PASS depleted node remains hidden / non-solid after effect
+PASS popup cleaned up
+PASS test sequence complete

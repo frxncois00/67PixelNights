@@ -1,0 +1,32 @@
+PASS Keyboard/physics road waypoint (25.00, 3.00) reached=(25.00, 2.88)
+PASS Keyboard/physics road waypoint (25.00, 5.00) reached=(25.00, 4.88)
+PASS Keyboard/physics road waypoint (26.00, 7.00) reached=(25.96, 6.88)
+PASS Keyboard/physics road waypoint (26.00, 10.00) reached=(25.96, 9.92)
+PASS Existing east road to outpost gate traversable
+PASS South fence blocks player at (24.00, 7.70)
+PASS Three-unit gate opening admits player
+PASS Ruins branch waypoint (22.00, 6.00) reached=(22.11, 6.03)
+PASS Ruins branch waypoint (21.00, 8.00) reached=(21.09, 7.93)
+PASS Ruins branch waypoint (20.00, 11.00) reached=(20.08, 10.94)
+PASS Ruins branch waypoint (19.00, 14.00) reached=(19.06, 13.96)
+PASS Ruins branch waypoint (19.00, 17.00) reached=(19.06, 16.92)
+PASS Pond/palisade route to ruins traversable
+PASS Quarry branch traversable; end=(31.92, 6.96)
+PASS Pond collision blocks walking on water; end=(20.19, 8.00)
+PASS Navigation route to Chest_Ruins (attempts=1, ms=0.77)
+PASS Existing LootChest interaction opens Chest_Ruins
+PASS Navigation route to Chest_Camp (attempts=1, ms=0.10)
+PASS Existing LootChest interaction opens Chest_Camp
+PASS Navigation route to Chest_Quarry (attempts=1, ms=0.10)
+PASS Existing LootChest interaction opens Chest_Quarry
+PASS Spawn marker is walkable: Camp_Spawn_01
+PASS Spawn marker is walkable: Camp_Spawn_02
+PASS Spawn marker is walkable: Camp_Spawn_03
+PASS Spawn marker is walkable: Camp_Spawn_04
+PASS Spawn marker is walkable: Camp_Spawn_05
+PASS Spawn marker is walkable: Quarry_Patrol_Spawn
+PASS Every new tilemap uses the original Grid
+PASS All outpost transforms have unit scale
+PASS Chest transforms have unit scale
+PASS Original follow component and camera zoom preserved
+Actual PlayerMovement.Update/FixedUpdate, virtual WASD keyboard and Physics2D.Simulate: 914 steps of 0.02 seconds.

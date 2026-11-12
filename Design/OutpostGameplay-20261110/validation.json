@@ -1,0 +1,14 @@
+{
+  "unity": "6000.6.4f1",
+  "scene": "Assets/Scenes/SampleScene.unity",
+  "missingScripts": 0,
+  "missingReferences": [],
+  "artChanges": [],
+  "otherEncounterChanges": [],
+  "campSlots": 7,
+  "captainSlots": 1,
+  "localCap": 5,
+  "globalCap": 28,
+  "ashenUncovered": 0,
+  "ashenWaterTiles": 0
+}

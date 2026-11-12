@@ -1,0 +1,3 @@
+Night spawns 2
+Reachable=True path nodes=39
+Reachable=True path nodes=45

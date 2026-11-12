@@ -1,0 +1,8 @@
+TOOL GRIP AND TREE CHOPPING FIX
+- Added ToolGripPose.cs: per-tool handle anchor and head orientation.
+- EquippedToolVisual.cs now places the grip at the hand, mirrors correctly, and rotates the short blade upright.
+- PlayerGatherAnimation.cs swings about the same hand anchor instead of orbiting away from the player.
+- PlayerToolController.cs reports wrong equipment and missing/inaccessible targets instead of silently failing.
+Diagnosis: inspected the user's running session; basic_sword was equipped, with InputBlocked false. A sword cannot chop wood under the requested equipment rules. Equip Basic Axe and use Space/left-click facing a nearby trunk.
+Verification: 22 actual Play Mode harvest regression checks passed; 8 further checks passed for six mirrored grip poses, wrong-tool feedback, and targeting near all 36 wood nodes. Current Unity Console errors: 0. Actual camera capture reviewed at Design/ToolGrip-Unity.png. Physical keyboard/mouse was not manually tested; tests exercised runtime game methods.
+No saved scene transforms, environment artwork, camera zoom or inventory contents changed in this fix. Runtime preview changes were discarded on exiting Play Mode.

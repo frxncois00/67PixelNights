@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3a43e4e9081a846b1e0653e8a39a13, type: 3}
+  m_Name: floodgate_keeper
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyArchetype
+  id: floodgate_keeper
+  displayName: The Floodgate Keeper
+  behavior: 3
+  health: 135
+  patrolSpeed: 0.95
+  chaseSpeed: 1.65
+  detectionRange: 5.4
+  attackRange: 2.65
+  damage: 16
+  cooldown: 2.9
+  windup: 0.85
+  recovery: 2.2
+  structureDamage: 8
+  knockbackResistance: 0.7
+  firstNight: 1
+  maximumActive: 10
+  spawnWeight: 1
+  sprite: {fileID: 9147886731845407119, guid: 9d3b32c637ffe124a882e5f12e12ea66, type: 3}
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  idleFrames:
+  - {fileID: 9147886731845407119, guid: 9d3b32c637ffe124a882e5f12e12ea66, type: 3}
+  - {fileID: 7969372367447542161, guid: 9d3b32c637ffe124a882e5f12e12ea66, type: 3}
+  - {fileID: -738947077600809769, guid: 9d3b32c637ffe124a882e5f12e12ea66, type: 3}
+  - {fileID: 6262706058877803025, guid: 9d3b32c637ffe124a882e5f12e12ea66, type: 3}
+  walkFrames:
+  - {fileID: -8145398534845239497, guid: 383be2a1a296a0c448a21803d7a3e6fa, type: 3}
+  - {fileID: -6925445465850473392, guid: 383be2a1a296a0c448a21803d7a3e6fa, type: 3}
+  - {fileID: 8709623852422575972, guid: 383be2a1a296a0c448a21803d7a3e6fa, type: 3}
+  - {fileID: -6818500907172520956, guid: 383be2a1a296a0c448a21803d7a3e6fa, type: 3}
+  animationFPS: 6
+  burstDuration: 0.7
+  burstCooldown: 4
+  burstMultiplier: 1.4
+  lungeDistance: 1.4
+  slamRadius: 2

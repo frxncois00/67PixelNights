@@ -1,0 +1,156 @@
+PHASE 8 — MAP EXPANSION & EXPLORATION
+2026-11-07 | Unity 6000.6.4f1 | Assets/Scenes/SampleScene.unity
+
+A. IMPLEMENTATION SUMMARY
+Integrated a larger continuous forest around the original hub, four exploration
+regions, reusable loot cache/chest interaction, session discovery, additional
+resource nodes, shoreline boundary colliders and bounded enemy navigation.
+Latest Body_A player, auto-equip button, corrected axe/blade and controls retained.
+Acceptance is partial: not every requested stress/physical-play case was run.
+Checkpoint: Design/Backups/Phase8-20261107-000753.
+
+B. FILES CREATED
+Assets/Scripts/Navigation/ForestNavigation.cs
+Assets/Scripts/Exploration/ExplorationManager.cs
+Assets/Scripts/Loot/LootChest.cs
+Assets/Prefabs/Exploration/LootChest.prefab
+AgentScripts/Prepare8.cs, BuildExpansion8.cs, PolishExpansion8.cs,
+VerifyPreservation8.cs, TestExpansion8.cs, TestPhase8Survival.cs, TestAttack8.cs.
+Unity .meta files accompany runtime assets.
+Design/Phase7-Hardening-Report.txt and evidence files listed below.
+
+C. FILES MODIFIED
+Assets/Scripts/Enemies/EnemyController.cs: cached route following, retreat search,
+bounded trapped-enemy dismissal, protection-aware detection.
+Assets/Scripts/Enemies/EnemySpawner.cs: navigation reference and connected spawn
+validation. Existing count/difficulty/day-night authority retained.
+Assets/Scenes/SampleScene.unity: terrain expansion, new objects and references.
+No movement, camera, inventory, item definition or player animation code changed.
+
+D. ORIGINAL CAMPSITE PRESERVATION
+Original occupied Ground cells (268) were never overwritten. Terrain additions
+inside original bounds only filled previously empty connection cells in the
+first pass; later forest infill skipped the original bounding rectangle.
+Original sprites, sorting and scales retained. Snapshot checked 189 original
+transforms/renderers. One position discrepancy: Tree_30 x changed from
+3.21265936 to 4.39 during the editor session. Expansion code does not move original
+objects; current position was retained rather than overwrite an apparent editor
+change. Exact original-transform equality therefore is NOT claimed.
+Campfire, tool pickups, player spawn and camera configuration were not moved by
+implementation scripts. Camera zoom remains 5. Runtime test moves discarded.
+
+E–J. TERRAIN, REGIONS AND PATHS
+The original Ground Tilemap was extended so existing drops, wildlife, player
+systems and enemies share one terrain authority. Existing grass/path/water assets
+are reused with unchanged import settings. EnvironmentExpansion groups new art.
+North: Dense Forest, center (0,20), resource trees/berries/stumps.
+East: Rocky Region, center (27,0), mineable/decorative rocks and scrap.
+South: Abandoned Cabin, center (0,-20), copied existing building art, loot cache.
+West: Dark Forest, center (-27,0), tinted new foliage, limited supplies and cache.
+Three-unit dirt routes lead outward; broad ground infill connects the regions.
+Initial pass added 1,344 ground cells and 25 resource nodes; subsequent infill
+and 517 varied tree/rock placements create the final continuous forest.
+Some new trees/rocks are permanent decoration; others reuse ResourceNode health,
+yield and regrowth. Existing original objects were not regrouped.
+The cabin is an exterior existing-house reuse, not an enterable interior.
+
+K. WORLD BOUNDARIES
+Small BoxCollider2D segments border exposed Ground cell edges. No giant blocking
+collider spans playable terrain. Connected cells have no separating boundary.
+Direct physical player edge traversal remains UNVERIFIED; collision-aware grid
+reachability passed for the region routes.
+
+L–M. NAVIGATION AND SPAWNING
+ForestNavigation: configurable .5-unit cardinal grid; static-collider footprint
+checks plus Ground samples; no diagonal corner cutting. Bounded breadth-first
+search (default 12,000 expansions); one-second cell-cache expiry reflects runtime
+resource changes. Enemies reuse routes for .8 seconds and validate actual steps.
+Spawn candidates must connect to the player's terrain component. Connectivity
+checks ignore safety only for region membership; enemy movement avoids active
+protection. No extra spawner, cycle or difficulty manager.
+Relight/upgrade retreat searches an unprotected location; a still-protected,
+trapped enemy is safely dismissed after 12 seconds, with a warning. It is never
+teleported through geometry. See Phase7-Hardening-Report.txt.
+
+N–O. LOOT AND INVENTORY
+Two separate caches at (2,-20) and (-25,0); reusable LootChest prefab.
+Uses InteractionTarget and existing E handler. Rewards roll once, pending counts
+remain on the chest, and InventoryController.Add determines accepted quantities.
+Partial/full inventory never discards remainder. Empty caches cannot reroll.
+Current rewards: existing wood 2–5, stone 1–4, berries 1–3, scrap 1–3.
+Inspector reward entries allow other existing items; no item definitions added.
+Lid rotates on opening, empty cache dims; received items use existing message UI.
+Visual is an explicitly named wooden-cache placeholder built from existing log
+sprites, not finished chest artwork. State is session-only, reset by scene load.
+
+P. DISCOVERY
+ExplorationManager is the single authority. Five stable IDs; camp starts known.
+Rectangular spatial regions checked in fixed order; unique HashSet prevents
+repeat rewards/progress. Text shows first discovery and count, with shadow for
+contrast. Inventory/death hides it. No persistence or fog-of-war shader added.
+
+Q–R. RESOURCES AND CAMERA
+Registered expanded ResourceNodes on PlayerToolController and stone renderers
+on NearbyStoneIndicator. Existing tool permissions, R/E/Space controls retained.
+New berry/scrap objects reuse existing components. Original timers unchanged.
+CameraFollow and zoom untouched; no optional camera clamp was added. Some empty
+water can remain visible at outer coast. Existing smooth follow covers new areas.
+
+S. ACTUAL TEST RESULTS
+PASS compilation: scripts imported, runtime test helpers compiled/executed.
+PASS collider-aware paths from campsite to all five region centers; final paths
+9/47/57/39/57 nodes. This proves sampled routes, not every off-path location.
+PASS 15 Phase8-Tests checks: unique discovery, full/partial/repeated chest loot,
+independent chests, reachable Night 1 spawns, sunrise, zoom and resource registry.
+PASS six direct attack checks (see hardening report).
+PASS 46 survival regression checks in actual paused Play Mode, using an adapted
+harness that cancels animation between independent transaction cases.
+Earlier historical Phase6 harness failed because newer eating Busy state was
+not advanced while paused; a separate TestPhase8Survival harness resolved that
+harness incompatibility. No production bypass of animation gates was added.
+PASS original sprite/sorting/scale snapshot; original positions have the one
+Tree_30 discrepancy described above. Exact transform preservation: FAIL equality.
+
+T. REGRESSION LIMITS
+18 Phase7 checks rerun before expansion; expanded chest/spawn/attack and survival
+checks rerun afterward. Existing physical movement, camera, all axe/pickaxe action
+directions, all new resource nodes, full inventory UI input, natural regrowth,
+real-time multi-night combat and repeated restart endurance remain UNVERIFIED.
+No prior phase test result is represented as a new physical-input test.
+
+U. VISUAL CHECKS
+Actual Unity camera captures at 1280x720, 1600x900, 1920x1080 inspected in cabin
+region. Existing HUD, discovery and loot messages showed no clipping/overlap.
+Discovery shadow was added afterward for contrast. Evidence:
+Design/Phase8-{1280,1600,1920}.png.
+Phase8-Overview.png shows the earlier region-blockout before connecting infill;
+it is not the final terrain overview. No generated concept images used.
+
+V. MANUAL ACCEPTANCE
+Open SampleScene, Play. Pick up tools south of camp with E; Tab/I, select item,
+Equip / Hotbar. Axe=1, pickaxe=2, sword=3. Existing controls unchanged.
+Travel north for trees/berries, east for rocks/scrap, south for cabin cache,
+west for dark forest/cache. E opens/collects a cache; fill inventory and revisit
+to test retained loot. Check discoveries once per region, then return to camp.
+Use axe Space/click, pickaxe R; collect drops with E. F eats, C cooks, U upgrades.
+F6 starts night; observe pathing, attack outside safety, sword combat and retreat
+on relight/upgrade. F6 again checks sunrise cleanup. Test starvation/death/restart,
+outer shore collisions, natural regrowth, and all three UI resolutions.
+Physical keyboard/mouse acceptance remains UNVERIFIED.
+
+W. KNOWN LIMITATIONS / REMAINING WORK
+Phase7 not fully accepted: extended chase/concave routing, relight windup matrix,
+wall-clock cooldown, trap fallback and performance under ten enemies need testing.
+Navigation search is bounded synchronous BFS, not optimized A*; large requests
+can still cost time. Routes may temporarily fail around dynamic actors; retries
+are bounded. Resource cache refresh is eventual (one second), not instant events.
+Grid-like prop spacing, simple straight paths, placeholder wooden caches and
+untrimmed new coastline need further art polish. No new chest sound or fog added.
+All region centers reachable, but every resource/clearing has not been traversed.
+No optional viewport-aware camera clamp or full shoreline visual tile blending.
+No claim of complete automated coverage or extended natural gameplay acceptance.
+
+X. PHASE 9 READINESS
+Do not treat this as fully accepted for further systems until outstanding
+physical/navigation/endurance tests are completed. Existing inventory, health,
+cycle and safe zone remain authoritative. Loot and discovery are session-local.

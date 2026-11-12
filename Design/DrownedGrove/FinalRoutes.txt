@@ -1,0 +1,13 @@
+Grove Guard 01 reachable=True
+Grove Guard 02 reachable=True
+Grove Guard 03 reachable=True
+Grove Guard 04 reachable=True
+Grove Guard 05 reachable=True
+Grove Guard 06 reachable=True
+Grove Guard 07 reachable=True
+Grove Guard 08 reachable=True
+Grove Guard 09 reachable=True
+Grove Guard 10 reachable=True
+Grove Guard 11 reachable=True
+Marsh Warden reachable=True
+Grove Guard 13 reachable=True

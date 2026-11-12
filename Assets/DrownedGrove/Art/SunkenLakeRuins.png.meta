@@ -1,0 +1,1006 @@
+fileFormatVersion: 2
+guid: 72aa742f1c932724097a8f53bb831eda
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5462179685288686647
+    second: SunkenLakeRuins_0
+  - first:
+      213: -1870182702445513961
+    second: SunkenLakeRuins_1
+  - first:
+      213: -4669949849892457314
+    second: SunkenLakeRuins_2
+  - first:
+      213: 7530705950429475350
+    second: SunkenLakeRuins_3
+  - first:
+      213: -3306811266946456348
+    second: SunkenLakeRuins_4
+  - first:
+      213: 1546465869794259706
+    second: SunkenLakeRuins_5
+  - first:
+      213: -408264446783201172
+    second: SunkenLakeRuins_6
+  - first:
+      213: 421570041287656391
+    second: SunkenLakeRuins_7
+  - first:
+      213: -6919492376538415894
+    second: SunkenLakeRuins_8
+  - first:
+      213: 4451835892151590365
+    second: SunkenLakeRuins_9
+  - first:
+      213: 2124560820916533208
+    second: SunkenLakeRuins_10
+  - first:
+      213: 426080484959853862
+    second: SunkenLakeRuins_11
+  - first:
+      213: 2571124690159584460
+    second: SunkenLakeRuins_12
+  - first:
+      213: 738835732903081918
+    second: SunkenLakeRuins_13
+  - first:
+      213: 8908321215076347151
+    second: SunkenLakeRuins_14
+  - first:
+      213: -3242416039637167470
+    second: SunkenLakeRuins_15
+  - first:
+      213: -8915115789389835899
+    second: SunkenLakeRuins_16
+  - first:
+      213: 8639493238097864247
+    second: SunkenLakeRuins_17
+  - first:
+      213: 4891690474863012825
+    second: SunkenLakeRuins_18
+  - first:
+      213: -2800910506550263832
+    second: SunkenLakeRuins_19
+  - first:
+      213: 6319170403588004024
+    second: SunkenLakeRuins_20
+  - first:
+      213: 4216140489625897502
+    second: SunkenLakeRuins_21
+  - first:
+      213: -3642885690406151945
+    second: SunkenLakeRuins_22
+  - first:
+      213: 7235992801031659152
+    second: SunkenLakeRuins_23
+  - first:
+      213: 7257506871858291917
+    second: SunkenLakeRuins_24
+  - first:
+      213: -8897462380237933673
+    second: SunkenLakeRuins_25
+  - first:
+      213: -2001405337425870411
+    second: SunkenLakeRuins_26
+  - first:
+      213: -6255058102599900088
+    second: SunkenLakeRuins_27
+  - first:
+      213: 6224001624641213965
+    second: SunkenLakeRuins_28
+  - first:
+      213: 7695253788230719370
+    second: SunkenLakeRuins_29
+  - first:
+      213: -1698487260121548453
+    second: TempleArchway
+  - first:
+      213: 1480929683043990601
+    second: VineRuinedArch
+  - first:
+      213: 3826698076803198516
+    second: SubmergedAqueductArch
+  - first:
+      213: -5472873385155559623
+    second: TempleCrystalSanctum
+  - first:
+      213: -7188533480369185427
+    second: TempleStoneStairs
+  - first:
+      213: -2233888365763198773
+    second: TallCarvedPillar
+  - first:
+      213: 6934448521369465750
+    second: BrokenPillarStump
+  - first:
+      213: -1555574754438666755
+    second: CollapsedPillarDrum
+  - first:
+      213: -8412935081565472114
+    second: SubmergedHouseRuins
+  - first:
+      213: -3931241613834521135
+    second: SubmergedStoneWallH
+  - first:
+      213: -1336221914003289906
+    second: SubmergedStoneWallV
+  - first:
+      213: -668005405071636685
+    second: UnderwaterStatue
+  - first:
+      213: -5787486295159076420
+    second: MossyRuinStatue
+  - first:
+      213: 1369598887832996000
+    second: AbandonedBoatH
+  - first:
+      213: 7899398105599309394
+    second: AbandonedBoatV
+  - first:
+      213: -1050216231375878065
+    second: WoodenPierDeckH
+  - first:
+      213: -725807083065184461
+    second: WoodenPierDeckV
+  - first:
+      213: 9109418114316356749
+    second: WoodenPierPilings
+  - first:
+      213: -2363701510663730236
+    second: BrokenFishingDock
+  - first:
+      213: -1990578554327182018
+    second: CliffRockWall
+  - first:
+      213: -6098039575452307721
+    second: CliffRockTall
+  - first:
+      213: -26407622541989566
+    second: WaterfallCascadeWide
+  - first:
+      213: -6445185324030480477
+    second: WaterfallCascadeStep
+  - first:
+      213: 8107690707494493472
+    second: LotusPadPink
+  - first:
+      213: 8228968114853622222
+    second: LotusPadCluster
+  - first:
+      213: 7343964899665890085
+    second: GlowingCrystalCluster
+  - first:
+      213: 3191662057243666534
+    second: MysteriousRuneSlab
+  - first:
+      213: 1088337524499907348
+    second: ForgottenCampTent
+  - first:
+      213: -7462581303310060541
+    second: SmolderingCampfire
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TempleArchway
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 128
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59bdecf5d2cd68e0800000000000000
+      internalID: -1698487260121548453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineRuinedArch
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c3b2f43b15d8410800000000000000
+      internalID: 1480929683043990601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SubmergedAqueductArch
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e668a40a92b1530800000000000000
+      internalID: 3826698076803198516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempleCrystalSanctum
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 416
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ffc1917a27c04b0800000000000000
+      internalID: -5472873385155559623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempleStoneStairs
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 416
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d9796d2e23d3c90800000000000000
+      internalID: -7188533480369185427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallCarvedPillar
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc08ec2fd52aff0e0800000000000000
+      internalID: -2233888365763198773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrokenPillarStump
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693b57d903c1c3060800000000000000
+      internalID: 6934448521369465750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollapsedPillarDrum
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df52e1ca00d796ae0800000000000000
+      internalID: -1555574754438666755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SubmergedHouseRuins
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 320
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a3ed0fd104f3b80800000000000000
+      internalID: -8412935081565472114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SubmergedStoneWallH
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 320
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5f821b49c6179c0800000000000000
+      internalID: -3931241613834521135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SubmergedStoneWallV
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 320
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8cdb2bf39c47de0800000000000000
+      internalID: -1336221914003289906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterStatue
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 320
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3370aa29f94cab6f0800000000000000
+      internalID: -668005405071636685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MossyRuinStatue
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb90a92c0e7beafa0800000000000000
+      internalID: -5787486295159076420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbandonedBoatH
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 320
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a84e0a9eeac10310800000000000000
+      internalID: 1369598887832996000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbandonedBoatV
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 320
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256f3a769bc40ad60800000000000000
+      internalID: 7899398105599309394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodenPierDeckH
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48cd7fd6e1ec61f0800000000000000
+      internalID: -1050216231375878065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodenPierDeckV
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fef6ead4a6de5f0800000000000000
+      internalID: -725807083065184461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodenPierPilings
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cc55ed2872b6e70800000000000000
+      internalID: 9109418114316356749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrokenFishingDock
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb85dddff1723fd0800000000000000
+      internalID: -2363701510663730236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CliffRockWall
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3551d3f95b0064e0800000000000000
+      internalID: -1990578554327182018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CliffRockTall
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe24ee90596f5ba0800000000000000
+      internalID: -6098039575452307721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterfallCascadeWide
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249a50f386e22aff0800000000000000
+      internalID: -26407622541989566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterfallCascadeStep
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af2a99881a1e86a0800000000000000
+      internalID: -6445185324030480477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LotusPadPink
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02dd1f8fdbd448070800000000000000
+      internalID: 8107690707494493472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LotusPadCluster
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1bdd9c6ea233270800000000000000
+      internalID: 8228968114853622222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlowingCrystalCluster
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bc58f8a210be560800000000000000
+      internalID: 7343964899665890085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysteriousRuneSlab
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668e91d1bbf0b4c20800000000000000
+      internalID: 3191662057243666534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForgottenCampTent
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4138b87563d8a1f00800000000000000
+      internalID: 1088337524499907348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmolderingCampfire
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3047bb4d7d59f6890800000000000000
+      internalID: -7462581303310060541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AbandonedBoatH: 1369598887832996000
+      AbandonedBoatV: 7899398105599309394
+      BrokenFishingDock: -2363701510663730236
+      BrokenPillarStump: 6934448521369465750
+      CliffRockTall: -6098039575452307721
+      CliffRockWall: -1990578554327182018
+      CollapsedPillarDrum: -1555574754438666755
+      ForgottenCampTent: 1088337524499907348
+      GlowingCrystalCluster: 7343964899665890085
+      LotusPadCluster: 8228968114853622222
+      LotusPadPink: 8107690707494493472
+      MossyRuinStatue: -5787486295159076420
+      MysteriousRuneSlab: 3191662057243666534
+      SmolderingCampfire: -7462581303310060541
+      SubmergedAqueductArch: 3826698076803198516
+      SubmergedHouseRuins: -8412935081565472114
+      SubmergedStoneWallH: -3931241613834521135
+      SubmergedStoneWallV: -1336221914003289906
+      SunkenLakeRuins_0: -5462179685288686647
+      SunkenLakeRuins_1: -1870182702445513961
+      SunkenLakeRuins_10: 2124560820916533208
+      SunkenLakeRuins_11: 426080484959853862
+      SunkenLakeRuins_12: 2571124690159584460
+      SunkenLakeRuins_13: 738835732903081918
+      SunkenLakeRuins_14: 8908321215076347151
+      SunkenLakeRuins_15: -3242416039637167470
+      SunkenLakeRuins_16: -8915115789389835899
+      SunkenLakeRuins_17: 8639493238097864247
+      SunkenLakeRuins_18: 4891690474863012825
+      SunkenLakeRuins_19: -2800910506550263832
+      SunkenLakeRuins_2: -4669949849892457314
+      SunkenLakeRuins_20: 6319170403588004024
+      SunkenLakeRuins_21: 4216140489625897502
+      SunkenLakeRuins_22: -3642885690406151945
+      SunkenLakeRuins_23: 7235992801031659152
+      SunkenLakeRuins_24: 7257506871858291917
+      SunkenLakeRuins_25: -8897462380237933673
+      SunkenLakeRuins_26: -2001405337425870411
+      SunkenLakeRuins_27: -6255058102599900088
+      SunkenLakeRuins_28: 6224001624641213965
+      SunkenLakeRuins_29: 7695253788230719370
+      SunkenLakeRuins_3: 7530705950429475350
+      SunkenLakeRuins_4: -3306811266946456348
+      SunkenLakeRuins_5: 1546465869794259706
+      SunkenLakeRuins_6: -408264446783201172
+      SunkenLakeRuins_7: 421570041287656391
+      SunkenLakeRuins_8: -6919492376538415894
+      SunkenLakeRuins_9: 4451835892151590365
+      TallCarvedPillar: -2233888365763198773
+      TempleArchway: -1698487260121548453
+      TempleCrystalSanctum: -5472873385155559623
+      TempleStoneStairs: -7188533480369185427
+      UnderwaterStatue: -668005405071636685
+      VineRuinedArch: 1480929683043990601
+      WaterfallCascadeStep: -6445185324030480477
+      WaterfallCascadeWide: -26407622541989566
+      WoodenPierDeckH: -1050216231375878065
+      WoodenPierDeckV: -725807083065184461
+      WoodenPierPilings: 9109418114316356749
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

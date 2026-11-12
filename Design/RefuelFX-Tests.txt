@@ -1,0 +1,6 @@
+PASS empty inventory no effect
+PASS successful fuel spend triggers effect
+PASS disable restores flame scale
+PASS relight triggers effect
+
+PASS live effect completes and restores scale

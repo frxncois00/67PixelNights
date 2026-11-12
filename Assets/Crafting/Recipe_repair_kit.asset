@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6500d84d8733b8c4da2652b7173759b9, type: 3}
+  m_Name: Recipe_repair_kit
+  m_EditorClassIdentifier: Assembly-CSharp::CraftingRecipe
+  recipeId: repair_kit
+  displayName: Repair Kit
+  description: Craft one Repair Kit at a workbench.
+  ingredients:
+  - item: {fileID: 11400000, guid: e3d30f39df6277f4582ff39a806e84f0, type: 2}
+    amount: 2
+  - item: {fileID: 11400000, guid: d80a118f12f6b0640933f4504047cabe, type: 2}
+    amount: 1
+  result: {fileID: 11400000, guid: 9c017eeff0353c747a9dfa6459b20c8c, type: 2}
+  quantity: 1

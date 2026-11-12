@@ -1,0 +1,7 @@
+WOOD GATHERING IMPLEMENTATION
+Created Assets/Scripts/Gathering/WoodSource.cs, PlayerGatherAnimation.cs, WoodGathering.cs; AgentScripts/SetupWood.cs.
+Modified TemporaryResourceWallet.cs (AddWood), CampfireInteraction.cs (animated E action), SampleScene.
+36 trees: three F chops yield three wood and change runtime sprite to original matching stump. Five Resources/Wood objects: one F pickup yields one wood and disables the collected object during the session. Camp log seats are not collectible. No saved-world destruction.
+Player uses six Pawn_Interact Axe frames and eight Pawn_Idle Wood frames temporarily during actions; original Warrior locomotion returns afterward. Movement pauses for .65 seconds chopping or .5 seconds transfer. Log flies toward player for pickup, toward fire for feeding. A wood inventory label and gathering prompt are on the existing Canvas.
+Verification: compilation passed before final pickup-direction correction; final compile status recorded in conversation. Direct three-hit test PASS (0,0,3,0 rewards). Unity camera screenshot inspected; labels visible. Physical F/E input and full animation playback remain UNVERIFIED.
+Manual: Play, click Game view, walk within 1.5 units of a trunk or loose resource, tap F. Repeat three times for a tree. Watch wood count. Near campfire, tap E; action completes then consumes one wood if still valid. U upgrades remain supported. No full multi-item inventory was added.

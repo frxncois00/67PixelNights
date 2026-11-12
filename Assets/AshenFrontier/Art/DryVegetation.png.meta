@@ -1,0 +1,1003 @@
+fileFormatVersion: 2
+guid: 69a4166e2c7255249ad19a825b62b432
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1469492106917932537
+    second: DryVegetation_0
+  - first:
+      213: 8024038571834483659
+    second: DryVegetation_1
+  - first:
+      213: 2234218317030146145
+    second: DryVegetation_2
+  - first:
+      213: 7525104679238872959
+    second: DryVegetation_3
+  - first:
+      213: 4535094594532443677
+    second: DryVegetation_4
+  - first:
+      213: 3407611621274068314
+    second: DryVegetation_5
+  - first:
+      213: -6316655770828811655
+    second: DryVegetation_6
+  - first:
+      213: 3294703671810454037
+    second: DryVegetation_7
+  - first:
+      213: 6691350788358676208
+    second: DryVegetation_8
+  - first:
+      213: -2566250353415794993
+    second: DryVegetation_9
+  - first:
+      213: 1886149030505592521
+    second: DryVegetation_10
+  - first:
+      213: -7849592877309267819
+    second: DryVegetation_11
+  - first:
+      213: 6622737722918359405
+    second: DryVegetation_12
+  - first:
+      213: -2895560016275721395
+    second: DryVegetation_13
+  - first:
+      213: 4059904792075210904
+    second: DryVegetation_14
+  - first:
+      213: -56049371107124085
+    second: DryVegetation_15
+  - first:
+      213: -7355051927303456380
+    second: DryVegetation_16
+  - first:
+      213: -6346294062905858202
+    second: DryVegetation_17
+  - first:
+      213: 6415594771475101509
+    second: DryVegetation_18
+  - first:
+      213: -8014730820103880435
+    second: DryVegetation_19
+  - first:
+      213: -2511028086846380715
+    second: DryVegetation_20
+  - first:
+      213: 5036012639950309104
+    second: DryVegetation_21
+  - first:
+      213: -6041436865760863586
+    second: DryVegetation_22
+  - first:
+      213: -3558901247188462278
+    second: DryVegetation_23
+  - first:
+      213: -5919552802337374318
+    second: DryVegetation_24
+  - first:
+      213: -8652237775004984404
+    second: DryVegetation_25
+  - first:
+      213: -1226736072458295780
+    second: DryVegetation_26
+  - first:
+      213: 3162304748967623667
+    second: DryVegetation_27
+  - first:
+      213: 1315604385604621742
+    second: DryVegetation_28
+  - first:
+      213: -4937109192757061369
+    second: DryVegetation_29
+  - first:
+      213: 1748323004232364973
+    second: DryVegetation_30
+  - first:
+      213: -5564405134773287819
+    second: DryVegetation_31
+  - first:
+      213: 7795235588691986079
+    second: DryVegetation_32
+  - first:
+      213: -4957320304366443014
+    second: DryVegetation_33
+  - first:
+      213: 3135846861581001356
+    second: DryVegetation_34
+  - first:
+      213: 4923361919331479070
+    second: DryVegetation_35
+  - first:
+      213: 1883014593756033628
+    second: DryVegetation_36
+  - first:
+      213: 5357206395204550027
+    second: DryVegetation_37
+  - first:
+      213: 5347222900030902270
+    second: DryVegetation_38
+  - first:
+      213: 3452278648843309208
+    second: DryVegetation_39
+  - first:
+      213: 8807541330129531534
+    second: DryVegetation_40
+  - first:
+      213: 5382146676824980819
+    second: DryVegetation_41
+  - first:
+      213: 1275316942794073335
+    second: DryVegetation_42
+  - first:
+      213: 3888175889469277519
+    second: DryVegetation_43
+  - first:
+      213: -7170290122664732505
+    second: DryVegetation_44
+  - first:
+      213: 5105415436265468975
+    second: DryVegetation_45
+  - first:
+      213: -5572805268873662844
+    second: DryVegetation_46
+  - first:
+      213: 2265540143701513310
+    second: DryVegetation_47
+  - first:
+      213: 2575012540034585840
+    second: DryVegetation_48
+  - first:
+      213: -8612494917996985353
+    second: DryVegetation_49
+  - first:
+      213: -6845193812757036170
+    second: DryVegetation_50
+  - first:
+      213: -8387006267479716186
+    second: DryVegetation_51
+  - first:
+      213: 7973897025391469591
+    second: DryVegetation_52
+  - first:
+      213: 5271425310259857907
+    second: DryVegetation_53
+  - first:
+      213: -282198816569792698
+    second: DryVegetation_54
+  - first:
+      213: 5875165680323651633
+    second: DryVegetation_55
+  - first:
+      213: 1767444267852189849
+    second: DryVegetation_56
+  - first:
+      213: 3405655457453190015
+    second: DryVegetation_57
+  - first:
+      213: -6068043868507020537
+    second: DryVegetation_58
+  - first:
+      213: -5336955720399978097
+    second: DryVegetation_59
+  - first:
+      213: -4591741710545132623
+    second: DryVegetation_60
+  - first:
+      213: -6111893173385536437
+    second: DryVegetation_61
+  - first:
+      213: 8230089811603420655
+    second: DryVegetation_62
+  - first:
+      213: 3800523669307124687
+    second: DryVegetation_63
+  - first:
+      213: -2385646340486459358
+    second: DryVegetation_64
+  - first:
+      213: 706897716591153347
+    second: DryVegetation_65
+  - first:
+      213: -5264234254412528221
+    second: DryVegetation_66
+  - first:
+      213: -6330189729315045647
+    second: DryVegetation_67
+  - first:
+      213: 614965271539380794
+    second: DryVegetation_68
+  - first:
+      213: 8656253777515194805
+    second: DryVegetation_69
+  - first:
+      213: 279839536432091087
+    second: DryVegetation_70
+  - first:
+      213: 8459720947336912065
+    second: DryVegetation_71
+  - first:
+      213: 2529169505263825975
+    second: DryVegetation_72
+  - first:
+      213: -3371964006718734108
+    second: DryVegetation_73
+  - first:
+      213: 4487555110359259797
+    second: DryVegetation_74
+  - first:
+      213: 4863797093898586186
+    second: DryVegetation_75
+  - first:
+      213: 4556754189546934995
+    second: DryVegetation_76
+  - first:
+      213: -9001695289367426422
+    second: DryVegetation_77
+  - first:
+      213: 1836422938684955832
+    second: DryVegetation_78
+  - first:
+      213: -979344710832418330
+    second: DryVegetation_79
+  - first:
+      213: -3221256174155614298
+    second: DryVegetation_80
+  - first:
+      213: 3315191398015882724
+    second: DryVegetation_81
+  - first:
+      213: 4393589667762828727
+    second: DryVegetation_82
+  - first:
+      213: 1357263802481248900
+    second: DryVegetation_83
+  - first:
+      213: -8194630188399642797
+    second: DryVegetation_84
+  - first:
+      213: 6122798143447879481
+    second: DryVegetation_85
+  - first:
+      213: -33393142441461843
+    second: DryVegetation_86
+  - first:
+      213: -8839355870555955656
+    second: DryVegetation_87
+  - first:
+      213: -506347913751960497
+    second: DryVegetation_88
+  - first:
+      213: 3482965528326444851
+    second: DryVegetation_89
+  - first:
+      213: -5621574521754465904
+    second: DryVegetation_90
+  - first:
+      213: 4504364069982851273
+    second: DryVegetation_91
+  - first:
+      213: 2453974458929284100
+    second: DryVegetation_92
+  - first:
+      213: -2404031065396856274
+    second: DryVegetation_93
+  - first:
+      213: -180621024361391617
+    second: DryVegetation_94
+  - first:
+      213: -3525750261179975689
+    second: DryVegetation_95
+  - first:
+      213: -2378633927320181697
+    second: DryVegetation_96
+  - first:
+      213: 8598083855135924767
+    second: DryVegetation_97
+  - first:
+      213: 5475221097381095264
+    second: DryVegetation_98
+  - first:
+      213: -2007027265412158081
+    second: DryVegetation_99
+  - first:
+      213: -7366929261058530553
+    second: DryVegetation_100
+  - first:
+      213: -3421776871352996161
+    second: DryVegetation_101
+  - first:
+      213: 287482166887458270
+    second: DryVegetation_102
+  - first:
+      213: -546999551377861098
+    second: DryVegetation_103
+  - first:
+      213: -5060777684132534108
+    second: DryVegetation_104
+  - first:
+      213: 5291412068476508797
+    second: DryVegetation_105
+  - first:
+      213: 561685894147556538
+    second: DryVegetation_106
+  - first:
+      213: -4936507021966795568
+    second: DryVegetation_107
+  - first:
+      213: 8233852788649771043
+    second: DryVegetation_108
+  - first:
+      213: 143830927111241591
+    second: DryVegetation_109
+  - first:
+      213: -2609044590204684577
+    second: DryVegetation_110
+  - first:
+      213: 7944697075833311180
+    second: DryVegetation_111
+  - first:
+      213: 1760517013495888844
+    second: DryVegetation_112
+  - first:
+      213: 976835848825696372
+    second: DryVegetation_113
+  - first:
+      213: 7301885625887275649
+    second: DryVegetation_114
+  - first:
+      213: -8689941470048050989
+    second: DryVegetation_115
+  - first:
+      213: 3897489924939025351
+    second: DryVegetation_116
+  - first:
+      213: -4080863874637372762
+    second: DryVegetation_117
+  - first:
+      213: -5338975130039412833
+    second: DryVegetation_118
+  - first:
+      213: -1852826806532294479
+    second: DryVegetation_119
+  - first:
+      213: 5928747977442539091
+    second: DryVegetation_120
+  - first:
+      213: -4173533783399796727
+    second: DryVegetation_121
+  - first:
+      213: -6964871369485357598
+    second: DryVegetation_122
+  - first:
+      213: -3636287295099919259
+    second: DryVegetation_123
+  - first:
+      213: 4120335133850327854
+    second: DryVegetation_124
+  - first:
+      213: 7138752085415210751
+    second: DryVegetation_125
+  - first:
+      213: -695763780078289347
+    second: DryVegetation_126
+  - first:
+      213: 5670279404456644795
+    second: DryVegetation_127
+  - first:
+      213: 5095502138718568044
+    second: DryVegetation_128
+  - first:
+      213: -9142037064321890574
+    second: DryVegetation_129
+  - first:
+      213: 7952138365109735471
+    second: DryVegetation_130
+  - first:
+      213: -3463891499367449490
+    second: DryVegetation_131
+  - first:
+      213: 137576284570798813
+    second: DryVegetation_132
+  - first:
+      213: 621946158186774240
+    second: DryVegetation_133
+  - first:
+      213: 1414209769938679537
+    second: DryVegetation_134
+  - first:
+      213: -1819433578345412503
+    second: DryVegetation_135
+  - first:
+      213: -5777452823144979434
+    second: DryVegetation_136
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bush_Ochre_Small
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 400
+        width: 29
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c430ef087536a439d9f9f8935c29d5
+      internalID: -1346386488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Russet_Small
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 400
+        width: 29
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8925992f18cd3e488998cbc679e4527
+      internalID: 1238047118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Ochre_Med
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 368
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13088a20c07e8a449720f37334690ea
+      internalID: -1919977515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Russet_Med
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 368
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24900f6531d3a149b02c011072869ed
+      internalID: 1817381023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Ochre_Wide
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 336
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8c910b8672f374c9e671c9a6d39493
+      internalID: -1044320684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Russet_Wide
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 336
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5e0ee937b40234e94fc747c340d3b0
+      internalID: 1514294798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Ochre_Large
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 290
+        width: 43
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4269aff55353084495cbd90bc2378c7
+      internalID: 102208248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Russet_Large
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 290
+        width: 43
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1c9ce6aa87f5f40ba4eb7067d4bbe1
+      internalID: -1195734335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree_Small
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 335
+        width: 36
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2aad3b74b42664f9df00de26c97874
+      internalID: -1086373132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree_Large
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 287
+        width: 38
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7d81ea88230414d9d096f33997fcec
+      internalID: 93304106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodenStakeMarker
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 287
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748f1853e6275d14488fb3c4f4a7137c
+      internalID: -277966146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DryBroadleaf_Large
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 164
+        width: 31
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fb1296d21d3074c9b726b3627f2f5e
+      internalID: -1493856196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DryBroadleaf_Small
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42dfb00adbd0ce47acfcd81a81b3234
+      internalID: -893079339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DryFern_Wide
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 32
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55b8ec2d545e2c49b42d2bcbf2cd30a
+      internalID: 231254921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DryReed_Tall
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 144
+        width: 15
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e8f99cfc4bd604a842a76f36c20ebd
+      internalID: 1203175168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DryReed_Short
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 144
+        width: 9
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e082e08603cbc64bba3e916a0ed4655
+      internalID: 2038205981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DryScrub_Tuft
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 144
+        width: 14
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4467e1a018cac6146807e5e11da48e06
+      internalID: -1587683238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DryBranch_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 415
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddc9439b86c4c640b5e297437918895
+      internalID: 1052156503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DryBranch_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 417
+        width: 11
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a2b6f98087c1f4cacd960be2ac02ee
+      internalID: -1710152053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DryTwig_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 403
+        width: 13
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2befb28d0d4cabb46be1bce9000847b6
+      internalID: -67982252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1bf3d65faf5ab3342beda61c7f465fae
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bush_Ochre_Large: 102208248
+      Bush_Ochre_Med: -1919977515
+      Bush_Ochre_Small: -1346386488
+      Bush_Ochre_Wide: -1044320684
+      Bush_Russet_Large: -1195734335
+      Bush_Russet_Med: 1817381023
+      Bush_Russet_Small: 1238047118
+      Bush_Russet_Wide: 1514294798
+      DeadTree_Large: 93304106
+      DeadTree_Small: -1086373132
+      DryBranch_1: 1052156503
+      DryBranch_2: -1710152053
+      DryBroadleaf_Large: -1493856196
+      DryBroadleaf_Small: -893079339
+      DryFern_Wide: 231254921
+      DryReed_Short: 2038205981
+      DryReed_Tall: 1203175168
+      DryScrub_Tuft: -1587683238
+      DryTwig_1: -67982252
+      WoodenStakeMarker: -277966146
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

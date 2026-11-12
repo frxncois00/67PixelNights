@@ -1,0 +1,35 @@
+PASS Attached beneath existing Grid
+PASS Required groups
+PASS Reusable connected prefab
+PASS Existing supported sprite material on every renderer
+PASS No missing sprites
+PASS All object scales 1:1, no stretched sprites
+PASS No missing scripts
+PASS Clearing contains no gameplay scripts
+PASS Water and cliff composite colliders generated
+PASS Cabin, boulders and large trees have solid colliders
+PASS Object pivot Y-sorting matches scene
+PASS ForestNavigation road to (-25.50, 16.00); 32 steps
+PASS ForestNavigation road to (-24.00, 12.00); 27 steps
+PASS ForestNavigation road to (-15.50, 6.50); 33 steps
+PASS ForestNavigation road to (-13.00, 9.00); 43 steps
+PASS Obstacle blocks (-18.50, 13.00)
+PASS Obstacle blocks (-18.50, 10.00)
+PASS Obstacle blocks (-19.00, 21.50)
+PASS Obstacle blocks (-24.50, 5.50)
+PASS Obstacle blocks (-10.50, 9.50)
+PASS Obstacle blocks (-25.50, 17.50)
+PASS Full south bridge crossing is walkable
+PASS Full west bridge crossing is walkable
+PASS All new tile cells are on existing navigable island ground (off-ground 0)
+PASS All new tiles outside safezone; nearest 11.34
+PASS Every added prop outside safezone
+PASS Point / uncompressed / no mipmaps: Bridges.png
+PASS Point / uncompressed / no mipmaps: BuildingProps.png
+PASS Point / uncompressed / no mipmaps: Cabin.png
+PASS Point / uncompressed / no mipmaps: CascadeFoam.png
+PASS Point / uncompressed / no mipmaps: Decor.png
+PASS Point / uncompressed / no mipmaps: Resources.png
+PASS Point / uncompressed / no mipmaps: Tools.png
+PASS Point / uncompressed / no mipmaps: Vegetation.png
+PASS Point / uncompressed / no mipmaps: Water.png

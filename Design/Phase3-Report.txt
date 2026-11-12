@@ -1,0 +1,45 @@
+PHASE 3 REPORT
+A. IMPLEMENTED
+Authoritative fuel, wood transactions via IWoodWallet, E proximity interaction, U upgrades, safe-zone XY queries and selected Gizmo circle, local URP Point Light, separate animated FlameVisual, fuel/wood/level/status HUD and contextual prompt. Low fuel and action feedback are event driven. No enemies or full inventory added.
+B. CREATED FILES
+Assets/Scripts/Campfire/CampfireController.cs
+Assets/Scripts/Campfire/CampfireInteraction.cs
+Assets/Scripts/Campfire/CampfireLighting.cs
+Assets/Scripts/Campfire/CampfireSafeZone.cs
+Assets/Scripts/Campfire/CampfireUpgrade.cs
+Assets/Scripts/Inventory/TemporaryResourceWallet.cs (includes IWoodWallet)
+Assets/Scripts/UI/CampfireUI.cs
+AgentScripts/SetupPhase3.cs
+AgentScripts/TestPhase3.cs
+Design/Phase2-Report.txt
+Design/Phase3-LogicTests.txt
+Design/Phase3-1280.png, Phase3-1600.png, Phase3-1920.png, Phase3-Night.png, Phase3-NightRelit.png
+Unity generated .meta files accompany scripts/folders.
+C. MODIFIED
+Assets/Scenes/SampleScene.unity only among existing project assets. Phase 1/2 scripts unchanged. Backup: Design/Backups/SampleScene-before-phase3.unity.
+D/E. SCENE AND REFERENCES
+Existing Campfire: controller, interaction, upgrade, safe-zone, lighting components. Children CampfireLight (Point Light2D) and FlameVisual (original Tiny Swords frames). Original SpriteRenderer/sprite retained, hidden only during runtime while FlameVisual operates. Stone ring preserved. Existing Player: TemporaryResourceWallet. Existing Canvas: CampfireHUD and bottom contextual InteractionPrompt. No additional Global Light or EventSystem.
+All fire/player/wallet/upgrade/light/flame/HUD references assigned directly. Defaults: 75/100 fuel, 1/sec drain, 25/wood, refuel/relight cost 1, range 2, starting wood 10. Levels capacity/radius/cost: 100/5/0, 150/7/5, 200/9/10. Upgrade preserves current fuel. Local light .4-1.5 intensity, 2-5 visual radius independent of protection radius.
+F. TEST RESULTS
+PASS compilation: Unity recompile completed with no errors.
+PASS direct logic tests: all 14 checks in Phase3-LogicTests.txt. Explicit initialization was used on temporary objects; these are not physical keyboard acceptance tests.
+PASS live runtime: frame counters advanced 5090 to 10085; fuel decreased 66.38 to 58.38 while wood stayed 10, safe zone active, local light intensity positive.
+PASS live phase-skip integration: day became 2; fuel was unchanged within the skip operation and wood remained 10.
+PASS live extinguish: zero fuel, local light zero, safe zone inactive. Night screenshot shows EMPTY and no flame.
+PASS live relight after restoring development wood: 30 -> 29 wood, fuel 25, safe zone active. Night screenshot shows restored fire/light/HUD.
+PASS empty wallet feedback observed in live scene: relight refused with wood 0.
+PASS UI static camera renders at 1920x1080,1600x900,1280x720: readable and non-overlapping. Dynamic prompt/warnings also seen at 1280.
+UNVERIFIED physical E/U press and hold behavior; direct API paths tested instead.
+UNVERIFIED live level 2/3 interaction; direct capacity/cost/radius/max-level tests PASS.
+UNVERIFIED complete uninterrupted natural day/night cycles, all notification timings and repeated Play sessions.
+UNVERIFIED rapid physical key presses; repeated API relight and maximum-level/full-fuel/empty-wallet tests PASS.
+G. PHASE 1
+Scripts, camera zoom/follow fields, spawn, collider and animation assets not modified. Existing transform and sprite-reference comparison PASS at integration. Movement/collision/animation regression remains UNVERIFIED; no claim that original Phase 1 acceptance suite passed.
+H. PHASE 2
+HUD preserved. Current live countdown/night lighting and skip integration observed. Earlier logic overshoot test passed. F6/F7 physical input and uninterrupted multi-cycle suite UNVERIFIED. Standard Unity Text retained.
+I. LIMITATIONS
+Flame uses four available Tiny Swords frames, not new art. Original static flame is hidden at runtime and restored on component disable. No disk persistence. Starting 10 wood is insufficient for both upgrades plus refueling; use development restore context menu for tests. Wallet and upgrade references are concrete at interaction layer; fuel/upgrade transactions accept IWoodWallet for later inventory adaptation.
+J. MANUAL TESTS
+Open SampleScene, press Play, click Game view. Walk within 2 units of center; press E once to refuel. Walk away and press E to confirm no spend. Press U near fire. For level 3, select Player > TemporaryResourceWallet component context menu > Development/Restore 30 Test Wood during Play. Let fuel drain, confirm empty/light-off/no protection, then E to relight. Check movement/arrows/diagonals/tree-house collisions/camera. Enable DayNightCycle Test Mode and watch Day1/Night1/Day2/Night2/Day3; F6 skip/F7 pause. No manual reference setup required.
+K. PHASE 4 READINESS
+IWoodWallet provides a small replacement boundary for real inventory. Fuel and safe-zone API are available to future pickup/chopping/enemy systems. Those systems are not implemented.

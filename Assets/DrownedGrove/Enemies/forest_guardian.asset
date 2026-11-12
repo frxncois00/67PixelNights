@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3a43e4e9081a846b1e0653e8a39a13, type: 3}
+  m_Name: forest_guardian
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyArchetype
+  id: forest_guardian
+  displayName: Forest Guardian
+  behavior: 3
+  health: 80
+  patrolSpeed: 1.1
+  chaseSpeed: 2
+  detectionRange: 6.5
+  attackRange: 1.05
+  damage: 10
+  cooldown: 1.05
+  windup: 0.42
+  recovery: 0.35
+  structureDamage: 8
+  knockbackResistance: 0
+  firstNight: 1
+  maximumActive: 8
+  spawnWeight: 1
+  sprite: {fileID: -8908100112004616518, guid: 6e003e3ea75c2de42a93419e3e8a0bb1, type: 3}
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  idleFrames:
+  - {fileID: -8908100112004616518, guid: 6e003e3ea75c2de42a93419e3e8a0bb1, type: 3}
+  - {fileID: 752023646723765133, guid: 6e003e3ea75c2de42a93419e3e8a0bb1, type: 3}
+  - {fileID: 4086656113650473886, guid: 6e003e3ea75c2de42a93419e3e8a0bb1, type: 3}
+  - {fileID: 7106754916707105786, guid: 6e003e3ea75c2de42a93419e3e8a0bb1, type: 3}
+  walkFrames:
+  - {fileID: 6725687651526028270, guid: ab5822b009e0b104cb4a38dd565566b1, type: 3}
+  - {fileID: 3411765991219878810, guid: ab5822b009e0b104cb4a38dd565566b1, type: 3}
+  - {fileID: -5469564623873373743, guid: ab5822b009e0b104cb4a38dd565566b1, type: 3}
+  - {fileID: -3543992743836668073, guid: ab5822b009e0b104cb4a38dd565566b1, type: 3}
+  animationFPS: 6
+  burstDuration: 0.7
+  burstCooldown: 4
+  burstMultiplier: 1.4
+  lungeDistance: 1.4
+  slamRadius: 1.85

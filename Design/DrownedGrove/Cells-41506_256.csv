@@ -1,0 +1,17 @@
+x,y,worldX,worldY,tile,collider
+8,18,8.5,18.5,DirtEdge_0_3,None
+9,18,9.5,18.5,DirtEdge_1_3,None
+10,18,10.5,18.5,DirtEdge_1_3,None
+11,18,11.5,18.5,DirtEdge_2_3,None
+8,19,8.5,19.5,DirtEdge_1_4,None
+9,19,9.5,19.5,DirtEdge_1_4,None
+10,19,10.5,19.5,DirtEdge_1_4,None
+11,19,11.5,19.5,DirtEdge_1_4,None
+12,19,12.5,19.5,DirtEdge_2_3,None
+8,20,8.5,20.5,DirtEdge_1_5,None
+9,20,9.5,20.5,DirtEdge_1_4,None
+10,20,10.5,20.5,DirtEdge_1_4,None
+11,20,11.5,20.5,DirtEdge_1_5,None
+12,20,12.5,20.5,DirtEdge_2_5,None
+9,21,9.5,21.5,DirtEdge_0_5,None
+10,21,10.5,21.5,DirtEdge_2_5,None

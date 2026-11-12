@@ -1,0 +1,23 @@
+PASS Walk from main road toward well via (4.00, 19.50); reached=(3.92, 19.50)
+PASS Walk from main road toward well via (6.00, 19.50); reached=(5.92, 19.50)
+PASS Walk from main road toward well via (9.00, 19.50); reached=(8.96, 19.50)
+PASS Walk from main road toward well via (11.00, 19.50); reached=(10.96, 19.50)
+PASS Walk from main road toward well via (12.00, 20.00); reached=(11.89, 19.95)
+PASS Well blocks player; stopped=(12.00, 20.59)
+PASS Merchant cart blocks player; stopped=(8.00, 17.67)
+PASS Bench blocks player; stopped=(12.00, 17.59)
+PASS Route around well to hidden chest via (14.00, 20.00); reached=(13.93, 19.95)
+PASS Route around well to hidden chest via (14.00, 21.50); reached=(13.93, 21.47)
+PASS Route around well to hidden chest via (13.00, 21.20); reached=(13.07, 21.25)
+PASS Hidden chest uses existing loot interaction
+PASS Hidden chest retains opening animation
+PASS Trader's existing idle sprite frames animate
+PASS New trail Grid matches original cell size and origin
+PASS Dirt trail has no blocking collider
+PASS Warm local 2D lantern light is configured
+PASS Existing single global light preserved
+PASS All new local scales are 1,1,1
+PASS All new sprite references assigned and Point filtered
+PASS No missing components/scripts in rest stop
+PASS Existing camera follow and zoom preserved
+Actual PlayerMovement and Physics2D steps=881 at 0.02 seconds; temporary player/input state restored.

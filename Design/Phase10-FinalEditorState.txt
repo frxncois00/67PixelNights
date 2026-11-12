@@ -1,0 +1,7 @@
+{
+  "playing": false,
+  "compiling": false,
+  "failed": false,
+  "scene": "Assets/Scenes/SampleScene.unity",
+  "dirty": false
+}

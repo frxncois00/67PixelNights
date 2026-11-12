@@ -1,0 +1,24 @@
+PASS Workbench contextual use opens modal
+PASS Missing ingredients rejected
+PASS Multi-ingredient craft commits once with exact cost
+PASS Rapid duplicate craft blocked
+PASS Closing releases modal
+PASS Full output rejects without partial spending
+PASS Consumed ingredient slot reused for output
+PASS Build mode starts with owned selected item
+PASS Main path protected
+PASS Out-of-range placement rejected
+PASS Valid navigation-preserving build site found
+PASS Valid placement consumes exactly one
+PASS Duplicate placement cannot consume or overlap
+PASS Fence health 50
+PASS Repair kit restores 25 once
+PASS Full-health repair does not spend
+PASS Empty structure dismantles
+PASS Deposit one
+PASS Deposit stack
+PASS Withdraw one
+PASS Withdraw stack
+PASS Nonempty chest cannot dismantle
+PASS Destroyed chest preserves recoverable contents without collision
+PASS Wreck contents recoverable

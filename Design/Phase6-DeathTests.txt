@@ -1,0 +1,8 @@
+PASS Starvation death occurs once
+PASS Game over shows day and death cause
+PASS Death closes and locks inventory
+PASS Death stops movement
+PASS Death blocks interactions and tools
+PASS Death blocks consumption and dropping
+PASS Death cancels cooking and prevents new job
+PASS Death blocks refuel and upgrades

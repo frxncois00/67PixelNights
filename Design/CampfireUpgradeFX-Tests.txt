@@ -1,0 +1,6 @@
+PASS no celebration without wood
+PASS level2 effect
+PASS level3 replaces active celebration
+PASS max level rejected
+
+PASS timed effect finishes during live play

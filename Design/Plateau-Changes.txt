@@ -1,0 +1,99 @@
+REPLACED terrain: Grid/HiddenPondClearing/Terrain/Clearing Ground Grid
+REPLACED terrain: Grid/HiddenPondClearing/Terrain/Winding Dirt Paths Grid
+REPLACED terrain: Grid/HiddenPondClearing/Terrain/Mossy Cliff Ledges Grid
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Pond and Stream Grid
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Water Obstacles - Bridge Openings Grid
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Ripple
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Whitewater Ribbon
+REPLACED water/cascade: Grid/HiddenPondClearing/Water/Cascade Ripple
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Axe in Chopping Stump
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Hay Sled - Timber Bed
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Hay Bundle 0
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Hay Bundle 1
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Hay Bundle 2
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Hay Bundle 3
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Hay Bundle 4
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Fallen Timber Log
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Fallen Timber Log
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Props/Fallen Timber Log
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 6
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 12
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 17
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 18
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 24
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 30
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 47
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 53
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 65
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 72
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 78
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 83
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 102
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 119
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 126
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 143
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Meadow Detail 150
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Waterside Reeds
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Fern
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Waterside Reeds
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Fern
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Waterside Reeds
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Fern
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Waterside Reeds
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Fern
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Waterside Reeds
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Fern
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Waterside Reeds
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Fern
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Waterside Reeds
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Fern
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Small Forest Bush
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Small Forest Bush
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Small Forest Bush
+REMOVED auxiliary sprite: Grid/HiddenPondClearing/Vegetation/Small Forest Bush
+MOVED cabin to (-25.5,20.25) on north-west tier
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Waterside Broadleaf 1 (-28.00, 19.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Waterside Broadleaf 2 (-22.00, 20.50)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Waterside Broadleaf 3 (-14.00, 18.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Waterside Broadleaf 4 (-12.00, 14.50)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Waterside Broadleaf 6 (-29.00, 9.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Outer Pine 1 (-31.00, 11.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Outer Pine 2 (-30.00, 16.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Outer Pine 4 (-21.00, 23.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Outer Pine 5 (-14.00, 22.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Outer Pine 6 (-9.00, 19.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Outer Pine 7 (-7.00, 13.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Outer Pine 8 (-14.00, 4.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Outer Pine 9 (-27.00, 5.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 2 (-28.00, 18.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 3 (-25.00, 22.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 4 (-22.00, 23.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 5 (-17.00, 23.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 6 (-13.00, 21.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 7 (-10.00, 18.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 9 (-10.00, 10.00)
+REMOVED overlapping/excess clearing tree: Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 11 (-31.00, 8.00)
+REMOVED prop obstructing new terrain: Grid/HiddenPondClearing/Props/Chopping Stump
+REMOVED prop obstructing new terrain: Grid/HiddenPondClearing/Props/Old Tree Stump 0
+REMOVED prop obstructing new terrain: Grid/HiddenPondClearing/Props/Old Tree Stump 1
+REMOVED prop obstructing new terrain: Grid/HiddenPondClearing/Props/Old Tree Stump 2
+REMOVED prop obstructing new terrain: Grid/HiddenPondClearing/Props/Old Tree Stump 3
+REMOVED prop obstructing new terrain: Grid/HiddenPondClearing/Props/Hollow Log Substitute - Weathered Stump
+REMOVED prop obstructing new terrain: Grid/HiddenPondClearing/Props/Mossy Boulders
+REMOVED prop obstructing new terrain: Grid/HiddenPondClearing/Props/Mossy Boulders
+REMOVED prop obstructing new terrain: Grid/HiddenPondClearing/Props/Mossy Boulders

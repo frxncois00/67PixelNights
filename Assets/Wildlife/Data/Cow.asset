@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b573cfaeb0444947891e6bd079bcdb0, type: 3}
+  m_Name: Cow
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalData
+  displayName: Cow
+  idleFrames:
+  - {fileID: 5552232653154027118, guid: d299e63aabb2a6245b0f9a7f36050b4e, type: 3}
+  walkFrames:
+  - {fileID: 5552232653154027118, guid: d299e63aabb2a6245b0f9a7f36050b4e, type: 3}
+  - {fileID: 5800295469788518432, guid: d299e63aabb2a6245b0f9a7f36050b4e, type: 3}
+  - {fileID: -6380609288461967311, guid: d299e63aabb2a6245b0f9a7f36050b4e, type: 3}
+  - {fileID: -6161296832414402164, guid: d299e63aabb2a6245b0f9a7f36050b4e, type: 3}
+  health: 55
+  moveSpeed: 1
+  roamingRadius: 3
+  walkingSeconds: 4
+  pauseSeconds: {x: 2, y: 4}
+  fleeWhenHit: 1
+  fleeSeconds: 4
+  fleeSpeedMultiplier: 1.8
+  bodyRadius: 0.4
+  animationFPS: 8
+  artworkFacesLeft: 1
+  drops:
+  - item: {fileID: 11400000, guid: 427d34b5c2199934e823f238f035b1a3, type: 2}
+    minimum: 2
+    maximum: 4
+    chance: 1
+  - item: {fileID: 11400000, guid: 95cf78c2820ea474fbcd6b5da42a9319, type: 2}
+    minimum: 1
+    maximum: 2
+    chance: 1
+  - item: {fileID: 11400000, guid: 6d953855357d7ac4c99b40c86a697f24, type: 2}
+    minimum: 1
+    maximum: 1
+    chance: 0.25

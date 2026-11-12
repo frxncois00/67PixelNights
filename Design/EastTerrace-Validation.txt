@@ -1,0 +1,4 @@
+PASS Road route (-14.00, 19.00)
+PASS Road route (-11.00, 14.50)
+PASS Road route (-25.50, 19.50)
+PASS Continuous stair and ledge clearance. Water and colliders were not edited.

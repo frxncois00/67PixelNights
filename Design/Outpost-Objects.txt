@@ -1,0 +1,213 @@
+Object inventory (all scales must equal 1,1,1)
+EnvironmentExpansion/GoblinOutpost | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,GoblinOutpostReferences
+EnvironmentExpansion/GoblinOutpost/Tilemaps | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Tilemaps/Outpost Path (shared Grid) | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Tilemaps/Outpost Ground Detail (shared Grid) | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Tilemaps/Outpost Pond (shared Grid) | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Tilemaps/Outpost Decoration (shared Grid) | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Tilemaps/Outpost Pond Foam (shared Grid) | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Tilemaps/Outpost Pond Shore (shared Grid) | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Ruins | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Ruins/Ancient Stone Arch | position=(19.000, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Ruins/Arch Foot 18 | position=(18.000, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Ruins/Arch Foot 20 | position=(20.000, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Ruins/Rune Monument | position=(19.000, 20.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Ruins/Broken Pillar (17.00, 20.00) | position=(17.000, 20.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Ruins/Broken Pillar (21.00, 20.00) | position=(21.000, 20.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Ruins/Broken Pillar (18.00, 18.00) | position=(18.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Ruins/Broken Pillar (21.00, 18.00) | position=(21.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Ruins/Ruin Rubble_0 | position=(17.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Ruins/Ruin Rubble_1 | position=(18.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Ruins/Ruin Rubble_2 | position=(21.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Ruins/Ruin Rubble_3 | position=(22.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Ruins/Ruin Rubble_4 | position=(21.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Cart | position=(32.000, 6.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Cart/Cart Wheel -0.25 | position=(31.813, 5.938, -0.001) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Cart/Cart Wheel 0.25 | position=(32.188, 5.938, -0.001) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Quarry Workbench | position=(33.000, 6.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry/Quarry Workbench/Quarry Pickaxe | position=(33.350, 6.250, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Ore Vein_01 | position=(31.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Quarry/Ore Vein_01/Ore Rock Base | position=(31.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry/Ore Vein_01/Embedded Crystal | position=(31.000, 9.080, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Ore Vein_02 | position=(33.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Quarry/Ore Vein_02/Ore Rock Base | position=(33.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry/Ore Vein_02/Embedded Crystal | position=(33.000, 9.080, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Ore Vein_03 | position=(34.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Quarry/Ore Vein_03/Ore Rock Base | position=(34.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry/Ore Vein_03/Embedded Crystal | position=(34.000, 8.080, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Quarry Loose Rubble (31.00, 9.00, 0.00) | position=(31.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,CircleCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry/Quarry Loose Rubble (34.00, 7.00, 0.00) | position=(34.000, 7.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,CircleCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails | position=(32.000, 6.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Rail 0 -0.25 | position=(31.750, 5.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Rail 0 0.25 | position=(32.250, 5.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Rail 1 -0.25 | position=(31.750, 6.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Rail 1 0.25 | position=(32.250, 6.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Rail 2 -0.25 | position=(31.750, 7.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Rail 2 0.25 | position=(32.250, 7.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_0 | position=(32.000, 5.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_1 | position=(32.000, 5.313, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_2 | position=(32.000, 5.625, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_3 | position=(32.000, 5.938, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_4 | position=(32.000, 6.250, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_5 | position=(32.000, 6.563, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_6 | position=(32.000, 6.875, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_7 | position=(32.000, 7.188, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_8 | position=(32.000, 7.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Rail 3 -0.25 | position=(31.750, 8.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Rail 3 0.25 | position=(32.250, 8.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_9 | position=(32.000, 7.813, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_10 | position=(32.000, 8.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_11 | position=(32.000, 8.438, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Rails/Sleeper_12 | position=(32.000, 8.750, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Quarry/Abandoned Mine Entrance | position=(32.080, 9.270, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Bank Boulder_01 | position=(31.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,CircleCollider2D
+EnvironmentExpansion/GoblinOutpost/Quarry/Mine Bank Boulder_02 | position=(33.140, 10.700, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,CircleCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,EdgeCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_01 | position=(23.000, 16.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_02 | position=(23.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_03 | position=(24.000, 16.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_04 | position=(24.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_05 | position=(25.000, 16.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_06 | position=(26.000, 16.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_07 | position=(27.000, 16.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_08 | position=(28.000, 16.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_09 | position=(28.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_11 | position=(29.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_12 | position=(21.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_13 | position=(31.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_14 | position=(21.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_15 | position=(31.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_16 | position=(21.000, 12.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_17 | position=(31.000, 12.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_18 | position=(21.000, 13.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_19 | position=(30.000, 13.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_20 | position=(31.020, 13.150, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_20 (3) | position=(22.260, 8.210, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_20 (2) | position=(29.060, 15.460, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_20 (1) | position=(22.200, 15.450, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_21 | position=(30.000, 14.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_22 | position=(22.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_23 | position=(22.000, 15.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_24 | position=(30.000, 9.010, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_25 | position=(29.000, 15.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_26 | position=(22.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_27 | position=(30.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_28 | position=(22.000, 14.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,SortingGroup
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/GoblinShelter_01 (Tent Substitute) | position=(23.000, 13.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/GoblinShelter_01 (Tent Substitute)/Visual | position=(23.000, 14.250, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/GoblinShelter_02 (Tent Substitute) | position=(28.000, 13.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/GoblinShelter_02 (Tent Substitute)/Visual | position=(28.000, 14.250, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/GoblinShelter_03 (Tent Substitute) | position=(23.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/GoblinShelter_03 (Tent Substitute)/Visual | position=(23.000, 10.250, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Watchtower | position=(27.000, 15.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Watchtower/Visual | position=(27.000, 16.750, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Goblin Lookout (Archer Placeholder) | position=(27.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Outpost Campfire | position=(26.000, 12.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D,Animator
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Outpost Campfire/Firewood Base | position=(26.000, 12.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Campfire Stone_0 | position=(25.000, 12.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Campfire Stone_1 | position=(27.000, 12.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Campfire Stone_2 | position=(25.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Campfire Stone_3 | position=(27.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Cooking Pot and Tripod | position=(29.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Cooking Pot and Tripod/Hanging Pot | position=(29.000, 11.250, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Weapon Rack | position=(22.000, 12.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_01 | position=(24.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_01/Timber Pole | position=(24.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_01/Red Banner | position=(24.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_01/Red Banner (3) | position=(23.000, 6.100, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_01/Red Banner (2) | position=(24.000, 6.100, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_01/Red Banner (1) | position=(22.000, 6.120, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_01/Torch Flame | position=(24.000, 9.750, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_02 | position=(28.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_02/Timber Pole | position=(28.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_02/Red Banner | position=(28.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/BannerTorch_02/Torch Flame | position=(28.000, 9.750, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Watchtower Red Banner | position=(28.000, 16.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/GoblinCamp/Watchtower Red Banner/Red Banner | position=(28.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Barricades | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Barricades/BarricadeStake_01 | position=(22.000, 5.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Barricades/BarricadeStake_02 | position=(23.000, 5.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Barricades/BarricadeStake_03 | position=(24.000, 5.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Chests | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Chests/Chest_Ruins Location (LootChestInstances) | position=(20.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Chests/Chest_Camp Location (LootChestInstances) | position=(28.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Chests/Chest_Quarry Location (LootChestInstances) | position=(33.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Trees | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_01 | position=(18.000, 23.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_02 | position=(17.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_03 | position=(19.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_04 | position=(27.000, 2.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_05 | position=(29.000, 2.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_20 | position=(20.000, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_21 | position=(21.000, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_22 | position=(22.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_23 | position=(25.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_24 | position=(34.000, 2.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_25 | position=(35.000, 2.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_26 | position=(36.000, 2.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Trees/OutpostTree_27 | position=(33.000, 2.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/SpawnPoints | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/SpawnPoints/Camp_Spawn_01 | position=(24.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/SpawnPoints/Camp_Spawn_02 | position=(28.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/SpawnPoints/Camp_Spawn_03 | position=(26.000, 14.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/SpawnPoints/Camp_Spawn_04 | position=(24.000, 15.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/SpawnPoints/Camp_Spawn_05 | position=(28.000, 15.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/SpawnPoints/Tower_Spawn (elevated placeholder) | position=(27.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/SpawnPoints/Quarry_Patrol_Spawn | position=(30.000, 7.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Pond Lily Pad (18.00, 7.00) | position=(17.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Pond Lily Pad (19.00, 6.00) | position=(18.000, 7.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Pond Lily Pad (20.00, 7.00) | position=(19.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Pond Reeds (17.00, 7.00) | position=(16.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Pond Reeds (20.00, 5.00) | position=(19.000, 6.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Pond Reeds (21.00, 7.00) | position=(20.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Pond Reeds (18.00, 9.00) | position=(17.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Pond Fallen Log | position=(20.000, 7.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,BoxCollider2D
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_01 | position=(17.000, 15.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_02 | position=(18.000, 20.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_03 | position=(19.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_04 | position=(20.000, 9.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_05 | position=(20.000, 23.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_06 | position=(22.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_07 | position=(23.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_08 | position=(29.000, 5.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_09 | position=(30.000, 3.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_10 | position=(32.000, 13.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_11 | position=(33.000, 11.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/GoblinOutpost/Flowers Rocks and Bushes/Outpost Decoration_13 | position=(35.000, 7.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+Grid/Tilemaps/GoblinOutpost Tilemaps | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Path | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,Tilemap,TilemapRenderer
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Ground Detail | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,Tilemap,TilemapRenderer
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Pond | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,Tilemap,TilemapRenderer,Rigidbody2D,TilemapCollider2D,CompositeCollider2D
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Decoration | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,Tilemap,TilemapRenderer
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Pond Foam | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,Tilemap,TilemapRenderer
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Pond Shore | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,Tilemap,TilemapRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Ruins | position=(20.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,LootChest,ChestOpeningAnimation,SortingGroup,BoxCollider2D
+EnvironmentExpansion/LootChestInstances/Chest_Ruins/Cache Lid | position=(20.000, 17.180, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Ruins/Opening Sparkle 1 | position=(20.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Ruins/Opening Sparkle 2 | position=(20.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Ruins/Opening Sparkle 3 | position=(20.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Ruins/Opening Sparkle 4 | position=(20.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Ruins/Opening Sparkle 5 | position=(20.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Ruins/Animated Chest Lid | position=(20.000, 17.119, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Ruins/Chest Interior | position=(20.016, 17.190, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Camp | position=(28.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,LootChest,ChestOpeningAnimation,SortingGroup,BoxCollider2D
+EnvironmentExpansion/LootChestInstances/Chest_Camp/Cache Lid | position=(28.000, 10.180, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Camp/Opening Sparkle 1 | position=(28.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Camp/Opening Sparkle 2 | position=(28.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Camp/Opening Sparkle 3 | position=(28.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Camp/Opening Sparkle 4 | position=(28.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Camp/Opening Sparkle 5 | position=(28.000, 10.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Camp/Animated Chest Lid | position=(28.000, 10.119, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Camp/Chest Interior | position=(28.016, 10.190, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Quarry | position=(33.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,LootChest,ChestOpeningAnimation,SortingGroup,BoxCollider2D
+EnvironmentExpansion/LootChestInstances/Chest_Quarry/Cache Lid | position=(33.000, 8.180, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Quarry/Opening Sparkle 1 | position=(33.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Quarry/Opening Sparkle 2 | position=(33.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Quarry/Opening Sparkle 3 | position=(33.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Quarry/Opening Sparkle 4 | position=(33.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Quarry/Opening Sparkle 5 | position=(33.000, 8.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Quarry/Animated Chest Lid | position=(33.000, 8.119, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/LootChestInstances/Chest_Quarry/Chest Interior | position=(33.016, 8.190, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer

@@ -1,0 +1,4 @@
+Observed maximum total enemies: 7
+Actual player damage observed: 136
+Editor samples: 20060
+Seconds: 58.7

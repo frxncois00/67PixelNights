@@ -1,0 +1,373 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Tilemaps;
+using Unity.Profiling;
+
+public class EnemySpawner : MonoBehaviour
+{
+    public ForestNavigation navigation;
+    // Optional scene markers share the existing wave budget and spawn validation.
+    readonly List<Transform> sceneSpawnPoints = new List<Transform>();
+    public void RegisterSpawnPoint(Transform point)
+    {
+        if (point && !sceneSpawnPoints.Contains(point)) sceneSpawnPoints.Add(point);
+    }
+    public void UnregisterSpawnPoint(Transform point) => sceneSpawnPoints.Remove(point);
+
+    readonly List<Vector2> spawnRoute = new List<Vector2>();
+    public DayNightCycle cycle;
+    public CampfireSafeZone safe;
+    public PlayerHealth player;
+    public Tilemap ground;
+    public EnemyController prefab;
+    public Transform container;
+    public EnemyController[] archetypePrefabs;
+    public EnemyWaveSchedule schedule;
+    [Min(1)]
+    public int baseCount = 2, additionalPerNight = 1, maximumActive = 10;
+    [Min(0)]
+    public float minimumPlayerDistance = 6;
+    readonly List<EnemyController> enemies = new List<EnemyController>(10);
+    readonly Queue<EnemyController> pending = new Queue<EnemyController>(10);
+    readonly List<EnemyController> roster = new List<EnemyController>(10);
+    readonly Collider2D[] overlaps = new Collider2D[32];
+    readonly RaycastHit2D[] rays = new RaycastHit2D[32];
+    ContactFilter2D filter;
+    int startedNight = -1, nextWave, rosterIndex, attempts;
+    float[] timings;
+    bool completed;
+    public int CurrentWave { get; private set; }
+    public int SkippedSpawns { get; private set; }
+    public int PendingCount => pending.Count + Mathf.Max(0, roster.Count - rosterIndex);
+
+    public event Action<string> Warning;
+    public double LastSpawnMilliseconds { get; private set; }
+
+    // Shared by night waves and proximity encounters; uses the existing registry.
+    public int TotalActiveCount
+    {
+        get
+        {
+            int count = 0;
+            foreach (var enemy in EnemyController.ActiveControllers)
+                if (enemy && enemy.isActiveAndEnabled && enemy.Alive) count++;
+            return count;
+        }
+    }
+
+    public int ActiveCount
+    {
+        get
+        {
+            int count = 0;
+            foreach (var e in enemies)
+                if (e && e.gameObject.activeInHierarchy && e.Alive)
+                    count++;
+            return count;
+        }
+    }
+
+    public int CountForNight(int night) => (int)Math.Min(Mathf.Clamp(maximumActive, 1, 10), Math.Max(1L, (long)baseCount + (long)Mathf.Max(0, night - 1) * Mathf.Max(0, additionalPerNight)));
+    public int ActiveType(EnemyArchetype type)
+    {
+        int n = 0;
+        foreach (var e in enemies)
+            if (e && e.gameObject.activeInHierarchy && e.Alive && e.archetype == type)
+                n++;
+        return n;
+    }
+
+    void Awake()
+    {
+        filter = ContactFilter2D.noFilter;
+        filter.useTriggers = false;
+    }
+
+    void OnEnable()
+    {
+        if (!cycle || !safe || !player || !ground || !prefab || !container || !navigation)
+        {
+            Debug.LogError("EnemySpawner requires cycle, safe zone, player, ground, prefab, container and navigation", this);
+            enabled = false;
+            return;
+        }
+
+        cycle.OnNightStarted += SpawnNight;
+        cycle.OnDayStarted += Cleanup;
+        if (cycle.IsNighttime)
+            SpawnNight();
+    }
+
+    void Start()
+    {
+        if (enabled && cycle.IsNighttime)
+            SpawnNight();
+    }
+
+    void OnDisable()
+    {
+        if (cycle)
+        {
+            cycle.OnNightStarted -= SpawnNight;
+            cycle.OnDayStarted -= Cleanup;
+        }
+
+        Cleanup();
+    }
+
+    public void Cleanup()
+    {
+        pending.Clear();
+        roster.Clear();
+        rosterIndex = nextWave = CurrentWave = attempts = 0;
+        startedNight = -1;
+        completed = false;
+        foreach (var e in enemies)
+            if (e)
+            {
+                e.gameObject.SetActive(false);
+                Destroy(e.gameObject);
+            }
+
+        enemies.Clear();
+    }
+
+    static readonly ProfilerMarker physicsMarker = new ProfilerMarker("Forest.EnemyPhysics"), spawnMarker = new ProfilerMarker("Forest.SpawnValidation");
+    public bool Walkable(Vector2 pos, Transform ignore = null, bool allowSafe = false)
+    {
+        using (physicsMarker.Auto())
+        {
+            if (!allowSafe && EncounterSafeArea.Contains(pos, .3f))
+                return false;
+            if (!allowSafe && safe.IsPositionSafe(pos))
+                return false;
+            for (int x = -1; x <= 1; x++)
+                for (int y = -1; y <= 1; y++)
+                    if (!ground.HasTile(ground.WorldToCell(pos + new Vector2(x, y) * .22f)))
+                        return false;
+            int n = Physics2D.OverlapCircle(pos, .24f, filter, overlaps);
+            if (n == overlaps.Length)
+                return false;
+            for (int i = 0; i < n; i++)
+                if (overlaps[i] && !overlaps[i].isTrigger && (!ignore || !overlaps[i].transform.IsChildOf(ignore)))
+                    return false;
+            return true;
+        }
+    }
+
+    public bool Visible(Vector2 from, Vector2 to, Transform self, Transform target)
+    {
+        using (physicsMarker.Auto())
+        {
+            int n = Physics2D.Linecast(from, to, filter, rays);
+            if (n == rays.Length)
+                return false;
+            for (int i = 0; i < n; i++)
+            {
+                var c = rays[i].collider;
+                if (c && !c.isTrigger && (!self || !c.transform.IsChildOf(self)) && (!target || !c.transform.IsChildOf(target)))
+                    return false;
+            }
+
+            return true;
+        }
+    }
+
+    public PlaceableStructure BlockingStructure(Vector2 from, Vector2 to, Transform self)
+    {
+        int n = Physics2D.Linecast(from, to, filter, rays);
+        float nearest = float.MaxValue;
+        Collider2D first = null;
+        for (int i = 0; i < n; i++)
+        {
+            var c = rays[i].collider;
+            if (!c || c.isTrigger || c.transform.IsChildOf(self) || c.transform.IsChildOf(player.transform))
+                continue;
+            if (rays[i].distance < nearest)
+            {
+                nearest = rays[i].distance;
+                first = c;
+            }
+        }
+
+        return first ? first.GetComponentInParent<PlaceableStructure>() : null;
+    }
+
+    public void BuildRoster(int night, List<EnemyController> output)
+    {
+        output.Clear();
+        int budget = CountForNight(night);
+        EnemyWaveSchedule.Night row = null;
+        if (schedule && schedule.nights != null)
+            foreach (var r in schedule.nights)
+                if (r != null && r.night == night)
+                    row = r;
+        if (row != null && row.counts != null && archetypePrefabs != null)
+        {
+            for (int i = 0; i < archetypePrefabs.Length && i < row.counts.Length; i++)
+            {
+                var p = archetypePrefabs[i];
+                if (!p || !p.archetype || p.archetype.firstNight > night)
+                    continue;
+                int n = Mathf.Min(Mathf.Max(0, row.counts[i]), p.archetype.maximumActive);
+                for (int j = 0; j < n && output.Count < budget; j++)
+                    output.Add(p);
+            }
+        }
+        else
+        {
+            for (int slot = 0; slot < budget; slot++)
+            {
+                float total = 0;
+                if (archetypePrefabs != null)
+                    foreach (var p in archetypePrefabs)
+                        if (Eligible(p, night, output))
+                            total += p.archetype.spawnWeight;
+                if (total <= 0)
+                {
+                    if (Eligible(prefab, night, output))
+                        output.Add(prefab);
+                    continue;
+                }
+
+                float choice = UnityEngine.Random.value * total;
+                foreach (var p in archetypePrefabs)
+                {
+                    if (!Eligible(p, night, output))
+                        continue;
+                    choice -= p.archetype.spawnWeight;
+                    if (choice <= 0)
+                    {
+                        output.Add(p);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    bool Eligible(EnemyController p, int night, List<EnemyController> list)
+    {
+        if (!p || !p.archetype || p.archetype.firstNight > night)
+            return false;
+        int n = 0;
+        foreach (var e in list)
+            if (e == p)
+                n++;
+        return n < p.archetype.maximumActive && p.archetype.spawnWeight > 0;
+    }
+
+    public void SpawnNight()
+    {
+        if (!isActiveAndEnabled || !cycle || !player || !cycle.IsNighttime || !player.IsAlive || startedNight == cycle.CurrentDay)
+            return;
+        Cleanup();
+        startedNight = cycle.CurrentDay;
+        SkippedSpawns = 0;
+        BuildRoster(startedNight, roster);
+        timings = schedule && schedule.waveFractions != null && schedule.waveFractions.Length > 0 ? (float[])schedule.waveFractions.Clone() : new[]
+        {
+            0f
+        };
+        for (int i = 0; i < timings.Length; i++)
+            timings[i] = EnemyArchetype.Safe(timings[i], 0, 0, .95f);
+        Array.Sort(timings);
+        Warning?.Invoke("NIGHT HAS FALLEN");
+        TickWaves();
+    }
+
+    public void TickWaves()
+    {
+        if (!cycle || !cycle.IsNighttime || !player || !player.IsAlive)
+        {
+            pending.Clear();
+            rosterIndex = roster.Count;
+            completed = true;
+            return;
+        }
+
+        if (startedNight != cycle.CurrentDay || completed)
+            return;
+        // Night 1-2 retain all introductory enemies at the start; later waves spread the same total budget.
+        int waveCount = startedNight < 3 ? 1 : timings.Length;
+        while (nextWave < waveCount && cycle.NormalizedPhaseProgress >= timings[nextWave])
+        {
+            CurrentWave = ++nextWave;
+            int target = Mathf.CeilToInt(roster.Count * nextWave / (float)waveCount);
+            while (rosterIndex < target)
+                pending.Enqueue(roster[rosterIndex++]);
+            Warning?.Invoke("WAVE " + CurrentWave + " APPROACHING");
+        }
+
+        if (nextWave == waveCount && pending.Count == 0)
+            completed = true;
+    }
+
+    void Update()
+    {
+        TickWaves();
+        ProcessSpawnRequests();
+    }
+
+    public void ProcessSpawnRequests()
+    {
+        if (!isActiveAndEnabled || pending.Count == 0 || !cycle || !player || !navigation || !ground || !safe || !cycle.IsNighttime || !player.IsAlive)
+            return;
+        using (spawnMarker.Auto())
+        {
+            long start = System.Diagnostics.Stopwatch.GetTimestamp();
+            var p = pending.Peek();
+            // Keep the wave request queued while another biome occupies the cap.
+            if (TotalActiveCount >= Mathf.Max(1, maximumActive)) return;
+            if (!p || (p.archetype && ActiveType(p.archetype) >= p.archetype.maximumActive))
+            {
+                pending.Dequeue();
+                SkippedSpawns++;
+                attempts = 0;
+                return;
+            }
+
+            var bounds = ground.cellBounds;
+            for (int i = 0; i < 8 && pending.Count > 0; i++)
+            {
+                if (!navigation.TryReserveSearch())
+                    break;
+                attempts++;
+                var cell = new Vector3Int(UnityEngine.Random.Range(bounds.xMin, bounds.xMax), UnityEngine.Random.Range(bounds.yMin, bounds.yMax), 0);
+                Vector2 pos = ground.GetCellCenterWorld(cell);
+                if (sceneSpawnPoints.Count > 0 && UnityEngine.Random.value < .25f)
+                {
+                    var point = sceneSpawnPoints[UnityEngine.Random.Range(0, sceneSpawnPoints.Count)];
+                    if (point && point.gameObject.activeInHierarchy) pos = point.position;
+                }
+                if (Vector2.Distance(pos, player.transform.position) >= minimumPlayerDistance && Walkable(pos) && navigation.Find(pos, player.transform.position, spawnRoute, true))
+                {
+                    var e = Instantiate(p, pos, Quaternion.identity, container);
+                    e.world = this;
+                    e.name = p.archetype ? p.archetype.displayName : "Forest Stalker";
+                    enemies.RemoveAll(x => !x);
+                    enemies.Add(e);
+                    pending.Dequeue();
+                    attempts = 0;
+                    Physics2D.SyncTransforms();
+                    if (p.archetype && p.archetype.behavior != EnemyBehaviorProfile.Stalker)
+                        Warning?.Invoke(e.name.ToUpperInvariant() + " APPROACHING!");
+                    break;
+                }
+
+                if (attempts >= 256)
+                {
+                    pending.Dequeue();
+                    SkippedSpawns++;
+                    attempts = 0;
+                    break;
+                }
+            }
+
+            LastSpawnMilliseconds = (System.Diagnostics.Stopwatch.GetTimestamp() - start) * 1000.0 / System.Diagnostics.Stopwatch.Frequency;
+        }
+    }
+
+    public EnemyController[] Snapshot() => enemies.ToArray();
+}

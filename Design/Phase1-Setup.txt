@@ -1,0 +1,5 @@
+Preserved 116 pre-existing transforms and sprite appearances (camera zoom intentionally changed).
+Player spawn: (-1.80, -1.30)
+Configured solid footprints: 59
+Existing decorative Warrior preserved.
+Directional states use side-facing frames; no up/down art in pack.

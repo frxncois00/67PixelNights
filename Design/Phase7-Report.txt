@@ -1,0 +1,150 @@
+PHASE 7 — IMPLEMENTATION AND VALIDATION REPORT
+2026-11-06 | Unity 6000.6.4f1 | SampleScene
+
+A. IMPLEMENTATION SUMMARY
+Implemented one nighttime enemy type, state-driven movement/attacks, enemy health,
+night-start spawning, count progression, sunrise cleanup, safe-zone checks,
+equipped short-sword directional combat, knockback, damage flashes and threat HUD.
+This is an integrated implementation with PARTIAL acceptance coverage, not a claim
+that every requested edge case or physical input test passed.
+Checkpoint: Design/Backups/Phase7-20261106-233449.
+
+B. FILES CREATED
+Assets/Scripts/Enemies/EnemyController.cs (includes EnemyState)
+Assets/Scripts/Enemies/EnemyHealth.cs
+Assets/Scripts/Enemies/EnemySpawner.cs (includes difficulty and bounded queries)
+Assets/Scripts/Combat/PlayerMeleeCombat.cs
+Assets/Scripts/Combat/PlayerDamageFlash.cs
+Assets/Scripts/UI/NightThreatUI.cs
+Assets/Prefabs/Enemies/ForestStalker.prefab
+AgentScripts/SetupPhase7.cs
+AgentScripts/TestPhase7.cs
+AgentScripts/TestSword7.cs
+Associated Unity .meta files; Design/Phase7-Tests.txt, Phase7-SwordTests.txt,
+Phase7-{1280,1600,1920}.png and this report.
+
+C. FILES MODIFIED
+Assets/Scripts/Tools/PlayerToolController.cs: existing Space/click input routes to
+PlayerMeleeCombat only when Short Sword is equipped; other tools retain behavior.
+Assets/Scenes/SampleScene.unity: references, spawner, enemy container, combat,
+player damage feedback and HUD. No package changes.
+
+D. ENEMY PREFAB / SCENE SETUP
+ForestStalker uses a clearly named temporary dark-tinted Black Pawn silhouette.
+It is placeholder art, not a finished original creature; no glowing-eye artwork
+or dedicated enemy animation/audio was added.
+Kinematic Rigidbody2D, zero gravity, frozen rotation, interpolation, radius .22
+CircleCollider2D, Objects sorting layer and existing lit sprite material.
+GameSystems/EnemySpawner references existing cycle, safe zone, health, Ground,
+prefab and root Enemies container. Player has combat and damage flash components.
+Existing Canvas has NightThreatUI. No duplicate Canvas/EventSystem/player/camera.
+
+E. AI STATE MACHINE
+Idle pauses, Patrol selects nearby goals, Chase follows detected unprotected
+players, Search visits last seen location for three seconds, Retreat moves away
+from active protection, Attack winds up/revalidates/recovers, Dead stops damage.
+Defaults: health 30; patrol 1.2; chase 2; detection 5; attack range 1; damage 10;
+cooldown 2; windup .35; recovery .3. Inspector configuration is exposed.
+Movement samples five steering directions with ground-footprint, overlap and
+linecast checks. This is conservative local steering, not full pathfinding.
+
+F. SPAWNING
+Existing OnNightStarted/OnDayStarted events drive spawning and cleanup.
+256 bounded attempts per requested enemy. Reject protected areas, occupied
+footprints, missing Ground tiles and positions within six units of the player.
+Unavailable placements warn and skip. Sunrise deactivates immediately, destroys
+remaining enemies and clears the tracked list; no spawn coroutine can overlap.
+Spawn accessibility beyond local footprint is NOT guaranteed by connected-region
+navigation. Narrow passages/disconnected ground require further acceptance work.
+
+G. DIFFICULTY
+Night 1 count 2; +1 each night; maximum 10, bounded using long arithmetic.
+Health/damage growth omitted (optional); base stats stay predictable.
+
+H. SAFE ZONE
+Uses CampfireSafeZone.IsPositionSafe, IsPlayerSafe and CurrentSafeRadius.
+No duplicate radius or lighting-based protection. Attack validation rechecks
+protection at hit time. Relit enemies attempt outward movement through valid
+terrain; trapped enemies may need better route finding (not teleportation).
+
+I. SWORD COMBAT
+Owned/equipped basic_sword only; Space/click routed through original handler.
+15 damage, range 1.5, 100-degree facing arc, cooldown .6; busy/input/death gates.
+Each tracked enemy evaluated once per swing; linecast rejects blocked hits.
+Damage occurs on the existing gathering animation completion callback.
+Knockback uses bounded .2-second movement at configurable strength 2.5, with
+terrain/obstacle/protection checks. No sheep/resource combat crossover.
+
+J. TOOL VISUALS
+ToolGripPose, EquippedToolVisual, scale 1, neutral Pawn locomotion and the
+existing short blade are unchanged. Sword animation uses PlayerGatherAnimation.
+Empty initial inventory and all three original tool pickups retained.
+
+K. PLAYER HEALTH / DEATH
+Damage uses PlayerHealth.TakeDamage with Forest Stalker cause.
+PlayerDamageFlash provides a brief red tint and restores the prior color.
+Enemy attacks validate alive state, night, range, protection and line of sight
+at the actual hit time. Dead players are no longer targeted.
+Existing game-over/restart code was not rewritten.
+
+L. HUD
+Existing Canvas, compact text below day/night HUD. Shows night, active count,
+brief phase warnings and camp protection/exposure. Hidden during inventory/death.
+PASS: Unity camera captures reviewed at 1280x720, 1600x900 and 1920x1080;
+no observed clipping or overlap with existing HUDs at those resolutions.
+
+M. TEST RESULTS
+PASS compilation: failed=false; final current Console errors/warnings zero.
+PASS 18 direct checks in actual Play Mode: night count, protection and distance
+at spawn, initial health, bounded count progression, two-hit health/death,
+single death, active count, empty-hand rejection, protected attack rejection,
+sunrise/rapid phase cleanup, retained pickups and zoom.
+PASS 3 frame-based Play Mode sword checks: start/duplicate rejection, actual
+animated first hit reduces health to 15, second animated hit defeats enemy.
+Tests invoke runtime APIs; they are NOT physical keyboard/mouse tests.
+UNVERIFIED: complete enemy attack damage/cooldown, all AI transitions, arc edge
+cases, relight during windup, upgrades during retreat, trapped-enemy escape,
+player death during sword swing, and sustained natural-night behavior.
+
+N. PHASE 1–6 REGRESSION
+PASS 22 existing equipment/harvest Play Mode checks rerun: pickups, empty hands,
+equipment permissions, held icons, tree/stone/sheep damage, tool scale and
+switching block during action. See Design/ToolEquipment-TestResults.txt.
+PASS existing camera zoom remains 5 and three ground pickups retained.
+UNVERIFIED this phase: comprehensive movement/collision/camera, food/cooking,
+starvation/game-over/restart, inventory overflow/drop/recollection, natural
+resource respawn, lighting and campfire upgrade regressions. Historical Phase 6
+results were not counted as newly executed tests.
+
+O. MANUAL ACCEPTANCE STILL REQUIRED
+1. Open SampleScene and Play. Pick up Short Sword south of campfire with E.
+2. Tab/I: click sword then hotbar slot; close and select 1–5.
+3. F6 enters night; observe two enemies when sufficient space is available.
+4. Leave protection; observe detection/chase and a single windup hit reducing HP.
+5. Face enemy; Space/click twice, allowing each swing to finish. Verify defeat.
+6. Return to burning camp; verify protection. In a development test extinguish
+   CampfireController, then refuel/relight with existing interaction. Verify that
+   protection resumes during attacks and enemies retreat without crossing solids.
+7. F6 reaches sunrise; verify cleanup. Repeat several cycles and fire upgrades.
+8. Test axe Space/click, pickaxe R, sheep E, food F/USE FOOD, cooking C, inventory,
+   death/restart and all prior movement/collision controls.
+Physical keyboard/mouse acceptance: UNVERIFIED.
+Extended natural gameplay/endurance: UNVERIFIED.
+
+P. KNOWN LIMITATIONS
+Temporary tinted humanoid placeholder, no finished creature art/animation/audio.
+Local steering can stall in dense concave terrain; no connected-region spawn
+validation or route planner. Relight retreat from a fully blocked location is
+not guaranteed. Numeric nonfinite Inspector values are not comprehensively
+sanitized across every new setting. Further acceptance/hardening is needed.
+
+Q. EDITOR SETUP
+None required for integration: prefab and scene references assigned and saved.
+Unity left in Edit Mode. Runtime test inventory, movement and enemy changes were
+not saved. Original environment objects were not intentionally repositioned.
+
+R. PHASE 8 READINESS
+Do not treat Phase 7 as fully accepted yet. Complete the unverified cases and
+navigation hardening before relying on it for later progression. EnemyHealth
+provides controlled damage and death events; the existing health, inventory,
+cycle and safe zone remain authoritative. No later-phase systems added.

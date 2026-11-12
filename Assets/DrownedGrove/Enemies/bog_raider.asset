@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3a43e4e9081a846b1e0653e8a39a13, type: 3}
+  m_Name: bog_raider
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyArchetype
+  id: bog_raider
+  displayName: Mire Cultist
+  behavior: 0
+  health: 48
+  patrolSpeed: 1.25
+  chaseSpeed: 2.05
+  detectionRange: 5
+  attackRange: 1.08
+  damage: 10
+  cooldown: 1.75
+  windup: 0.5
+  recovery: 0.3
+  structureDamage: 9
+  knockbackResistance: 0.2
+  firstNight: 99
+  maximumActive: 6
+  spawnWeight: 0
+  sprite: {fileID: -5743543263408251984, guid: bc611a5f05b213446854d9a248412de7, type: 3}
+  tint: {r: 0.66, g: 0.92, b: 0.88, a: 1}
+  idleFrames:
+  - {fileID: -5743543263408251984, guid: bc611a5f05b213446854d9a248412de7, type: 3}
+  - {fileID: 1061786074165840523, guid: bc611a5f05b213446854d9a248412de7, type: 3}
+  - {fileID: -9728965519388545, guid: bc611a5f05b213446854d9a248412de7, type: 3}
+  - {fileID: 2073785921506836650, guid: bc611a5f05b213446854d9a248412de7, type: 3}
+  walkFrames:
+  - {fileID: -1378292131559350742, guid: a6cbd01c13601f3469b60275876ed594, type: 3}
+  - {fileID: 1000986555769447184, guid: a6cbd01c13601f3469b60275876ed594, type: 3}
+  - {fileID: -991632884122753618, guid: a6cbd01c13601f3469b60275876ed594, type: 3}
+  - {fileID: -5619530574395611020, guid: a6cbd01c13601f3469b60275876ed594, type: 3}
+  - {fileID: 4986835944086876770, guid: a6cbd01c13601f3469b60275876ed594, type: 3}
+  - {fileID: 7727202197108745423, guid: a6cbd01c13601f3469b60275876ed594, type: 3}
+  animationFPS: 8
+  burstDuration: 0.7
+  burstCooldown: 4
+  burstMultiplier: 1.4
+  lungeDistance: 1.5
+  slamRadius: 1.6

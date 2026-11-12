@@ -1,0 +1,12 @@
+PASS Six ground markers registered
+PASS Elevated tower excluded from ground AI
+PASS Disable unregisters markers
+PASS Re-enable registers exactly six markers
+PASS Duplicate registration is ignored
+PASS Existing wave spawner creates an enemy exactly at a registered marker (seed=9)
+PASS Spawned enemy retains existing world and AI references
+PASS Marker spawns share existing wave budget (active=1, pending=1, budget=2)
+PASS Active cap unchanged
+PASS Player distance and safe-zone restrictions retained
+PASS Sunrise cleans up marker-spawned enemies
+PASS Markers remain registered for future nights

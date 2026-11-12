@@ -1,0 +1,3 @@
+FAIL Re-enable spawner during night resumes schedule
+FAIL Destroyed structure windup never converts to player hit
+FAIL Null configured count row handled safely

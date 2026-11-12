@@ -1,0 +1,16 @@
+PASS Starting resources zero
+PASS Wood first two hits
+PASS Wood depletion
+PASS Wood yield 3
+PASS Wood pickups credited exactly once
+PASS Nearest pickup wins at camp
+PASS Gathered wood fuels existing campfire
+PASS Campfire upgrade spends wallet wood
+PASS Regrowth defers on player
+PASS Regrowth restores health and collider
+PASS Stone first two hits
+PASS Stone depletion
+PASS Stone yield 3
+PASS Stone pickups credited exactly once
+PASS Scrap gathered
+PASS Resources persist across two phase changes

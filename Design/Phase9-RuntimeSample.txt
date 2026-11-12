@@ -1,0 +1,9 @@
+Runtime sample: 15 seconds, ten-enemy configuration
+Active enemies: 10
+Editor update observations: 7844
+Navigation searches: 150
+Largest observed unscaled delta: 0.1642315 seconds
+Last route: 30 visited, 0.1849ms
+Finite positions: True
+Player health: 100
+This is a short editor runtime sample, not a profiler benchmark or full-night endurance test.

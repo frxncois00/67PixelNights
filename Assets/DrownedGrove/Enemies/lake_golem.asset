@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3a43e4e9081a846b1e0653e8a39a13, type: 3}
+  m_Name: lake_golem
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyArchetype
+  id: lake_golem
+  displayName: Lake Golem
+  behavior: 4
+  health: 140
+  patrolSpeed: 0.96250004
+  chaseSpeed: 1.75
+  detectionRange: 8
+  attackRange: 1.3
+  damage: 15
+  cooldown: 1.05
+  windup: 0.42
+  recovery: 0.35
+  structureDamage: 8
+  knockbackResistance: 0
+  firstNight: 1
+  maximumActive: 8
+  spawnWeight: 1
+  sprite: {fileID: -6006061381787968665, guid: dbc5bd2e8df6a2e40a5627b2102f1b2e, type: 3}
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  idleFrames:
+  - {fileID: -6006061381787968665, guid: dbc5bd2e8df6a2e40a5627b2102f1b2e, type: 3}
+  - {fileID: 3670146393941703254, guid: dbc5bd2e8df6a2e40a5627b2102f1b2e, type: 3}
+  - {fileID: 370902989113052992, guid: dbc5bd2e8df6a2e40a5627b2102f1b2e, type: 3}
+  - {fileID: 1582312169790669846, guid: dbc5bd2e8df6a2e40a5627b2102f1b2e, type: 3}
+  walkFrames:
+  - {fileID: 4105366161442982698, guid: 115ed2c868bca5d4ea2f15dd1693fbf4, type: 3}
+  - {fileID: 2546060621091499448, guid: 115ed2c868bca5d4ea2f15dd1693fbf4, type: 3}
+  - {fileID: -659156330795522101, guid: 115ed2c868bca5d4ea2f15dd1693fbf4, type: 3}
+  - {fileID: 3011430903716100510, guid: 115ed2c868bca5d4ea2f15dd1693fbf4, type: 3}
+  animationFPS: 6
+  burstDuration: 0.7
+  burstCooldown: 4
+  burstMultiplier: 1.4
+  lungeDistance: 1.4
+  slamRadius: 1.85

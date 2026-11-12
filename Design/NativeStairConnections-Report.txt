@@ -1,0 +1,11 @@
+Replaced east shoulder (-13,16): Cliff_8_4 -> RampFlank_3_5; matching top at (-13,17).
+West opening: x=-23,-22; y=17,18. Lower landing y=16 to cabin tier y=19.
+East opening: x=-15,-14; y=16,17. Lower landing y=15 to upper tier y=18.
+Removed 0 quarter-cell cliff barriers inside openings.
+PASS route (-24.50, 12.00) -> (-25.50, 19.50)
+PASS route (-16.75, 6.50) -> (-14.00, 19.00)
+PASS route (-27.00, 1.00) -> (-11.00, 14.50)
+PASS full-width stairs, blocked cliff bypass, unchanged lake/stream/bridges/path/decor and outside objects.
+Sorting retained: walkable ramps on Ground; cliff faces on Objects, Individual mode for existing Y-sort.
+Native atlas has grassy slopes, not discrete stair-tread art. RampCenter and native sloping shoulders used; no bridge sprites or generated tread bands.
+No cliff-face tiles needed removal: both 2x2 openings were already empty; restored native ramp presentation and cleared only barriers inside openings.

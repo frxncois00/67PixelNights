@@ -1,0 +1,24 @@
+BODY_A CHARACTER AND EQUIPMENT UPDATE
+Player now uses Pixel Crawler 2.0.3 Body_A, imported from the user's local pack.
+Directional Idle and Walk animation clips updated; Crush, Slice and Carry action
+frames assigned through BodyAActionFrames. Left uses mirrored side frames;
+up/down use their dedicated sheets. Eating neutral pose also uses Body_A.
+32 PPU on these lower-resolution character sheets keeps comparable world height;
+Point filtering, no compression, unit transform scale. Existing world unchanged.
+Source PNG/aseprite sheets and Terms copied to Assets/PixelCrawler.
+
+Also completed the preceding request:
+Corrected Basic Axe to Tool_02 and Short Sword to Tool_03.
+Equip / Hotbar button moves a bag item automatically into the hotbar:
+axe slot 1, pickaxe slot 2, sword slot 3; other items use a free slot, or swap
+with the selected slot when full. Displaced stack returns to source bag slot.
+Other bag contents remain untouched. Pickup still adds to the bag first.
+
+Validation: compiled; current Console errors zero. Runtime auto-equip checks
+passed for all three tools plus food. Inventory UI and actual Body_A scene
+capture inspected in Unity. Animated sword regression rerun (see latest
+Phase7-SwordTests.txt). Physical input and every action direction remain manual
+acceptance items. Native action sheets include their supplied weapon artwork;
+they are not dynamically redrawn to match every future inventory weapon.
+Saved scene; preview/test transforms and inventories discarded on leaving Play.
+Evidence: Design/EquipUX-Tests.txt, EquipUX-Inventory.png, BodyA-Unity.png.

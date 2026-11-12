@@ -1,0 +1,2 @@
+PASS Repair during live attack restores eight health and spends one kit
+PASS forest_stalker repaired live structure destruction: hits=8 expected=8 elapsed=14.376s min interval=1.999s configured=2s

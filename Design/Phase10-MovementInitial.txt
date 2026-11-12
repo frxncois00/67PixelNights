@@ -1,0 +1,7 @@
+PASS East staircase actual movement reached goal; travelled=3.239997
+PASS Rocky road actual movement reached goal; travelled=6.800077
+PASS South cabin road actual movement reached goal; travelled=8.960032
+PASS North forest road actual movement reached goal; travelled=9.200068
+PASS Pond bridge to cabin stairs actual movement reached goal; travelled=11.36004
+PASS South bridge to east terrace actual movement reached goal; travelled=17.92002
+FAIL West road did not reach goal within bound; position=(-30.00, 0.00) goal=(-27.00, 1.00) travelled=0

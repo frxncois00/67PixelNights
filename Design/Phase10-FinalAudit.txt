@@ -1,0 +1,10 @@
+PASS Correct production SampleScene
+PASS Single authoritative spawner and navigation
+PASS Required spawner Inspector references assigned
+PASS Five complete enemy prefab configurations
+PASS Enemy prefab scales remain1
+PASS No runtime enemies or acceptance runner saved into scene
+PASS Camera follow component and zoom5 retained
+PASS Player movement/equipment/animation/combat components retained
+PASS No missing scene MonoBehaviour scripts
+PASS SampleScene saved in Edit Mode

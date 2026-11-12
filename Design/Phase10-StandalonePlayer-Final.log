@@ -1,0 +1,53 @@
+Mono path[0] = 'C:/Users/Francis/My project/Builds/Phase10Acceptance/ForestAcceptance_Data/Managed'
+Mono config path = 'C:/Users/Francis/My project/Builds/Phase10Acceptance/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Found 1 interfaces on host : 0) 192.168.100.56
+Player connection [31820]  Target information:
+
+Player connection [31820]  * "[IP] 192.168.100.56 [Port] 55000 [Flags] 2 [Guid] 2985518375 [EditorId] 3447247049 [Version] 1048832 [Id] WindowsPlayer(2,DESKTOP-BK043NM) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] My project" 
+
+Player connection [31820] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.6.4f1 (12bfff696524)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Users/Francis/My project/Builds/Phase10Acceptance/ForestAcceptance_Data/UnitySubsystems
+[D3D12 Device Filter] Vendor Name: ATI
+[D3D12 Device Filter] Device Name: AMD Radeon RX 6600
+[D3D12 Device Filter] Driver Version: 32.0.21045.16010
+[D3D12 Device Filter] Feature Level: 12.2
+[D3D12 Device Filter] Graphics Memory: 8147 MB
+[D3D12 Device Filter] Processor Count: 16
+[D3D12 Device Filter] Device Type: Discrete
+GfxDevice: creating device client; kGfxThreadingModeSplitJobs
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        AMD Radeon RX 6600 (ID=0x73ff)
+    Vendor:          ATI
+    VRAM:            8147 MB
+    App VRAM Budget: 7379 MB
+    Driver:          32.0.21045.16010
+Begin MonoManager ReloadAssembly
+- Finished resetting the current domain, in  0.013 seconds
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+D3D11 device created for Microsoft Media Foundation video decoding.
+<RI> Initializing input.
+Using Windows.Gaming.Input
+UnloadTime: 2.938900 ms
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+CodeReloadManager destroyed
+GarbageCollector disposing of ComputeBuffer. Please use ComputeBuffer.Release() or .Dispose() to manually release the buffer.
+PlayerConnection::Cleanup[d3d12] Unreleased non-evictable resource 000001C044DFDB10 (size 65536 B, lastUsedFence 10) 'Buffer-16-4096'
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1794059440554,"processId":38832,"allocatedMemory":68300,"memoryLabels":[{"Default":5368},{"Thread":7696},{"Manager":18583},{"GfxDevice":3376},{"GfxThread":24},{"Animation":200},{"Audio":544},{"Serialization":17000},{"Input":2440},{"String":1547},{"PoolAlloc":768},{"ScriptManager":5696},{"CodeReload":440},{"CloudService":288},{"WebRequest":3910},{"VR":1928},{"Video":144},{"NativeArray":372},{"Subsystems":96},{"CoreBusinessMetrics":128}]}

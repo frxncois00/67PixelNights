@@ -1,0 +1,7 @@
+Final build: Grid/HiddenPondClearing, center (-19,14), cabin (-25.5,17), road entry (-27,1).
+286 new objects including 268 sprite objects and 6 tilemaps; connected prefab Assets/Prefabs/Environment/HiddenPondClearing.prefab.
+101 existing trees + 1 rock deactivated; none destroyed. Exact list: HiddenPond-OverlapChanges.txt.
+All 1276 original objects preserved; only allowed activation flags and Grid child list differ.
+Only changed pre-existing file: Assets/Scenes/SampleScene.unity.
+Edit and Play Mode route/collision checks pass. Editor Console: 0 errors, 0 warnings.
+See HiddenPondClearing-Report.md for final imports, substitutions, coordinates, licenses and verification.

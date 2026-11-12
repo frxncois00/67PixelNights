@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba750b9d448069642a28afecac74e087, type: 3}
+  m_Name: storage_chest
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingDefinition
+  item: {fileID: 11400000, guid: 4860fafaced80624694465d6a11dedc9, type: 2}
+  prefab: {fileID: 2752171352035153698, guid: 5b0f6d701a4226249bab22f148707fe5, type: 3}
+  footprint: {x: 0.9, y: 0.5}
+  maximumHealth: 50
+  storage: 1

@@ -1,0 +1,12 @@
+PASS wood_shovel action starts
+PASS wood_shovel actual damage hp=92
+PASS wood_knife action starts
+PASS wood_knife actual damage hp=88
+PASS wood_bow action starts
+PASS wood_bow actual damage hp=85
+PASS wood_spear action starts
+PASS wood_spear actual damage hp=80
+PASS wood_longsword action starts
+PASS wood_longsword actual damage hp=72
+PASS wood_hammer action starts
+PASS wood_hammer actual damage hp=62

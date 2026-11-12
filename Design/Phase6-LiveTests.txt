@@ -1,0 +1,6 @@
+PASS Frame-based F consumes one hotbar berry
+PASS Frame-based C starts cooking in range
+FAIL Natural cooking timer completes once
+FAIL Holding F did not repeatedly consume
+FAIL Wildlife stays on clear ground across 45 samples
+PASS Live wildlife wandered

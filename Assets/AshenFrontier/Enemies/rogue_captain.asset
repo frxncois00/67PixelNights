@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3a43e4e9081a846b1e0653e8a39a13, type: 3}
+  m_Name: rogue_captain
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyArchetype
+  id: rogue_captain
+  displayName: Ashen Captain
+  behavior: 3
+  health: 115
+  patrolSpeed: 1.15
+  chaseSpeed: 2.1
+  detectionRange: 6.2
+  attackRange: 1.3
+  damage: 16
+  cooldown: 1.6
+  windup: 0.38
+  recovery: 0.32
+  structureDamage: 14
+  knockbackResistance: 0.45
+  firstNight: 99
+  maximumActive: 6
+  spawnWeight: 0
+  sprite: {fileID: -4305002088602419163, guid: 97a5dcac915cd264397fb4b20223bd04, type: 3}
+  tint: {r: 1.06, g: 0.85, b: 0.66, a: 1}
+  idleFrames:
+  - {fileID: -4305002088602419163, guid: 97a5dcac915cd264397fb4b20223bd04, type: 3}
+  - {fileID: -3137719416112633485, guid: 97a5dcac915cd264397fb4b20223bd04, type: 3}
+  - {fileID: -7263898952724076276, guid: 97a5dcac915cd264397fb4b20223bd04, type: 3}
+  - {fileID: -684480488157220108, guid: 97a5dcac915cd264397fb4b20223bd04, type: 3}
+  walkFrames:
+  - {fileID: 2266486144642397681, guid: 3f5e379e6ea474d4c9c4e288e16d556e, type: 3}
+  - {fileID: -6633417133185293058, guid: 3f5e379e6ea474d4c9c4e288e16d556e, type: 3}
+  - {fileID: 74773741846843983, guid: 3f5e379e6ea474d4c9c4e288e16d556e, type: 3}
+  - {fileID: -7099695088299863478, guid: 3f5e379e6ea474d4c9c4e288e16d556e, type: 3}
+  - {fileID: 8824577193713716575, guid: 3f5e379e6ea474d4c9c4e288e16d556e, type: 3}
+  - {fileID: 7699524156645228037, guid: 3f5e379e6ea474d4c9c4e288e16d556e, type: 3}
+  animationFPS: 8
+  burstDuration: 0.7
+  burstCooldown: 4
+  burstMultiplier: 1.4
+  lungeDistance: 1.5
+  slamRadius: 1.6

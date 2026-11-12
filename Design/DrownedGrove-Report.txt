@@ -1,0 +1,148 @@
+===============================================================================
+THE DROWNED GROVE — THE SUNKEN WATERWORKS UPGRADE REPORT
+===============================================================================
+Scene: Assets/Scenes/SampleScene.unity
+Root Object: EnvironmentExpansion/DrownedGrove
+Discovery Region: id = "drowned_grove", title = "The Drowned Grove", bounds = Rect(-30, 3, 21, 21)
+
+1. BIOME CONCEPT & LAYOUT LOOP
+------------------------------
+The Drowned Grove has been upgraded into "The Sunken Waterworks" — an old lake
+waterworks settlement where the upper headwater pumps failed, the lower sluice
+workshops flooded, and amphibious lake creatures moved into the reeds, shallow
+waterline, and stone machinery.
+
+Preserved Existing Architecture:
+- Kept the existing Timber Cabin (-25.50, 20.75), western/eastern terrace stairs,
+  southern plank bridge, western plank bridge, northern plank crossing, cliffs,
+  waterfalls, and surrounding forest rim.
+
+Full Loop Route:
+  South Road Entrance (-26.5, 4.5)
+    -> 1. Fisherman's Landing (-26.5, 8.5)
+    -> 2. The Sluice Shaft & Inspection Walkway (-27.25, 16.15)
+    -> 3. Pumpkeeper's Cabin & Bounded Sluice Channel (-23.8, 21.0 / -18.0, 16.0)
+    -> 4. Flooded Pump Station Boss Arena (-12.0, 10.9)
+    -> 5. The Gauge Shrine Central Islet Stepping Stones (-17.0, 13.0)
+          OR Southern Plank Bridge (-18.5, 6.5)
+    -> Back to Fisherman's Landing (-26.5, 8.5)
+
+2. FIVE UPGRADED LANDMARKS & INTERACTIVE MECHANICS
+--------------------------------------------------
+A. South Entrance & West Bank — Fisherman's Landing (EnvironmentExpansion/DrownedGrove/FishermansLanding)
+   - Coherent shoreline work area featuring a 5-plank timber pier extending over
+     the water (-25.5..-23.4, 9.0) with 4 rope-tied Mooring Posts, a Broken Boat
+     Ramp & half-sunken skiff (-24.25, 7.75), 2 A-frame Fishing/Net Drying Racks
+     (-28.35, 8.85 and -28.35, 7.25), Tackle Crate, Salted Bait Barrel, Salvage
+     pickup (-27.7, 8.1), and a warm Entrance Dock Lantern (-25.5, 5.0).
+   - Preserves a wide unobstructed dry combat corridor (x = -27.2..-25.0) for
+     fighting and retreating from Reed Stalker ambushes.
+
+B. West Ruins Below the Cabin — The Sluice Shaft (EnvironmentExpansion/DrownedGrove/TheSluiceShaft)
+   - Converted the dark stone arch at (-27.25, 17.0) into The Sluice Shaft with
+     an iron Sluice Shaft Grate, damp water stains, and an old carved Stone
+     Depth Marker (-25.45, 16.85).
+   - Attached SluiceShaftEntrance (InteractionTarget): pressing [E] unlatches
+     and lifts the iron shaft grate and connects directly to the enclosed lower
+     stone maintenance chamber & raised Stone/Grate Inspection Walkway
+     (x = -28.8..-25.2, y = 14.8..16.6).
+   - Houses the interactive Sluice Drainage Wheel (SluiceDrainageWheel at
+     -25.65, 16.15), the shaft supply cache (Chest_SluiceShaft at -28.35, 16.05),
+     and 2 mineable slate nodes (-28.6, 13.8 and -26.0, 14.2), guarded by
+     Sluice Crabs.
+
+C. Upper Terrace & Waterfall — Pumpkeeper's Cabin (EnvironmentExpansion/DrownedGrove/PumpkeepersCabin)
+   - Preserved the cabin (-25.5, 20.75) and stairs (-22.5, 17.5).
+   - Dressed the yard with the Main Pump Housing (-23.8, 22.15), 4 Headwater
+     Flume Pipes (-22.4..-19.5, 22.15) feeding toward the upper waterfall,
+     Pumpkeeper's Workbench (-24.1, 19.95), Water-Level Gauge Markings, and
+     Chest_PumpkeepersCabin (-21.0, 22.8).
+   - Readable Environmental Clue: WaterworksDiagramClue (InteractionTarget) on
+     the Waterworks Diagram Board (-23.15, 20.05) beside the workbench hints at
+     turning the Sluice Shaft wheel below the stairs to open the spillway grate
+     and reach the shaft cache.
+   - Bounded Sluice Spillway Channel (-18.0, 16.0): Located right at the foot of
+     the cabin stairs and waterfall (readable directly from the Sluice Shaft
+     walkway). Turning the Drainage Wheel ([E]) visibly rotates the wheel, lifts
+     the iron Spillway Sluice Grate, drains the high turbid water to expose a
+     stone-lined channel bed, switches the water-level markers from flood-amber
+     to drained-cyan, and updates the channel's Water tilemap cells to
+     WaterUnderBridge (ColliderType.None) + ForestNavigation.Invalidate() so
+     players can walk straight across the drained channel.
+
+D. East Bank — Flooded Pump Station (EnvironmentExpansion/DrownedGrove/FloodedPumpStation)
+   - Replaced the old stone ring with a recognizable Flooded Pump Station ruin:
+     a half-submerged Broken Waterwheel at the lake edge (-14.15, 11.35) with
+     animated water ripples, a monumental stone-and-iron Pump Station Sluice
+     Gate bulkhead (-12.0, 12.55) with hoist chains and stone piers, and a
+     3x3 Raised Stone & Timber Service Platform (-13.0..-11.0, 9.6..11.5).
+   - Cleared the two pinching East Bank boulders to provide a clean dodge arena
+     with routes back to both bridges and the Gauge Shrine stepping stones.
+   - Houses The Floodgate Keeper boss encounter (-12.0, 10.9),
+     Chest_FloodedPumpStation (-10.45, 11.75), and PumpStation_Salvage (-10.4, 9.1).
+
+E. Central Islet — The Gauge Shrine (EnvironmentExpansion/DrownedGrove/TheGaugeShrine)
+   - Turned the central 2x2 lake islet (-18..-16, 12..14) into The Gauge Shrine
+     with a carved Stone Water Gauge & Brass Lantern Monument (-17.35, 13.45),
+     warm shrine lantern (-17.65, 12.35), and reward stash Chest_GaugeShrine
+     (-16.35, 13.45).
+   - Connected the islet with walkable mossy limestone Stepping Stones eastward
+     to the Flooded Pump Station (-15.65..-14.65, 12.15..12.95) and southward
+     to the southern peninsula/bridge (-16.55..-16.35, 10.75..11.55) using
+     WaterUnderBridge (ColliderType.None) so both player movement and
+     ForestNavigation enemy pathfinding cross reliably while preserving open
+     lake water around the islet.
+
+3. LAKE CREATURE ROSTER (13 PROXIMITY SLOTS, LOCAL CAP 5, GLOBAL CAP 10)
+------------------------------------------------------------------------
+Replaced all rogue-style encounters in The Drowned Grove with 4 custom lake
+creatures (Assets/Scripts/Environment/SunkenWaterworksCreature.cs):
+
+1) Reed Stalker (Assets/DrownedGrove/Enemies/reed_stalker.asset, 5 slots)
+   - Placement: Fisherman's Landing & bankside reed beds.
+   - Behavior: Hides crouched in bankside reeds (68% alpha camouflage + reed
+     cluster overlay). Shaking reeds and an expanding water ripple ring warn the
+     player (0.60s windup) before a short lunge (1.55u) onto dry ground.
+   - Night Tell: Chartreuse bioluminescent predator eyes + subtle Point Light 2D.
+
+2) Sluice Crab (Assets/DrownedGrove/Enemies/sluice_crab.asset, 5 slots)
+   - Placement: Sluice Shaft walkway, cabin terrace, and Pump Station approaches.
+   - Behavior: Guards its front with its copper-and-slate shell (frontal hits
+     take 0.35x damage with a cyan shell-deflect flash). Executes a slow claw
+     strike (0.68s windup) and then exposes its vulnerable side for 1.65s
+     (taking 1.35x bonus damage with an amber weak-side indicator).
+   - Night Tell: Bioluminescent cyan-amber carapace vents + Point Light 2D.
+
+3) Lantern Eel (Assets/DrownedGrove/Enemies/lantern_eel.asset, 2 slots)
+   - Placement: Shallow waterline beside The Gauge Shrine islet (-16.1, 12.3)
+     and Flooded Pump Station (-13.6, 10.6).
+   - Behavior: Tethered to the shallow shoreline edge; projects a clearly marked
+     rectangular water-surge lane (length 2.75u, width 0.75u) across a narrow
+     strip of shoreline during its 0.85s windup, then surfaces at the bank edge
+     for 2.20s so melee and bow attacks reliably hit its collider (1.35x damage
+     while surfaced).
+   - Night Tell: Bright golden-cyan angler lantern lure orb above the water.
+
+4) The Floodgate Keeper — Boss (Assets/DrownedGrove/Enemies/floodgate_keeper.asset, 1 slot)
+   - Placement: Flooded Pump Station arena (-12.0, 10.9), 135 HP, 16 damage.
+   - Behavior: Alternates a close-range paddle-cleaver sweep with a telegraphed
+     water surge (length 3.6u, width 0.95u) down one lane of the pump platform.
+     Exposes its pressurized Hydro-Core weak point for 2.20s after each surge
+     (taking 1.50x weak-point damage). Drops FloodgateKeeperSpoils (Scrap, Stone,
+     Wood, Berries) upon defeat via AshenFrontierEncounterController.
+   - Night Tell: Pressurized cyan-gold Hydro-Core & helm visor beacon.
+
+4. SHARED CODE CHANGES & ASHEN FRONTIER VERIFICATION
+----------------------------------------------------
+- Assets/Scripts/Enemies/EnemyHealth.cs:
+  Added optional `public Func<float, Vector2, float> damageModifier;` (null on
+  all standard and Ashen Frontier enemies; used by SunkenWaterworksCreature for
+  Sluice Crab directional shell guard, Lantern Eel surface window, and Floodgate
+  Keeper weak-point multiplier).
+- Assets/Scripts/Enemies/EnemyController.cs:
+  Added optional delegates `customBeginAttack`, `customExecuteAttack`,
+  `customCancelAttack`, and `customLateUpdate` (all null on standard and Ashen
+  Frontier enemies).
+- Verified in Play Mode that The Ashen Frontier (EnvironmentExpansion/AshenFrontier)
+  behaves identically with zero regressions.
+===============================================================================

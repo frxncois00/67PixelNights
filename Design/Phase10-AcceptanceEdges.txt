@@ -1,0 +1,3 @@
+PASS Re-enable spawner during night resumes schedule
+PASS Destroyed structure windup never converts to player hit
+PASS Null configured count row handled safely

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b573cfaeb0444947891e6bd079bcdb0, type: 3}
+  m_Name: Sheep
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalData
+  displayName: Sheep
+  idleFrames:
+  - {fileID: 951832292, guid: 83935279c389a7b4ea00ee3a52d39431, type: 3}
+  - {fileID: 442096614, guid: 83935279c389a7b4ea00ee3a52d39431, type: 3}
+  - {fileID: -903554421, guid: 83935279c389a7b4ea00ee3a52d39431, type: 3}
+  - {fileID: -926156292, guid: 83935279c389a7b4ea00ee3a52d39431, type: 3}
+  - {fileID: 1256781238, guid: 83935279c389a7b4ea00ee3a52d39431, type: 3}
+  - {fileID: 1351816601, guid: 83935279c389a7b4ea00ee3a52d39431, type: 3}
+  walkFrames:
+  - {fileID: 204427289, guid: 9adc640e8e30fca4faa8d61db01ba4af, type: 3}
+  - {fileID: -1471853950, guid: 9adc640e8e30fca4faa8d61db01ba4af, type: 3}
+  - {fileID: 862622298, guid: 9adc640e8e30fca4faa8d61db01ba4af, type: 3}
+  - {fileID: -800933038, guid: 9adc640e8e30fca4faa8d61db01ba4af, type: 3}
+  health: 30
+  moveSpeed: 1.3
+  roamingRadius: 4
+  walkingSeconds: 4
+  pauseSeconds: {x: 1, y: 3}
+  fleeWhenHit: 1
+  fleeSeconds: 3
+  fleeSpeedMultiplier: 1.8
+  bodyRadius: 0.28
+  animationFPS: 8
+  artworkFacesLeft: 0
+  drops:
+  - item: {fileID: 11400000, guid: 427d34b5c2199934e823f238f035b1a3, type: 2}
+    minimum: 1
+    maximum: 2
+    chance: 1
+  - item: {fileID: 11400000, guid: 058fde40e4966ea419ddb26a9e3985ea, type: 2}
+    minimum: 1
+    maximum: 3
+    chance: 1

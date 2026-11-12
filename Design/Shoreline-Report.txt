@@ -1,0 +1,2 @@
+Repainted 264 grass cells with neighbor-aware native borders. Added shore foam at 300 boundary cells. PASS: both water tilemaps byte-for-byte unchanged; all existing colliders unchanged; ground footprint unchanged. Scene saved.
+Added 63 native 16-pixel grass fringe strips along the outer pond overlay. Water tilemap and collision preserved.

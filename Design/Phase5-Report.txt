@@ -1,0 +1,218 @@
+PHASE 5 — INVENTORY & ITEM SYSTEM
+Implemented and validated in Unity 6000.6.4f1 on 2026-11-06.
+
+A. IMPLEMENTATION SUMMARY
+Implemented directly in Assets/Scenes/SampleScene.unity.
+20 main slots in a 4 x 5 grid and 5 bottom-centered hotbar slots share one authoritative InventoryController.
+Four ScriptableObject definitions provide stable IDs, names, descriptions, icons, categories, stack limits and equip/drop rules.
+Resources stack to 99. The non-stackable Basic Axe starts in hotbar slot 1 and cannot be dropped through item management.
+Supported operations include add, all-or-nothing add, quantity/capacity queries, consume across stacks, move, swap, merge, split, equip, unequip, drop one and drop stack.
+Click-based selection leaves items in their slots. Closing the inventory cannot strand a cursor-held item.
+Partial pickups retain overflow in the world. Full pickups display INVENTORY FULL and remain collectible.
+The inventory blocks movement and world actions while open. Day/night and campfire fuel continue.
+No hunger, combat, crafting, save/load or other later-phase systems were added.
+
+B. NEW FILES
+Assets/Scripts/Inventory/ItemDefinition.cs
+Assets/Scripts/Inventory/InventorySlot.cs
+Assets/Scripts/Inventory/InventoryController.cs
+Assets/Scripts/Inventory/InventoryResourceAdapter.cs
+Assets/Scripts/Inventory/EquipmentController.cs
+Assets/Scripts/Inventory/ItemDropController.cs
+Assets/Scripts/UI/InventoryUI.cs
+Assets/Scripts/UI/InventorySlotUI.cs
+Assets/Scripts/UI/ItemTooltipUI.cs
+Assets/Scripts/UI/InventoryNotificationUI.cs
+Assets/Items/basic_axe.asset
+Assets/Items/wood_log.asset
+Assets/Items/stone.asset
+Assets/Items/scrap.asset
+Unity generated corresponding .meta files.
+AgentScripts/SetupPhase5.cs
+AgentScripts/TestPhase5.cs
+AgentScripts/TestPhase5Input.cs
+AgentScripts/TestPhase5Keys.cs
+Design/Phase5-LogicTests.txt
+Design/Phase5-InputTests.txt
+Design/Phase5-KeyTests.txt
+Design/Phase5-RegressionTests.txt
+Design/Phase5-1280.png
+Design/Phase5-1600.png
+Design/Phase5-1920.png
+Design/Phase5-SwingBefore.txt (temporary diagnostic evidence)
+Design/Phase5-Report.txt
+
+InventorySlot combines the requested ItemStack/InventorySlot data responsibilities.
+InventoryUI and InventorySlotUI also manage the five hotbar views, avoiding a duplicate HotbarUI controller.
+
+C. EXISTING FILES MODIFIED
+Assets/Scripts/Inventory/TemporaryResourceWallet.cs
+  Compatibility facade forwards every balance operation to the inventory adapter.
+  Serialized starting-resource fields and IWoodWallet API are retained.
+Assets/Scripts/Player/PlayerMovement.cs
+  Added the shared inventory modal check when reading movement and writing Rigidbody2D velocity.
+  Speed, facing, animation logic and Rigidbody settings otherwise preserved.
+Assets/Scripts/Interaction/PlayerInteractionController.cs
+  Added shared modal block. E now handles contextual interaction only.
+  Prompt advertises Space/click for chopping. R retains mining.
+Assets/Scripts/Tools/PlayerToolController.cs
+  Restored Space/left-click axe input following the user's explicit Phase 5 clarification.
+  Added equipment gating and pointer-over-UI protection for mouse attacks.
+  Existing range, cooldown, facing, target selection and action animation retained.
+Assets/Scripts/Resources/ResourcePickup.cs
+  Added quantity, partial acceptance, remaining-quantity prompt and modal guard.
+Assets/Scripts/Resources/ResourceNode.cs
+  Blocks scrap interaction during inventory and reports full inventory without depleting the node.
+Assets/Scripts/Campfire/CampfireInteraction.cs
+  Blocks refuel, upgrade and interaction during inventory.
+Assets/Scenes/SampleScene.unity
+  Added inventory components, item references, window, hotbar and EventSystem.
+  Repositioned only existing bottom HUD labels to make room for the hotbar.
+
+CameraFollow, day/night scripts, campfire fuel/upgrade logic, action animation code and player animation assets were not rewritten.
+
+D. SCENE INTEGRATION
+Player now has InventoryController, InventoryResourceAdapter, EquipmentController and ItemDropController.
+TemporaryResourceWallet references the adapter. Equipment references inventory and existing PlayerGatherAnimation.
+Drop controller references Ground Tilemap and the existing lit sprite material.
+Existing Canvas contains InventoryInterface with InventoryPanel, InventoryGrid (20 slots), fixed item detail tooltip, close/drop buttons, HotbarPanel (5 slots) and InventoryNotifications.
+Existing ResourceUI, campfire and day/night HUDs are retained.
+One EventSystem with InputSystemUIInputModule provides UI input.
+Final Editor inspection confirmed one inventory, one Canvas, one EventSystem, 25 valid slot reference groups and assigned ground/adapter.
+Canvas Scaler uses 1920 x 1080 with Scale With Screen Size. Icons preserve aspect ratio.
+Inventory panel starts closed.
+SampleScene is saved and Unity was left in Edit Mode.
+
+E. INVENTORY ARCHITECTURE
+InventoryController owns 25 runtime slots. Indices 0-19 are the main inventory; 20-24 are the hotbar.
+Slot contents have public read-only accessors. Mutations validate quantities and indices.
+Adding fills existing stacks before empty main slots and then empty hotbar slots.
+TryAdd rejects the whole transaction if capacity is insufficient. Add returns the accepted quantity.
+Remove checks total holdings before consuming across stacks. Move merges or swaps without quantity duplication.
+Split moves half into the first available slot and rejects safely when none is free.
+The UI keeps a selected slot index rather than extracting a stack into temporary storage.
+Changed events refresh the inventory, equipment, wallet facade and resource totals.
+Item assets use stable IDs basic_axe, wood_log, stone and scrap. Definitions are canonical catalog assets.
+
+F. RESOURCE WALLET MIGRATION
+InventoryResourceAdapter maps existing ResourceType values to the item definitions.
+TemporaryResourceWallet stores no independent current balance.
+GetResourceCount, TryAddResource, TryConsumeResource, AddWood and TrySpend remain compatible.
+AddResource returns the accepted quantity for partial pickups.
+Legacy serialized starting quantities are applied once at Start. SampleScene starts with zero resources.
+Development/Restore 30 Test Wood tops up the inventory rather than replacing another balance.
+
+G. EQUIPMENT INTEGRATION
+Hotbar slot 1 contains Basic Axe and starts selected.
+Selecting an empty or resource slot disables tree and rock tool actions. Selecting the axe re-enables them.
+Equipment changes and inventory opening are rejected during an active gathering animation.
+The existing worker artwork can still depict an axe in its locomotion sprite while unequipped. No animation art was replaced.
+The current R pickaxe remains a secondary action available while the Basic Axe tool slot is equipped.
+A separate pickaxe inventory item was not added in this phase.
+
+H. CAMPFIRE INTEGRATION
+Existing IWoodWallet transactions consume inventory wood.
+Refueling checks fuel capacity before spending; relighting and upgrades continue using existing costs.
+No second E listener was introduced.
+Existing nearest-valid-target selection remains authoritative. Only its selected action executes.
+Menu-open checks apply to E interaction and U upgrade.
+Inventory totals and ResourceUI update from the same event chain.
+
+I. CONTROLS AND UI
+WASD / arrows — movement
+Space / left-click — axe chopping when the Basic Axe is selected
+R — existing pickaxe mining when the tool is equipped
+E — nearest contextual pickup, scrap, refuel or relight
+U — campfire upgrade
+Tab / I — toggle inventory
+Escape — close inventory
+1-5 — select hotbar slot during gameplay
+G — drop one from the selected droppable hotbar stack
+Left-click a stack then another slot — move, merge or swap
+Click the selected slot again — deselect
+Right-click a stack — split half into a free slot
+Drop One / Drop Stack — drop selected resource quantities
+Close button — close and release modal input
+
+The user explicitly chose to restore Space/click rather than retain E chopping.
+Number-key selection is suppressed while typing in the project's Unity UI InputField or while the inventory is open.
+The fixed detail panel shows item name, description, category and quantity/maximum without extending off screen.
+Existing pickup and campfire messages are reused; new inventory notifications cover equipment and drop actions.
+
+J. TEST RESULTS
+PASS — Unity compilation completed with failed=false, errors=[], compilationFailed=false.
+PASS — final current Unity Console had zero errors and zero warnings. Retained Pipeline errors predate Phase 5.
+PASS — all 34 direct Play Mode inventory/integration checks in Phase5-LogicTests.txt.
+PASS — starting axe and zero-resource state observed in separate fresh Play Mode sessions.
+PASS — 80 + 30 wood distributes as 99 + 11.
+PASS — split, merge, swap, hotbar movement and closing selection conserve quantities.
+PASS — inventory totals, wallet totals and ResourceUI agree.
+PASS — partial pickup accepts four of ten and leaves six; full pickup remains.
+PASS — repeated use of the same collected pickup does not add twice.
+PASS — dropped quantities are deducted once, placed on clear Ground tiles and recollected without duplication.
+PASS — a blocked drop area rejects the drop and preserves quantity.
+PASS — the Basic Axe cannot be dropped.
+PASS — refuel, relight and upgrade spend the exact inventory amount once.
+PASS — a nearer pickup beside the campfire wins selection and does not add fuel.
+PASS — open inventory blocks pickup, refuel, upgrade, chop and movement.
+PASS — direct day timer and fuel advancement still work with inventory open.
+PASS — wallet disable/re-enable yields one event subscription.
+PASS — UI disable/re-enable releases modal state.
+PASS — nine direct input-state/UI checks in Phase5-InputTests.txt, including held W block/resume, normalized diagonal speed, arrow movement, release stop, EventSystem stack selection and tooltip refresh.
+PASS — nine frame-based Input System tests in Phase5-KeyTests.txt. Tab opens, Escape closes, I opens/closes, and all hotbar number keys select the expected slot. These used a virtual keyboard across actual Editor Play frames, not physical keys.
+PASS — accepted animated axe swing reduced Tree_12 health from 3 to 2, completed with Busy=false and restored movement. Switching equipment and opening inventory were rejected while it was busy.
+PASS — actual Unity camera renders inspected at 1280x720, 1600x900 and 1920x1080. All 20 main slots, five hotbar slots, details and buttons fit. Text is readable and icons retain proportions.
+PASS — final saved-scene comparison to the checkpoint found no differences in pre-existing world transform positions/scales/rotations or sprite/color references.
+PASS — final scene retained the existing saved Player position (9.256223, 1.1597306, 0) and camera orthographic size 5.
+UNVERIFIED — physical keyboard/mouse acceptance, including real mouse attacks and button interaction.
+UNVERIFIED — full prolonged movement/collision/camera gameplay, natural full regrowth timers and uninterrupted day/night cycles.
+UNVERIFIED — stress testing under arbitrary third-party event subscribers or invalid manual scene edits.
+
+Test development notes
+An initial nearest-target test put its pickup exactly at the campfire. The existing deterministic tie-break correctly selected the campfire. The test was corrected to place the pickup closer.
+One rapid stop/start validation run was not a clean initialization baseline and produced ordering failures. Fresh sessions were verified before the final passing run.
+A synchronous synthetic key harness could read held states but could not validate edge-triggered keys in one Editor call. It was replaced by the passing frame-based key harness.
+Several tests invoke gameplay methods directly, and the 34-check deterministic run was performed with the Editor paused in Play Mode. They do not establish physical input or natural elapsed-time behavior.
+Temporary test objects/resources and runtime movement were discarded on leaving Play Mode.
+
+K. PHASE 1-4 REGRESSION
+PASS — Phase 4's existing 16-check direct regression suite ran against the inventory facade. Wood/stone damage, depletion, yields, pickups, scrap, campfire spending, occupied regrowth deferral, clear regrowth and balances across phase changes passed.
+PASS — Player Rigidbody2D/Animator/PlayerMovement and CameraFollow components remain configured; camera zoom unchanged.
+PASS — synthetic held movement, diagonal normalization, arrows and stopping passed.
+PASS — day/night and campfire HUDs remain visible in Unity captures.
+UNVERIFIED — complete physical Phase 1 movement/collision/camera acceptance.
+UNVERIFIED — complete natural Phase 2 lighting cycle and F6/F7 physical input acceptance this phase.
+UNVERIFIED — complete Phase 3 safe-zone/light behavior and full timed Phase 4 regrowth this phase.
+Existing tests are documented as direct checks, not blanket verification of all prior phases.
+
+L. KNOWN LIMITATIONS
+Scrap uses the same existing pickaxe-shaped placeholder icon as the earlier scrap piles. No unrelated assets were downloaded.
+The worker's existing movement sprite includes its axe even when the tool is unequipped; tool damage and action animation are gated.
+The pickaxe has no separate inventory item yet.
+The UI uses existing Unity Text/LegacyRuntime font, consistent with the other HUDs.
+Split sends half to the first free slot; it does not use a dragged cursor stack.
+Items are session-local and reset when restarting Play Mode. No persistent save system was added.
+Legacy ResourceNode world-drop placement still uses its existing bounded search; its earlier warning behavior when no space exists was outside this inventory change.
+The tooltip is a fixed inventory detail panel, not a floating cursor-following tooltip.
+
+M. MANUAL ACCEPTANCE
+No Inspector setup or code changes are required.
+1. Open Assets/Scenes/SampleScene.unity and press Play. Focus Game view.
+2. Confirm slot 1 shows the axe and all resource counts are zero.
+3. Press Tab, I and Escape. Check opening/closing and that movement stops only while open.
+4. Press 2 to select an empty slot. Try Space/click and R near a node. Re-select 1 and confirm the appropriate tool animation works.
+5. Chop a tree with Space/click, then E near its drops. Use R near a mineable rock.
+6. Open inventory. Click a stack and an empty slot, swap two different types, right-click to split, hover/select to inspect details.
+7. Drop one or the whole selected resource stack. Close inventory and recollect with E.
+8. At the campfire, E refuels/relights and U upgrades using the displayed inventory wood.
+9. While inventory is open, try E/U/Space/R and watch the day timer and fuel continue.
+10. Check ordinary movement, tree/house collision, camera following and animations.
+11. Check the UI at the three target resolutions, then stop Play. Runtime test quantities are not saved.
+
+N. PHASE 6 READINESS
+New item definitions can be added to the catalog with stable IDs and stack/equipment/drop metadata.
+Inventory operations and change events provide a small base for later consumable actions.
+Food, health, crafting and persistence have intentionally not been implemented.
+
+CHECKPOINT
+Design/Backups/Phase5-20261106-211512 contains pre-change Scripts and SampleScene.unity.

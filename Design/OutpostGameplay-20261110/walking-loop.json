@@ -1,0 +1,101 @@
+{
+  "done": true,
+  "success": true,
+  "error": null,
+  "leg": 13,
+  "startFrame": 2641,
+  "frame": 11032,
+  "log": [
+    {
+      "pass": true,
+      "name": "Walk leg 0",
+      "position": "(11.39, 19.95)",
+      "target": "(12.00, 20.00)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 1",
+      "position": "(15.36, 20.96)",
+      "target": "(16.00, 21.00)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 2",
+      "position": "(18.95, 17.39)",
+      "target": "(19.00, 18.00)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 3",
+      "position": "(18.95, 13.63)",
+      "target": "(19.00, 13.00)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 4",
+      "position": "(20.46, 11.09)",
+      "target": "(21.00, 11.00)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 5",
+      "position": "(25.37, 7.06)",
+      "target": "(26.00, 7.00)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 6",
+      "position": "(25.48, 10.85)",
+      "target": "(26.00, 11.00)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 7",
+      "position": "(25.34, 12.94)",
+      "target": "(26.00, 13.00)"
+    },
+    {
+      "pass": true,
+      "name": "Captain defeated using equipped sword and animation-driven PlayerMeleeCombat",
+      "attacks": 8
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 8",
+      "position": "(27.41, 9.51)",
+      "target": "(28.00, 9.30)"
+    },
+    {
+      "pass": true,
+      "name": "Guarded loot opened after combat"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 9",
+      "position": "(19.63, 13.98)",
+      "target": "(19.00, 14.00)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 10",
+      "position": "(16.36, 22.96)",
+      "target": "(17.00, 23.00)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 11",
+      "position": "(16.12, 24.47)",
+      "target": "(15.50, 24.50)"
+    },
+    {
+      "pass": true,
+      "name": "Walk leg 12",
+      "position": "(15.53, 24.90)",
+      "target": "(15.50, 25.50)"
+    },
+    {
+      "pass": true,
+      "name": "Upper cabin cache reached and looted"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+PASS forest_stalker live structure destruction: hits=7 expected=7 elapsed=12.467s min interval=2.005s configured=2s
+PASS shadow_wolf live structure destruction: hits=9 expected=9 elapsed=13.275s min interval=1.600s configured=1.6s
+PASS night_crawler live structure destruction: hits=5 expected=5 elapsed=10.640s min interval=2.500s configured=2.5s
+PASS forest_brute live structure destruction: hits=2 expected=2 elapsed=3.801s min interval=3.001s configured=3s
+PASS ancient_stalker live structure destruction: hits=2 expected=2 elapsed=4.021s min interval=3.001s configured=3s
+PASS Repair during live attack restores eight health and spends one kit
+FAIL forest_stalker repaired live structure destruction: hits=7 expected=8 elapsed=14.376s min interval=1.999s configured=2s

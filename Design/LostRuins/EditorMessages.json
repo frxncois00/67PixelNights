@@ -1,0 +1,32 @@
+[
+  {
+    "timestampUtc": "2026-11-11T16:25:57.3471014Z",
+    "level": "warn",
+    "message": "Account API did not become accessible within 30 seconds. This may be due to network issues or editor focus."
+  },
+  {
+    "timestampUtc": "2026-11-11T16:43:08.2082936Z",
+    "level": "warn",
+    "message": "Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect"
+  },
+  {
+    "timestampUtc": "2026-11-11T16:50:01.2141619Z",
+    "level": "warn",
+    "message": "Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect"
+  },
+  {
+    "timestampUtc": "2026-11-11T16:56:49.3755173Z",
+    "level": "warn",
+    "message": "Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect"
+  },
+  {
+    "timestampUtc": "2026-11-11T16:59:01.4664137Z",
+    "level": "error",
+    "message": "Command 'capture game_view' failed: No camera found to capture."
+  },
+  {
+    "timestampUtc": "2026-11-11T16:59:02.5660495Z",
+    "level": "error",
+    "message": "Command 'capture game_view' failed: No camera found to capture."
+  }
+]

@@ -1,0 +1,7 @@
+New transforms=212, renderers=166, colliders=82, tilemaps=6, chests=3, spawn markers=7
+Abnormal local scales=0
+Missing scripts=0
+Existing scattered rocks disabled=50 (0 final footprint overlaps)
+Grid matches=True
+No duplicate global light=1
+Collider roots lacking two-cell land margin=EnvironmentExpansion/GoblinOutpost/Quarry/Mine Bank Boulder_02;EnvironmentExpansion/GoblinOutpost/GoblinCamp/Palisade Ring - Timber Fence/Palisade_20

@@ -1,0 +1,4 @@
+PASS Road to (-22.00, 19.50)
+PASS Road to (-25.50, 19.50)
+PASS Continuous stairs and landing clearance
+PASS Water and existing colliders unchanged

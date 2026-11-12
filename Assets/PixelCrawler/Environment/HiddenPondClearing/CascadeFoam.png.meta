@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 16eca35ca749b224ab3f59811b1e41c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2111092632248810925
+    second: CascadeFoam_0
+  - first:
+      213: -5481085346377012444
+    second: CascadeFoam_1
+  - first:
+      213: -8334955035560309296
+    second: CascadeFoam_2
+  - first:
+      213: -1302228098113188949
+    second: CascadeFoam_3
+  - first:
+      213: -6289659141798762596
+    second: CascadeFoam_4
+  - first:
+      213: 5746175151529678244
+    second: CascadeFoam_5
+  - first:
+      213: -4463645481985104891
+    second: CascadeFoam_6
+  - first:
+      213: -1925305355974443212
+    second: CascadeFoam_7
+  - first:
+      213: -4038068236298172804
+    second: CascadeFoam_8
+  - first:
+      213: -6963424932098739186
+    second: CascadeFoam_9
+  - first:
+      213: 7126505355779123028
+    second: CascadeFoam_10
+  - first:
+      213: 2070378454346959437
+    second: CascadeFoam_11
+  - first:
+      213: -7644360733971759578
+    second: CascadeFoam_12
+  - first:
+      213: -5329625895534630548
+    second: CascadeFoam_13
+  - first:
+      213: 2241787099151243884
+    second: CascadeFoam_14
+  - first:
+      213: 4706742789089040072
+    second: CascadeFoam_15
+  - first:
+      213: -1518305237527872178
+    second: CascadeFoam_16
+  - first:
+      213: -5283105212164448087
+    second: CascadeFoam_17
+  - first:
+      213: 523307768068954938
+    second: CascadeFoam_18
+  - first:
+      213: 2706020584934484667
+    second: CascadeFoam_19
+  - first:
+      213: -2690794272780943450
+    second: CascadeFoam_20
+  - first:
+      213: 8762133857078839924
+    second: CascadeFoam_21
+  - first:
+      213: -7439125762270775287
+    second: CascadeFoam_22
+  - first:
+      213: -8952796629554490359
+    second: CascadeFoam_23
+  - first:
+      213: -5772513610726698509
+    second: CascadeFoam_24
+  - first:
+      213: 3067597892714425588
+    second: CascadeFoam_25
+  - first:
+      213: 4789373574500385891
+    second: CascadeFoam_26
+  - first:
+      213: -6522743045132614950
+    second: CascadeFoam_27
+  - first:
+      213: 1406755327170530170
+    second: CascadeFoam_28
+  - first:
+      213: -133945550450865223
+    second: CascadeFoam_29
+  - first:
+      213: 3598301777994992442
+    second: CascadeFoam_30
+  - first:
+      213: -1303671443601564545
+    second: CascadeFoam_31
+  - first:
+      213: 735356369783718547
+    second: CascadeFoam_32
+  - first:
+      213: -7781322637190424385
+    second: CascadeFoam_33
+  - first:
+      213: 8680995371924976345
+    second: CascadeFoam_34
+  - first:
+      213: -4719158652699949345
+    second: CascadeFoam_35
+  - first:
+      213: 3440950200614034420
+    second: CascadeFoam_36
+  - first:
+      213: 418947529910081891
+    second: CascadeFoam_37
+  - first:
+      213: -2736536748194953486
+    second: CascadeFoam_38
+  - first:
+      213: -8518054707804619338
+    second: CascadeFoam_39
+  - first:
+      213: -663258904702759814
+    second: CascadeFoam_40
+  - first:
+      213: -9186582063258655393
+    second: CascadeFoam_41
+  - first:
+      213: 3218987259841716576
+    second: CascadeFoam_42
+  - first:
+      213: 2921771371650729898
+    second: CascadeFoam_43
+  - first:
+      213: 2905542323665302181
+    second: CascadeFoam_44
+  - first:
+      213: 8340669506340119616
+    second: CascadeFoam_45
+  - first:
+      213: 8360108369123952394
+    second: CascadeFoam_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WhitewaterRibbon
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 8
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fdb35a275661042bfb90be1b925964
+      internalID: -1733340284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ripple
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 68
+        width: 56
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2761ed52648504ab8964168f730ae9
+      internalID: -344678222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6aff9a9c2e8907d4fa6709ea21d3db3d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ripple: -344678222
+      WhitewaterRibbon: -1733340284
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

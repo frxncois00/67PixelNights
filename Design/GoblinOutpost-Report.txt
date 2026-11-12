@@ -1,0 +1,69 @@
+GOBLIN OUTPOST AND QUARRY REVISION
+Updated: 8 November 2026
+Scene: Assets/Scenes/SampleScene.unity
+
+RESULT
+The northeast outpost is integrated into the existing scene. Its entry branches north from the existing east road. The latest requested raised quarry grass/cliff stage was removed and replaced with a ground-level, timber-framed mine entrance, rails, a loaded cart, rock deposits, a native wooden workbench and a reachable loot chest.
+Chest opening animation was added afterward; see Design/Chest-Animation-Report.txt for those changes and tests.
+
+INSPECTION
+The original main Grid has 1x1 cells. HiddenPondClearing also contains 0.25-cell collision/bridge grids, which were left alone. Existing sorting layers are Default, Background, Ground, Objects and Foreground; transparency uses the Y axis. Existing art uses 64 PPU for Tiny Swords and 32 PPU for Pixel Crawler/Cute Fantasy, with Point filtering and uncompressed textures. The outpost follows these existing pack-specific settings and the existing 2D-lit material. Full inspection: Design/Outpost-Inspection.txt.
+
+CREATED CONTENT
+- EnvironmentExpansion/GoblinOutpost with GoblinCamp, Ruins, Quarry, Barricades, Chests, Trees, SpawnPoints and Tilemaps reference groups.
+- Central timber fence enclosure with a south-facing opening, three red shelters, animated campfire, two gate banners/torches, cooking pot/tripod and weapon display.
+- Northeast stone watchtower with red banner and an orc lookout visual.
+- Northwest ruins with arch, pillars, blocks, a central stone marker and chest.
+- Southwest pond with shore detail, foliage and fallen wood.
+- Southeast ground-level mine with workbench, cart, rails, rubble and crystal decorations. The previous new Quarry Ridge and Quarry Ledge tilemap objects/colliders were removed at the user's request; unused tile assets were retained.
+- Three timber road stakes, clustered trees, flowers, shrubs and rocks.
+- Six new overlay tilemaps under Grid/Tilemaps/GoblinOutpost Tilemaps so they share the original Grid. Original ground and water tiles were not overwritten.
+- Three actual LootChest prefab instances under EnvironmentExpansion/LootChestInstances. Outpost/Chests has their named location markers.
+- Seven enemy layout markers: five in camp, one quarry marker and one tower marker. Six ground markers register with the existing enemy spawner; the tower marker is excluded from ground AI.
+- Reusable prefabs for the red shelter, fence segment, barricade stake and four tree variants.
+
+ASSETS
+Reused existing Tiny Swords terrain, rocks, trees, buildings and flags; existing Pixel Crawler fire, resources, tools and environment sprites; Cute Fantasy fences; existing LootChest and enemy prefabs; existing lighting and sorting setup.
+Seven source PNGs imported from the user's installed packs into Assets/GoblinOutpost/Art:
+DungeonProps.png, OrcLookout.png, CookingPot.png, Chest.png, Pans.png, Workbench.png, CaveTiles.png.
+Additional frames were appended to existing BuildingProps, Resources, Tools, Vegetation, Decor and Fences sprite sheets, retaining their old sprite IDs.
+No composite scene sprite or externally generated preview was used as a game asset.
+Exact current object/component/position list: Design/Outpost-Objects.txt.
+Exact new asset list: Design/Outpost-AssetInventory.txt.
+
+GAMEPLAY INTEGRATION
+- Solid fences, stakes, structures, rocks, trunks, ruins and pond boundaries have Collider2D components. Walkable ground, paths and flowers have no blocking collider.
+- Existing LootChest reward/interaction logic is reused.
+- Added Assets/Scripts/Environment/GoblinOutpostReferences.cs to retain scene references and register/unregister the ground spawn markers.
+- With explicit user approval, EnemySpawner.cs accepts optional registered scene points. Each existing spawn attempt has a 25% chance to try one; original wave budget, active cap, player-distance, walkability, safe-zone and route checks still apply. No second spawner or extra enemy budget was added.
+- Decoration has no new idle per-frame behavior scripts; campfire animation uses an animation clip/controller.
+
+ACTUAL VALIDATION
+- Unity compilation passed for the runtime changes.
+- 31 movement/navigation/integration checks passed after the mine replacement. These used the actual PlayerMovement Update/FixedUpdate methods, a virtual WASD keyboard and 914 Physics2D steps.
+- Tested approach road, gate passage, blocked fence, ruins route, quarry route, pond blocking, all three chest routes/interactions, six walkable spawn points, shared Grid, unit scales and the original camera follow/zoom.
+- 12 spawner checks passed: registration lifecycle, duplicate prevention, exclusion of tower, actual fixed-point enemy spawn, shared budget/cap, safety checks and sunrise cleanup.
+- Scene/Game views and scene renders were inspected in Unity. Design/Quarry-GameView.png records the mine in Play Mode. Design/Chest-Opening.png records the subsequent chest animation in the scene.
+- The final chest-specific test run added 48 passing checks and reported no new Console errors.
+- These are targeted Editor/Play Mode checks, not a standalone build or a long full-game balance/playthrough test.
+
+PRESERVATION AND BACKUPS
+Initial scene, detailed transform/component/tile snapshot, script hashes and importer backups are in Design/Backups/GoblinOutpost.
+Before the later chest work, comparison of 57,679 original records found only the 50 permitted original scattered rocks disabled for the new area's footprints/routes. Their objects were retained; exact paths are in Outpost-DisabledOverlappingRocks.txt. Original tiles, Player, Canvas and camera setup matched that snapshot.
+Later live Editor edits are also present: the latest comparison includes six other original environment transform differences (Camp/Lookout, Rocky Region_6 and Trees 01/02/34/36), alongside the two intentionally updated original LootChest components. Those separate live edits were not reverted. Accordingly, the final scene should not be described as byte-for-byte unchanged outside the outpost.
+The latest object/margin audit reflects the live scene, including subsequent edits; two collider roots no longer satisfy its conservative two-cell margin (Mine Bank Boulder_02 and Palisade_20). They were not repositioned during the chest-animation task.
+
+REFERENCE DIFFERENCES / LIMITS
+- Available packs did not contain the exact reference tents or spiked palisade. Red Tiny Swords shelters and existing timber fences/posts are used instead.
+- The central ruins marker substitutes for the reference rune monument.
+- The tower lookout is a visual prop, not a functioning ranged goblin archer. Night waves use the existing enemy archetypes and shared AI.
+- The quarry marker participates in night spawning; it does not add a permanent daytime patrol route.
+- Mine entrance, ore crystals, workbench, pot and rack are scenery. No mine interior, new harvesting nodes or new crafting system was introduced.
+- The mine replaces the raised quarry ridge because the user explicitly requested removal of that stage.
+- No manual Inspector setup is required for the implemented systems.
+
+EVIDENCE
+Outpost-Inspection.txt, Outpost-Objects.txt, Outpost-FinalAudit.txt,
+Outpost-PlayModeTests.txt, Outpost-SpawnerTests.txt, Outpost-PreservationChanges.txt,
+Quarry-GameView.png, Quarry-SceneView.png, Quarry-Final.png,
+Chest-Animation-Report.txt and Chest-AnimationTests.txt.

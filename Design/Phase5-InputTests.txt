@@ -1,0 +1,9 @@
+PASS Held W blocked while menu open
+PASS Held W resumes after menu closes
+PASS Diagonal speed normalized
+PASS Arrow-key movement retained
+PASS Release stops movement
+PASS Blocked drop terrain preserves quantity
+PASS EventSystem click selects stack
+PASS Tooltip refreshes after consumption
+PASS UI selection does not remove items

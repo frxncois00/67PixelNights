@@ -1,0 +1,10 @@
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-780303836-0|EnvironmentExpansion/Dense Forest/Expansion Tree 286|(5.166027, 18.6525688, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1215814202-0|EnvironmentExpansion/Dense Forest/Expansion Tree 287|(5.2894125, 20.2475185, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1631821081-0|EnvironmentExpansion/Dense Forest/Expansion Tree 298|(7.122223, 16.7229137, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-912355980-0|EnvironmentExpansion/Dense Forest/Expansion Tree 299|(7.772328, 18.1001358, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1781350230-0|EnvironmentExpansion/Dense Forest/Expansion Tree 300|(7.08704758, 20.4960442, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1221757004-0|EnvironmentExpansion/Dense Forest/Expansion Tree 307|(9.187254, 18.65413, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1769670185-0|EnvironmentExpansion/Dense Forest/Expansion Tree 308|(9.187272, 20.12798, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-78873493-0|EnvironmentExpansion/Dense Forest/Expansion Tree 338|(13.7543983, 16.1643925, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-250821033-0|EnvironmentExpansion/Dense Forest/Expansion Tree 339|(13.4357157, 18.7204456, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-601518328-0|EnvironmentExpansion/Dense Forest/Expansion Tree 340|(13.305891, 20.7097435, 0)|(0, 0, 0, 1)|(1, 1, 1)|True

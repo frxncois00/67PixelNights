@@ -1,0 +1,10 @@
+PASS First pickup fills hotbar1
+PASS Resource fills hotbar2
+PASS Stackable pickups merge without duplication
+PASS Hotbar fills before bag overflow
+PASS Select equips axe
+PASS Repeat number unequips without removing item
+PASS Third press re-equips
+PASS Another slot selects resource
+PASS Explicit equip with full hotbar swaps without loss
+PASS Full inventory rejects excess

@@ -1,0 +1,57 @@
+PASS Road route to (-25.50, 19.50); 51 steps
+PASS Road route to (-22.00, 21.00); 49 steps
+PASS Road route to (-14.00, 19.50); 68 steps
+PASS Road route to (-10.50, 14.00); 76 steps
+PASS Road route to (-17.00, 6.50); 34 steps
+PASS Road route to (-24.50, 15.50); 33 steps
+PASS Continuous radius-clearance sweep (-22.00, 16.50) to (-22.00, 20.50)
+PASS Continuous radius-clearance sweep (-14.00, 15.50) to (-14.00, 20.00)
+PASS Continuous radius-clearance sweep (-24.50, 12.00) to (-24.50, 15.50)
+PASS Continuous radius-clearance sweep (-21.00, 6.50) to (-16.00, 6.50)
+PASS Closing ramp prevents entry to tier (-25.50, 19.50)
+PASS Closing ramp prevents entry to tier (-14.00, 19.50)
+PASS Water/cliff obstacle at (-21.00, 14.00)
+PASS Water/cliff obstacle at (-18.50, 20.00)
+PASS Water/cliff obstacle at (-18.50, 5.00)
+PASS Water/cliff obstacle at (-26.50, 18.50)
+PASS Water/cliff obstacle at (-16.50, 17.50)
+PASS Water/cliff obstacle at (-10.50, 11.50)
+PASS Required separate tilemap layers present
+PASS All composite collider geometry generated
+PASS Water/cliff tilemaps have Tilemap and Composite colliders
+PASS Existing supported sprite material everywhere
+PASS No missing sprites
+PASS No stretched object scales
+PASS No missing scripts
+PASS No gameplay scripts added
+FAIL Connected clearing prefab
+PASS Cliff faces use per-tile Objects-layer Y sorting
+PASS Trees/cabin retain pivot Y sorting
+PASS No added tiles in safezone
+PASS Every terrain cell supported by original navigation ground
+PASS All props outside safezone
+PASS Native Tiny Swords import settings: Grass
+PASS Native Tiny Swords import settings: Path
+PASS Native Tiny Swords import settings: Foam
+FAIL Changed outside component Main Camera Transform
+FAIL Changed outside component Camp/Campfire SpriteRenderer
+FAIL Changed outside component Camp/Campfire/CampfireLight Light2D
+FAIL Changed outside component Camp/Campfire/FlameVisual SpriteRenderer
+FAIL Changed outside component Player Transform
+FAIL Changed outside component Player/Visual SpriteRenderer
+FAIL Changed outside component Canvas/DayNightHUD/TimerText Text
+FAIL Changed outside component Canvas/DayNightHUD/PhaseProgressBar Image
+FAIL Changed outside component Canvas/CampfireHUD/FuelText Text
+FAIL Changed outside component Canvas/CampfireHUD/WoodText Text
+FAIL Changed outside component Canvas/CampfireHUD/FuelProgressBar Image
+FAIL Changed outside component Canvas/InteractionPrompt Text
+FAIL Changed outside component Canvas/InventoryInterface/InventoryPanel/DropOneButton Button
+FAIL Changed outside component Canvas/InventoryInterface/InventoryPanel/DropStackButton Button
+FAIL Changed outside component Canvas/InventoryInterface/InventoryPanel/UseFoodButton Button
+FAIL Changed outside component Canvas/InventoryInterface/InventoryPanel/EquipButton Button
+FAIL Changed outside component Canvas/InventoryInterface/HotbarPanel/HotbarSlot1/Icon Image
+FAIL Changed outside component Canvas/SurvivalHUD/HungerBarBackground/HungerBar Image
+FAIL Changed outside object Canvas/CookingInterface/CookingProgress
+FAIL Changed outside component Canvas/CookingInterface/CookingProgress/CookingBarBackground/CookingBar Image
+FAIL Changed outside component Canvas/ExplorationHUD Text
+FAIL All 1275 outside objects/components unchanged

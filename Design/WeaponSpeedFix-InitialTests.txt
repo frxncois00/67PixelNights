@@ -1,0 +1,167 @@
+PASS Scene starts at normal time scale (1)
+PASS Player movement and Animator start enabled
+PASS D produces normal 4-unit movement velocity
+PASS RightArrow produces normal 4-unit movement velocity
+PASS Diagonal movement remains normalized
+PASS Player stops on key release
+PASS basic_axe (1.00, 0.00) starts
+PASS basic_axe (1.00, 0.00) does not alter global time scale
+PASS basic_axe (1.00, 0.00) finishes in 0.329 real seconds
+PASS basic_axe (1.00, 0.00) impact callback fires once
+PASS basic_axe (1.00, 0.00) restores movement and Animator
+PASS basic_axe (1.00, 0.00) restores body position and scale
+PASS basic_axe (1.00, 0.00) uses the native directional sprite frames
+PASS basic_axe (1.00, 0.00) impact effects clean up
+FAIL basic_axe (1.00, 0.00) temporary weapon rig cleans up
+PASS basic_axe (0.00, 1.00) starts
+PASS basic_axe (0.00, 1.00) does not alter global time scale
+PASS basic_axe (0.00, 1.00) finishes in 0.658 real seconds
+PASS basic_axe (0.00, 1.00) impact callback fires once
+PASS basic_axe (0.00, 1.00) restores movement and Animator
+PASS basic_axe (0.00, 1.00) restores body position and scale
+PASS basic_axe (0.00, 1.00) uses the native directional sprite frames
+PASS basic_axe (0.00, 1.00) impact effects clean up
+FAIL basic_axe (0.00, 1.00) temporary weapon rig cleans up
+PASS basic_axe (-1.00, 0.00) starts
+PASS basic_axe (-1.00, 0.00) does not alter global time scale
+PASS basic_axe (-1.00, 0.00) finishes in 0.650 real seconds
+PASS basic_axe (-1.00, 0.00) impact callback fires once
+PASS basic_axe (-1.00, 0.00) restores movement and Animator
+PASS basic_axe (-1.00, 0.00) restores body position and scale
+PASS basic_axe (-1.00, 0.00) uses the native directional sprite frames
+PASS basic_axe (-1.00, 0.00) impact effects clean up
+FAIL basic_axe (-1.00, 0.00) temporary weapon rig cleans up
+PASS basic_axe (0.00, -1.00) starts
+PASS basic_axe (0.00, -1.00) does not alter global time scale
+PASS basic_axe (0.00, -1.00) finishes in 0.650 real seconds
+PASS basic_axe (0.00, -1.00) impact callback fires once
+PASS basic_axe (0.00, -1.00) restores movement and Animator
+PASS basic_axe (0.00, -1.00) restores body position and scale
+PASS basic_axe (0.00, -1.00) uses the native directional sprite frames
+PASS basic_axe (0.00, -1.00) impact effects clean up
+FAIL basic_axe (0.00, -1.00) temporary weapon rig cleans up
+PASS basic_pickaxe (1.00, 0.00) starts
+PASS basic_pickaxe (1.00, 0.00) does not alter global time scale
+PASS basic_pickaxe (1.00, 0.00) finishes in 0.650 real seconds
+PASS basic_pickaxe (1.00, 0.00) impact callback fires once
+PASS basic_pickaxe (1.00, 0.00) restores movement and Animator
+PASS basic_pickaxe (1.00, 0.00) restores body position and scale
+PASS basic_pickaxe (1.00, 0.00) uses the native directional sprite frames
+PASS basic_pickaxe (1.00, 0.00) impact effects clean up
+FAIL basic_pickaxe (1.00, 0.00) temporary weapon rig cleans up
+PASS basic_pickaxe (0.00, 1.00) starts
+PASS basic_pickaxe (0.00, 1.00) does not alter global time scale
+PASS basic_pickaxe (0.00, 1.00) finishes in 0.650 real seconds
+PASS basic_pickaxe (0.00, 1.00) impact callback fires once
+PASS basic_pickaxe (0.00, 1.00) restores movement and Animator
+PASS basic_pickaxe (0.00, 1.00) restores body position and scale
+PASS basic_pickaxe (0.00, 1.00) uses the native directional sprite frames
+PASS basic_pickaxe (0.00, 1.00) impact effects clean up
+FAIL basic_pickaxe (0.00, 1.00) temporary weapon rig cleans up
+PASS basic_pickaxe (-1.00, 0.00) starts
+PASS basic_pickaxe (-1.00, 0.00) does not alter global time scale
+PASS basic_pickaxe (-1.00, 0.00) finishes in 0.649 real seconds
+PASS basic_pickaxe (-1.00, 0.00) impact callback fires once
+PASS basic_pickaxe (-1.00, 0.00) restores movement and Animator
+PASS basic_pickaxe (-1.00, 0.00) restores body position and scale
+PASS basic_pickaxe (-1.00, 0.00) uses the native directional sprite frames
+PASS basic_pickaxe (-1.00, 0.00) impact effects clean up
+FAIL basic_pickaxe (-1.00, 0.00) temporary weapon rig cleans up
+PASS basic_pickaxe (0.00, -1.00) starts
+PASS basic_pickaxe (0.00, -1.00) does not alter global time scale
+PASS basic_pickaxe (0.00, -1.00) finishes in 0.650 real seconds
+PASS basic_pickaxe (0.00, -1.00) impact callback fires once
+PASS basic_pickaxe (0.00, -1.00) restores movement and Animator
+PASS basic_pickaxe (0.00, -1.00) restores body position and scale
+PASS basic_pickaxe (0.00, -1.00) uses the native directional sprite frames
+PASS basic_pickaxe (0.00, -1.00) impact effects clean up
+FAIL basic_pickaxe (0.00, -1.00) temporary weapon rig cleans up
+PASS basic_sword (1.00, 0.00) starts
+PASS basic_sword (1.00, 0.00) does not alter global time scale
+PASS basic_sword (1.00, 0.00) finishes in 0.652 real seconds
+PASS basic_sword (1.00, 0.00) impact callback fires once
+PASS basic_sword (1.00, 0.00) restores movement and Animator
+PASS basic_sword (1.00, 0.00) restores body position and scale
+PASS basic_sword (1.00, 0.00) uses the native directional sprite frames
+PASS basic_sword (1.00, 0.00) impact effects clean up
+FAIL basic_sword (1.00, 0.00) temporary weapon rig cleans up
+PASS basic_sword (0.00, 1.00) starts
+PASS basic_sword (0.00, 1.00) does not alter global time scale
+PASS basic_sword (0.00, 1.00) finishes in 0.649 real seconds
+PASS basic_sword (0.00, 1.00) impact callback fires once
+PASS basic_sword (0.00, 1.00) restores movement and Animator
+PASS basic_sword (0.00, 1.00) restores body position and scale
+PASS basic_sword (0.00, 1.00) uses the native directional sprite frames
+PASS basic_sword (0.00, 1.00) impact effects clean up
+FAIL basic_sword (0.00, 1.00) temporary weapon rig cleans up
+PASS basic_sword (-1.00, 0.00) starts
+PASS basic_sword (-1.00, 0.00) does not alter global time scale
+PASS basic_sword (-1.00, 0.00) finishes in 0.649 real seconds
+PASS basic_sword (-1.00, 0.00) impact callback fires once
+PASS basic_sword (-1.00, 0.00) restores movement and Animator
+PASS basic_sword (-1.00, 0.00) restores body position and scale
+PASS basic_sword (-1.00, 0.00) uses the native directional sprite frames
+PASS basic_sword (-1.00, 0.00) impact effects clean up
+FAIL basic_sword (-1.00, 0.00) temporary weapon rig cleans up
+PASS basic_sword (0.00, -1.00) starts
+PASS basic_sword (0.00, -1.00) does not alter global time scale
+PASS basic_sword (0.00, -1.00) finishes in 0.650 real seconds
+PASS basic_sword (0.00, -1.00) impact callback fires once
+PASS basic_sword (0.00, -1.00) restores movement and Animator
+PASS basic_sword (0.00, -1.00) restores body position and scale
+PASS basic_sword (0.00, -1.00) uses the native directional sprite frames
+PASS basic_sword (0.00, -1.00) impact effects clean up
+FAIL basic_sword (0.00, -1.00) temporary weapon rig cleans up
+PASS wood_knife (1.00, 0.00) starts
+PASS wood_knife (1.00, 0.00) does not alter global time scale
+PASS wood_knife (1.00, 0.00) finishes in 0.325 real seconds
+PASS wood_knife (1.00, 0.00) impact callback fires once
+PASS wood_knife (1.00, 0.00) restores movement and Animator
+PASS wood_knife (1.00, 0.00) restores body position and scale
+PASS wood_knife (1.00, 0.00) impact effects clean up
+FAIL wood_knife (1.00, 0.00) temporary weapon rig cleans up
+PASS wood_spear (1.00, 0.00) starts
+PASS wood_spear (1.00, 0.00) does not alter global time scale
+PASS wood_spear (1.00, 0.00) finishes in 0.524 real seconds
+PASS wood_spear (1.00, 0.00) impact callback fires once
+PASS wood_spear (1.00, 0.00) restores movement and Animator
+PASS wood_spear (1.00, 0.00) restores body position and scale
+PASS wood_spear (1.00, 0.00) impact effects clean up
+FAIL wood_spear (1.00, 0.00) temporary weapon rig cleans up
+PASS wood_shovel (1.00, 0.00) starts
+PASS wood_shovel (1.00, 0.00) does not alter global time scale
+PASS wood_shovel (1.00, 0.00) finishes in 0.503 real seconds
+PASS wood_shovel (1.00, 0.00) impact callback fires once
+PASS wood_shovel (1.00, 0.00) restores movement and Animator
+PASS wood_shovel (1.00, 0.00) restores body position and scale
+PASS wood_shovel (1.00, 0.00) impact effects clean up
+FAIL wood_shovel (1.00, 0.00) temporary weapon rig cleans up
+PASS wood_longsword (1.00, 0.00) starts
+PASS wood_longsword (1.00, 0.00) does not alter global time scale
+PASS wood_longsword (1.00, 0.00) finishes in 0.476 real seconds
+PASS wood_longsword (1.00, 0.00) impact callback fires once
+PASS wood_longsword (1.00, 0.00) restores movement and Animator
+PASS wood_longsword (1.00, 0.00) restores body position and scale
+PASS wood_longsword (1.00, 0.00) impact effects clean up
+FAIL wood_longsword (1.00, 0.00) temporary weapon rig cleans up
+PASS wood_hammer (1.00, 0.00) starts
+PASS wood_hammer (1.00, 0.00) does not alter global time scale
+PASS wood_hammer (1.00, 0.00) finishes in 0.725 real seconds
+PASS wood_hammer (1.00, 0.00) impact callback fires once
+PASS wood_hammer (1.00, 0.00) restores movement and Animator
+PASS wood_hammer (1.00, 0.00) restores body position and scale
+PASS wood_hammer (1.00, 0.00) impact effects clean up
+FAIL wood_hammer (1.00, 0.00) temporary weapon rig cleans up
+PASS wood_bow (1.00, 0.00) starts
+PASS wood_bow (1.00, 0.00) does not alter global time scale
+PASS wood_bow (1.00, 0.00) finishes in 0.572 real seconds
+PASS wood_bow (1.00, 0.00) impact callback fires once
+PASS wood_bow (1.00, 0.00) restores movement and Animator
+PASS wood_bow (1.00, 0.00) restores body position and scale
+PASS wood_bow (1.00, 0.00) impact effects clean up
+FAIL wood_bow (1.00, 0.00) temporary weapon rig cleans up
+PASS Game clock advances at normal speed: 22.68 game seconds / 22.36 real seconds
+Unity Editor frame ms: samples=10484, average=2.16, p95=3.13, max=325.73
+Unity Editor Main Thread recorder ms: samples=10484, average=2.13, p95=3.08, max=18.04
+Peak live weapon-effect particles: 18; no persistent FX detected between attacks.
+Editor observations, not a standalone-build FPS guarantee.

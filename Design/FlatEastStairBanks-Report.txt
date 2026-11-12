@@ -1,0 +1,1 @@
+Removed both sloping cliff shoulders at (-14,14) and (-11,14), removed left sloping top (-14,15), replaced right sloping top (-11,15) with flat grass. Retained compact stair and existing path. Preserved all other tilemaps. PASS route, stair clearance and single upper entrance.

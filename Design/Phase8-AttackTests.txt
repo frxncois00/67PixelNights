@@ -1,0 +1,6 @@
+PASS Unprotected target enters windup
+PASS One hit deals ten through player health
+PASS No repeated hit during recovery
+PASS Expanded protection cancels attack and enters retreat
+PASS Dead enemy cannot attack
+PASS Sunrise cleanup after enemy death

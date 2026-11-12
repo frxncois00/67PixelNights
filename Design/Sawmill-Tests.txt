@@ -1,0 +1,16 @@
+PASS Sawmill opens in reach
+PASS Removed recipes absent
+PASS Unaffordable upgrade rejected
+PASS Level1 recipes unlocked; level2 blocked
+PASS Craft shovel
+PASS Level2 consumes30wood
+PASS Level2 unlocks bow; level3 locked
+PASS Level3 upgrade and max cap
+PASS Both level3 weapons unlocked
+PASS Fence has solid collider
+PASS Enemy navigation rejects fence footprint
+PASS Axe removal animation starts on placed fence
+
+PASS Axe callback removes fence
+PASS actual moving player stopped by fence y=19.69
+PASS actual selected fence placement (3.00, 19.50)

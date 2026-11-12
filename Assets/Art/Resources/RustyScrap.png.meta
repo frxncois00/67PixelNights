@@ -1,0 +1,730 @@
+fileFormatVersion: 2
+guid: 9bb5c85d31159a94b96832497e03421e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7309624687054966635
+    second: RustyScrap_0
+  - first:
+      213: -56319469304091089
+    second: RustyScrap_1
+  - first:
+      213: -7303898497263432966
+    second: RustyScrap_2
+  - first:
+      213: 3092769007019048475
+    second: RustyScrap_3
+  - first:
+      213: 4375832336113536035
+    second: RustyScrap_4
+  - first:
+      213: -8631620529376026587
+    second: RustyScrap_5
+  - first:
+      213: 205622668859264755
+    second: RustyScrap_6
+  - first:
+      213: -1899146989495203206
+    second: RustyScrap_7
+  - first:
+      213: 8917328636681677815
+    second: RustyScrap_8
+  - first:
+      213: -8391553789290718560
+    second: RustyScrap_9
+  - first:
+      213: -4432422375730490412
+    second: RustyScrap_10
+  - first:
+      213: -4895690029903911124
+    second: RustyScrap_11
+  - first:
+      213: -5355991467435938224
+    second: RustyScrap_12
+  - first:
+      213: 3038015466018417227
+    second: RustyScrap_13
+  - first:
+      213: -4815934240394777951
+    second: RustyScrap_14
+  - first:
+      213: -5993809035690877706
+    second: RustyScrap_15
+  - first:
+      213: -1358240878690951238
+    second: RustyScrap_16
+  - first:
+      213: -3220824232535000829
+    second: RustyScrap_17
+  - first:
+      213: 5113802054781890507
+    second: RustyScrap_18
+  - first:
+      213: 347607914241893381
+    second: RustyScrap_19
+  - first:
+      213: -2123523067717450870
+    second: RustyScrap_20
+  - first:
+      213: 368566204875387335
+    second: RustyScrap_21
+  - first:
+      213: -5716534431290125680
+    second: RustyScrap_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1280
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RustyScrap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 851
+        width: 483
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590b9ae331ffe8a90800000000000000
+      internalID: -7309624687054966635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 1235
+        height: 980
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ee036bdb9e73ff0800000000000000
+      internalID: -56319469304091089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_2
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1034
+        width: 106
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa8a13b30753aa90800000000000000
+      internalID: -7303898497263432966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_3
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 951
+        width: 367
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e35b39609bbea20800000000000000
+      internalID: 3092769007019048475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_4
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1132
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c07b653541abc30800000000000000
+      internalID: 4375832336113536035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_5
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 785
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520a29e5cd2563880800000000000000
+      internalID: -8631620529376026587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_6
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 618
+        width: 124
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fecf175ab48ad200800000000000000
+      internalID: 205622668859264755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_7
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 556
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ac2ea00efd4a5e0800000000000000
+      internalID: -1899146989495203206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 521
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb64d62627b0cb70800000000000000
+      internalID: 8917328636681677815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_9
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 424
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa5ebbf9463b8b80800000000000000
+      internalID: -8391553789290718560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_10
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 377
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d35710555fdc72c0800000000000000
+      internalID: -4432422375730490412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_11
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 377
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27e7253bd30f0cb0800000000000000
+      internalID: -4895690029903911124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_12
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 264
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e257b3322bba5b0800000000000000
+      internalID: -5355991467435938224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_13
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 189
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4aab2268f2392a20800000000000000
+      internalID: 3038015466018417227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_14
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 168
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aae0a3035d5a2db0800000000000000
+      internalID: -4815934240394777951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_15
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 174
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc5e184076b1dca0800000000000000
+      internalID: -5993809035690877706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_16
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 190
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf163afd1f862de0800000000000000
+      internalID: -1358240878690951238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_17
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309f7c7dc655d43d0800000000000000
+      internalID: -3220824232535000829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_18
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 135
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcfefeeefdfd7f640800000000000000
+      internalID: 5113802054781890507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 130
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504a0896e83f2d400800000000000000
+      internalID: 347607914241893381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_20
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 119
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a838a54550bb782e0800000000000000
+      internalID: -2123523067717450870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_21
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 81
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1bfc5b2096d1500800000000000000
+      internalID: 368566204875387335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RustyScrap_22
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 15
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09299a4e83acaa0b0800000000000000
+      internalID: -5716534431290125680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RustyScrap_0: -7309624687054966635
+      RustyScrap_1: -56319469304091089
+      RustyScrap_10: -4432422375730490412
+      RustyScrap_11: -4895690029903911124
+      RustyScrap_12: -5355991467435938224
+      RustyScrap_13: 3038015466018417227
+      RustyScrap_14: -4815934240394777951
+      RustyScrap_15: -5993809035690877706
+      RustyScrap_16: -1358240878690951238
+      RustyScrap_17: -3220824232535000829
+      RustyScrap_18: 5113802054781890507
+      RustyScrap_19: 347607914241893381
+      RustyScrap_2: -7303898497263432966
+      RustyScrap_20: -2123523067717450870
+      RustyScrap_21: 368566204875387335
+      RustyScrap_22: -5716534431290125680
+      RustyScrap_3: 3092769007019048475
+      RustyScrap_4: 4375832336113536035
+      RustyScrap_5: -8631620529376026587
+      RustyScrap_6: 205622668859264755
+      RustyScrap_7: -1899146989495203206
+      RustyScrap_8: 8917328636681677815
+      RustyScrap_9: -8391553789290718560
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

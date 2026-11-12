@@ -1,0 +1,2 @@
+Filled 151 missing ground cells; removed 376 exterior clearing water-overlay cells; connected lake islet with grass neck. Replaced 396 old shoreline segments. Land cells=3751, connected=3751, disconnected=0. Existing object positions changed=0. Pond and stream retained. Clearing changes saved as scene overrides.
+Removed 52 obsolete internal camp/shore edge tiles; softened 196 road cells with native border tiles; added outer shore foam. No object positions changed.

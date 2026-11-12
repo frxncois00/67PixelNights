@@ -1,0 +1,22 @@
+PASS Sheep available
+PASS Empty hands block harvesting
+PASS Picked up basic_axe
+PASS Picked up basic_pickaxe
+PASS Picked up basic_sword
+PASS Equipment permissions basic_axe
+PASS Held icon matches basic_axe
+PASS Equipment permissions basic_pickaxe
+PASS Held icon matches basic_pickaxe
+PASS Equipment permissions basic_sword
+PASS Held icon matches basic_sword
+PASS Harvest starts 0
+PASS Correct tool sprite and 1x scale 0
+PASS Switch blocked during swing 0
+PASS Harvest completes exactly once 0
+PASS Harvest starts 1
+PASS Correct tool sprite and 1x scale 1
+PASS Switch blocked during swing 1
+PASS Harvest completes exactly once 1
+PASS Correct tool sprite and 1x scale 2
+PASS Switch blocked during swing 2
+PASS Harvest completes exactly once 2

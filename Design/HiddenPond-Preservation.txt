@@ -1,0 +1,2 @@
+Verified 1276 original objects; 102 allowed deactivations; only Grid child list allowed to gain the prefab.
+PASS All other original serialized objects/components unchanged.

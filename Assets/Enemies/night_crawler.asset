@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3a43e4e9081a846b1e0653e8a39a13, type: 3}
+  m_Name: night_crawler
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyArchetype
+  id: night_crawler
+  displayName: Night Crawler
+  behavior: 2
+  health: 55
+  patrolSpeed: 1.2
+  chaseSpeed: 1.8
+  detectionRange: 5.5
+  attackRange: 1.2
+  damage: 15
+  cooldown: 2.5
+  windup: 0.6
+  recovery: 0.7
+  structureDamage: 10
+  knockbackResistance: 0
+  firstNight: 5
+  maximumActive: 3
+  spawnWeight: 1
+  sprite: {fileID: -67817144, guid: b3c2ef98351d8bc45a96e39328f2c7c6, type: 3}
+  tint: {r: 0.55, g: 0.85, b: 0.5, a: 1}
+  idleFrames:
+  - {fileID: -67817144, guid: b3c2ef98351d8bc45a96e39328f2c7c6, type: 3}
+  - {fileID: 359714133, guid: b3c2ef98351d8bc45a96e39328f2c7c6, type: 3}
+  - {fileID: -851242650, guid: b3c2ef98351d8bc45a96e39328f2c7c6, type: 3}
+  - {fileID: -856217425, guid: b3c2ef98351d8bc45a96e39328f2c7c6, type: 3}
+  - {fileID: 1316730942, guid: b3c2ef98351d8bc45a96e39328f2c7c6, type: 3}
+  - {fileID: -479340998, guid: b3c2ef98351d8bc45a96e39328f2c7c6, type: 3}
+  walkFrames:
+  - {fileID: 614903605, guid: a6b17f56b6602a345ab1b5ffafddfcd6, type: 3}
+  - {fileID: 144414863, guid: a6b17f56b6602a345ab1b5ffafddfcd6, type: 3}
+  - {fileID: -311824160, guid: a6b17f56b6602a345ab1b5ffafddfcd6, type: 3}
+  - {fileID: -1507490341, guid: a6b17f56b6602a345ab1b5ffafddfcd6, type: 3}
+  animationFPS: 8
+  burstDuration: 0.7
+  burstCooldown: 4
+  burstMultiplier: 1.4
+  lungeDistance: 1.5
+  slamRadius: 1.6

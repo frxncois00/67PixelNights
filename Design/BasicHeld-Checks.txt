@@ -1,0 +1,3 @@
+PASS basic_sword real walking displayed 6 of six side frames
+PASS basic_pickaxe real walking displayed 6 of six side frames
+PASS basic_axe real walking displayed 6 of six side frames

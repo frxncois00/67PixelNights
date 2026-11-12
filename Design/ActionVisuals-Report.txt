@@ -1,0 +1,72 @@
+ACTION VISUAL FIXES — 2026-11-06
+Saved in Assets/Scenes/SampleScene.unity.
+
+Implemented
+- All axe/pickaxe/sheep-harvest actions use the upright neutral worker and a separate target-directed tool.
+- Mining aims at the selected stone's HitPoint, not merely the last movement vector.
+- The swing settles on the target heading. Axe and pickaxe use their correct, different artwork orientations.
+- Tools are enlarged for readability. Horizontal attack sheets no longer replace the character during these actions.
+- NearbyStoneIndicator labels the nearest solid Rock_* within 1.5 units of its collider surface.
+  Yellow = mineable, with [R] and remaining health when facing it.
+  Other prompts distinguish needing the axe, facing the rock, and SOLID ROCK scenery.
+  The indicator is on Foreground so the player's body does not hide it.
+- Eating raises the food sprite toward the mouth, pulses/tilts it and shrinks it over 0.9 seconds.
+  F and inventory USE FOOD share the existing successful transaction. Inventory closes after successful use to expose the animation.
+  Busy prevents duplicate actions; interruption/death cleans up the transient food object.
+- Cooking displays a bobbing/turning meat sprite above the existing campfire, browns it with progress and draws rising steam.
+  Fire-out pauses animation and hides steam. Cancellation/completion hides the visual.
+  Recipe timing and ingredient/output transactions remain controlled solely by CampfireCooking.
+- Inventory runtime slots are now serialized so a script/domain reload during Play Mode preserves them.
+  This fixes the observed historical null-slot exceptions affecting tool selection and HUD resource counts.
+
+Files modified
+Assets/Scripts/Gathering/PlayerGatherAnimation.cs
+Assets/Scripts/Tools/PlayerToolController.cs
+Assets/Scripts/Survival/FoodConsumption.cs
+Assets/Scripts/Inventory/InventoryController.cs
+Assets/Scenes/SampleScene.unity
+
+Files added
+Assets/Scripts/UI/NearbyStoneIndicator.cs
+Assets/Scripts/Cooking/CookingAnimation.cs
+AgentScripts/PreviewActions.cs
+AgentScripts/PreviewFoodActions.cs
+AgentScripts/TestActionVisuals.cs
+Design/ActionVisualTests.txt
+Design/Actions-Mining.png
+Design/Actions-Food.png
+Design/ActionVisuals-Report.txt
+Unity-generated .meta files accompany new scripts.
+
+Scene integration
+Player/NearbyStoneIndicator references all 14 Rock_* SpriteRenderers, existing equipment and tool controller.
+Campfire/CookingAnimation references existing CampfireCooking and its SpriteRenderer/material.
+No existing environmental transforms, sprites or camera zoom were intentionally changed.
+The existing player artwork and resource/cooking controls are retained.
+No sword combat was added; the worker's held action visuals use the existing axe and pickaxe sprites.
+The separate decorative Warrior is retained.
+
+Validation
+PASS Unity compilation, no compilation errors.
+PASS 55 live automated action checks in ActionVisualTests.txt.
+PASS eight axe and eight pickaxe directions use the neutral worker, correct target-facing tool rotation, one completion callback, and restored movement.
+PASS eating visual appears, repeated consumption is blocked during the animation, one item is spent, and the transient prop is removed.
+PASS roasting meat and steam appear; extinguishing pauses steam; cancellation hides the visual.
+PASS actual Unity game-view captures inspected for mining marker and eating/roasting visuals.
+PASS runtime script reload retained three test berries, the equipped axe, and 25 valid slots.
+Historical Console null-slot exceptions were found and addressed by the serialization fix.
+Existing DEVELOPMENT_BUILD deprecation warnings were observed; no unrelated warning cleanup was performed.
+UNVERIFIED complete physical keyboard/mouse and prolonged gameplay acceptance.
+The screenshots were produced by Unity, not external artwork generation.
+The mining screenshot was captured before the final pickaxe orientation correction; the final corrected orientation was verified by the subsequent eight-direction live tests.
+
+Manual check
+Press Play. Face a mineable stone from above and below, press R, and watch its ring/health label.
+Try a solid scenery stone to see SOLID ROCK.
+Approach a sheep with the axe and use E from different sides.
+With hunger below full, select food and press F, or click USE FOOD in inventory.
+Near a burning campfire with raw meat, press C. Watch meat turn above the fire and steam rise.
+Existing food placeholder artwork remains unchanged.
+
+Backup
+Design/Backups/ActionVisuals-20261106-225139 contains pre-change scripts and scene.

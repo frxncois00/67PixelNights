@@ -1,0 +1,6 @@
+BuildingProps.png.meta: 7 original sprite IDs; missing=0
+Decor.png.meta: 14 original sprite IDs; missing=0
+DungeonProps.png.meta: 24 original sprite IDs; missing=0
+Resources.png.meta: 10 original sprite IDs; missing=0
+Tilemap_color4.png.meta: 55 original sprite IDs; missing=0
+Tools.png.meta: 6 original sprite IDs; missing=0

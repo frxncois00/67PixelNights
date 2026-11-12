@@ -1,0 +1,9 @@
+PIXEL CRAWLER NATIVE WEAPONS — November 7, 2026
+Reassigned existing basic_axe/basic_pickaxe/basic_sword ItemDefinition icons and three scene tool pickups to sprites sliced from the original Body_A artwork. Original sheets preserved. New copies under Assets/PixelCrawler/NativeTools,32PPU,Point,uncompressed.
+BodyAActionFrames now routes axe to Slice, pickaxe to Crush, sword to Pierce (Top is the pack's upward Pierce filename). Existing gameplay IDs, slots, ownership checks, costs, damage and callbacks retained.
+EquippedToolVisual uses native icon pivots and Body_A hand placement, with upward-facing tool behind character. Held overlay remains hidden during native attacks to prevent doubled weapons.
+Modified: Assets/Scripts/Player/BodyAActionFrames.cs; Assets/Scripts/Gathering/PlayerGatherAnimation.cs; Assets/Scripts/Inventory/EquippedToolVisual.cs; Assets/Items/basic_axe.asset; basic_pickaxe.asset; basic_sword.asset; Assets/Scenes/SampleScene.unity.
+Backup: Design/Backups/NativeWeapons.
+PASS Unity compilation. PASS synthetic movement/chop/mine/hotbar checks. PASS33 actual sword-animation callback assertions across five enemies. Actual Unity equipped-view screenshot: Design/NativeWeapons-Equipped.png. Results: NativeWeapons-InputTests.txt and NativeWeapons-SwordTests.txt.
+No full physical input/facing playthrough claimed. No environment rearrangement. Original unused weapon source assets retained.
+November 8: Corrected native held axe horizontal flip: right-facing mirrors the left-facing source blade; left-facing uses source orientation. Verified both flip states in Unity Play Mode and reviewed AxeFacing-Fixed.png. Compilation passed. Sword/pickaxe and action animations unchanged.

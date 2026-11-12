@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3a43e4e9081a846b1e0653e8a39a13, type: 3}
+  m_Name: ancient_ruin_guardian
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyArchetype
+  id: ancient_ruin_guardian
+  displayName: Ancient Ruin Guardian
+  behavior: 3
+  health: 100
+  patrolSpeed: 1.2375001
+  chaseSpeed: 2.25
+  detectionRange: 7.5
+  attackRange: 1.15
+  damage: 10
+  cooldown: 1.05
+  windup: 0.42
+  recovery: 0.35
+  structureDamage: 8
+  knockbackResistance: 0
+  firstNight: 1
+  maximumActive: 8
+  spawnWeight: 1
+  sprite: {fileID: -6918866804519829032, guid: 4c2830d4154c9b64ab3fd62da555de4f, type: 3}
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  idleFrames:
+  - {fileID: -6918866804519829032, guid: 4c2830d4154c9b64ab3fd62da555de4f, type: 3}
+  - {fileID: 9083114115976458810, guid: 4c2830d4154c9b64ab3fd62da555de4f, type: 3}
+  - {fileID: 59798431960542533, guid: 4c2830d4154c9b64ab3fd62da555de4f, type: 3}
+  - {fileID: 8674986946654654275, guid: 4c2830d4154c9b64ab3fd62da555de4f, type: 3}
+  walkFrames:
+  - {fileID: -5260670347403651793, guid: 1b5e06c08cc08e04a9a27d8541ac1b32, type: 3}
+  - {fileID: 8954204232060189119, guid: 1b5e06c08cc08e04a9a27d8541ac1b32, type: 3}
+  - {fileID: 7461367919274971904, guid: 1b5e06c08cc08e04a9a27d8541ac1b32, type: 3}
+  - {fileID: -1278493254991525626, guid: 1b5e06c08cc08e04a9a27d8541ac1b32, type: 3}
+  animationFPS: 6
+  burstDuration: 0.7
+  burstCooldown: 4
+  burstMultiplier: 1.4
+  lungeDistance: 1.4
+  slamRadius: 1.85

@@ -1,0 +1,27 @@
+PASS Natural Night10 -> Day11 at normal night duration
+PASS Three waves reach ten live enemies; max=10 wave=3
+PASS Sunrise removes active and queued enemies
+PASS Protected player health remains100
+Natural night (safe camp, test refueling, no health restoration)
+Frame ms n=7167 mean=16.7439770277315 p95=17.0144978910685 p99=17.0740000903606 max=19.8003053665161
+Main thread ms n=7167 mean=16.733358992605 p95=17.0101 p99=17.0703 max=19.7773
+GC bytes/frame n=7167 mean=827.186828519604 p95=1108 p99=1146 max=42736
+Max spawn validation call ms=9.1555
+Forest.Navigation mean/ms=0.0311284498395423 max/ms=5.6192
+Forest.EnemyAI mean/ms=0.0713404771871076 max/ms=4.3042
+Forest.EnemyPhysics mean/ms=0.0277032649644203 max/ms=1.3136
+Forest.SpawnValidation mean/ms=0.00505285335565788 max/ms=9.1642
+Forest.EnemyAnimation mean/ms=0.00383403097530346 max/ms=0.111
+PASS Live crowd combat hit events=84 relocated mobs=10
+30s mixed crowd combat (health restored by harness, clock held)
+Frame ms n=1792 mean=16.7413626570903 p95=17.0175023376942 p99=17.1007998287678 max=17.7443027496338
+Main thread ms n=1792 mean=16.73573515625 p95=17.0144 p99=17.0991 max=17.8011
+GC bytes/frame n=1792 mean=394.418526785714 p95=770 p99=826 max=5268
+Max spawn validation call ms=0.4328
+Forest.Navigation mean/ms=0.00617444196428571 max/ms=1.9176
+Forest.EnemyAI mean/ms=0.111988895089286 max/ms=0.9418
+Forest.EnemyPhysics mean/ms=0.0828949776785714 max/ms=0.2583
+Forest.SpawnValidation mean/ms=0.00138443080357143 max/ms=2.0476
+Forest.EnemyAnimation mean/ms=0.00512756696428572 max/ms=0.0659
+PASS Runtime errors=0
+Standalone Windows development build;1280x720;target60fps;VSync off;no Editor/CLI sampling calls during run.

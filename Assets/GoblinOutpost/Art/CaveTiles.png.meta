@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: 2e852b6d18db64b41946de076d290866
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7591121709447093570
+    second: CaveTiles_0
+  - first:
+      213: 899246111885669078
+    second: CaveTiles_1
+  - first:
+      213: 7831296557821908362
+    second: CaveTiles_2
+  - first:
+      213: 3933787971878157481
+    second: CaveTiles_3
+  - first:
+      213: 1988647157731865578
+    second: CaveTiles_4
+  - first:
+      213: 2117807088299484205
+    second: CaveTiles_5
+  - first:
+      213: -5539547720536998675
+    second: CaveTiles_6
+  - first:
+      213: -6219947173529345322
+    second: CaveTiles_7
+  - first:
+      213: 3319636106525806664
+    second: CaveTiles_8
+  - first:
+      213: -2977670827266203353
+    second: CaveTiles_9
+  - first:
+      213: -6571767030028021166
+    second: CaveTiles_10
+  - first:
+      213: -2560184500388821685
+    second: CaveTiles_11
+  - first:
+      213: -7642630238338748970
+    second: CaveTiles_12
+  - first:
+      213: -3311876845739296373
+    second: CaveTiles_13
+  - first:
+      213: -4935763294051389329
+    second: CaveTiles_14
+  - first:
+      213: 1977615194379861509
+    second: CaveTiles_15
+  - first:
+      213: 581761319177697676
+    second: CaveTiles_16
+  - first:
+      213: -3811888857491163014
+    second: CaveTiles_17
+  - first:
+      213: 2493547959418891086
+    second: CaveTiles_18
+  - first:
+      213: 8951742327902856707
+    second: CaveTiles_19
+  - first:
+      213: 3356744704678516843
+    second: CaveTiles_20
+  - first:
+      213: 1901193921598802775
+    second: CaveTiles_21
+  - first:
+      213: -5254744167742887519
+    second: CaveTiles_22
+  - first:
+      213: 3000188820671303317
+    second: CaveTiles_23
+  - first:
+      213: 2173945012272526973
+    second: CaveTiles_24
+  - first:
+      213: -1090904538730691598
+    second: CaveTiles_25
+  - first:
+      213: -1854552077754445275
+    second: CaveTiles_26
+  - first:
+      213: 4220769525440314258
+    second: CaveTiles_27
+  - first:
+      213: 392147352287753425
+    second: CaveTiles_28
+  - first:
+      213: 9185707857814595677
+    second: CaveTiles_29
+  - first:
+      213: 5821550065783098203
+    second: CaveTiles_30
+  - first:
+      213: -7360948839298552109
+    second: CaveTiles_31
+  - first:
+      213: -5989197916123279342
+    second: CaveTiles_32
+  - first:
+      213: 4145422989182251547
+    second: CaveTiles_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TimberedMineEntrance
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f51fcf9f4e919441a98134aad8c1410
+      internalID: -1364916479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c93b40cddb2454041a8f3e21235f3740
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TimberedMineEntrance: -1364916479
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

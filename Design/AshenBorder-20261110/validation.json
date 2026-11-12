@@ -1,0 +1,14 @@
+{
+  "unity": "6000.6.4f1",
+  "scene": "Assets/Scenes/SampleScene.unity",
+  "protectedComponentCount": 6405,
+  "protectedChanges": [],
+  "missingScripts": 0,
+  "missingReferences": [],
+  "terrainCells": 721,
+  "uncoveredTargetCells": 0,
+  "unexpectedCells": 0,
+  "tilesInWater": 0,
+  "disconnectedCells": 0,
+  "trailOrDetailChanges": []
+}

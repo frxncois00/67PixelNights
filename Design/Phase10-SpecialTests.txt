@@ -1,0 +1,25 @@
+PASS Wolf anticipates before burst
+PASS Wolf bounded burst speed4.2
+PASS Wolf pauses after burst
+PASS Crawler validates and starts bounded lunge
+PASS Relit/expanded safety cancels lunge
+PASS forest_stalker radius5 protected
+PASS forest_stalker radius7 protected
+PASS forest_stalker radius9 protected
+PASS Sunrise cancels forest_stalker windup
+PASS shadow_wolf radius5 protected
+PASS shadow_wolf radius7 protected
+PASS shadow_wolf radius9 protected
+PASS Sunrise cancels shadow_wolf windup
+PASS night_crawler radius5 protected
+PASS night_crawler radius7 protected
+PASS night_crawler radius9 protected
+PASS Sunrise cancels night_crawler windup
+PASS forest_brute radius5 protected
+PASS forest_brute radius7 protected
+PASS forest_brute radius9 protected
+PASS Sunrise cancels forest_brute windup
+PASS ancient_stalker radius5 protected
+PASS ancient_stalker radius7 protected
+PASS ancient_stalker radius9 protected
+PASS Sunrise cancels ancient_stalker windup

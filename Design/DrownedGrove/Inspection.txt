@@ -1,0 +1,1019 @@
+Trees and Stumps/Tree_15 pos=(-8.22, 3.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-8.22, 3.66, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+Trees and Stumps/Tree_16 pos=(-8.99, 2.03, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-8.99, 1.94, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+Trees and Stumps/Tree_17 pos=(-10.37, 1.34, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-10.37, 1.17, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+Trees and Stumps/Tree_18 pos=(-11.66, 3.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-11.66, 3.58, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+Trees and Stumps/Tree_19 pos=(-12.15, 1.77, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.15, 1.68, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+Camp/Tent pos=(-9.23, 11.67, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Buildings/Blue Buildings/House2.png#House2 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-9.23, 10.42, 0.00), Extents: (0.52, 0.25, 0.00) enabled=True trigger=False
+Grid pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Grid
+ GRID (1.00, 1.00, 1.00)
+Grid/Tilemaps/Water pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-40, -32, 0), Size: (81, 65, 1) tiles=5265 sorting=Background:0 mode=Chunk assets=Assets/ForestTiles/Water.asset
+Grid/Tilemaps/Ground pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-39, -30, 0), Size: (78, 60, 1) tiles=3587 sorting=Ground:0 mode=Chunk assets=Assets/ForestTiles/Grass_27.asset;Assets/ForestTiles/Grass_36.asset;Assets/ForestTiles/Grass_45.asset;Assets/ForestTiles/Grass_37.asset;Assets/ForestTiles/Grass_28.asset;Assets/ForestTiles/Grass_46.asset;Assets/ForestTiles/Grass_29.asset;Assets/ForestTiles/Grass_47.asset;Assets/ForestTiles/Grass_38.asset
+Grid/Tilemaps/Paths pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-6, -5, 0), Size: (13, 8, 1) tiles=32 sorting=Ground:1 mode=Chunk assets=Assets/ForestTiles/Path.asset
+Grid/Tilemaps/Natural Shoreline Foam pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-39, -30, 0), Size: (78, 60, 1) tiles=298 sorting=Background:1 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/ShoreFoam.asset
+Grid/Tilemaps/Natural Camp Lakes/Lake Water Obstacles pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,Rigidbody2D,TilemapCollider2D,CompositeCollider2D
+ TILEMAP bounds=Position: (-11, -9, 0), Size: (23, 19, 1) tiles=97 sorting=collision only assets=Assets/ForestTiles/HiddenPondPlateau/WaterSolid.asset
+ COLLIDER TilemapCollider2D bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+ COLLIDER CompositeCollider2D bounds=Center: (0.50, 0.50, 0.00), Extents: (11.50, 9.50, 0.00) enabled=True trigger=False
+Grid/Tilemaps/Natural Camp Lakes/Shallow water stones pos=(-10.50, 5.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks in the Water/Water Rocks_01.png#Water Rocks_01_003 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Path pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (0, 0, 0), Size: (33, 19, 1) tiles=70 sorting=Ground:6 mode=Chunk assets=Assets/GoblinOutpost/Tiles/DirtEdge_1_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_5.asset
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Ground Detail pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (0, 0, 0), Size: (35, 22, 1) tiles=104 sorting=Ground:5 mode=Chunk assets=Assets/GoblinOutpost/Tiles/DirtEdge_0_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_5.asset
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Pond pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer,Rigidbody2D,TilemapCollider2D,CompositeCollider2D
+ TILEMAP bounds=Position: (0, 0, 0), Size: (20, 10, 1) tiles=12 sorting=Ground:3 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/WaterSolid.asset
+ COLLIDER TilemapCollider2D bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+ COLLIDER CompositeCollider2D bounds=Center: (18.00, 8.50, 0.00), Extents: (2.00, 1.50, 0.00) enabled=True trigger=False
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Decoration pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (0, 0, 0), Size: (0, 0, 1) tiles=0 sorting=Ground:8 mode=Chunk assets=
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Pond Foam pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (0, 0, 0), Size: (21, 11, 1) tiles=18 sorting=Ground:4 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/ShoreFoam.asset
+Grid/Tilemaps/GoblinOutpost Tilemaps/Outpost Pond Shore pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (0, 0, 0), Size: (21, 11, 1) tiles=18 sorting=Ground:5 mode=Chunk assets=Assets/ForestTiles/Grass_37.asset;Assets/ForestTiles/Grass_46.asset;Assets/ForestTiles/Grass_38.asset;Assets/ForestTiles/Grass_36.asset;Assets/ForestTiles/Grass_28.asset
+Grid/Tilemaps/AshenFrontier Tilemaps/Ashen Ochre Grass pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-36, -24, 0), Size: (36, 24, 1) tiles=345 sorting=Ground:3 mode=Chunk assets=Assets/GoblinOutpost/Tiles/DirtEdge_0_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_4.asset
+Grid/Tilemaps/AshenFrontier Tilemaps/Ashen Dry Soil pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-35, -24, 0), Size: (35, 24, 1) tiles=285 sorting=Ground:5 mode=Chunk assets=Assets/GoblinOutpost/Tiles/DirtEdge_0_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_3.asset
+Grid/Tilemaps/AshenFrontier Tilemaps/Ashen Trails pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-34, -21, 0), Size: (34, 21, 1) tiles=125 sorting=Ground:6 mode=Chunk assets=Assets/GoblinOutpost/Tiles/DirtEdge_0_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_3.asset
+Grid/Tilemaps/AshenFrontier Tilemaps/Ashen Details pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-31, -9, 0), Size: (31, 9, 1) tiles=16 sorting=Ground:7 mode=Chunk assets=Assets/AshenFrontier/Tiles/CrackedCobble.asset;Assets/AshenFrontier/Tiles/RuinBrick_1.asset;Assets/AshenFrontier/Tiles/RuinBrick_2.asset
+Grid/HiddenPondClearing/Terrain/Ground pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-31, 5, 0), Size: (23, 19, 1) tiles=283 sorting=Ground:4 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/GrassGrass5_2.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass5_1.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass5_0.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass7_2.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass6_1.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass6_0.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass5_3.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass6_2.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass7_1.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass7_0.asset
+Grid/HiddenPondClearing/Terrain/Ground - Upper Tiers pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-28, 12, 0), Size: (19, 12, 1) tiles=81 sorting=Ground:6 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/GrassGrass5_2.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass5_0.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass6_2.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass6_1.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass6_0.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass7_2.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass7_1.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass7_0.asset;Assets/ForestTiles/HiddenPondPlateau/GrassGrass5_1.asset
+Grid/HiddenPondClearing/Terrain/Cliffs (upper tier) pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer,Rigidbody2D,TilemapCollider2D,CompositeCollider2D
+ TILEMAP bounds=Position: (-28, 11, 0), Size: (19, 8, 1) tiles=13 sorting=Objects:0 mode=Individual assets=Assets/ForestTiles/HiddenPondPlateau/Cliff_5_4.asset;Assets/ForestTiles/HiddenPondPlateau/Cliff_6_4.asset;Assets/ForestTiles/HiddenPondPlateau/Cliff_7_4.asset
+ COLLIDER TilemapCollider2D bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+ COLLIDER CompositeCollider2D bounds=Center: (-18.50, 16.50, 0.00), Extents: (9.50, 2.50, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Terrain/Grass Ramps pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-23, 13, 0), Size: (12, 6, 1) tiles=8 sorting=Ground:7 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/RampCenter.asset
+Grid/HiddenPondClearing/Terrain/Path pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-28, 1, 0), Size: (17, 21, 1) tiles=71 sorting=Ground:7 mode=Chunk assets=Assets/ForestTiles/CabinStairs/Path6_3.asset;Assets/ForestTiles/CabinStairs/Path5_2.asset;Assets/ForestTiles/CabinStairs/Path7_2.asset;Assets/ForestTiles/CabinStairs/Path5_1.asset;Assets/ForestTiles/CabinStairs/Path7_1.asset;Assets/ForestTiles/CabinStairs/Path6_2.asset;Assets/ForestTiles/CabinStairs/Path6_0.asset;Assets/ForestTiles/CabinStairs/Path7_0.asset;Assets/ForestTiles/CabinStairs/Path5_0.asset;Assets/ForestTiles/CabinStairs/Path6_1.asset;Assets/ForestTiles/CabinStairs/Path8_1.asset
+Grid/HiddenPondClearing/Terrain/Decor pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-29, 0, 0), Size: (29, 22, 1) tiles=7 sorting=Ground:8 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/DecorPebble.asset
+Grid/HiddenPondClearing/Terrain/Cliff Boundary Grid/Cliffs - Side Boundaries pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer,Rigidbody2D,TilemapCollider2D,CompositeCollider2D
+ TILEMAP bounds=Position: (-112, 48, 0), Size: (76, 48, 1) tiles=166 sorting=Ground:0 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/CliffBoundary.asset
+ COLLIDER TilemapCollider2D bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+ COLLIDER CompositeCollider2D bounds=Center: (-18.50, 19.50, 0.00), Extents: (9.50, 4.50, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Terrain/Cabin Five-Step Staircase pos=(-23.00, 17.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,MeshFilter,MeshRenderer
+Grid/HiddenPondClearing/Terrain/East Five-Step Staircase pos=(-13.00, 14.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,MeshFilter,MeshRenderer
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.83, 10.68, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-20.30, 10.86, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.69, 11.77, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.31, 10.56, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.42, 11.19, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-20.97, 11.83, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.44, 10.48, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.60, 10.61, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.34, 10.78, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.33, 10.59, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.81, 11.62, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-20.51, 10.74, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-20.76, 11.64, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.22, 11.79, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.61, 10.91, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.20, 10.81, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-20.61, 11.64, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.34, 11.38, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-20.82, 11.09, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.43, 11.32, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.46, 10.72, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.34, 11.64, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.06, 11.45, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Leafy Water Pad pos=(-21.67, 11.37, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#LeafPad ppu=32 filter=Point layer=Ground:7 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Water pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer,Rigidbody2D,TilemapCollider2D,CompositeCollider2D
+ TILEMAP bounds=Position: (-33, 3, 0), Size: (28, 22, 1) tiles=460 sorting=Ground:2 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/WaterSolid.asset;Assets/ForestTiles/HiddenPondPlateau/WaterUnderBridge.asset
+ COLLIDER TilemapCollider2D bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+ COLLIDER CompositeCollider2D bounds=Center: (-19.00, 14.00, 0.00), Extents: (14.00, 11.00, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Water/Foam pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-31, 5, 0), Size: (23, 19, 1) tiles=107 sorting=Ground:3 mode=Chunk assets=Assets/ForestTiles/HiddenPondPlateau/ShoreFoam.asset
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.75, 17.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.75, 18.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.75, 18.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.63, 17.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.63, 18.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.63, 18.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.50, 17.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.50, 18.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.50, 18.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.38, 17.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.38, 18.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.38, 18.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.25, 17.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.25, 18.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.25, 18.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Cascade Foam pos=(-18.50, 17.15, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#Ripple ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.75, 4.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.75, 5.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.75, 5.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.63, 4.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.63, 5.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.63, 5.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.50, 4.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.50, 5.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.50, 5.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.38, 4.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.38, 5.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.38, 5.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.25, 4.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.25, 5.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Waterfall Ribbon pos=(-18.25, 5.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#WhitewaterRibbon ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Water/Tiny Swords Cascade Foam pos=(-18.50, 4.15, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/CascadeFoam.png#Ripple ppu=42.66667 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Structures/Timber Cabin with Chimney and Wooden Door pos=(-25.50, 20.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Cabin.png#TimberCabin ppu=32 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-25.50, 20.90, 0.00), Extents: (1.15, 0.70, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Structures/Walkable Plank Bridges Grid/Walkable Plank Bridges pos=(2.00, -2.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (-108, 32, 0), Size: (34, 38, 1) tiles=168 sorting=Ground:10 mode=Chunk assets=Assets/ForestTiles/HiddenPondClearing/SolidWoodDeck.asset
+Grid/HiddenPondClearing/Props/Cabin Woodpile 0 pos=(-27.20, 20.45, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png#Wood Resource ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Props/Cabin Woodpile 1 pos=(-26.88, 20.45, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png#Wood Resource ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Props/Cabin Woodpile 2 pos=(-26.56, 20.45, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png#Wood Resource ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Props/Cabin Woodpile 3 pos=(-27.20, 20.65, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png#Wood Resource ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Props/Cabin Woodpile 4 pos=(-26.88, 20.65, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png#Wood Resource ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Props/Mossy Boulders pos=(-14.00, 9.20, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png#Rock3 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.00, 9.35, 0.00), Extents: (0.35, 0.22, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Props/Mossy Boulders pos=(-11.00, 12.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png#Rock3 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-11.00, 12.15, 0.00), Extents: (0.35, 0.22, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Props/Mossy Boulders pos=(-21.00, 20.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png#Rock3 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-21.00, 20.15, 0.00), Extents: (0.35, 0.23, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Props/Tiny Swords Water Stone 0 pos=(-20.50, 15.40, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks in the Water/Water Rocks_01.png#Water Rocks_01_000 ppu=64 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.50, 15.55, 0.00), Extents: (0.23, 0.15, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Props/Tiny Swords Water Stone 1 pos=(-15.00, 12.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png#Water Rocks_02_000 ppu=64 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-15.00, 12.15, 0.00), Extents: (0.23, 0.15, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Props/Tiny Swords Water Stone 2 pos=(-19.50, 8.80, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks in the Water/Water Rocks_03.png#Water Rocks_03_000 ppu=64 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-19.50, 8.95, 0.00), Extents: (0.23, 0.15, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Props/Tiny Swords Water Stone 3 pos=(-15.30, 12.40, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks in the Water/Water Rocks_04.png#Water Rocks_04_000 ppu=64 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-15.30, 12.55, 0.00), Extents: (0.23, 0.15, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Props/Tiny Swords Plateau Rock pos=(-14.50, 21.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png#Rock3 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.50, 21.65, 0.00), Extents: (0.25, 0.15, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Props/Tiny Swords Plateau Rock pos=(-10.50, 16.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png#Rock3 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-10.50, 16.15, 0.00), Extents: (0.25, 0.15, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Props/Tiny Swords Plateau Rock pos=(-24.00, 8.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png#Rock3 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.00, 8.15, 0.00), Extents: (0.25, 0.15, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Vegetation/Waterside Broadleaf 5 pos=(-15.25, 9.99, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-15.25, 10.14, 0.00), Extents: (0.30, 0.20, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Vegetation/Waterside Broadleaf 7 pos=(-22.77, 5.45, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.77, 5.60, 0.00), Extents: (0.30, 0.20, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 1 pos=(-26.69, 17.29, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 3 pos=(-15.60, 15.05, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 7 pos=(-26.66, 17.22, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 8 pos=(-15.48, 15.05, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 16 pos=(-15.36, 15.05, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 26 pos=(-13.99, 9.15, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 31 pos=(-14.84, 20.44, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 32 pos=(-28.16, 11.53, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 43 pos=(-15.64, 20.11, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 46 pos=(-27.59, 19.65, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 51 pos=(-24.40, 22.41, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 52 pos=(-27.56, 17.36, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 61 pos=(-15.24, 15.05, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 62 pos=(-15.12, 15.05, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 64 pos=(-13.97, 9.13, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 69 pos=(-15.95, 20.68, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 76 pos=(-28.04, 11.49, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 79 pos=(-16.19, 20.27, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 80 pos=(-27.80, 19.76, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 81 pos=(-15.12, 15.05, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 85 pos=(-26.97, 17.06, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 88 pos=(-15.60, 15.11, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 91 pos=(-15.48, 15.11, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 92 pos=(-14.52, 8.73, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 93 pos=(-28.04, 11.74, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 94 pos=(-28.29, 10.95, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 98 pos=(-15.09, 20.29, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 99 pos=(-27.25, 19.98, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 100 pos=(-23.56, 22.11, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 103 pos=(-27.46, 17.22, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 105 pos=(-15.36, 15.11, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 111 pos=(-15.12, 15.11, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 124 pos=(-14.20, 9.37, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 133 pos=(-28.43, 11.78, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 135 pos=(-28.09, 11.69, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 136 pos=(-15.20, 20.25, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 139 pos=(-27.82, 19.86, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 142 pos=(-24.64, 22.27, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 146 pos=(-27.29, 16.74, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 153 pos=(-15.24, 15.11, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 154 pos=(-15.12, 15.11, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Meadow Detail 159 pos=(-15.24, 8.55, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 0 pos=(-29.76, 9.71, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-29.76, 9.86, 0.00), Extents: (0.30, 0.20, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 1 pos=(-27.99, 14.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-27.99, 14.15, 0.00), Extents: (0.30, 0.20, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 8 pos=(-10.92, 19.93, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-10.92, 20.08, 0.00), Extents: (0.30, 0.20, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Vegetation/Forest Rim Pine 10 pos=(-24.00, 6.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.00, 6.15, 0.00), Extents: (0.30, 0.20, 0.00) enabled=True trigger=False
+Grid/HiddenPondClearing/Vegetation/Flower Patch 0 pos=(-28.05, 11.66, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 1 pos=(-28.48, 11.30, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 2 pos=(-16.00, 20.47, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 3 pos=(-27.53, 16.92, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 4 pos=(-23.74, 21.89, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 5 pos=(-26.81, 17.42, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 6 pos=(-15.60, 15.16, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 7 pos=(-15.48, 15.16, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 8 pos=(-14.57, 9.16, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 9 pos=(-28.65, 11.51, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 10 pos=(-14.98, 20.57, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 11 pos=(-14.82, 20.18, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 12 pos=(-27.26, 20.14, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 13 pos=(-23.77, 21.84, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 14 pos=(-27.18, 16.88, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 15 pos=(-15.12, 15.16, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 16 pos=(-15.36, 15.16, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 17 pos=(-14.26, 9.24, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 18 pos=(-15.39, 20.40, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 19 pos=(-28.36, 11.10, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 0 pos=(-15.83, 20.28, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 1 pos=(-27.41, 20.42, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 2 pos=(-23.79, 21.86, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 3 pos=(-15.24, 15.16, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 4 pos=(-15.12, 15.16, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 5 pos=(-15.60, 15.22, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 6 pos=(-15.18, 9.34, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 7 pos=(-15.61, 20.10, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 8 pos=(-15.31, 20.61, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 9 pos=(-15.90, 20.19, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 10 pos=(-27.73, 19.81, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 11 pos=(-15.12, 15.22, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 12 pos=(-27.00, 17.37, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 13 pos=(-15.48, 15.22, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 14 pos=(-15.36, 15.22, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 15 pos=(-14.89, 9.02, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 16 pos=(-28.34, 11.52, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 17 pos=(-15.43, 20.19, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 18 pos=(-15.26, 20.17, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 19 pos=(-27.26, 20.10, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 0 pos=(-27.32, 17.12, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 1 pos=(-15.24, 15.22, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 2 pos=(-15.12, 15.22, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 3 pos=(-15.12, 15.27, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 4 pos=(-14.70, 9.12, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 5 pos=(-15.01, 20.53, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 6 pos=(-28.66, 11.63, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 7 pos=(-15.90, 20.14, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 8 pos=(-24.20, 22.25, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 9 pos=(-23.53, 22.29, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 10 pos=(-26.37, 17.33, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 11 pos=(-15.60, 15.27, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 12 pos=(-15.48, 15.27, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 13 pos=(-15.05, 8.97, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 14 pos=(-28.10, 11.29, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 15 pos=(-14.87, 19.89, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 16 pos=(-15.73, 19.91, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 17 pos=(-27.82, 19.86, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 18 pos=(-26.76, 17.24, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 19 pos=(-15.36, 15.27, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 2 pos=(-15.24, 15.27, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 7 pos=(-15.12, 15.33, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 19 pos=(-15.13, 9.38, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 0 pos=(-16.00, 20.20, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 1 pos=(-28.24, 11.71, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 3 pos=(-15.58, 20.06, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 4 pos=(-27.37, 19.84, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 5 pos=(-24.09, 22.25, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 7 pos=(-26.53, 17.03, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 9 pos=(-15.12, 15.27, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 15 pos=(-15.60, 15.33, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 19 pos=(-14.91, 8.70, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 0 pos=(-15.29, 20.72, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 1 pos=(-14.91, 20.23, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 2 pos=(-15.57, 20.21, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 3 pos=(-15.48, 15.33, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 4 pos=(-23.94, 21.55, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 5 pos=(-15.36, 15.33, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 6 pos=(-15.12, 15.38, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 7 pos=(-15.24, 15.33, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 8 pos=(-14.58, 8.80, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 9 pos=(-28.06, 11.53, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 10 pos=(-28.14, 10.96, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 11 pos=(-15.75, 20.18, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 12 pos=(-27.17, 16.67, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 13 pos=(-23.39, 22.35, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 14 pos=(-15.12, 15.33, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 15 pos=(-15.60, 15.38, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 16 pos=(-15.48, 15.38, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 17 pos=(-15.28, 8.97, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 18 pos=(-14.99, 20.05, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Flower Patch 19 pos=(-14.82, 20.32, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 4 pos=(-15.25, 20.07, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 5 pos=(-27.24, 19.92, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 8 pos=(-23.99, 21.74, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 13 pos=(-27.50, 17.08, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 14 pos=(-15.12, 15.44, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 16 pos=(-15.36, 15.38, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 17 pos=(-14.12, 9.20, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 22 pos=(-15.75, 20.63, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#BlueFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 23 pos=(-28.20, 11.17, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 26 pos=(-15.29, 20.46, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 31 pos=(-24.32, 22.19, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 32 pos=(-23.35, 22.05, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Retained Flower Cluster Extension 35 pos=(-27.04, 17.07, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Tiny Swords Bush Cluster 0 pos=(-15.00, 21.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe1.png#Bushe1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Tiny Swords Bush Cluster 1 pos=(-10.00, 16.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe2.png#Bushe2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Tiny Swords Bush Cluster 2 pos=(-11.00, 15.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe3.png#Bushe3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Tiny Swords Bush Cluster 3 pos=(-28.00, 11.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe4.png#Bushe4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Tiny Swords Bush Cluster 4 pos=(-23.00, 7.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe1.png#Bushe1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/Tiny Swords Bush Cluster 5 pos=(-17.00, 12.80, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe2.png#Bushe2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/East Bank Garden Accents/Bank shrub pos=(-15.60, 16.25, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe2.png#Bushe2_000 ppu=64 filter=Point layer=Ground:9 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/East Bank Garden Accents/Small bank flowers pos=(-15.70, 15.80, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/East Bank Garden Accents/Small bank flowers pos=(-15.55, 15.80, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/East Bank Garden Accents/Small bank flowers pos=(-15.40, 15.80, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/East Bank Garden Accents/Small bank flowers pos=(-15.25, 15.80, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/East Bank Garden Accents/Small bank flowers pos=(-15.70, 15.95, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/East Bank Garden Accents/Small bank flowers pos=(-15.55, 15.95, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#WhiteFlower ppu=32 filter=Point layer=Ground:9 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/East Bank Garden Accents/Small bank flowers pos=(-15.40, 15.95, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#PinkFlower ppu=32 filter=Point layer=Ground:9 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Vegetation/East Bank Garden Accents/Small bank flowers pos=(-15.25, 15.95, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png#YellowFlower ppu=32 filter=Point layer=Ground:9 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-21.00, 3.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-20.50, 3.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-19.50, 3.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-18.50, 3.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-17.00, 3.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe1 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-17.50, 3.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-25.00, 4.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-24.50, 4.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-23.50, 4.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-22.50, 4.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-21.50, 4.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-16.50, 4.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-15.50, 4.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-14.50, 4.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-13.00, 4.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe1 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-13.50, 4.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-25.50, 5.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-12.50, 5.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-11.50, 5.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-29.00, 6.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-28.50, 6.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-30.00, 7.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-29.50, 7.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-31.00, 8.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-30.50, 8.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-32.00, 9.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-31.50, 9.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-33.00, 10.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-32.50, 10.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe3 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-33.00, 11.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-33.00, 12.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-33.00, 13.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-33.00, 14.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-8.00, 20.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe1 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-8.50, 21.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe2 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-9.00, 21.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe1 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-9.50, 22.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe2 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-11.50, 23.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe2 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-10.00, 22.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe1 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-10.50, 23.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe2 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-21.00, 24.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe0 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-20.50, 25.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe2 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-19.50, 25.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe2 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-18.50, 25.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe2 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-17.00, 24.50, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe1 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+Grid/HiddenPondClearing/Pond Outer Bank Fringe/Native grass bank pos=(-17.50, 25.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer
+ SPRITE Assets/ForestTiles/ShorelinePolish/GrassFringe.png#Fringe2 ppu=64 filter=Point layer=Ground:3 pivot=Center mat=Assets/Materials/ForestDayNightLit.mat
+GameSystems/EnemySpawner pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,EnemySpawner
+EnvironmentExpansion/Dense Forest/Expansion Tree 192 pos=(-12.23, 4.45, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.23, 4.36, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 193 pos=(-12.48, 6.55, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.48, 6.55, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 194 pos=(-12.24, 8.15, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.24, 8.15, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 195 pos=(-12.60, 10.41, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.60, 10.41, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 196 pos=(-12.29, 12.71, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.29, 12.71, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 197 pos=(-12.56, 14.12, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.56, 14.12, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 198 pos=(-12.22, 16.76, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.22, 16.76, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 199 pos=(-12.74, 18.22, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.74, 18.22, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 200 pos=(-12.37, 20.55, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.37, 20.55, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 201 pos=(-12.87, 22.48, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.87, 22.48, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 202 pos=(-12.53, 24.43, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.53, 24.26, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 203 pos=(-12.29, 26.55, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-12.29, 26.38, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 208 pos=(-10.31, 10.01, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-10.31, 10.01, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 209 pos=(-10.37, 12.47, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-10.37, 12.47, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 210 pos=(-10.60, 26.54, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-10.60, 26.37, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 216 pos=(-8.92, 10.35, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-8.92, 10.35, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 217 pos=(-8.83, 16.11, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-8.83, 16.11, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 218 pos=(-8.29, 20.03, 0.00) scale=(1.00, 1.00, 1.00) active=False components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-8.29, 20.03, 0.00), Extents: (0.00, 0.00, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 219 pos=(-8.95, 22.55, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-8.95, 22.38, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dense Forest/Expansion Tree 232 pos=(-17.36, 17.46, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-17.36, 17.29, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Dark Forest_5 pos=(-18.12, 4.06, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-18.12, 3.97, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Dark Forest_9 pos=(-32.80, 4.23, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-32.80, 4.14, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Dark Forest_16 pos=(-23.49, 6.35, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-23.49, 6.26, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Dark Forest_21 pos=(-24.01, 4.25, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock1.png#Rock1 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.01, 3.90, 0.00), Extents: (0.25, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Berry Bush pos=(-24.00, 2.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BerryBush
+ SPRITE Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe1.png#Bushe1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+EnvironmentExpansion/Dark Forest/Old Stump pos=(-30.00, 2.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Stump 1.png#Stump 1 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-30.00, 0.15, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 7 pos=(-33.78, 12.61, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-33.78, 12.44, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 13 pos=(-32.33, 10.51, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-32.33, 10.34, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 14 pos=(-32.36, 12.63, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-32.36, 12.54, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 15 pos=(-32.40, 14.71, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-32.40, 14.62, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 16 pos=(-32.38, 16.64, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-32.38, 16.47, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 22 pos=(-30.91, 4.77, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-30.91, 4.68, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 23 pos=(-30.81, 6.06, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-30.81, 5.97, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 24 pos=(-30.89, 10.06, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-30.89, 9.97, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 25 pos=(-30.58, 12.31, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-30.58, 12.14, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 26 pos=(-30.51, 14.08, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-30.51, 13.99, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 27 pos=(-30.95, 16.23, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-30.95, 16.06, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 28 pos=(-29.90, 13.20, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-29.90, 13.03, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 37 pos=(-28.30, 4.74, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-28.30, 4.57, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 38 pos=(-28.61, 6.07, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-28.61, 5.98, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 39 pos=(-28.60, 10.54, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-28.60, 10.37, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 40 pos=(-28.52, 12.07, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-28.52, 11.98, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 41 pos=(-28.24, 14.60, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-28.24, 14.43, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 42 pos=(-28.29, 16.08, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-28.29, 15.99, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 43 pos=(-28.44, 18.67, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-28.44, 18.50, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 53 pos=(-26.41, 4.68, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-26.41, 4.51, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 54 pos=(-26.21, 6.44, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-26.21, 6.27, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 55 pos=(-26.81, 10.59, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-26.81, 10.42, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 56 pos=(-26.49, 12.72, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-26.49, 12.55, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 57 pos=(-26.22, 14.79, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-26.22, 14.70, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 58 pos=(-26.54, 16.12, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-26.54, 16.03, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 59 pos=(-26.88, 18.30, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-26.88, 18.13, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 60 pos=(-26.45, 20.64, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-26.45, 20.47, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 70 pos=(-24.54, 6.67, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.54, 6.50, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 71 pos=(-24.24, 8.02, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.24, 7.93, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 72 pos=(-24.22, 10.42, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.22, 10.33, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 73 pos=(-24.96, 12.40, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.96, 12.31, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 74 pos=(-24.89, 14.09, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.89, 14.00, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 75 pos=(-24.87, 16.67, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.87, 16.50, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 76 pos=(-24.87, 18.12, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.87, 18.03, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 77 pos=(-24.29, 20.02, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.29, 19.93, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 78 pos=(-24.98, 22.70, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-24.98, 22.61, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 88 pos=(-22.82, 4.11, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.82, 3.94, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 89 pos=(-22.39, 6.44, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.39, 6.27, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 90 pos=(-22.93, 10.56, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.93, 10.39, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 91 pos=(-22.93, 12.14, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.93, 11.97, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 92 pos=(-22.57, 14.34, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.57, 14.17, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 93 pos=(-22.83, 16.03, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.83, 15.94, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 94 pos=(-22.36, 18.15, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.36, 17.98, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 95 pos=(-22.27, 20.03, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.27, 19.94, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 96 pos=(-22.45, 22.15, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.45, 21.98, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 97 pos=(-22.48, 24.02, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-22.48, 23.85, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 108 pos=(-20.51, 4.35, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.51, 4.26, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 109 pos=(-20.28, 10.52, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.28, 10.43, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 110 pos=(-20.67, 12.63, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.67, 12.46, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 111 pos=(-20.55, 14.01, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.55, 13.92, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 112 pos=(-20.74, 16.64, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.74, 16.55, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 113 pos=(-20.99, 18.32, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.99, 18.15, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 114 pos=(-20.82, 20.62, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.82, 20.53, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 115 pos=(-20.22, 22.12, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.22, 21.95, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 116 pos=(-20.34, 24.09, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-20.34, 24.00, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 126 pos=(-18.91, 8.44, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-18.91, 8.27, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 127 pos=(-18.64, 10.51, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-18.64, 10.34, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 128 pos=(-18.48, 12.15, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-18.48, 12.06, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 129 pos=(-18.51, 14.52, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-18.51, 14.35, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 130 pos=(-18.42, 16.15, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-18.42, 15.98, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 131 pos=(-18.31, 18.15, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-18.31, 18.06, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 132 pos=(-18.30, 20.75, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-18.30, 20.66, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 133 pos=(-18.27, 22.63, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-18.27, 22.54, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 134 pos=(-10.48, 23.99, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-10.48, 23.82, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 145 pos=(-16.45, 6.36, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.45, 6.27, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 146 pos=(-16.47, 8.36, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.47, 8.19, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 147 pos=(-16.54, 10.02, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.54, 9.85, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 148 pos=(-16.98, 12.39, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.98, 12.22, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 149 pos=(-16.67, 14.12, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.67, 14.03, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 150 pos=(-16.27, 16.31, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.27, 16.22, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 151 pos=(-16.48, 18.74, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.48, 18.57, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 152 pos=(-16.61, 20.56, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.61, 20.39, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 153 pos=(-16.73, 22.63, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.73, 22.46, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 154 pos=(-16.51, 24.63, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.51, 24.54, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 155 pos=(-16.91, 26.59, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-16.91, 26.50, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 168 pos=(-14.30, 4.79, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.30, 4.62, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 169 pos=(-14.81, 6.40, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.81, 6.31, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 170 pos=(-14.39, 8.65, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.39, 8.56, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 171 pos=(-14.42, 10.29, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.42, 10.20, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 172 pos=(-14.40, 12.03, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.40, 11.86, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 173 pos=(-14.24, 14.51, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.24, 14.42, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 174 pos=(-14.25, 16.22, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.25, 16.05, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 175 pos=(-14.34, 18.79, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png#Tree1_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.34, 18.62, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 176 pos=(-14.67, 20.55, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png#Tree4_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.67, 20.46, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 177 pos=(-14.26, 22.16, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.26, 22.07, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 178 pos=(-14.57, 24.46, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png#Tree2_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.57, 24.29, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/Dark Forest/Expansion Tree 179 pos=(-14.99, 26.56, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,SpriteRenderer,BoxCollider2D,ResourceNode
+ SPRITE Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png#Tree3_000 ppu=64 filter=Point layer=Objects:0 pivot=Pivot mat=Assets/Materials/ForestDayNightLit.mat
+ COLLIDER BoxCollider2D bounds=Center: (-14.99, 26.47, 0.00), Extents: (0.21, 0.15, 0.00) enabled=True trigger=False
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Rest Stop Trail pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,Tilemap,TilemapRenderer
+ TILEMAP bounds=Position: (8, 18, 0), Size: (5, 4, 1) tiles=16 sorting=Ground:6 mode=Chunk assets=Assets/GoblinOutpost/Tiles/DirtEdge_0_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_0_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_5.asset;Assets/GoblinOutpost/Tiles/DirtEdge_1_4.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_3.asset;Assets/GoblinOutpost/Tiles/DirtEdge_2_5.asset
+ExplorationSystems pos=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True components=Transform,ExplorationManager
+SORTING Default,Background,Ground,Objects,Foreground
+CONFIG GameSystems/EnemySpawner {"MonoBehaviour":{"m_Enabled":true,"m_EditorHideFlags":0,"m_Name":"","m_EditorClassIdentifier":"Assembly-CSharp::EnemySpawner","navigation":{"instanceID":0},"cycle":{"instanceID":0},"safe":{"instanceID":0},"player":{"instanceID":0},"ground":{"instanceID":0},"prefab":{"fileID":7200555989588230979,"guid":"1f7c6b5b5f06834488435d0c1a423f39","type":3},"container":{"instanceID":0},"archetypePrefabs":[{"fileID":7200555989588230979,"guid":"1f7c6b5b5f06834488435d0c1a423f39","type":3},{"fileID":961067460607783582,"guid":"69597e32ae850554faa1e6e50a910b07","type":3},{"fileID":5485487596697490370,"guid":"4484cbc1508e7f64499d764bc25bcde1","type":3},{"fileID":4365685408496575436,"guid":"721fb3289ea0f47408cfbbf26c695832","type":3},{"fileID":5635261072073742215,"guid":"773c80ea1aa87784b9a3841daff7a6ad","type":3}],"schedule":{"fileID":11400000,"guid":"a8bb91446e4eef2419da07bd0d1c8240","type":2},"baseCount":2,"additionalPerNight":1,"maximumActive":10,"minimumPlayerDistance":6.0}}
+CONFIG ForestNavigation {"MonoBehaviour":{"m_Enabled":true,"m_EditorHideFlags":0,"m_Name":"","m_EditorClassIdentifier":"Assembly-CSharp::ForestNavigation","ground":{"instanceID":0},"safe":{"instanceID":0},"cellSize":0.5,"maximumSearch":12000,"searchBudgetMilliseconds":4.0}}
+CONFIG ExplorationSystems {"MonoBehaviour":{"m_Enabled":true,"m_EditorHideFlags":0,"m_Name":"","m_EditorClassIdentifier":"Assembly-CSharp::ExplorationManager","player":{"instanceID":0},"label":{"instanceID":0},"regions":[{"id":"camp","title":"Campsite","bounds":{"serializedVersion":"2","x":-11.0,"y":-8.0,"width":22.0,"height":16.0}},{"id":"region_0","title":"Dense Forest","bounds":{"serializedVersion":"2","x":-10.0,"y":12.0,"width":20.0,"height":16.0}},{"id":"region_1","title":"Rocky Region","bounds":{"serializedVersion":"2","x":17.0,"y":-8.0,"width":20.0,"height":16.0}},{"id":"region_2","title":"Abandoned Cabin","bounds":{"serializedVersion":"2","x":-10.0,"y":-28.0,"width":20.0,"height":16.0}},{"id":"region_3","title":"Dark Forest","bounds":{"serializedVersion":"2","x":-37.0,"y":-8.0,"width":20.0,"height":16.0}},{"id":"ashen_frontier","title":"The Ashen Frontier","bounds":{"serializedVersion":"2","x":-35.5,"y":-24.5,"width":22.799999237060547,"height":20.200000762939453}}]}}

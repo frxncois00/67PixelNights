@@ -1,0 +1,4 @@
+Aligned east right shoulder from (-13,16) to (-13,17), matching left shoulder at y=17; upper cap moved to (-13,18). Removed the staggered extra-height appearance.
+PASS one usable entrance per raised tier: closing its ramp blocks entry to that tier. Both two-tile-wide entrances clear.
+PASS east bridge to upper ledge; lake, stream, paths, bridges, flowers, cabin and all props unchanged.
+Added four quarter-cell side barriers at x=-48, y=64..67 (world x=-12, y=16..17) to prevent bypassing the single east entrance.

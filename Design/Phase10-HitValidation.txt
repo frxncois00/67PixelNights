@@ -1,0 +1,23 @@
+PASS forest_stalker misses when player leaves hit area
+PASS forest_stalker no hit through newly inserted wall
+PASS forest_stalker protection at hit frame cancels all damage
+PASS forest_stalker disable/re-enable does not replay pending hit
+PASS shadow_wolf misses when player leaves hit area
+PASS shadow_wolf no hit through newly inserted wall
+PASS shadow_wolf protection at hit frame cancels all damage
+PASS shadow_wolf disable/re-enable does not replay pending hit
+PASS night_crawler misses when player leaves hit area
+PASS night_crawler no hit through newly inserted wall
+PASS night_crawler protection at hit frame cancels all damage
+PASS night_crawler disable/re-enable does not replay pending hit
+PASS forest_brute misses when player leaves hit area
+PASS forest_brute no hit through newly inserted wall
+PASS forest_brute protection at hit frame cancels all damage
+PASS forest_brute disable/re-enable does not replay pending hit
+PASS ancient_stalker misses when player leaves hit area
+PASS ancient_stalker no hit through newly inserted wall
+PASS ancient_stalker protection at hit frame cancels all damage
+PASS ancient_stalker disable/re-enable does not replay pending hit
+PASS Ancient structure hit40, chest remains alive
+PASS Two attackers destroy chest without deleting contents
+PASS Enemy-destroyed chest returns all seven stored logs

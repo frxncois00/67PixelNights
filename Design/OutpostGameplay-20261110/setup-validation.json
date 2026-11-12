@@ -1,0 +1,198 @@
+{
+  "results": [
+    {
+      "label": "Bandit Captain - Central Command",
+      "spawn": "(26.00, 14.00, 0.00)",
+      "walkable": true,
+      "legs": [
+        {
+          "a": "(26.00, 14.00)",
+          "b": "(25.00, 14.50)",
+          "ok": true,
+          "points": 2
+        },
+        {
+          "a": "(25.00, 14.50)",
+          "b": "(27.00, 14.00)",
+          "ok": true,
+          "points": 4
+        },
+        {
+          "a": "(27.00, 14.00)",
+          "b": "(26.00, 14.00)",
+          "ok": true,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "label": "Entrance Raider",
+      "spawn": "(26.00, 6.00, 0.00)",
+      "walkable": true,
+      "legs": [
+        {
+          "a": "(26.00, 6.00)",
+          "b": "(26.00, 8.50)",
+          "ok": true,
+          "points": 4
+        },
+        {
+          "a": "(26.00, 8.50)",
+          "b": "(27.00, 10.00)",
+          "ok": true,
+          "points": 4
+        },
+        {
+          "a": "(27.00, 10.00)",
+          "b": "(26.00, 6.00)",
+          "ok": true,
+          "points": 9
+        }
+      ]
+    },
+    {
+      "label": "Bonfire Scout",
+      "spawn": "(24.50, 11.00, 0.00)",
+      "walkable": true,
+      "legs": [
+        {
+          "a": "(24.50, 11.00)",
+          "b": "(25.00, 10.00)",
+          "ok": true,
+          "points": 2
+        },
+        {
+          "a": "(25.00, 10.00)",
+          "b": "(27.00, 10.50)",
+          "ok": true,
+          "points": 4
+        },
+        {
+          "a": "(27.00, 10.50)",
+          "b": "(27.50, 12.00)",
+          "ok": true,
+          "points": 3
+        },
+        {
+          "a": "(27.50, 12.00)",
+          "b": "(24.50, 11.00)",
+          "ok": true,
+          "points": 7
+        }
+      ]
+    },
+    {
+      "label": "West Tents Raider",
+      "spawn": "(24.50, 13.50, 0.00)",
+      "walkable": true,
+      "legs": [
+        {
+          "a": "(24.50, 13.50)",
+          "b": "(24.50, 15.00)",
+          "ok": true,
+          "points": 2
+        },
+        {
+          "a": "(24.50, 15.00)",
+          "b": "(25.00, 13.50)",
+          "ok": true,
+          "points": 3
+        },
+        {
+          "a": "(25.00, 13.50)",
+          "b": "(24.50, 13.50)",
+          "ok": true,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "label": "East Guard Post Scout",
+      "spawn": "(27.50, 12.00, 0.00)",
+      "walkable": true,
+      "legs": [
+        {
+          "a": "(27.50, 12.00)",
+          "b": "(27.00, 13.00)",
+          "ok": true,
+          "points": 2
+        },
+        {
+          "a": "(27.00, 13.00)",
+          "b": "(26.00, 13.50)",
+          "ok": true,
+          "points": 2
+        },
+        {
+          "a": "(26.00, 13.50)",
+          "b": "(27.50, 12.00)",
+          "ok": true,
+          "points": 5
+        }
+      ]
+    },
+    {
+      "label": "Tower Foot Sentry",
+      "spawn": "(28.50, 14.50, 0.00)",
+      "walkable": true,
+      "legs": [
+        {
+          "a": "(28.50, 14.50)",
+          "b": "(28.50, 14.50)",
+          "ok": true,
+          "points": 5
+        }
+      ]
+    },
+    {
+      "label": "Quarry Cache Raider",
+      "spawn": "(30.50, 7.50, 0.00)",
+      "walkable": true,
+      "legs": [
+        {
+          "a": "(30.50, 7.50)",
+          "b": "(31.00, 5.50)",
+          "ok": true,
+          "points": 4
+        },
+        {
+          "a": "(31.00, 5.50)",
+          "b": "(33.00, 7.50)",
+          "ok": true,
+          "points": 7
+        },
+        {
+          "a": "(33.00, 7.50)",
+          "b": "(30.50, 7.50)",
+          "ok": true,
+          "points": 4
+        }
+      ]
+    }
+  ],
+  "hidden": {
+    "closedCellOpen": false,
+    "openCellOpen": true,
+    "routeExists": true
+  },
+  "chests": [
+    {
+      "name": "Chest_Camp",
+      "pos": "(28.00, 10.00, 0.00)",
+      "prefab": "Assets/Prefabs/Exploration/LootChest.prefab",
+      "registered": true
+    },
+    {
+      "name": "Chest_Quarry",
+      "pos": "(33.00, 8.00, 0.00)",
+      "prefab": "Assets/Prefabs/Exploration/LootChest.prefab",
+      "registered": true
+    },
+    {
+      "name": "Chest_Ruins",
+      "pos": "(15.50, 25.80, 0.00)",
+      "prefab": "Assets/Prefabs/Exploration/LootChest.prefab",
+      "registered": true
+    }
+  ]
+}

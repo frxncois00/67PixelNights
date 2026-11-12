@@ -1,0 +1,12 @@
+PHASE 10 BASELINE — 2026-11-07
+PASS inspection: Unity 6000.6.4f1, URP17.6.0, Input1.20, uGUI2.6. Current SampleScene is authoritative, including updated pond/stairs/roads/lakes. No historical map generator rerun.
+PASS checkpoint: see Phase10-Checkpoint.txt. 1609 transforms/renderers and 10643 tile cells recorded. Scripts/prefabs/items/crafting/animations/settings/packages/scene backed up.
+PASS baseline performance measurement: see Phase10-Baseline-Performance.txt. Actual 120-second live Editor session with ten enemies, seed1010, player (0,20), night clock held, health restored to avoid game over. Frame mean2.315ms, p95 4.867ms, max433.179ms; Main Thread recorder mean2.303ms p95 4.858ms max108.492ms; GC recorder mean12469 bytes/frame max2950752. No claim that spikes are solely navigation.
+PASS direct Phase9 building regression: see Phase10-BuildingBaseline.txt. Production APIs in paused Play Mode, not physical input.
+UNVERIFIED physical input/endurance acceptance of the entire construction loop.
+Current Stalker:30HP/10damage/2speed, night1=2, +1/night, activecap10. Existing spawner batches up to256 attempts per enemy synchronously. Navigation allocates Candidate objects plus SortedSet nodes, synchronous bounded12000cell search, one-second walkability cache. Existing enemy path retry .8s. No current structure attacks or enemy archetypes.
+Planned targeted improvements: reusable struct heap; shared per-frame AI/spawn search allowance; per-search time guard; incremental spawn attempts; profiler markers separating AI/physics/navigation/spawning/animation.
+Current art: Tiny Swords Black Pawn/Warrior/Lancer/Monk/Archer sprites and imported Body_A/environment sheets. No dedicated wolf/crawler monster art identified. Use clearly documented distinct existing-art placeholders; preserve player Body_A. Building log/stone placeholders retained unless an appropriate already-sliced prop can be identified safely.
+UNVERIFIED precise attribution of frame spikes: main thread and frame delta maxima differ, Editor/profiler/CLI context contributes. Component-specific markers will be available after instrumentation. No production performance sign-off.
+
+Final baseline distinction: component-level markers were introduced after the unmodified baseline. Their later measurements cannot retrospectively attribute the baseline433ms spike. Building baseline passed24direct assertions. Physical acceptance remains UNVERIFIED. See Phase10-Report.txt for final changes, actual new tests and limitations.

@@ -1,0 +1,6 @@
+FAIL wood_knife real walking displayed 3 of six side frames
+PASS wood_spear real walking displayed 6 of six side frames
+PASS wood_shovel real walking displayed 6 of six side frames
+PASS wood_longsword real walking displayed 6 of six side frames
+PASS wood_hammer real walking displayed 6 of six side frames
+PASS wood_bow real walking displayed 6 of six side frames

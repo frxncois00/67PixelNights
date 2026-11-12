@@ -1,0 +1,114 @@
+{
+  "done": true,
+  "success": true,
+  "message": "All entrance/path/coastal traversal legs passed",
+  "leg": 11,
+  "legs": 11,
+  "frames": 10607,
+  "startFrame": 9995,
+  "currentFrame": 20602,
+  "groundFailures": 0,
+  "position": "(-18.86, -3.04)",
+  "elapsed": 31.512575200002175,
+  "results": [
+    {
+      "pass": true,
+      "leg": 0,
+      "name": "North road to checkpoint entrance",
+      "requested": "(-19.50, -5.50)",
+      "reached": "(-19.50, -4.90)",
+      "waypoints": 9,
+      "frame": 10272
+    },
+    {
+      "pass": true,
+      "leg": 1,
+      "name": "Watchpost courtyard access",
+      "requested": "(-29.50, -9.50)",
+      "reached": "(-28.89, -9.49)",
+      "waypoints": 28,
+      "frame": 11276
+    },
+    {
+      "pass": true,
+      "leg": 2,
+      "name": "Quarry workstations approach",
+      "requested": "(-28.50, -16.00)",
+      "reached": "(-29.10, -16.47)",
+      "waypoints": 18,
+      "frame": 11892
+    },
+    {
+      "pass": true,
+      "leg": 3,
+      "name": "Camp western entrance",
+      "requested": "(-22.00, -13.50)",
+      "reached": "(-23.04, -13.61)",
+      "waypoints": 18,
+      "frame": 12580
+    },
+    {
+      "pass": true,
+      "leg": 4,
+      "name": "Forge entrance",
+      "requested": "(-15.00, -16.50)",
+      "reached": "(-15.60, -16.45)",
+      "waypoints": 25,
+      "frame": 13538
+    },
+    {
+      "pass": true,
+      "leg": 5,
+      "name": "Bastion and duel clearing",
+      "requested": "(-17.00, -21.50)",
+      "reached": "(-16.41, -21.46)",
+      "waypoints": 12,
+      "frame": 14042
+    },
+    {
+      "pass": true,
+      "leg": 6,
+      "name": "Southwest shoreline expansion",
+      "requested": "(-25.00, -22.00)",
+      "reached": "(-24.42, -21.95)",
+      "waypoints": 17,
+      "frame": 14856
+    },
+    {
+      "pass": true,
+      "leg": 7,
+      "name": "Southern shoreline expansion",
+      "requested": "(-12.00, -27.50)",
+      "reached": "(-12.03, -26.89)",
+      "waypoints": 35,
+      "frame": 16501
+    },
+    {
+      "pass": true,
+      "leg": 8,
+      "name": "Eastern clearing and cabin approach",
+      "requested": "(-7.00, -21.50)",
+      "reached": "(-7.65, -21.54)",
+      "waypoints": 20,
+      "frame": 17389
+    },
+    {
+      "pass": true,
+      "leg": 9,
+      "name": "Main road transition",
+      "requested": "(-2.50, -17.00)",
+      "reached": "(-3.16, -17.05)",
+      "waypoints": 18,
+      "frame": 18281
+    },
+    {
+      "pass": true,
+      "leg": 10,
+      "name": "Return through checkpoint",
+      "requested": "(-19.50, -3.00)",
+      "reached": "(-18.86, -3.04)",
+      "waypoints": 60,
+      "frame": 20602
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+PASS Level1 animated burning
+PASS Level1 cold/smoke/light off
+PASS Level2 animated burning
+PASS Level2 cold/smoke/light off
+PASS Level3 animated burning
+PASS Level3 cold/smoke/light off

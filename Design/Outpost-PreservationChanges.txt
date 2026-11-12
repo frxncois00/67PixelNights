@@ -1,0 +1,58 @@
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-214740938-0|Camp/Lookout|(7.84, -0.38, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1875883670-0 LootChest|{"MonoBehaviour":{"m_Enabled":true,"m_EditorHideFlags":0,"m_Name":"","m_EditorClassIdentifier":"Assembly-CSharp::LootChest","rewards":[{"item":{"fileID":11400000,"guid":"e3d30f39df6277f4582ff39a806e84f0","type":2},"minimum":2,"maximum":5,"remaining":0},{"item":{"fileID":11400000,"guid":"7dee09d5b9f5c0d43a8c400173f2313a","type":2},"minimum":1,"maximum":4,"remaining":0},{"item":{"fileID":11400000,"guid":"3a7c179f8eeb58f45aa4c8fd2215e12d","type":2},"minimum":1,"maximum":3,"remaining":0},{"item":{"fileID":11400000,"guid":"d80a118f12f6b0640933f4504047cabe","type":2},"minimum":1,"maximum":3,"remaining":0}],"visual":{"instanceID":0},"lid":{"instanceID":0},"rolled":false,"empty":false}}
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1219056605-0 LootChest|{"MonoBehaviour":{"m_Enabled":true,"m_EditorHideFlags":0,"m_Name":"","m_EditorClassIdentifier":"Assembly-CSharp::LootChest","rewards":[{"item":{"fileID":11400000,"guid":"e3d30f39df6277f4582ff39a806e84f0","type":2},"minimum":2,"maximum":5,"remaining":0},{"item":{"fileID":11400000,"guid":"7dee09d5b9f5c0d43a8c400173f2313a","type":2},"minimum":1,"maximum":4,"remaining":0},{"item":{"fileID":11400000,"guid":"3a7c179f8eeb58f45aa4c8fd2215e12d","type":2},"minimum":1,"maximum":3,"remaining":0},{"item":{"fileID":11400000,"guid":"d80a118f12f6b0640933f4504047cabe","type":2},"minimum":1,"maximum":3,"remaining":0}],"visual":{"instanceID":0},"lid":{"instanceID":0},"rolled":false,"empty":false}}
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1389463568-0|EnvironmentExpansion/Rocky Region/Expansion Rock 377|(17.6750259, 8.332791, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-2088901412-0|EnvironmentExpansion/Rocky Region/Expansion Rock 378|(17.6295643, 10.1048584, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-234323790-0|EnvironmentExpansion/Rocky Region/Expansion Rock 382|(17.6115837, 18.1134148, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-970694107-0|EnvironmentExpansion/Rocky Region/Expansion Rock 383|(17.631609, 20.0777855, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1031618635-0|EnvironmentExpansion/Rocky Region/Expansion Rock 397|(19.5057125, 8.487676, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-640733584-0|EnvironmentExpansion/Rocky Region/Expansion Rock 398|(19.1348934, 10.3642349, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1124037536-0|EnvironmentExpansion/Rocky Region/Expansion Rock 399|(19.70551, 12.6821175, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1783488413-0|EnvironmentExpansion/Rocky Region/Expansion Rock 400|(19.6109333, 14.0404711, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-2043429697-0|EnvironmentExpansion/Rocky Region/Expansion Rock 401|(19.7353916, 16.4183083, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1864462671-0|EnvironmentExpansion/Rocky Region/Expansion Rock 402|(19.15843, 18.4080658, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-620868466-0|EnvironmentExpansion/Rocky Region/Expansion Rock 403|(19.7573452, 20.775383, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1519989109-0|EnvironmentExpansion/Rocky Region/Expansion Rock 404|(19.5970936, 22.1258526, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-20784672-0|EnvironmentExpansion/Rocky Region/Expansion Rock 417|(21.2508144, 10.5196981, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-474630260-0|EnvironmentExpansion/Rocky Region/Expansion Rock 418|(21.4293385, 12.1448345, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-723751695-0|EnvironmentExpansion/Rocky Region/Expansion Rock 419|(21.2087688, 14.19582, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1100924954-0|EnvironmentExpansion/Rocky Region/Expansion Rock 422|(21.71544, 20.3826656, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1836851860-0|EnvironmentExpansion/Rocky Region/Expansion Rock 423|(21.1548843, 22.7238922, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-2104742847-0|EnvironmentExpansion/Rocky Region/Expansion Rock 434|(23.5195618, 6.64315128, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1492692279-0|EnvironmentExpansion/Rocky Region/Expansion Rock 435|(23.63703, 10.56181, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1525357536-0|EnvironmentExpansion/Rocky Region/Expansion Rock 436|(23.25226, 12.5005131, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1880868837-0|EnvironmentExpansion/Rocky Region/Expansion Rock 437|(23.508812, 14.3111963, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-83110749-0|EnvironmentExpansion/Rocky Region/Expansion Rock 438|(23.5452023, 16.305706, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1453299873-0|EnvironmentExpansion/Rocky Region/Expansion Rock 440|(23.2961521, 20.1058941, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1322356337-0|EnvironmentExpansion/Rocky Region/Expansion Rock 451|(25.64354, 4.2083025, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1025502746-0|EnvironmentExpansion/Rocky Region/Expansion Rock 452|(25.0786552, 6.79040337, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-192085356-0|EnvironmentExpansion/Rocky Region/Expansion Rock 453|(25.5011387, 10.72873, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-101118447-0|EnvironmentExpansion/Rocky Region/Expansion Rock 454|(25.1579666, 12.0388269, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-502123009-0|EnvironmentExpansion/Rocky Region/Expansion Rock 455|(25.7293339, 14.1703367, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1037136198-0|EnvironmentExpansion/Rocky Region/Expansion Rock 456|(25.1126556, 16.2215557, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-240149793-0|EnvironmentExpansion/Rocky Region/Expansion Rock 457|(25.2733765, 18.26254, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-847407808-0|EnvironmentExpansion/Rocky Region/Expansion Rock 469|(27.4873314, 6.17622566, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1256773371-0|EnvironmentExpansion/Rocky Region/Expansion Rock 470|(27.7300549, 8.019126, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1651430298-0|EnvironmentExpansion/Rocky Region/Expansion Rock 471|(27.0574532, 10.0489855, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1697658931-0|EnvironmentExpansion/Rocky Region/Expansion Rock 472|(27.1994514, 12.2951126, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-49242048-0|EnvironmentExpansion/Rocky Region/Expansion Rock 473|(27.3061371, 14.7277946, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1070788490-0|EnvironmentExpansion/Rocky Region/Expansion Rock 474|(27.06453, 16.3948, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1181234724-0|EnvironmentExpansion/Rocky Region/Expansion Rock 475|(27.2461853, 18.5264053, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1432442170-0|EnvironmentExpansion/Rocky Region/Expansion Rock 486|(29.2642632, 6.49166727, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1576635036-0|EnvironmentExpansion/Rocky Region/Expansion Rock 487|(29.33146, 10.6372557, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1960130247-0|EnvironmentExpansion/Rocky Region/Expansion Rock 488|(29.5175762, 12.6990786, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-765138173-0|EnvironmentExpansion/Rocky Region/Expansion Rock 489|(29.1430187, 14.0988846, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-410131530-0|EnvironmentExpansion/Rocky Region/Expansion Rock 490|(29.3303089, 16.2069645, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1547609953-0|EnvironmentExpansion/Rocky Region/Expansion Rock 491|(29.7568188, 18.5092773, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1001287357-0|EnvironmentExpansion/Rocky Region/Expansion Rock 498|(31.55838, 6.61787844, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-915374281-0|EnvironmentExpansion/Rocky Region/Expansion Rock 499|(31.2785549, 10.170722, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1851292967-0|EnvironmentExpansion/Rocky Region/Expansion Rock 500|(31.2959862, 12.1603956, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-543591190-0|EnvironmentExpansion/Rocky Region/Expansion Rock 501|(31.3946, 14.15281, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-706019185-0|EnvironmentExpansion/Rocky Region/Expansion Rock 508|(33.36676, 10.6109161, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-807156883-0|EnvironmentExpansion/Rocky Region/Expansion Rock 514|(35.4299545, 4.242302, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1656554485-0|EnvironmentExpansion/Rocky Region/Expansion Rock 516|(35.133667, 10.0491095, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1931067662-0|EnvironmentExpansion/Rocky Region/Rocky Region_6|(30.4633579, 4.10226536, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-882950449-0|Trees and Stumps/Tree_01|(10.2, 0.62, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-41259495-0|Trees and Stumps/Tree_02|(10.28, -1.18, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1115602667-0|Trees and Stumps/Tree_34|(9.41, -2.63, 0)|(0, 0, 0, 1)|(1, 1, 1)|True
+GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-2058668875-0|Trees and Stumps/Tree_36|(8.29, -1.04, 0)|(0, 0, 0, 1)|(1, 1, 1)|True

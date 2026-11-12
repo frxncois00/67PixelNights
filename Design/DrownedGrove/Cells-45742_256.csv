@@ -1,0 +1,14 @@
+x,y,worldX,worldY,tile,collider
+-11,14,-10.5,14.5,Cliff_5_4,Grid
+-10,14,-9.5,14.5,Cliff_7_4,Grid
+-17,17,-16.5,17.5,Cliff_5_4,Grid
+-16,17,-15.5,17.5,Cliff_6_4,Grid
+-15,17,-14.5,17.5,Cliff_6_4,Grid
+-14,17,-13.5,17.5,Cliff_7_4,Grid
+-28,18,-27.5,18.5,Cliff_5_4,Grid
+-27,18,-26.5,18.5,Cliff_6_4,Grid
+-26,18,-25.5,18.5,Cliff_6_4,Grid
+-25,18,-24.5,18.5,Cliff_6_4,Grid
+-24,18,-23.5,18.5,Cliff_6_4,Grid
+-21,18,-20.5,18.5,Cliff_6_4,Grid
+-20,18,-19.5,18.5,Cliff_7_4,Grid

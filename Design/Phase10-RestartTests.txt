@@ -1,0 +1,4 @@
+PASS Death locks player and cancels pending waves
+PASS Restart resets day/waves/enemies
+PASS Restart empty inventory and released input lock
+PASS Restart healthy player and one spawner

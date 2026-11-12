@@ -1,0 +1,4 @@
+REFUEL ANIMATION — November 8, 2026
+Existing E wood-transfer animation now ends with a .9second native-flame flare and12 rising orange/gold pixel embers. Successful CampfireController.TryAddFuel emits FuelAdded; failed spending/full fire do not emit. Relighting supported. Repeated refueling restarts reusable effect. Disable/finish restores flame scale. Does not change fuel cost/value, upgrade effect, safe-zone logic or player controls.
+Added Assets/Scripts/Campfire/CampfireRefuelEffect.cs; modified CampfireController.cs; attached references in SampleScene. Backup Design/Backups/RefuelFX.
+PASS Unity Play Mode successful spend, rejected empty inventory, relight, disable cleanup and live timed completion. Results RefuelFX-Tests.txt; actual Unity screenshot RefuelFX.png. Compilation passed. Temporary camera/test fuel changes discarded after Play Mode.

@@ -1,0 +1,173 @@
+Main Camera|(0.00, 0.00, -10.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Global Light 2D|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Trees and Stumps|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Tree_01|(9.26, 0.26, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png|Tree1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_02|(9.30, 1.21, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png|Tree2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_03|(8.87, 2.01, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png|Tree3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_04|(7.97, 2.93, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png|Tree4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_05|(7.05, 3.96, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png|Tree1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_06|(5.93, 4.67, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png|Tree2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_07|(4.79, 5.32, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png|Tree3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_08|(3.21, 5.71, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png|Tree4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_09|(1.75, 5.82, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png|Tree1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_10|(0.13, 5.99, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png|Tree2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_11|(-1.24, 5.75, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png|Tree3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_12|(-2.86, 5.64, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png|Tree4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_13|(-4.41, 5.08, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png|Tree1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_14|(-5.83, 4.45, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png|Tree2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_15|(-6.66, 3.97, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png|Tree3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_16|(-7.62, 3.06, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png|Tree4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_17|(-8.51, 2.12, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png|Tree1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_18|(-8.89, 1.02, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png|Tree2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_19|(-9.09, 0.25, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png|Tree3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_20|(-8.86, -0.96, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png|Tree4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_21|(-8.37, -1.92, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png|Tree1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_22|(-7.61, -2.76, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png|Tree2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_23|(-6.93, -3.43, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png|Tree3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_24|(-5.84, -4.44, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png|Tree4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_25|(-4.26, -4.93, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png|Tree1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_26|(-2.79, -5.35, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png|Tree2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_27|(-1.38, -5.51, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png|Tree3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_28|(0.01, -5.71, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png|Tree4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_29|(1.63, -5.61, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png|Tree1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_30|(3.21, -5.24, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png|Tree2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_31|(4.56, -4.95, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png|Tree3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_32|(5.93, -4.32, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png|Tree4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_33|(6.99, -3.52, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png|Tree1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_34|(8.11, -2.83, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png|Tree2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_35|(8.82, -1.92, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png|Tree3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tree_36|(9.25, -0.82, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png|Tree4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Stump_01|(-5.00, -3.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Stump 1.png|Stump 1|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Stump_02|(-2.00, -3.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Stump 2.png|Stump 2|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Stump_03|(1.00, -3.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Stump 3.png|Stump 3|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Stump_04|(4.00, -3.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Stump 4.png|Stump 4|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rocks and Bushes|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Rock_01|(5.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock1.png|Rock1|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_02|(-4.42, 2.97, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock2.png|Rock2|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_03|(0.61, -3.79, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png|Rock3|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_04|(3.04, 3.49, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock4.png|Rock4|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_05|(-5.91, -0.66, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock1.png|Rock1|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_06|(5.91, -2.36, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock2.png|Rock2|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_07|(-1.30, 3.67, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png|Rock3|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_08|(-2.76, -3.91, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock4.png|Rock4|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_09|(6.57, 1.30, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock1.png|Rock1|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_10|(-4.62, 1.68, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock2.png|Rock2|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_11|(2.55, -3.44, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png|Rock3|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_12|(2.09, 4.20, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock4.png|Rock4|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_13|(-4.32, -1.91, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock1.png|Rock1|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Rock_14|(5.86, -0.94, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock2.png|Rock2|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_01|(4.18, 3.01, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe1.png|Bushe1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_02|(-6.99, -0.25, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe2.png|Bushe2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_03|(4.65, -2.65, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe3.png|Bushe3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_04|(-1.02, 4.16, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe4.png|Bushe4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_05|(-3.37, -3.48, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe1.png|Bushe1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_06|(6.81, 0.97, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe2.png|Bushe2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_07|(-5.24, 2.04, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe3.png|Bushe3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_08|(2.21, -3.99, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe4.png|Bushe4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_09|(2.45, 3.83, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe1.png|Bushe1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_10|(-6.42, -1.67, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe2.png|Bushe2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_11|(5.67, -1.37, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe3.png|Bushe3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_12|(-3.33, 3.69, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe4.png|Bushe4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_13|(-1.46, -4.07, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe1.png|Bushe1_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_14|(5.84, 2.32, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe2.png|Bushe2_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_15|(-5.93, 0.66, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe3.png|Bushe3_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Bush_16|(4.36, -3.29, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe4.png|Bushe4_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Camp|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Campfire|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Particle FX/Fire_03.png|Fire_03_004|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_01|(0.80, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock1.png|Rock1|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_02|(0.65, 0.35, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock2.png|Rock2|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_03|(0.25, 0.57, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png|Rock3|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_04|(-0.25, 0.57, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock4.png|Rock4|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_05|(-0.65, 0.35, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock1.png|Rock1|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_06|(-0.80, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock2.png|Rock2|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_07|(-0.65, -0.35, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png|Rock3|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_08|(-0.25, -0.57, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock4.png|Rock4|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_09|(0.25, -0.57, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock1.png|Rock1|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Fire_Ring_10|(0.65, -0.35, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock2.png|Rock2|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Log_Seat_01|(1.41, 1.13, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png|Wood Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Log_Seat_02|(-1.41, 1.13, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png|Wood Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Log_Seat_03|(-1.41, -1.13, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png|Wood Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Log_Seat_04|(1.41, -1.13, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png|Wood Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tent|(3.10, 2.60, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Buildings/Blue Buildings/House2.png|House2|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Shelter|(-4.00, 2.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Buildings/Blue Buildings/House1.png|House1|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Lookout|(7.84, -0.38, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Buildings/Blue Buildings/Tower.png|Tower|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Tower|(0.73, 3.64, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Buildings/Blue Buildings/Tower.png|Tower|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Resources|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Gold_01|(-7.00, 3.50, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Gold/Gold Resource/Gold_Resource.png|Gold_Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Wood_01|(5.00, -4.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png|Wood Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Meat_01|(-5.00, -5.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Meat/Meat Resource/Meat Resource.png|Meat Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Gold_02|(-6.50, 4.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Gold/Gold Resource/Gold_Resource.png|Gold_Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Wood_02|(5.50, -3.50, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png|Wood Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Meat_02|(-4.50, -4.50, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Meat/Meat Resource/Meat Resource.png|Meat Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Gold_03|(-6.00, 3.50, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Gold/Gold Resource/Gold_Resource.png|Gold_Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Wood_03|(6.00, -4.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png|Wood Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Meat_03|(-4.00, -5.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Meat/Meat Resource/Meat Resource.png|Meat Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Gold_04|(-5.50, 4.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Gold/Gold Resource/Gold_Resource.png|Gold_Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Wood_04|(6.50, -3.50, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png|Wood Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Meat_04|(-3.50, -4.50, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Meat/Meat Resource/Meat Resource.png|Meat Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Gold_05|(-5.00, 3.50, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Gold/Gold Resource/Gold_Resource.png|Gold_Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Wood_05|(7.00, -4.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png|Wood Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Meat_05|(-3.00, -5.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Terrain/Resources/Meat/Meat Resource/Meat Resource.png|Meat Resource|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Grid|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Tilemaps|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Water|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Ground|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Paths|(0.00, 0.00, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|
+Warrior|(-1.59, -0.42, 0.00)|(0.00000, 0.00000, 0.00000, 1.00000)|(1.00, 1.00, 1.00)|Assets/Tiny Swords/Units/Blue Units/Warrior/Warrior_Idle.png|Warrior_Idle_000|RGBA(1.000, 1.000, 1.000, 1.000)|Objects|0
+Collider: Tree_01 BoxCollider2D
+Collider: Tree_02 BoxCollider2D
+Collider: Tree_03 BoxCollider2D
+Collider: Tree_04 BoxCollider2D
+Collider: Tree_05 BoxCollider2D
+Collider: Tree_06 BoxCollider2D
+Collider: Tree_07 BoxCollider2D
+Collider: Tree_08 BoxCollider2D
+Collider: Tree_09 BoxCollider2D
+Collider: Tree_10 BoxCollider2D
+Collider: Tree_11 BoxCollider2D
+Collider: Tree_12 BoxCollider2D
+Collider: Tree_13 BoxCollider2D
+Collider: Tree_14 BoxCollider2D
+Collider: Tree_15 BoxCollider2D
+Collider: Tree_16 BoxCollider2D
+Collider: Tree_17 BoxCollider2D
+Collider: Tree_18 BoxCollider2D
+Collider: Tree_19 BoxCollider2D
+Collider: Tree_20 BoxCollider2D
+Collider: Tree_21 BoxCollider2D
+Collider: Tree_22 BoxCollider2D
+Collider: Tree_23 BoxCollider2D
+Collider: Tree_24 BoxCollider2D
+Collider: Tree_25 BoxCollider2D
+Collider: Tree_26 BoxCollider2D
+Collider: Tree_27 BoxCollider2D
+Collider: Tree_28 BoxCollider2D
+Collider: Tree_29 BoxCollider2D
+Collider: Tree_30 BoxCollider2D
+Collider: Tree_31 BoxCollider2D
+Collider: Tree_32 BoxCollider2D
+Collider: Tree_33 BoxCollider2D
+Collider: Tree_34 BoxCollider2D
+Collider: Tree_35 BoxCollider2D
+Collider: Tree_36 BoxCollider2D
+Collider: Stump_01 BoxCollider2D
+Collider: Stump_02 BoxCollider2D
+Collider: Stump_03 BoxCollider2D
+Collider: Stump_04 BoxCollider2D
+Collider: Rock_01 BoxCollider2D
+Collider: Rock_02 BoxCollider2D
+Collider: Rock_03 BoxCollider2D
+Collider: Rock_04 BoxCollider2D
+Collider: Rock_05 BoxCollider2D
+Collider: Rock_06 BoxCollider2D
+Collider: Rock_07 BoxCollider2D
+Collider: Rock_08 BoxCollider2D
+Collider: Rock_09 BoxCollider2D
+Collider: Rock_10 BoxCollider2D
+Collider: Rock_11 BoxCollider2D
+Collider: Rock_12 BoxCollider2D
+Collider: Rock_13 BoxCollider2D
+Collider: Rock_14 BoxCollider2D
+Collider: Tent BoxCollider2D
+Collider: Shelter BoxCollider2D
+Collider: Lookout BoxCollider2D

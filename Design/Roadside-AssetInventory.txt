@@ -1,0 +1,17 @@
+Assets/RoadsideRestStop\Animations.meta
+Assets/RoadsideRestStop\Animations\TraderIdle.anim
+Assets/RoadsideRestStop\Animations\TraderIdle.anim.meta
+Assets/RoadsideRestStop\Animations\TraderIdle.controller
+Assets/RoadsideRestStop\Animations\TraderIdle.controller.meta
+Assets/RoadsideRestStop\Art.meta
+Assets/RoadsideRestStop\Art\Furniture.png
+Assets/RoadsideRestStop\Art\Furniture.png.meta
+Assets/RoadsideRestStop\Prefabs.meta
+Assets/RoadsideRestStop\Prefabs\LanternPost.prefab
+Assets/RoadsideRestStop\Prefabs\LanternPost.prefab.meta
+Assets/RoadsideRestStop\Prefabs\MerchantCart.prefab
+Assets/RoadsideRestStop\Prefabs\MerchantCart.prefab.meta
+Assets/RoadsideRestStop\Prefabs\RestingBench.prefab
+Assets/RoadsideRestStop\Prefabs\RestingBench.prefab.meta
+Assets/RoadsideRestStop\Prefabs\StoneWell.prefab
+Assets/RoadsideRestStop\Prefabs\StoneWell.prefab.meta

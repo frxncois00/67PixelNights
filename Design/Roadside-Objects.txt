@@ -1,0 +1,128 @@
+EnvironmentExpansion/RoadsideRestStop | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,Grid
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Rest Stop Trail | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,Tilemap,TilemapRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 0 | position=(0.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 0/Lower edge | position=(0.500, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 0/Upper edge | position=(0.500, 19.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 1 | position=(1.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 1/Lower edge | position=(1.500, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 1/Upper edge | position=(1.500, 19.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 2 | position=(2.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 2/Lower edge | position=(2.500, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 2/Upper edge | position=(2.500, 19.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 3 | position=(3.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 3/Lower edge | position=(3.500, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 3/Upper edge | position=(3.500, 19.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 4 | position=(4.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 4/Lower edge | position=(4.500, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 4/Upper edge | position=(4.500, 19.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 5 | position=(5.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 5/Lower edge | position=(5.500, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 5/Upper edge | position=(5.500, 19.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 6 | position=(6.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 6/Lower edge | position=(6.500, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 6/Upper edge | position=(6.500, 19.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 7 | position=(7.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 7/Lower edge | position=(7.500, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Terrain Grid/Narrow Road Connection/Trail Cell 7/Upper edge | position=(7.500, 19.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well | position=(12.000, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Well Water | position=(12.000, 21.650, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Masonry Block 1 | position=(11.500, 22.050, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Masonry Block 2 | position=(12.000, 22.050, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Masonry Block 3 | position=(12.500, 22.050, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Masonry Block 4 | position=(11.200, 21.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Masonry Block 5 | position=(12.800, 21.500, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Masonry Block 6 | position=(11.500, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Masonry Block 7 | position=(12.000, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Masonry Block 8 | position=(12.500, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Winch Post -0.65 | position=(11.350, 21.200, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Winch Post 0.65 | position=(12.650, 21.200, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Winch Beam Left | position=(11.700, 22.450, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Winch Beam Right | position=(12.300, 22.450, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Bucket Chain | position=(12.120, 22.450, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Stone Well/Water Bucket | position=(12.120, 21.300, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart | position=(8.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Cart Body | position=(8.000, 18.350, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Cart Wheel -0.65 | position=(7.350, 18.050, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Cart Wheel 0.65 | position=(8.650, 18.050, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Canopy Support -0.85 | position=(7.150, 18.200, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Canopy Support 0.85 | position=(8.850, 18.200, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Canopy Crossbar Left | position=(7.500, 19.600, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Canopy Crossbar Right | position=(8.500, 19.600, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Red Canvas Panel 1 | position=(7.219, 19.100, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Red Canvas Panel 2 | position=(7.531, 19.100, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Red Canvas Panel 3 | position=(7.844, 19.100, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Red Canvas Panel 4 | position=(8.156, 19.100, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Red Canvas Panel 5 | position=(8.469, 19.100, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Red Canvas Panel 6 | position=(8.781, 19.100, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Water Jug | position=(7.550, 18.550, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Merchant Cart/Produce Sign | position=(8.350, 18.550, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Cargo Crate 1 | position=(7.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Cargo Crate 1/Crate | position=(7.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Cargo Crate 2 | position=(7.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Cargo Crate 2/Crate | position=(7.000, 19.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Trader NPC | position=(10.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Trader NPC/Trader Visual | position=(10.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,Animator
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Warm Lantern Post | position=(9.000, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Warm Lantern Post/Lantern | position=(9.000, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Warm Lantern Post/Warm Lantern Glow | position=(9.000, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,Light2D
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Rest Stop Signpost | position=(2.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Rest Stop Signpost/Sign Post | position=(2.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Rest Stop Signpost/Arrow Shaft | position=(2.000, 18.650, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Rest Stop Signpost/Arrow Tip | position=(2.450, 18.850, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Rest Stop Signpost/Produce Marker | position=(1.900, 18.650, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Rest Stop Furnishings/Rest Stop Signpost/Arrow Tip Lower | position=(2.450, 18.450, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details | position=(0.000, 0.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 1 | position=(6.000, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 1/Flowers 1 | position=(5.813, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 1/Flowers 2 | position=(6.000, 21.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 1/Flowers 3 | position=(6.188, 21.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 2 | position=(7.000, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 2/Flowers 1 | position=(6.813, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 2/Flowers 2 | position=(7.000, 22.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 2/Flowers 3 | position=(7.188, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 3 | position=(10.000, 23.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 3/Flowers 1 | position=(9.813, 23.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 3/Flowers 2 | position=(10.000, 23.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 3/Flowers 3 | position=(10.188, 23.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 4 | position=(12.000, 23.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 4/Flowers 1 | position=(11.813, 23.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 4/Flowers 2 | position=(12.000, 23.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 4/Flowers 3 | position=(12.188, 23.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 5 | position=(14.000, 20.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 5/Flowers 1 | position=(13.813, 20.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 5/Flowers 2 | position=(14.000, 20.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 5/Flowers 3 | position=(14.188, 20.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 6 | position=(14.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 6/Flowers 1 | position=(13.813, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 6/Flowers 2 | position=(14.000, 18.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 6/Flowers 3 | position=(14.188, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 7 | position=(11.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 7/Flowers 1 | position=(10.813, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 7/Flowers 2 | position=(11.000, 17.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 7/Flowers 3 | position=(11.188, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 8 | position=(6.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 8/Flowers 1 | position=(5.813, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 8/Flowers 2 | position=(6.000, 18.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 8/Flowers 3 | position=(6.188, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 9 | position=(4.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 9/Flowers 1 | position=(3.813, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 9/Flowers 2 | position=(4.000, 18.125, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Flower Patch 9/Flowers 3 | position=(4.188, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Resting Bench | position=(12.000, 18.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Resting Bench/Bench | position=(12.000, 18.450, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Hidden Supply Chest | position=(13.000, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer,LootChest,ChestOpeningAnimation,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Hidden Supply Chest/Cache Lid | position=(13.000, 22.180, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Hidden Supply Chest/Opening Sparkle 1 | position=(13.000, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Hidden Supply Chest/Opening Sparkle 2 | position=(13.000, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Hidden Supply Chest/Opening Sparkle 3 | position=(13.000, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Hidden Supply Chest/Opening Sparkle 4 | position=(13.000, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Hidden Supply Chest/Opening Sparkle 5 | position=(13.000, 22.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Hidden Supply Chest/Animated Chest Lid | position=(13.000, 22.119, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Hidden Supply Chest/Chest Interior | position=(13.016, 22.190, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Trailside Stone 1 | position=(6.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Trailside Stone 1/Stone | position=(6.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Trailside Stone 2 | position=(13.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SortingGroup,BoxCollider2D
+EnvironmentExpansion/RoadsideRestStop/Clearing Details/Trailside Stone 2/Stone | position=(13.000, 17.000, 0.000) | scale=(1.00, 1.00, 1.00) | components=Transform,SpriteRenderer

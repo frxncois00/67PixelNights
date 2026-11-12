@@ -1,0 +1,34 @@
+PASS Starting resources zero
+PASS Axe starts in selected hotbar slot 1
+PASS 20 main and 5 hotbar slots
+PASS 80+30 stacks as 99+11
+PASS Inventory wallet and HUD agree
+PASS Invalid transactions preserve quantities
+PASS Split conserves items
+PASS Merge
+PASS Swap different items
+PASS Move stack into hotbar without duplication
+PASS Resource slot unequips axe
+PASS Unequipped tools cannot damage trees or rocks
+PASS Axe re-equips
+PASS Axe cannot be dropped
+PASS Closing selected stack preserves all contents
+PASS Full inventory retains four wood spaces
+PASS Partial pickup accepts four and preserves six
+PASS Full pickup preserves world quantity and reports full
+PASS Split with no free slot fails without loss
+PASS Pickup cannot be collected twice
+PASS Drop deducts exact stack quantity
+PASS Drop placed on clear ground
+PASS Dropped stack recollected without duplication
+PASS Campfire refuel consumes inventory once
+PASS Campfire upgrade consumes exact cost
+PASS Relight consumes inventory once
+PASS Nearest pickup wins over campfire and executes once
+PASS Menu blocks pickup interaction refuel upgrade and chop
+PASS Menu blocks movement
+PASS Day timer and fuel continue with inventory open
+PASS Closing menu restores gameplay input gate
+PASS Wallet re-enable has a single subscription
+PASS UI re-enable releases modal state
+PASS Player animation physics camera components preserved

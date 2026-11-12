@@ -1,0 +1,1 @@
+basic_axe slot 1 PASS; basic_pickaxe slot 2 PASS; basic_sword slot 3 PASS; Food slot4 PASS

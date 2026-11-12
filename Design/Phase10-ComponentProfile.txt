@@ -1,0 +1,6 @@
+Forest.Navigation ms/frame mean=0.0104817751672377 max=4.3661
+Forest.NavigationPhysics ms/frame mean=0.00139542339696525 max=0.7344
+Forest.EnemyAI ms/frame mean=0.017041034426497 max=4.4076
+Forest.EnemyPhysics ms/frame mean=0.00446136808614781 max=0.2052
+Forest.SpawnValidation ms/frame mean=0 max=0
+Forest.EnemyAnimation ms/frame mean=0.00618880730951225 max=0.2662

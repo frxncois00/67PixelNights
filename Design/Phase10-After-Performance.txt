@@ -1,0 +1,5 @@
+Unity Editor Windows 120 seconds, seed 1010, ten-enemy requested, player at (0,20), night clock paused, health refreshed to prevent game over. Not a standalone build.
+Frame ms: samples=64495 avg=1.86292528673655 p95=2.70379823632538 max=150.913208723068
+Main Thread recorder ms: samples=64495 avg=1.85838214745328 p95=2.7013 max=91.7742
+GC bytes/frame recorder: samples=64495 avg=10038.0297852547 p95=9860 max=13200118
+Active=10 route searches=1203 last route ms=0.0259 visited=7

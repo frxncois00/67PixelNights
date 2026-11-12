@@ -1,0 +1,2 @@
+FAIL forest_stalker live structure destruction: hits=1 expected=7 elapsed=34.996s min interval=340282300000000000000000000000000000000.000s configured=2s
+FAIL shadow_wolf live structure destruction: hits=2 expected=9 elapsed=34.996s min interval=1.600s configured=1.6s

@@ -1,0 +1,6 @@
+using System;using System.IO;using System.Linq;using UnityEngine;using UnityEditor;
+public static class GroveCombatMonitor {
+ static PlayerHealth hp;static EnemySpawner spawner;static int maximum;static float damage;static float prior;static double until;static int frames;static double start;
+ public static string Main(){hp=GameObject.Find("Player").GetComponent<PlayerHealth>();if(!hp.IsAlive)return "Player already dead; restart for test";spawner=UnityEngine.Object.FindAnyObjectByType<EnemySpawner>();hp.Heal(100);prior=hp.CurrentHealth;start=EditorApplication.timeSinceStartup;until=start+210;EditorApplication.update+=Tick;return "Monitoring cap and actual damage; healing test player below 60 HP.";}
+ static void Tick(){if(!Application.isPlaying||EditorApplication.timeSinceStartup>until){EditorApplication.update-=Tick;File.WriteAllText("Design/DrownedGrove/CombatMonitor.txt",$"Observed maximum total enemies: {maximum}\nActual player damage observed: {damage}\nEditor samples: {frames}\nSeconds: {EditorApplication.timeSinceStartup-start:F1}\n");return;}frames++;maximum=Mathf.Max(maximum,spawner.TotalActiveCount);if(hp.CurrentHealth<prior)damage+=prior-hp.CurrentHealth;if(hp.CurrentHealth<60)hp.Heal(100);prior=hp.CurrentHealth;}
+}

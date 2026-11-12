@@ -1,0 +1,3 @@
+movement=False, animator=False, timeScale=1
+Observed original live simulation timeScale=0.12; AgentScripts/atk.cs set it without restoring.
+Restored movement, Animator and timeScale=1.

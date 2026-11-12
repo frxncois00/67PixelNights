@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: b5f799ba015d64b43a83bd6a972f33c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -670737151147374117
+    second: Icon_wood_spear_0
+  - first:
+      213: -6703295870528127710
+    second: Icon_wood_spear_1
+  - first:
+      213: 7540605978287262850
+    second: Icon_wood_spear_2
+  - first:
+      213: -946255988798954617
+    second: Icon_wood_spear_3
+  - first:
+      213: -3944739090259737522
+    second: Icon_wood_spear_4
+  - first:
+      213: -5170474043144284073
+    second: Icon_wood_spear_5
+  - first:
+      213: -3022809938452286919
+    second: Icon_wood_spear_6
+  - first:
+      213: -9059725974521137889
+    second: Icon_wood_spear_7
+  - first:
+      213: 8994936232349443866
+    second: Icon_wood_spear_8
+  - first:
+      213: 5448448928309099831
+    second: Icon_wood_spear_9
+  - first:
+      213: -2290899253434287992
+    second: Icon_wood_spear_10
+  - first:
+      213: 3373833758154716813
+    second: Icon_wood_spear_11
+  - first:
+      213: -6814177130156625408
+    second: Icon_wood_spear_12
+  - first:
+      213: -1368023568112816604
+    second: Icon_wood_spear_13
+  - first:
+      213: 7530662183892586179
+    second: Icon_wood_spear_14
+  - first:
+      213: 8422306061028057494
+    second: Icon_wood_spear_15
+  - first:
+      213: 2672201083751357466
+    second: Icon_wood_spear_16
+  - first:
+      213: 3966536941514663151
+    second: Icon_wood_spear_17
+  - first:
+      213: 2974426498676709466
+    second: wood_spear
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wood_spear
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5852203429474920800000000000000
+      internalID: 2974426498676709466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_wood_spear_0: -670737151147374117
+      Icon_wood_spear_1: -6703295870528127710
+      Icon_wood_spear_10: -2290899253434287992
+      Icon_wood_spear_11: 3373833758154716813
+      Icon_wood_spear_12: -6814177130156625408
+      Icon_wood_spear_13: -1368023568112816604
+      Icon_wood_spear_14: 7530662183892586179
+      Icon_wood_spear_15: 8422306061028057494
+      Icon_wood_spear_16: 2672201083751357466
+      Icon_wood_spear_17: 3966536941514663151
+      Icon_wood_spear_2: 7540605978287262850
+      Icon_wood_spear_3: -946255988798954617
+      Icon_wood_spear_4: -3944739090259737522
+      Icon_wood_spear_5: -5170474043144284073
+      Icon_wood_spear_6: -3022809938452286919
+      Icon_wood_spear_7: -9059725974521137889
+      Icon_wood_spear_8: 8994936232349443866
+      Icon_wood_spear_9: 5448448928309099831
+      wood_spear: 2974426498676709466
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

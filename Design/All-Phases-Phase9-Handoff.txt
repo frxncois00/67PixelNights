@@ -1,0 +1,128 @@
+ALL-PHASE SUMMARY AND PHASE 9 CONTINUATION HANDOFF
+Updated: November 7, 2026 (Asia/Shanghai)
+Project: C:\Users\Francis\My project
+Scene: Assets/Scenes/SampleScene.unity
+Unity 6000.6.4f1; URP 2D; new Input System.
+
+IMPORTANT STATUS
+Phase 9 has already been implemented. Continue and refine it; do not recreate its systems. This handoff consolidates existing reports, including newer map changes. No new Play Mode tests were run while writing this summary. Historical passes apply to the scene at the time tested, not automatically to all later map edits.
+
+PHASE 1 — PLAYER AND CAMERA
+Top-down WASD/arrow movement, normalized diagonals, dynamic zero-gravity Rigidbody2D, foot collider, obstacle collision, directional idle/walk integration and smooth camera follow. Camera zoom 5, follow smooth time 0.15. Latest player artwork is Body_A (see below), superseding early knight/worker references.
+
+PHASE 2 — DAY/NIGHT
+Authoritative repeating Day/Night cycle, day counter, 180-second days/120-second nights, transitions within phase durations, Global Light 2D palette/intensity changes, timer/progress HUD and notifications. Short test durations and F6 skip/F7 pause development controls. Standard Unity UI Text retained.
+
+PHASE 3 — CAMPFIRE
+Fuel consumption, wood feeding, upgrades, protection radius, local fire lighting, animated flame and fuel/status HUD. CampfireSafeZone remains authoritative for protection. Resource wallet interfaces were subsequently connected to inventory; do not create another wood balance.
+
+PHASE 4 — GATHERING
+Tree/stone resource nodes, directional tool actions, health/hit feedback, depletion, drops and regrowth. Contextual E interactions and loose pickups. Later equipment checks require the appropriate owned/equipped tool. Old report references to always starting with an axe and side-facing vertical animation are superseded.
+
+PHASE 5 — INVENTORY
+One InventoryController with 20 bag slots and 5 hotbar slots; item definitions, stacking, move/swap/merge/split, equip, drop and overflow-safe pickup. Bag UI blocks movement/world actions but time continues. Current start is empty: tools are picked up near camp. Early reports describing a permanent starting axe are obsolete.
+
+PHASE 6 — SURVIVAL
+Health, hunger, starvation, berries, sheep/raw meat, cooked food, consumption, cooking near a burning fire, death/input restrictions and HUD. Food/actions use the existing inventory, not duplicate counters. Added eating/cooking feedback and refined tool size, grip, facing and target selection.
+
+PHASE 7 — ENEMIES AND COMBAT
+Forest Stalker nighttime spawning, count progression capped at ten, patrol/chase/search/attack/retreat/death states, health, windup/cooldown, player damage, sword strikes, knockback and threat HUD. Sunrise cleanup and campfire protection. Enemy artwork remains a temporary tinted existing sprite. Structure attacks were not added in Phase 9.
+
+PHASE 8 — EXPANSION AND EXPLORATION
+Continuous forest around camp, Dense Forest north, Rocky Region east, Abandoned Cabin south, Dark Forest west, five discovery IDs including camp, extra resources, loot caches, terrain boundary colliders and bounded cardinal navigation. Cache overflow retains remaining loot; discoveries do not duplicate. Cabin is exterior artwork, not an enterable interior. Later terrain edits below supersede the original broad straight-road layout.
+
+RECENT PLAYER / EQUIPMENT CHANGES
+- Pixel Crawler Body_A is now the main character, replacing the knight/worker appearance.
+- Dedicated up/down and side idle/walk; Crush/Slice/Carry action frames; mirrored left side. Eating uses Body_A neutral pose.
+- Character 32 PPU, environment generally 64 PPU; preserve these intentional source-resolution differences. Point filtering, uncompressed sprites and unit object scales.
+- Corrected axe/sword icons: Basic Axe Tool_02; Pickaxe Tool_04; Short Sword Tool_03.
+- Equip / Hotbar places axe in 1, pickaxe in 2, sword in 3. Other items use an available hotbar slot or swap with the selected slot; displaced contents return to the bag.
+- Pickups enter inventory; use Equip / Hotbar to assign them. Tools must be equipped for corresponding actions.
+- Native action sheets contain their supplied weapon art; they do not dynamically match every future weapon.
+
+RECENT WORLD CHANGES AFTER THE INITIAL PHASE 9 REPORT
+Read the newer Design reports before touching terrain:
+- HiddenPondClearing at approximately (-19,14), with lake/stream, cabin, flowers, bridges and dedicated tilemaps/prefab.
+- Subsequent plateau redesign uses Tiny Swords terrain, raised terraces, cliffs and controlled stair entrances. Retained cabin/flowers/bridge art includes earlier imported assets. Some decorative objects were deliberately moved/replaced in this later redesign; the earlier Phase 9 preservation snapshot does not describe these newer authorized changes.
+- ConnectedIsland report: 151 missing ground cells filled; 3,751 land cells connected, none disconnected at that check; obsolete shoreline/internal overlays removed; pond and stream preserved.
+- Stair/cabin refinements: compact reference-style stairs, corrected shoulders/banks, flattened obsolete cabin tier and single upper entrances. Consult the latest stair reports rather than intermediate plateau coordinates.
+- NaturalRoads: 277 solid dirt surfaces replaced by textured winding trails with irregular edges. Existing collision/ground occupancy preserved; old center-path renderer hidden.
+- NaturalCampLakes: 97 water cells retained, 19 filled as grassy inlets, 32 outer-bank cells carved; water barriers updated, four rock accents added; all four road crossings retained; hidden pond protected.
+- Later clearing changes may be scene overrides. Do not blindly reapply the prefab or rerun old map setup scripts.
+
+PHASE 9 — ALREADY IMPLEMENTED
+Crafting at a workbench near (-1.5,2), contextual E, default range 2.
+Recipes (one output each):
+Wooden Fence = 3 wood; 50 HP; stack 20.
+Reinforced Barricade = 5 wood + 2 stone; 150 HP; stack 20.
+Storage Chest = 6 wood + 2 scrap; 50 HP; stack 10; 12 storage slots.
+Repair Kit = 2 wood + 1 scrap; repairs up to 25 HP; stack 20.
+Atomic multi-ingredient crafting checks final output capacity before committing one inventory change. No spending on failed recipes.
+Equip building item, close inventory, select hotbar slot, B preview, left-click place, right-click/Escape cancel. Range 3; half-unit snapping; green/red ghost and footprint outline; no ghost collider.
+Placement checks terrain, solid overlaps, player, main routes, interaction proximity and simulated route connectivity. Commit revalidates and consumes one item.
+E on a structure opens management. Repair spends one kit only if useful. Dismantle requires confirmation, no refund; nonempty chests reject dismantling.
+Chest deposit/withdraw one or stack supports partial capacity. Destroyed nonempty chest remains a nonblocking withdraw-only wreck, retaining contents.
+New building/world artwork and icons are placeholders: a wood-log image can mean a chest or fence, while stone represents the barricade. Use the item name to distinguish them. Ordinary wood cannot itself be placed as a chest/fence.
+Runtime structures/storage are session-only. No persistence/save system.
+
+PHASE 9 CODE / ASSETS TO REUSE
+Assets/Scripts/Crafting/CraftingRecipe.cs
+Assets/Scripts/Crafting/CraftingWorkbench.cs
+Assets/Scripts/Building/BuildingDefinition.cs
+Assets/Scripts/Building/BuildingController.cs
+Assets/Scripts/Building/PlaceableStructure.cs
+Assets/Scripts/Building/StructureStorage.cs
+Assets/Scripts/UI/ConstructionUI.cs
+Assets/Crafting/ (four recipes and three building definitions)
+Assets/Prefabs/Building/ (fence, barricade, chest)
+Assets/Prefabs/Crafting/CraftingWorkbench.prefab
+Existing InventoryController.CraftBatch and ForestNavigation integration.
+Scene: Player.BuildingController, BuildableStructures, CraftingWorkbench and ConstructionInterface under existing Canvas. No duplicate Canvas/EventSystem needed.
+
+CONTROLS
+WASD / arrows: movement.
+1-5: selected hotbar item.
+Space / left click: equipped axe chopping or sword combat.
+R: mining with equipped pickaxe.
+E: contextual pickup, berry/sheep/campfire interaction, workbench or structure management.
+F: eat selected hotbar food; inventory Use Food also supported.
+C: cook near burning campfire.
+U: campfire upgrade.
+Tab / I: inventory; G: drop one.
+B: building preview with an equipped building item.
+Left click in building mode: placement, not a weapon swing.
+Right click / Escape: cancel building; Escape closes modal UI.
+F6/F7: development cycle skip/pause.
+
+RECORDED VALIDATION — NOT RE-RUN FOR THIS SUMMARY
+Phase 9 recorded 101 passing assertions, zero failures:
+24 crafting/building/storage; 7 extra capacity/modal; 6 enemy attack; 15 exploration; 46 survival; 3 actual sword animation-callback checks.
+Unity compilation and current Console were clean at the Phase 9 final check.
+1,166 original transforms/renderers matched the Phase 9 pre-change snapshot then. This is not a claim that newer intentional map changes leave that snapshot unchanged.
+Crafting rendering reviewed at 1280x720, 1600x900 and 1920x1080; storage at 720p; Unity-rendered placement preview verified collider-free.
+Navigation ten-route sample improved from 81.246 ms to 14.2401 ms. Failed/exhausted enemy routes respect 0.8-second retry interval.
+Fifteen-second ten-enemy runtime sample retained ten finite-position enemies and made 150 searches, but maximum observed frame delta was 164 ms. Performance is NOT signed off.
+Most assertions used direct production API calls in Unity. They are not physical keyboard/mouse acceptance tests.
+
+RECOMMENDED PHASE 9 CONTINUATION
+1. Inspect current SampleScene and newer terrain reports; create a fresh backup.
+2. Replace confusing chest/fence/workbench/repair-kit placeholder visuals with appropriate available sprites; preserve item IDs, recipes, inventory contents and references.
+3. Revalidate placement against the latest winding roads, camp lakes, stairs and hidden pond. Existing main-path rejection is based on abs(world x)<2 or abs(world y)<2, not the visual trail shape; this is conservative and needs review after road edits.
+4. Physically test craft -> equip -> preview -> place -> collide -> manage -> store/withdraw -> repair/dismantle. Check full inventories and no item loss.
+5. Test enemies around new structures, narrow paths, stairs and water; profile a full night with ten enemies. Confirm no trapped actors or damaging through walls.
+6. Recheck Body_A actions, gathering, food, campfire, death, camera and UI at requested resolutions.
+7. Update Phase9-Report.txt with new evidence; do not mark unrun tests as passed.
+
+DO NOT REBUILD OR DUPLICATE
+Preserve working Phases 1-8, current terrain, Body_A, inventory authority, safe-zone authority, camera zoom and tool pickup setup. No new inventory, player, camera, EventSystem, save system or later-phase mechanics unless separately requested.
+
+SOURCE REPORTS
+Design/Phase1-Report.txt through Phase9-Report.txt
+Design/Phase7-8-Hardening-Report.txt
+Design/BodyA-Report.txt; ToolEquipment-Report.txt; ToolGrip-Report.txt
+Design/HiddenPondClearing-Report.md; HiddenPondPlateau-Report.md
+Design/ConnectedIsland-Report.txt; Shoreline-Report.txt
+Design/NativeStairConnections-Report.txt; SingleTierEntrance-Report.txt
+Design/RelocateEastStair-Report.txt; FlattenCabinTier-Report.txt
+Design/CabinReferenceStairs-Report.txt; EastReferenceStairs-Report.txt
+Design/FlatEastStairBanks-Report.txt; NaturalRoads-Report.txt; NaturalCampLakes-Report.txt

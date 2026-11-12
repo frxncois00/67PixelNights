@@ -1,0 +1,7 @@
+HOTBAR FIRST / UNEQUIP — November 8, 2026
+Pickups merge compatible stacks first (hotbar before bag), then fill empty hotbar slots1–5 before empty bag slots. Applies to InventoryController.Add, including pickups and storage withdrawals. No automatic movement of existing bag contents.
+Explicit Equip/Hotbar uses first available hotbar slot; when full, swaps with selected slot (or1 when nothing selected), retaining the displaced item in the bag. Fixed axe/pickaxe/sword slot reservation removed: pickup order now determines slot order.
+Number keys1–5 toggle the selected slot off on repeat. Item remains in its slot. Next press selects again. Explicit Equip button remains idempotent. Startup has no selected slot. F/G ignore no-selection state; slot highlighting handles no selection.
+Changed: InventoryController.cs, EquipmentController.cs, ItemDropController.cs, FoodConsumption.cs, InventorySlotUI.cs. Backup: Design/Backups/HotbarFirst.
+PASS10 Unity Play Mode logic checks: Design/HotbarFirst-Tests.txt. Synthetic Input System probe was inconclusive (manual Update invocation may process the same key twice); no physical keyboard test claimed. Direct toggle logic passed. Compilation passed. Temporary test inventories discarded on exiting Play Mode. No scene objects or assets changed.
+

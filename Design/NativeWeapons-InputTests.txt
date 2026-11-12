@@ -1,0 +1,25 @@
+PASS Synthetic W velocity=(0.00, 4.00)
+PASS Camera Z retained
+PASS Synthetic S velocity=(0.00, -4.00)
+PASS Camera Z retained
+PASS Synthetic A velocity=(-4.00, 0.00)
+PASS Camera Z retained
+PASS Synthetic D velocity=(4.00, 0.00)
+PASS Camera Z retained
+PASS Synthetic UpArrow velocity=(0.00, 4.00)
+PASS Camera Z retained
+PASS Synthetic DownArrow velocity=(0.00, -4.00)
+PASS Camera Z retained
+PASS Synthetic LeftArrow velocity=(-4.00, 0.00)
+PASS Camera Z retained
+PASS Synthetic RightArrow velocity=(4.00, 0.00)
+PASS Camera Z retained
+PASS Synthetic W+D velocity=(2.83, 2.83)
+PASS Camera Z retained
+PASS Synthetic release stops immediately velocity=(0.00, 0.00)
+PASS Camera Z retained
+PASS Synthetic Space axe triggers actual animation and one resource hit
+PASS Synthetic R pickaxe triggers actual animation and one resource hit
+PASS Synthetic Tab opens inventory
+PASS Synthetic Escape closes inventory
+PASS Synthetic1 selects axe hotbar

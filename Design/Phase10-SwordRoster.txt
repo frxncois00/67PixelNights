@@ -1,0 +1,33 @@
+PASS forest_stalker animated strike1 health=15
+PASS forest_stalker animated strike2 health=0
+PASS forest_stalker defeated in 2 sword swings
+PASS shadow_wolf animated strike1 health=25
+PASS shadow_wolf animated strike2 health=10
+PASS shadow_wolf animated strike3 health=0
+PASS shadow_wolf defeated in 3 sword swings
+PASS night_crawler animated strike1 health=40
+PASS night_crawler animated strike2 health=25
+PASS night_crawler animated strike3 health=10
+PASS night_crawler animated strike4 health=0
+PASS night_crawler defeated in 4 sword swings
+PASS forest_brute animated strike1 health=85
+PASS forest_brute animated strike2 health=70
+PASS forest_brute animated strike3 health=55
+PASS forest_brute animated strike4 health=40
+PASS forest_brute animated strike5 health=25
+PASS forest_brute animated strike6 health=10
+PASS forest_brute animated strike7 health=0
+PASS forest_brute defeated in 7 sword swings
+PASS ancient_stalker animated strike1 health=165
+PASS ancient_stalker animated strike2 health=150
+PASS ancient_stalker animated strike3 health=135
+PASS ancient_stalker animated strike4 health=120
+PASS ancient_stalker animated strike5 health=105
+PASS ancient_stalker animated strike6 health=90
+PASS ancient_stalker animated strike7 health=75
+PASS ancient_stalker animated strike8 health=60
+PASS ancient_stalker animated strike9 health=45
+PASS ancient_stalker animated strike10 health=30
+PASS ancient_stalker animated strike11 health=15
+PASS ancient_stalker animated strike12 health=0
+PASS ancient_stalker defeated in 12 sword swings

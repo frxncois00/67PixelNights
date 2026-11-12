@@ -1,0 +1,37 @@
+{
+  "playing": true,
+  "checks": [
+    {
+      "target": "(-25.50, 19.50)",
+      "open": true,
+      "path": true,
+      "steps": 51
+    },
+    {
+      "target": "(-14.00, 19.50)",
+      "open": true,
+      "path": true,
+      "steps": 68
+    },
+    {
+      "target": "(-10.50, 14.00)",
+      "open": true,
+      "path": true,
+      "steps": 76
+    },
+    {
+      "target": "(-24.50, 14.00)",
+      "open": true,
+      "path": true,
+      "steps": 30
+    },
+    {
+      "target": "(-18.50, 6.50)",
+      "open": true,
+      "path": true,
+      "steps": 31
+    }
+  ],
+  "pondBlocked": true,
+  "cliffBlocked": true
+}

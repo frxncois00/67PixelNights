@@ -1,0 +1,28 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Bb]uilds/
+MemoryCaptures/
+Recordings/
+
+# IDE generated files
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# Local design archives
+Design/Backups/
+Design/Reviews/
+
+# Operating system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,48 @@
+PASS Chest_Quarry starts closed with animation assigned
+PASS Nearby chest selected by existing interaction system
+PASS Chest_Quarry opens and starts one-shot animation
+PASS Chest_Quarry transfers loot into existing inventory
+PASS Chest_Quarry repeated interaction does not duplicate loot
+PASS Player movement remains active while chest opens
+PASS Chest_Quarry lid visibly moves over real Play Mode frames
+PASS Chest_Quarry settles into open pose
+PASS Chest_Quarry transient sparkles finish cleanly
+PASS Chest_Quarry empty chest cannot reroll loot
+PASS Dark Forest Supply Chest (Wooden Cache Placeholder) starts closed with animation assigned
+PASS Dark Forest Supply Chest (Wooden Cache Placeholder) opens and starts one-shot animation
+PASS Dark Forest Supply Chest (Wooden Cache Placeholder) transfers loot into existing inventory
+PASS Dark Forest Supply Chest (Wooden Cache Placeholder) repeated interaction does not duplicate loot
+PASS Dark Forest Supply Chest (Wooden Cache Placeholder) lid visibly moves over real Play Mode frames
+PASS Dark Forest Supply Chest (Wooden Cache Placeholder) settles into open pose
+PASS Dark Forest Supply Chest (Wooden Cache Placeholder) transient sparkles finish cleanly
+PASS Dark Forest Supply Chest (Wooden Cache Placeholder) empty chest cannot reroll loot
+PASS Chest_Camp starts closed with animation assigned
+PASS Chest_Camp opens and starts one-shot animation
+PASS Chest_Camp transfers loot into existing inventory
+PASS Chest_Camp repeated interaction does not duplicate loot
+PASS Chest_Camp lid visibly moves over real Play Mode frames
+PASS Chest_Camp settles into open pose
+PASS Chest_Camp transient sparkles finish cleanly
+PASS Chest_Camp empty chest cannot reroll loot
+PASS Chest_Ruins starts closed with animation assigned
+PASS Chest_Ruins opens and starts one-shot animation
+PASS Chest_Ruins transfers loot into existing inventory
+PASS Chest_Ruins repeated interaction does not duplicate loot
+PASS Chest_Ruins lid visibly moves over real Play Mode frames
+PASS Chest_Ruins settles into open pose
+PASS Chest_Ruins transient sparkles finish cleanly
+PASS Chest_Ruins empty chest cannot reroll loot
+PASS Abandoned Cabin Supply Chest (Wooden Cache Placeholder) starts closed with animation assigned
+PASS Abandoned Cabin Supply Chest (Wooden Cache Placeholder) opens and starts one-shot animation
+PASS Abandoned Cabin Supply Chest (Wooden Cache Placeholder) transfers loot into existing inventory
+PASS Abandoned Cabin Supply Chest (Wooden Cache Placeholder) repeated interaction does not duplicate loot
+PASS Abandoned Cabin Supply Chest (Wooden Cache Placeholder) lid visibly moves over real Play Mode frames
+PASS Abandoned Cabin Supply Chest (Wooden Cache Placeholder) settles into open pose
+PASS Abandoned Cabin Supply Chest (Wooden Cache Placeholder) transient sparkles finish cleanly
+PASS Abandoned Cabin Supply Chest (Wooden Cache Placeholder) empty chest cannot reroll loot
+PASS Full inventory retains all rolled loot in chest
+PASS Rapid repeated use neither rerolls loot nor restarts opening
+PASS Disabling animation stops transient effects
+PASS Disable/re-enable keeps the open state without replay
+PASS Remaining loot can be collected after freeing inventory space
+PASS Collecting remaining loot does not replay first-open animation

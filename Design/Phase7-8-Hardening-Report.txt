@@ -1,0 +1,48 @@
+PHASE 7-8 HARDENING REPORT — Phase 9 prerequisite
+Date: 2026-11-07 (Asia/Shanghai)
+Project: C:\Users\Francis\My project
+Editor: Unity 6000.6.4f1; SampleScene
+
+IMPLEMENTED
+- ForestNavigation now prioritizes cardinal search candidates using path cost plus Manhattan distance. Escape searches retain breadth/cost-first behavior. The existing cell sampling, terrain checks, static footprints, safety rules and bounded search remain.
+- This is a bounded heuristic search, not a claim of optimal A* paths. It can conservatively reject a route after exhausting its budget.
+- EnemyController no longer immediately replans an exhausted/failed route on every physics tick. All retries respect the existing 0.8-second interval.
+- Temporary candidate footprint simulation supports placement checks without creating a physical ghost collider.
+- Structure placement, destruction and dismantling invalidate cached navigation occupancy.
+- Existing CampfireSafeZone remains the only protection authority. No new safe zone or enemy attack system was introduced.
+
+MEASURED IN THE UNITY EDITOR
+- Ten long route requests before: 81.246 ms total, 10 successful.
+- Same requested route after: 14.2401 ms total, 10 successful; 3,950 cells expanded total; final request 0.4432 ms.
+- This measures these route calls, including a cold first request. It is not an FPS or allocation benchmark.
+- A 15-second live Play Mode sample with ten enemies retained ten active enemies, finite positions and 150 navigation searches.
+- Largest observed unscaled frame delta was 0.1642315 seconds. This is NOT a performance acceptance pass. Use the Unity Profiler for sustained frame timing and allocation analysis; editor overhead and scene workload were not isolated.
+- Last sampled route: 30 visited cells, 0.1849 ms.
+
+ACTUAL REGRESSION RESULTS
+- Six attack checks passed in paused Play Mode through project APIs: windup entry, one 10-point hit, no repeated recovery hit, safety expansion cancels attack/retreats, dead enemy cannot attack, sunrise cleanup.
+- Fifteen expansion checks passed: five discoveries without duplication, full/partial loot transfer retention, independent chest state, Night 1 spawns, connected spawn routes, sunrise cleanup, camera zoom 5, expanded resource registration.
+- Forty-six survival checks passed: health/hunger, starvation intervals, food benefits and rejection, berry overflow/regrowth, wildlife harvest, cooking cancellation/output capacity, food drop/recollect, phase-change integration.
+- Sword regression uses actual animation completion callbacks, with programmatic attack initiation and a stationary test enemy. See Phase9-SwordTests.txt for the recorded result.
+- Existing 1,166 scene transforms and SpriteRenderer states compared against the pre-change snapshot: zero differences.
+- No physical keyboard/mouse playthrough is claimed. Most checks directly call production APIs in Play Mode; windup deadline was advanced by the test helper.
+
+REMAINING MANUAL ACCEPTANCE
+- Sustain a complete night with ten moving enemies in dense forest and inspect profiler spikes/GC.
+- Physically chase around new fences/barricades, narrow paths and corner obstacles; inspect unexpected stopping, corner cutting or collision jitter.
+- Enter/leave protection during windup; extinguish and relight fire under attack; expand safety with nearby enemies.
+- Verify collision occlusion, moving-target missed attacks, knockback and death/restart visually.
+- WASD/arrows, animation facing, axe/pickaxe and camera follow physical regressions remain required.
+- Existing trapped-enemy retreat fallback (dismissal after 12 seconds) remains; no teleport was introduced.
+
+EVIDENCE
+Design/Phase9-NavBaseline.txt
+Design/Phase9-NavAfter.txt
+Design/Phase9-RuntimeSample.txt
+Design/Phase9-AttackTests.txt
+Design/Phase9-ExpansionTests.txt
+Design/Phase9-SurvivalRegression.txt
+Design/Phase9-SwordTests.txt
+Design/Phase9-Preservation.txt
+
+STATUS: targeted hardening implemented; automated Unity runtime checks completed as listed; full physical/endurance acceptance remains unverified.

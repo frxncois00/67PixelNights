@@ -1,0 +1,3 @@
+Assets\Scenes\SampleScene.unity
+Assets\Scripts\Enemies\EnemySpawner.cs
+Assets\Scripts\Environment\AshenFrontierEncounterController.cs

@@ -1,0 +1,80 @@
+WEAPON ANIMATION / GAME SPEED FIX
+Date: 2026-11-08
+Project: Unity 6000.6.4f1, Assets/Scenes/SampleScene.unity
+
+Confirmed causes
+- The running game had Time.timeScale = 0.12. AgentScripts/atk.cs explicitly
+  set this value for a weapon preview and did not restore it. This slowed the
+  whole simulation to 12% speed, including movement, animations and timers.
+- PlayerMovement and the Visual Animator had also been saved disabled in the
+  scene. The player was alive and no action was running.
+- A temporary "Attacking Wood Spear" hierarchy had been saved in SampleScene.
+  Its Weapon sprite and Tip trail remained after attacks finished.
+
+Changes
+- Restored Time.timeScale to 1 and confirmed it across fresh Play sessions.
+- AgentScripts/atk.cs: previews require Play Mode and use normal time scale.
+- AgentScripts/fxmat.cs: disallows scene/material setup during Play Mode so
+  saving this helper cannot capture an in-progress attack's disabled components.
+- Assets/Scripts/Combat/WeaponSwing.cs: temporary weapon rigs, trails, arrows
+  and impact particles are marked DontSave. Animation profiles are unchanged.
+- Assets/Scripts/Gathering/PlayerGatherAnimation.cs: tracked temporary action
+  props are marked DontSave, including eating and wood-transfer props.
+- Assets/Scenes/SampleScene.unity: re-enabled PlayerMovement and Visual Animator;
+  removed only the orphan Attacking Wood Spear and its Weapon/Tip children.
+- Unity serialized TimeManager.asset using its current format; time scale is 1
+  and the fixed timestep remains approximately 0.02 seconds.
+
+Preservation verified
+- Compared scene YAML against Design/Backups/WeaponSpeedFix/SampleScene.unity.
+  The only surviving component changes are the two enabled flags. The only
+  removed objects are the orphan attack rig and its two children, with the
+  corresponding scene-root reference removed. No scene objects were added.
+- Forest, rest stop, outpost, sprites, player position, colliders, camera and
+  inventory configuration remain unchanged by this fix.
+- No changes to weapon animation profiles, directional sprite frames, attack
+  controls, movement speed, damage values, or the equipment rules.
+
+Validation performed in the running Unity Editor
+- Compilation completed without errors.
+- Final automated Play Mode run: 175 checks passed, 0 failed.
+- Virtual keyboard input tested during the actual Dynamic input update:
+  WASD and all four arrow keys produce 4-unit directional velocity;
+  diagonal movement is normalized; releasing keys sets velocity to zero.
+- Basic axe, basic pickaxe and short sword exercised in all four directions.
+  Native directional frames appear; actions finish at normal speed; each impact
+  callback runs once; movement, Animator, body position and scale are restored.
+- Crafted knife, spear, shovel, long sword, hammer and bow exercised as well.
+  Their temporary hierarchies cannot be saved, and rigs/effects clean up.
+- Game clock: 22.65 game seconds over 22.66 real seconds in the final run.
+- Peak simultaneous impact particles: 18; none persisted between attacks.
+- Final Editor sample: frame time average 2.27 ms, p95 3.34 ms, max 17.27 ms;
+  Main Thread recorder average 2.27 ms, p95 3.28 ms, max 15.79 ms.
+- Unity Console reported zero errors after the run. Earlier compilation
+  warnings concern pre-existing deprecated APIs/unused fields, not this fix.
+- Stopped Play Mode. Final saved Edit scene: time scale 1, movement and Animator
+  enabled, no temporary attack rig or weapon particles, scene not dirty.
+
+Test scope and limitations
+- These are Unity Editor measurements, not a standalone-build FPS guarantee.
+- Input checks use a virtual keyboard and the actual PlayerMovement callbacks;
+  they are not a manual physical-keyboard playthrough.
+- Animation tests check the impact callback, not damage against every enemy or
+  resource. No new gameplay systems or unrelated performance changes were made.
+- Earlier test runs exposed the orphan rig and an Editor input-context issue.
+  Keyboard tests were moved to the game's Dynamic input update rather than
+  changing the game's input settings. Final results supersede those runs.
+
+Evidence and backup
+- Design/WeaponSpeedFix-Tests.txt: final individual checks and timing samples.
+- Design/WeaponSpeedFix-FinalState.txt: final saved Editor state.
+- AgentScripts/TestWeaponSpeedFix.cs: Editor-only validation helper outside Assets.
+- Design/WeaponSpeedFix-InitialTests.txt and WeaponSpeedFix-FocusFilteredTests.txt:
+  earlier diagnostic runs, retained for transparency.
+- Design/Backups/WeaponSpeedFix/: non-destructive backups of edited scripts and
+  the original scene. WeaponFxParticle.cs was backed up but not modified.
+
+How to try it
+Open SampleScene, press Play and click the Game view. Move with WASD/arrows,
+equip an owned tool using 1-5, and use the existing attack controls. No manual
+Inspector setup or code changes are required.

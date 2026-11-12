@@ -1,0 +1,12 @@
+var b=UnityEngine.Object.FindAnyObjectByType<BuildingController>();
+var bench=UnityEngine.Object.FindObjectsByType<CraftingWorkbench>().First(x=>x.GetComponent<SawmillStation>());
+b.transform.position=bench.transform.position+Vector3.down*.8f;
+b.GetComponent<Rigidbody2D>().position=b.transform.position;
+b.OpenWorkbench(bench);
+var recipe=b.recipes.First(r=>r.result.Id=="wood_shovel");
+foreach(var cost in recipe.ingredients) b.inventory.Add(cost.item, cost.amount+10);
+var ui=b.ui;
+var flags=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;
+var select=typeof(ConstructionUI).GetMethod("SelectRecipe",flags);
+select.Invoke(ui,new object[]{recipe});
+return new { open=ui.PurchaseOpen, before=b.inventory.Count(recipe.result), costs=recipe.ingredients.Select(c=>new{c.item.name,count=b.inventory.Count(c.item)}).ToArray() };

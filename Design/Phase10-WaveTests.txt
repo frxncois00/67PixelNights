@@ -1,0 +1,93 @@
+PASS Night 1 initial cap
+PASS Night 1 final spawn accounting
+PASS Night 1 wave progression
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Sunrise cleanup
+PASS Night 2 initial cap
+PASS Night 2 final spawn accounting
+PASS Night 2 wave progression
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Sunrise cleanup
+PASS Night 3 initial cap
+PASS Night 3 final spawn accounting
+PASS Night 3 wave progression
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Sunrise cleanup
+PASS Night 4 initial cap
+PASS Night 4 final spawn accounting
+PASS Night 4 wave progression
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Sunrise cleanup
+PASS Night 5 initial cap
+PASS Night 5 final spawn accounting
+PASS Night 5 wave progression
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Sunrise cleanup
+PASS Night 6 initial cap
+PASS Night 6 final spawn accounting
+PASS Night 6 wave progression
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Sunrise cleanup
+PASS Night 7 initial cap
+PASS Night 7 final spawn accounting
+PASS Night 7 wave progression
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Sunrise cleanup
+PASS Night 8 initial cap
+PASS Night 8 final spawn accounting
+PASS Night 8 wave progression
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Sunrise cleanup
+PASS Night 9 initial cap
+PASS Night 9 final spawn accounting
+PASS Night 9 wave progression
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Spawn eligible and outside protection
+PASS Sunrise cleanup
+PASS Night10 cap
+PASS Night10 Ancient actually spawned
+PASS Repeat spawn callback idempotent

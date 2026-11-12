@@ -1,0 +1,1 @@
+10 heuristic route searches: 14.2401ms; success=10; total expanded=3950; last=0.4432ms

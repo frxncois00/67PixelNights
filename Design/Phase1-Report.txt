@@ -1,0 +1,26 @@
+Phase 1 implementation
+
+Files created/modified (plus Unity-generated .meta files):
+Assets/Scripts/Player/PlayerMovement.cs
+Assets/Scripts/Camera/CameraFollow.cs
+Assets/Scenes/SampleScene.unity
+Assets/Animations/Player/Idle_Down.anim
+Assets/Animations/Player/Idle_Left.anim
+Assets/Animations/Player/Idle_Right.anim
+Assets/Animations/Player/Idle_Up.anim
+Assets/Animations/Player/Player.controller
+Assets/Animations/Player/Walk_Down.anim
+Assets/Animations/Player/Walk_Left.anim
+Assets/Animations/Player/Walk_Right.anim
+Assets/Animations/Player/Walk_Up.anim
+AgentScripts/SetupPhase1.cs
+AgentScripts/TestPhase1.cs
+AgentScripts/TickTestPhase1.cs
+
+Verified: C# compilation succeeded; Player/Visual, Rigidbody2D, CapsuleCollider2D, animator/controller and camera target references inspected in the actual Editor. Scene saved. Existing environment transforms/sprites matched the pre-change snapshot (115 objects excluding camera); camera zoom is intentionally 5. Existing Warrior is retained. 59 solid footprints configured without moving the environment.
+
+Dynamic testing status: INCONCLUSIVE. Automated runs failed to maintain a continuously running Play Mode session. The raw test log is diagnostic evidence, NOT a successful acceptance run. Keyboard direction, diagonal speed, collisions and smooth follow require manual acceptance.
+
+Manual test: Open SampleScene, press Play, click Game view. Use WASD/arrows; hold W+D to check diagonal speed, release to stop. Walk into a tree trunk and house base. Verify camera follows and idle resumes. Stop Play afterwards.
+
+Artwork: Existing Idle and Run frames animated in eight named states. Left is mirrored; Up/Down reuse side-facing art because directional sheets are unavailable. No artwork was changed. Point filtering and 64 PPU are retained. Pixel Perfect Camera was not added; smooth subpixel camera movement can still shimmer.

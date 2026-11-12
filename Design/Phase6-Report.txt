@@ -1,0 +1,426 @@
+PHASE 6 — CURRENT SUMMARY AND PHASE 7 HANDOFF
+Updated: 2026-11-06
+Project: C:/Users/Francis/My project
+Scene: Assets/Scenes/SampleScene.unity
+Unity 6000.6.4f1 | URP 17.6.0 | Input System 1.20.0 | uGUI 2.6.0
+
+READ THIS FIRST
+This summary is the current implementation baseline for Phase 7. It includes
+Phase 6 and every subsequent action-visual, equipment and tool-grip update.
+Phase 7 itself has NOT been implemented. The original detailed Phase 6 report
+is retained below as a historical record; this summary supersedes its outdated
+statements about starting with an axe, axe-only sheep harvesting, missing eating
+animations, inventory staying open after eating, and baked-in walking tools.
+
+1. COMPLETED SURVIVAL SYSTEMS
+- Health: 100 maximum; controlled damage/healing; one death event; HUD and warnings.
+- Hunger: 100 maximum; drains 0.2/second; zero hunger causes 5 damage every 5 seconds.
+- Berry: restores 15 hunger. Cooked meat: restores 35 hunger and 5 health.
+  Raw meat is not directly edible. Food stacks to 20 in the existing inventory.
+- Four existing bushes provide E berry gathering with overflow protection and
+  a 90-second respawn timer.
+- Three passive sheep wander on valid ground. Two successful harvest hits produce
+  a single pickup stack of 1-2 raw meat. No automatic sheep respawn.
+- C cooks one raw meat into one cooked meat in five seconds near a burning fire.
+  Leaving range cancels; extinguishing pauses; relighting resumes. Ingredients
+  are spent only in the successful atomic completion transaction.
+- Death locks player actions/inventory, cancels cooking and offers scene restart.
+  Restart resets session state. No disk persistence or enemy combat was added.
+
+2. RECENT VISUAL AND RELIABILITY CHANGES
+- Axe, pickaxe and sheep-harvest animations retain the upright neutral worker.
+  A separate equipped-tool sprite aims toward the selected target; mining uses
+  the stone's HitPoint instead of merely the player's previous movement vector.
+- F and inventory USE FOOD now play a 0.9-second eating animation: the food moves
+  near the mouth, tilts/pulses and shrinks. Successful inventory use closes the
+  inventory so the animation is visible. Busy/death/interruption guards remain.
+- Cooking shows turning/bobbing meat, browning and rising steam above the fire.
+  Extinguishing pauses the visual and steam; cancellation/completion cleans up.
+- NearbyStoneIndicator references 14 existing Rock_* objects, measures proximity
+  to collider surfaces and renders above the player. It distinguishes mineable
+  rocks, remaining hits, wrong equipment, facing requirements and SOLID ROCK.
+  Only configured resource nodes are mineable; decorative rocks remain solid.
+- Runtime inventory slots are serialized to survive script/domain reloads in
+  Play Mode, fixing observed null-slot errors. This is NOT a save system.
+
+3. EQUIPMENT AND HAND PLACEMENT — CURRENT BEHAVIOR
+- Tools must be owned, moved into a hotbar slot and selected before use.
+- Basic Axe (basic_axe): Space/left-click chops trees; E harvests sheep.
+- Basic Pickaxe (basic_pickaxe): R mines configured stone nodes.
+- Short Sword (basic_sword): E harvests sheep; cannot chop trees or mine stone.
+  Uses Tiny Swords Tool_02, an existing short-blade sprite, not a long sword.
+- Wrong-tool and missing-target attempts now show an explanation instead of
+  silently doing nothing. The latest reported chopping failure was inspected:
+  basic_sword was equipped, and input was not blocked. Axe chopping passed tests.
+- Neutral Pawn idle/walk clips replace frames with a permanently drawn axe.
+  Player/Equipped Tool displays the actual selected tool and hides during actions.
+- Tool scale is 1, reduced from 1.8. ToolGripPose supplies per-tool grip positions
+  and head angles. Idle tools mirror with the player; swings rotate around the
+  same hand anchor instead of floating near the feet or orbiting away.
+- Equipment changes are blocked during a swing. Tools can be dropped/recollected.
+
+4. STARTING SCENE AND CURRENT CONTROLS
+The player now starts EMPTY-HANDED. Three individual pickups are south of the
+campfire under Safezone Test Tools:
+  Basic Axe:     (-1.84, -1.54)
+  Basic Pickaxe: (-0.62, -2.32)
+  Short Sword:   ( 0.82, -2.26)
+E picks up a nearby tool. Tab/I opens inventory; click the tool and then a bottom
+hotbar slot to move it. Close inventory; select 1-5 or click the hotbar to equip.
+WASD/arrows: move. Space/click: axe on trees. R: pickaxe on stone.
+E: nearest contextual pickup, berries, sheep harvest, or campfire interaction.
+F: eat selected hotbar food. USE FOOD: eat selected inventory food.
+C: cook. U: campfire upgrade. G: drop selected hotbar item.
+Escape: close inventory. F6/F7: existing development day/night controls.
+Do not restore the older E-for-chopping binding or an automatic starting axe.
+
+5. FILES AND INTEGRATION ADDED SINCE THE ORIGINAL PHASE 6 REPORT
+New scripts:
+  Assets/Scripts/UI/NearbyStoneIndicator.cs
+  Assets/Scripts/Cooking/CookingAnimation.cs
+  Assets/Scripts/Inventory/EquippedToolVisual.cs
+  Assets/Scripts/Inventory/ToolGripPose.cs
+New item definitions:
+  Assets/Items/basic_pickaxe.asset
+  Assets/Items/basic_sword.asset
+Updated scripts:
+  Assets/Scripts/Gathering/PlayerGatherAnimation.cs
+  Assets/Scripts/Tools/PlayerToolController.cs
+  Assets/Scripts/Survival/FoodConsumption.cs
+  Assets/Scripts/Inventory/InventoryController.cs
+  Assets/Scripts/Inventory/EquipmentController.cs
+  Assets/Scripts/Wildlife/WildlifeHarvest.cs
+Updated assets:
+  Assets/Items/basic_axe.asset
+  Assets/Animations/Player/Idle_{Down,Up,Left,Right}.anim
+  Assets/Animations/Player/Walk_{Down,Up,Left,Right}.anim
+  Assets/Scenes/SampleScene.unity
+Scene integration includes Player's stone indicator and Equipped Tool child,
+Campfire's CookingAnimation, the three safe-zone pickups and catalog references.
+No setup steps remain. Original Phase 6 files are listed in the historical report.
+
+6. VERIFIED RESULTS AND LIMITS
+Previously recorded Phase 6 checks: 46 logic, 8 death, 34 inventory regression,
+16 resource regression; additional timing, virtual-input and resolution checks
+are documented below. These are historical results, not newly rerun today.
+Subsequent action-visual checks: 55 passed, including directional swings,
+eating/cooking cleanup and interruption behavior. Runtime slot reload tested.
+Latest equipment regression: 22 Play Mode checks passed, including all three
+pickups, permissions, tool sprites/scale and actual tree/stone/sheep damage.
+Latest grip follow-up: 8 checks passed, covering six mirrored grip positions,
+wrong-tool feedback and targeting near all 36 wood nodes.
+Latest recorded Unity compilation succeeded; current Console errors were zero
+at that check. Runtime test/preview changes were discarded by exiting Play Mode.
+Tests used actual runtime components/game APIs; physical keyboard/mouse and
+extended gameplay acceptance remain unverified. Earlier 55 visual checks were
+not all rerun after the final grip change; the latest 22+8 checks were run.
+Actual Unity captures were reviewed, including Design/ToolGrip-Unity.png.
+This report update only changes documentation; it does not rerun tests.
+
+7. PHASE 7 INTEGRATION RULES AND REMAINING WORK
+- Preserve the current forest, player, camera follow/zoom, inventory, lighting,
+  campfire, food transactions, equipment gates and hand-anchor visuals.
+- Future damage should use PlayerHealth.TakeDamage(amount, cause), IsAlive/IsDead
+  and the existing health events. Register/unregister event subscriptions safely.
+- Respect PlayerSurvivalController.InputLocked, PlayerInteractionController's
+  input gate and PlayerGatherAnimation.Busy. Do not add competing input polling.
+- InventoryController is authoritative. Reuse its capacity/transaction paths;
+  no separate food/tool counts or duplicated wallets.
+- Short Sword currently supports contextual sheep harvesting only. No general
+  sword-combat, enemy AI, enemy spawning or other Phase 7 system is implemented.
+- Validate actual keyboard/mouse use, tree/house collisions, prolonged play,
+  natural berry/resource respawn and current visuals at common resolutions.
+- Berry icon is a tinted bush placeholder; cooked meat is tinted existing meat.
+  Sheep use simple local avoidance, without advanced pathfinding.
+- Latest grip changes did not change saved environment transforms or camera zoom.
+  The earlier equipment scene save retained pre-existing unsaved Shelter and
+  Bush_09 position edits; do not mistake them for intended layout changes here.
+
+8. SUPPORTING REPORTS AND EVIDENCE
+Design/ActionVisuals-Report.txt and Design/ActionVisualTests.txt
+Design/ToolEquipment-Report.txt and Design/ToolEquipment-TestResults.txt
+Design/ToolGrip-Report.txt and Design/ToolGrip-TestResults.txt
+Design/Actions-Food.png
+Design/EquippedPickaxe-Unity.png
+Design/SafezoneTools-Unity.png
+Design/ToolGrip-Unity.png
+Earlier reports may describe superseded visual settings; use this summary and
+the latest ToolGrip report for the current behavior.
+Original report backup: Design/Backups/Phase6-Report-before-Phase7-handoff.txt
+
+==========================================================================
+HISTORICAL ORIGINAL PHASE 6 REPORT — PRIOR TO THE UPDATES SUMMARIZED ABOVE
+Retained for implementation detail and original test evidence, not current
+starting equipment or final visual behavior.
+==========================================================================
+
+PHASE 6 — HEALTH, HUNGER AND FOOD SURVIVAL
+Implemented in Unity 6000.6.4f1 on 2026-11-06.
+Scene: Assets/Scenes/SampleScene.unity
+Packages inspected: URP 17.6.0, Input System 1.20.0, uGUI 2.6.0.
+Checkpoint: Design/Backups/Phase6-20261106-214217 (Scripts, Items, SampleScene).
+
+A. IMPLEMENTATION SUMMARY
+Added player health, gradual hunger, interval starvation damage, threshold warnings and survival HUD.
+Added Berry, Raw Meat and Cooked Meat to the existing item catalog and authoritative 25-slot inventory.
+Food can be eaten with inventory USE FOOD or F on a selected hotbar food stack.
+Four existing bushes now offer contextual E berry gathering, preserving overflow.
+Three passive sheep spawn on valid existing ground, wander, pause and can be harvested through contextual E with an equipped axe.
+The existing campfire cooks one raw meat into one cooked meat using C and a five-second timer.
+Death locks player actions, closes inventory, cancels cooking and shows a restart screen.
+Restart reloads the existing SampleScene through SceneManager.LoadScene.
+No hostile enemies, save system, crafting, multiplayer or other later-phase features were added.
+
+B. NEW FILES
+Assets/Scripts/Survival/PlayerHealth.cs
+Assets/Scripts/Survival/PlayerHunger.cs
+Assets/Scripts/Survival/PlayerSurvivalController.cs
+Assets/Scripts/Survival/FoodConsumption.cs
+Assets/Scripts/Resources/BerryBush.cs
+Assets/Scripts/Wildlife/PassiveAnimal.cs
+Assets/Scripts/Wildlife/WildlifeSpawner.cs
+Assets/Scripts/Wildlife/WildlifeHarvest.cs
+Assets/Scripts/Cooking/CampfireCooking.cs
+Assets/Scripts/UI/SurvivalHUD.cs
+Assets/Scripts/UI/CookingUI.cs
+Assets/Scripts/UI/GameOverUI.cs
+Assets/Items/berry.asset
+Assets/Items/raw_meat.asset
+Assets/Items/cooked_meat.asset
+Unity generated associated .meta files.
+
+Integration and validation helpers outside Assets:
+AgentScripts/SetupPhase6.cs
+AgentScripts/TestPhase6.cs
+AgentScripts/TestPhase6Death.cs
+AgentScripts/TestPhase6Live.cs
+AgentScripts/TestPhase6Timing.cs
+
+Evidence:
+Design/Phase6-LogicTests.txt
+Design/Phase6-DeathTests.txt
+Design/Phase6-LiveTests.txt
+Design/Phase6-TimingTests.txt
+Design/Phase6-InventoryRegression.txt
+Design/Phase6-ResourceRegression.txt
+Design/Phase6-1280.png
+Design/Phase6-1600.png
+Design/Phase6-1920.png
+Design/Phase6-Death-1280.png
+Design/Phase6-Death-1600.png
+Design/Phase6-Death-1920.png
+Design/Phase6-Gameplay.png
+Design/Phase6-Report.txt
+
+C. MODIFIED FILES
+Assets/Scripts/Inventory/ItemDefinition.cs
+  Appended Food/FoodMaterial categories, optional food effects and icon tint. Existing enum values preserved.
+Assets/Scripts/Inventory/InventoryController.cs
+  Added stable-ID lookup, death management lock, and one-event atomic one-item recipe exchange.
+Assets/Scripts/Inventory/EquipmentController.cs
+  Rejects equipment changes after death.
+Assets/Scripts/Inventory/ItemDropController.cs
+  Supports droppable food using the same ResourcePickup component; rejects drops after death.
+Assets/Scripts/Resources/ResourcePickup.cs
+  Optional ItemDefinition reference supports food while legacy resource-type pickups remain compatible.
+Assets/Scripts/Interaction/PlayerInteractionController.cs
+  Shared input gate includes death state.
+Assets/Scripts/Player/PlayerMovement.cs
+  Existing movement input and velocity are gated by death state.
+Assets/Scripts/UI/InventoryUI.cs
+  Added USE FOOD button/reference and guards against inventory reopening/management after death.
+Assets/Scripts/UI/InventorySlotUI.cs
+  Displays item icon tint to distinguish cooked meat.
+Assets/Scenes/SampleScene.unity
+  Added references, food catalog entries, survival/cooking/death UI, berry components and wildlife spawner.
+The existing camera, player animation assets, day/night scripts, campfire fuel/upgrade scripts and resource regrowth script were not rewritten.
+Existing item assets basic_axe, wood_log, stone and scrap were not replaced.
+
+D. ITEM DEFINITIONS
+berry — Berry — Food — stack 20 — consumable — droppable — hunger +15, health +0.
+raw_meat — Raw Meat — FoodMaterial — stack 20 — not consumable — droppable.
+cooked_meat — Cooked Meat — Food — stack 20 — consumable — droppable — hunger +35, health +5.
+All use the existing InventoryController. There is no separate food wallet.
+The berry icon is a clearly documented temporary tinted bush-frame placeholder.
+Raw meat uses the existing Tiny Swords meat sprite. Cooked meat reuses it with a brown tint.
+No source textures or unrelated import settings were changed.
+
+E. HEALTH AND HUNGER
+Health starts at 100, maximum 100.
+Public read-only properties: CurrentHealth, MaxHealth, NormalizedHealth, IsAlive, IsDead, CauseOfDeath.
+TakeDamage(amount, cause), Heal(amount), and development-only SetHealthForTesting provide controlled mutation.
+Changed, Damaged, Healed and Died events are exposed. Death fires once.
+Negative/nonfinite damage and healing are rejected. Dead players cannot heal back to life; use restart.
+
+Hunger starts at 100, maximum 100, depletion 0.2/second.
+At zero, starvation deals 5 health per 5 seconds.
+Advance(seconds) separates time spent depleting positive hunger from time actually spent starving.
+Large deltas apply the exact accumulated interval damage in one bounded health call.
+Restore(amount) clamps hunger and resets starvation timing when hunger becomes positive.
+Hunger uses scaled Time.deltaTime, continues with inventory open and stops damaging after death.
+Low-hunger (20%), starving (0) and low-health (25%) warnings fire on threshold entry, not every frame.
+Development SetHungerForTesting is available for manual/automated tests.
+
+F. BERRY GATHERING
+Configured existing objects, without moving or changing their sprites:
+Bush_01 at approximately (4.18, 3.01)
+Bush_05 at approximately (-3.37, -3.48)
+Bush_07 at approximately (-5.24, 2.04)
+Bush_13 at approximately (-1.46, -4.07)
+Range 1.5; yield 2-4 berries; respawn 90 seconds.
+E uses the existing nearest-target PlayerInteractionController.
+Each harvest yield is rolled once and retained until fully accepted.
+A full inventory leaves the unaccepted remainder on the bush. It does not roll a new reward on each attempt.
+Only after the full reward is collected does the bush deplete and start its respawn timer.
+The existing artwork remains unchanged in the depleted state; its interaction prompt disappears until ready.
+
+G. WILDLIFE
+Used the imported Tiny Swords Sheep_Idle and Sheep_Move frames instead of introducing a rabbit placeholder.
+Maximum initial sheep: 3. No automatic animal respawning in this phase.
+Configured anchors approximately (-3,-2), (3,-3), (1.96,4.76), with a bounded search if an anchor is obstructed.
+Spawning checks ground, structures, player distance and campfire distance.
+Wander speed 1.5, radius 4 from spawn, pauses 1-3 seconds.
+Kinematic Rigidbody2D with a small circular footprint. Candidate movement checks ground footprint, obstacles, radius and campfire avoidance.
+No advanced pathfinding or hostile attacks.
+Contextual E harvest requires Basic Axe equipped and uses the existing gathering animation.
+Two successful harvest hits deplete a sheep. It produces one pickup stack containing 1-2 raw meat.
+A harvested guard and immediate deactivation prevent duplicate drops.
+Raw meat is collected through the existing E pickup path and supports partial acceptance.
+Interrupted player action releases the animal's temporary movement hold.
+
+H. COOKING AND TRANSACTION SAFETY
+Existing Campfire has CampfireCooking.
+C starts cooking within 2 units, while alive, with a burning fire and one raw meat.
+Cooking duration 5 seconds; one job at a time.
+No ingredient is consumed while the timer runs.
+InventoryController.CanExchangeOne checks whether output can fit, including a slot freed by consuming a singleton ingredient.
+ExchangeOne removes one raw meat and inserts one cooked meat before emitting a single inventory change event.
+Leaving range cancels without spending.
+Extinguished fire pauses elapsed cooking; relighting resumes while the player stays in range.
+Death or component disable cancels.
+If ingredients disappear or output capacity is lost before completion, the transaction fails without consuming anything.
+Successful completion produces exactly one cooked meat.
+The cooking HUD is below the campfire HUD; refuel E and upgrade U remain unchanged.
+
+I. DEATH AND RESTART
+PlayerSurvivalController subscribes to PlayerHealth.Died.
+Death cancels the active gather coroutine before disabling movement, then locks tools, interactions, equipment, food, drops and inventory management.
+Cooking cancels. Inventory closes. Rigidbody velocity is zeroed.
+GameOverUI shows YOU DIED, survived day and cause.
+Only RESTART is shown; no menu scene was introduced.
+The existing enabled SampleScene is reloaded through Unity SceneManager.
+Runtime inventory, health/hunger, day count, fire, resource depletion and wildlife reset with the scene.
+No global time-scale pause was added. The world may continue behind the game-over overlay.
+The game-over day/cause are captured when shown.
+Re-enabling the survival controller after death reapplies the death state safely.
+
+J. SCENE INTEGRATION
+Player references: PlayerHealth, PlayerHunger, PlayerSurvivalController, FoodConsumption connected to existing inventory, actions and equipment.
+Campfire references: existing fire controller, player, health, inventory, raw/cooked definitions.
+GameSystems/WildlifeSpawner references Ground Tilemap, campfire, player, existing lit material and sheep frames.
+Four BerryBush components reference berry.asset.
+Existing Canvas now has SurvivalHUD, CookingInterface/CookingProgress and GameOverInterface/GameOverPanel.
+InventoryInterface has USE FOOD and adjusted detail/drop-button spacing.
+One Canvas and one existing EventSystem retained.
+Seven ItemDefinition assets confirmed.
+All new critical Inspector references inspected in the Editor.
+Scene saved; final isDirty=false and Unity left in Edit Mode.
+Saved-scene comparison found zero changes to pre-existing world local positions, rotations, scales, sprite references or sprite colors.
+Camera orthographic size remains 5.
+Existing fuel values, safe-zone radii, camera follow, player speed and environment layout were preserved.
+
+K. UI AND CONTROLS
+Survival HUD is at upper right, clear of campfire and centered day/night HUD.
+Health is red, hunger orange. Bars darken at low thresholds.
+Cooking progress is below the existing campfire HUD.
+Inventory remains a 20-slot grid plus five-slot hotbar.
+USE FOOD consumes the selected edible item without closing inventory.
+Game-over overlay and restart button are centered.
+
+New controls:
+F — eat selected hotbar food.
+C — cook raw meat near burning campfire.
+E — also gathers berries and harvests sheep when that is the selected nearest target.
+
+Preserved:
+WASD/arrows movement; Space/click axe; R mining; E pickups/refuel/relight; U upgrade;
+Tab/I inventory; Escape close; 1-5 hotbar; G drop; F6/F7 development day/night.
+No independent berry or animal E polling was added.
+
+L. AUTOMATED AND EDITOR TEST RESULTS
+PASS — final compilation completed, failed=false, errors=[], compilationFailed=false.
+PASS — final current Unity Console reported zero errors and warnings. Retained historical Pipeline entries are separate.
+PASS — all 46 checks in Phase6-LogicTests.txt, performed on actual scene components in paused Play Mode.
+These include:
+initial stats, hunger rate, starvation intervals/overshoot, recovery, numeric boundaries, single death;
+berry/cooked consumption, raw rejection, capped benefits, inventory USE FOOD;
+partial berry and food pickup acceptance, depletion and forced respawn;
+wildlife count/valid starting locations, health, raw-meat drops and duplicate prevention;
+cooking prerequisites, five-second direct progression, pause/relight, cancel/full-output behavior;
+singleton ingredient slot reuse, dropping/recollecting food and phase/menu integration.
+PASS — all 8 checks in Phase6-DeathTests.txt.
+PASS — restart button callback reloaded SampleScene. Observed health 100, zero resources/food, Basic Axe, Day 1, fresh fire countdown, three animals, movement enabled and game-over/input lock cleared.
+PASS — a second restart again reset health, food, axe and day state.
+PASS — survival controller disable/death/re-enable reapplied game over and movement lock.
+PASS — frame-based virtual F consumed a hotbar berry and virtual C started cooking.
+PASS — controlled nine-second Play Mode timing test completed one natural cooking exchange.
+PASS — all three animals moved while remaining on valid ground over 45 samples in the controlled timing test.
+PASS — test harness restored movement, food, inventory UI and other temporarily suspended input handlers.
+PASS — inspected Unity-rendered survival/inventory/cooking HUD at 1280x720, 1600x900 and 1920x1080.
+PASS — inspected game-over layout at all three resolutions.
+PASS — final normal gameplay capture shows survival, campfire, day/night HUDs and existing forest.
+
+Initial live-test limitation:
+Phase6-LiveTests.txt retains FAIL expectations from an uncontrolled session after the initial F/C checks passed.
+During that observation the player changed position, food quantities changed, and animals were harvested, so those final counts could not serve as controlled timing/hold-input evidence.
+The isolated test temporarily suspended player input handlers and inventory UI, then restored them; its natural cooking and wildlife checks all passed.
+UNVERIFIED — physical keyboard/mouse acceptance and a clean prolonged held-F test.
+No physical-key success is inferred from virtual input or direct API calls.
+
+M. PHASE 1-5 REGRESSION
+PASS — all 34 existing direct Phase 5 checks in Phase6-InventoryRegression.txt.
+PASS — all 16 existing direct Phase 4 checks in Phase6-ResourceRegression.txt.
+These cover inventory stack limits, merge/split/swap, hotbar conservation, equipment gating, overflow, drop/recollection, wallet/HUD sync, fuel spending, upgrades, relighting, nearest-target priority, menu blocks, subscriptions, tree/stone depletion/yield/pickup, scrap, and occupied/clear regrowth.
+PASS — stats/food remained stable through direct day/night phase changes.
+PASS — player physics/animation components and camera settings retained.
+PASS — final saved-scene world transform/sprite comparison.
+UNVERIFIED — complete physical movement/collision/camera and all original input bindings.
+UNVERIFIED — uninterrupted natural day/night cycles and complete campfire local-light/safe-zone acceptance this phase.
+UNVERIFIED — natural 90-second berry respawn and long-duration tree/stone regrowth. Forced-deadline/direct regrowth tests passed.
+
+N. REMAINING MANUAL ACCEPTANCE
+1. Open SampleScene and press Play. Verify health/hunger begin at 100 and hotbar slot 1 contains the axe.
+2. Walk to a configured berry bush. E when Gather Berries is the selected prompt.
+3. Select berries in Tab inventory and click USE FOOD after hunger drops.
+4. Move food to hotbar, close inventory, select that slot and press F.
+5. Try raw meat: it must not be edible. With full health/hunger, food must not be spent.
+6. Equip the axe, approach a sheep and use its E harvest prompt twice. Collect the raw-meat pickup with E.
+7. Refuel/relight the campfire with E if needed. Stand within 2 units and press C.
+8. Watch five seconds of progress. Leave range to cancel, or extinguish/relight the fire to check pause/resume.
+9. Check full inventory overflow and food dropping/recollection.
+10. For fast death testing in Play Mode, use script/debug tooling to set hunger to zero and health low, or wait for natural starvation. Check game over and click RESTART physically.
+11. Confirm restart resets the session, then check movement, collisions, chopping/mining, E/U, inventory and day/night controls.
+12. Repeat at the three target resolutions and wait 90 seconds after fully collecting a bush's berries.
+
+O. KNOWN LIMITATIONS
+Wildlife is sheep, using available imported art, rather than rabbit.
+Berry inventory icon is a tinted bush placeholder. Cooked meat is a tinted version of the existing meat icon.
+Berry bush visuals are intentionally unchanged; availability is communicated by the contextual prompt.
+Animals use simple local obstacle avoidance and may pause/retry in tight terrain. No pathfinding or automatic animal respawn.
+Natural wildlife observation was nine seconds, not an extended endurance test.
+No separate eat animation was added. Sheep harvesting reuses the existing axe gathering animation.
+Inventory and survival state remain session-local; no disk persistence.
+The existing worker locomotion sprite still depicts an axe even when a food/empty hotbar slot is selected, as documented in Phase 5.
+The optional menu destination is omitted because no valid menu scene was provided.
+
+P. REQUIRED MANUAL EDITOR STEPS
+None for setup. Scripts, scene objects, catalog definitions, buttons and Inspector references are assigned and saved.
+Manual acceptance above remains recommended; the report distinguishes it from performed automated tests.
+
+Q. PHASE 7 READINESS
+Future enemy damage should call PlayerHealth.TakeDamage(amount, cause).
+Read IsAlive/IsDead rather than modifying health fields.
+Subscribe/unsubscribe to Damaged, Changed and Died for reactions.
+Use PlayerSurvivalController.InputLocked and the existing interaction gate to respect death.
+Food consumption and cooking already use authoritative inventory transactions.
+No enemy AI or advanced combat was implemented.

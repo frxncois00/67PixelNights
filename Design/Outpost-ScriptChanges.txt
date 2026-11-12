@@ -1,0 +1,2 @@
+CHANGED C:\Users\Francis\My project\Assets\Scripts\Enemies\EnemySpawner.cs
+CHANGED C:\Users\Francis\My project\Assets\Scripts\Loot\LootChest.cs

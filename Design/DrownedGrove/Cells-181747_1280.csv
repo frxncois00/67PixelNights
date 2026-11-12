@@ -1,0 +1,17 @@
+x,y,worldX,worldY,tile,collider
+-31,-9,-30.5,-8.5,CrackedCobble,None
+-30,-9,-29.5,-8.5,CrackedCobble,None
+-29,-9,-28.5,-8.5,CrackedCobble,None
+-28,-9,-27.5,-8.5,CrackedCobble,None
+-31,-8,-30.5,-7.5,CrackedCobble,None
+-30,-8,-29.5,-7.5,RuinBrick_1,None
+-29,-8,-28.5,-7.5,RuinBrick_2,None
+-28,-8,-27.5,-7.5,CrackedCobble,None
+-31,-7,-30.5,-6.5,CrackedCobble,None
+-30,-7,-29.5,-6.5,RuinBrick_2,None
+-29,-7,-28.5,-6.5,RuinBrick_1,None
+-28,-7,-27.5,-6.5,CrackedCobble,None
+-31,-6,-30.5,-5.5,CrackedCobble,None
+-30,-6,-29.5,-5.5,CrackedCobble,None
+-29,-6,-28.5,-5.5,CrackedCobble,None
+-28,-6,-27.5,-5.5,CrackedCobble,None

@@ -1,0 +1,1 @@
+Removed internal right edge at x=-21, y=19..23 and joined existing grass strip x=-20 into the same cabin tier. Moved hidden boundary to outer bank. Added front cliff at (-20,18). PASS flat cross-seam walking; original single stair entrance retained; paths, water, bridges and other tilemaps unchanged.

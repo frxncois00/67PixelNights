@@ -1,0 +1,55 @@
+TOOL EQUIPMENT UPDATE
+Implemented and saved in Assets/Scenes/SampleScene.unity.
+- Swing scale reduced from 1.8 to 1; swing radius .65 to .42 world units.
+- Neutral Pawn idle/walk frames remove the permanently baked-in axe.
+- Equipped Tool child displays the selected hotbar tool and hides during actions.
+- Wood requires equipped Basic Axe. Stone requires equipped Basic Pickaxe.
+- Sheep accept equipped Basic Axe or Short Sword, using that item's actual icon in the swing.
+- Short Sword uses the existing Tiny Swords Tool_02 short blade (not a new long-sword asset).
+- Empty initial loadout. Three separate ResourcePickup objects placed south of campfire:
+  Basic Axe (-1.84,-1.54), Basic Pickaxe (-0.62,-2.32), Short Sword (0.82,-2.26).
+- Tools can be dropped and collected again. No inventory save system added.
+
+CREATED
+Assets/Scripts/Inventory/EquippedToolVisual.cs
+Assets/Items/basic_pickaxe.asset
+Assets/Items/basic_sword.asset
+Scene: Player/Equipped Tool; Safezone Test Tools with three pickup children.
+
+MODIFIED
+Assets/Scripts/Inventory/EquipmentController.cs
+Assets/Scripts/Inventory/InventoryController.cs (allows intentional empty starting loadout)
+Assets/Scripts/Tools/PlayerToolController.cs
+Assets/Scripts/Gathering/PlayerGatherAnimation.cs
+Assets/Scripts/Wildlife/WildlifeHarvest.cs
+Assets/Scripts/UI/NearbyStoneIndicator.cs
+Assets/Items/basic_axe.asset
+Assets/Animations/Player/Idle_{Down,Up,Left,Right}.anim
+Assets/Animations/Player/Walk_{Down,Up,Left,Right}.anim
+Assets/Scenes/SampleScene.unity
+
+VALIDATION
+Unity compilation succeeded; current Console errors: 0.
+22 Play Mode checks passed, 0 failures: pickup all three, correct permissions,
+held icons, actual tree/rock/sheep damage, swing scale and sprite, and blocking
+selection changes during swings. Tests invoke game APIs in actual Play Mode;
+physical keyboard/mouse interaction was not manually retested.
+Fresh Play confirmed empty inventory and all three ground pickups respawn.
+Actual Unity camera captures: Design/EquippedPickaxe-Unity.png and Design/SafezoneTools-Unity.png.
+No existing scene components deleted. Only Player/Visual's source sprite changed.
+No environment transform edits made by the setup script. Saving the existing
+Editor scene also retained pending Shelter and Bush_09 position changes that
+were already present in the Editor relative to the disk backup; these were not reverted.
+Runtime test damage, pickup collection and camera/player positioning were discarded
+by exiting Play Mode. Scene is ready for a fresh user Play test.
+
+HOW TO TEST
+Press Play. Walk south of campfire. E collects the nearest tool.
+Tab or I opens inventory. Click a tool, then click a bottom hotbar slot to move it.
+Close inventory and press 1-5 (or click a hotbar slot) to equip.
+Axe: Space/left-click facing a tree. Pickaxe: R facing a mineable rock.
+Axe or short sword: E near sheep. G drops the selected hotbar item.
+Food controls remain F to eat and C to cook.
+
+Backup: Design/Backups/ToolEquipment-20261106-231014
+Test details: Design/ToolEquipment-TestResults.txt

@@ -1,0 +1,91 @@
+SAWMILL WEAPON ANIMATION SHEETS — 2026-11-09
+
+Completed and integrated in Assets/Scenes/SampleScene.unity.
+
+Weapons: Wood Knife, Wood Spear, Wood Shovel, Wood Long Sword,
+Wood Long Hammer, Wood Bow. Wooden Fence is excluded. Basic axe,
+basic pickaxe and basic short sword continue to use their existing animations.
+
+Assets created
+- Assets/PixelCrawler/BodyA/SawmillWeapons/<weapon>/:
+  54 layered .aseprite sources and 54 transparent PNG sheets, with Unity .meta files.
+  Each weapon has Idle, Walk and Attack in Down, Up and Side views.
+  Side is mirrored for left; front and back have their own poses.
+  Idle: 4 frames. Walk: 6 frames. Attack: 8 frames. Total: 324 sliced sprites.
+  96x96 cells, 32 PPU, Point, uncompressed PNGs, pivot (0.5, 1/3).
+- Assets/Animations/Player/SawmillWeapons/<weapon>/: 54 .anim clips and metadata.
+- Assets/Scripts/Player/SawmillWeaponAnimations.cs and metadata.
+- Asset folder README.md and manifest.json describe source/export conventions.
+- AgentScripts/aseprite_layers.py: RGBA source reader/writer.
+- AgentScripts/build_sawmill_sheets.py: reproducible layered authoring/export.
+- AgentScripts/SetupSawmillAnimations.cs: Unity slicing, clips and scene integration.
+- AgentScripts/TestSawmillAnimations.cs and TestSawmillWalking.cs: Editor validation.
+
+Existing files modified
+- Assets/Scripts/Inventory/EquippedToolVisual.cs: use authored held/walk frames
+  for these six items and hide the separate floating item renderer.
+- Assets/Scripts/Gathering/PlayerGatherAnimation.cs: play the authored attack
+  frames for these six items through the existing action and restoration logic.
+- Assets/Scenes/SampleScene.unity: one SawmillWeaponAnimations component added
+  to Player, with all six frame sets assigned. Scene saved in Edit Mode.
+
+Art and behavior
+- Reused Body_A legs, torso, head and native arm poses from the installed pack.
+- Replaced weapon layers with existing sawmill icon artwork; aligned the grip
+  to the leading hand per frame. Hand layers occlude the grip correctly.
+- Walking uses the original animated legs with the equipped arm/weapon pose
+  following the torso. Bow arms/draw/release use matching skin-palette pixels.
+- Front, side and rear poses include appropriate body/weapon overlap.
+- Weapon dimensions are consistent between held, walking and attack sheets.
+- Hit timing and total attack durations retain the existing weapon profiles.
+- Existing damage, cooldowns, ownership, equip controls and arrow spawning remain
+  authoritative. The old procedural weapon overlay is bypassed for these six
+  authored sets; attacks now animate the character's body, arms and weapon together.
+- Runtime uses the component's sprite arrays. The .anim clips are also supplied
+  for preview/editing, rather than replacing the existing Player Animator controller.
+
+Verified
+- All 54 generated Aseprite files round-trip through the reader with identical
+  composites to their exported PNG frames.
+- Unity's Aseprite importer successfully imports sprites from all 54 sources;
+  their PPU is 32 and their canvas pivot matches the PNG feet pivot.
+- Unity compilation completed without errors. Final Console error count: zero.
+- 313 Play Mode checks passed: all six sets, directional idle/walk selection,
+  mirrored left facing, separate overlay hidden, 24 real coroutine attacks,
+  changing authored frames, one impact callback, movement/Animator restoration,
+  normal speed and no body transform drift.
+- Actual PlayerMovement driven by a virtual keyboard displayed all six walk
+  frames for each of the six weapons: six further checks passed.
+  The first shorter sampling run observed only three knife walk frames. The
+  final longer check reverses direction within a small patch and observes all six.
+- Actual Unity Game-view attack screenshots saved for all six weapons.
+  Inspected long sword, hammer and bow captures; a walking capture is also saved.
+- Scene comparison against the pre-change backup: no removed objects/components,
+  no environmental transforms or existing component settings changed. Only the
+  new Player component and its component-list entry were added.
+- Final Edit Mode: movement and Animator enabled, Time.timeScale=1, camera zoom=5.
+  Test inventory assignments, player movement and camera zoom were runtime-only.
+
+Limits
+- Aseprite desktop GUI is not installed. Editable files were validated by the
+  source round trip and Unity's official Aseprite importer, not by opening that GUI.
+- Combat checks verify animation impact callbacks; a complete enemy/resource
+  damage regression was not rerun because combat logic was not modified.
+- Automated walking uses virtual input, not a manual keyboard playthrough.
+- The setup helper uses the project's existing TextureImporter.spritesheet API;
+  Unity reports a deprecation warning for it, but slicing and references verified.
+
+Evidence
+- Unity-Checks.txt, Walking-Checks.txt, Walking-InitialChecks.txt.
+- Unity_wood_*_Attack.png and Unity_Walking.png are actual Unity screenshots.
+- *-review.png / GripReview.png are authoring contact sheets, not gameplay tests.
+- Backups: Design/Backups/SawmillAnimations/.
+
+Use
+Press Play, craft/pick up a sawmill weapon, equip it with its hotbar key, and move
+with WASD/arrows. Space/click plays its attack animation. No manual Inspector
+setup is required. Edit layered sources under the asset folder; follow README
+before regenerating so manual pixel changes are not overwritten.
+
+Format reference used for the source reader/writer:
+https://github.com/aseprite/aseprite/blob/main/docs/ase-file-specs.md

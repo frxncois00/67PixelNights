@@ -1,0 +1,81 @@
+{
+  "otherRegion": "DrownedGrove",
+  "LocalActiveCount": 9,
+  "TotalSlots": 17,
+  "restricted": false,
+  "assignedPatrolSlots": 0,
+  "actors": [
+    {
+      "label": "Water Slime (West Inlet)",
+      "alive": true,
+      "active": true,
+      "patrol": false,
+      "state": "Patrol",
+      "allowed": true
+    },
+    {
+      "label": "Water Slime (NE Shallows)",
+      "alive": true,
+      "active": true,
+      "patrol": false,
+      "state": "Patrol",
+      "allowed": true
+    },
+    {
+      "label": "Forest Guardian (West Woods)",
+      "alive": true,
+      "active": true,
+      "patrol": false,
+      "state": "Patrol",
+      "allowed": true
+    },
+    {
+      "label": "Swamp Creature (South Marsh)",
+      "alive": true,
+      "active": true,
+      "patrol": false,
+      "state": "Idle",
+      "allowed": true
+    },
+    {
+      "label": "Ancient Ruin Guardian (Temple Sanctum)",
+      "alive": true,
+      "active": true,
+      "patrol": false,
+      "state": "Idle",
+      "allowed": true
+    },
+    {
+      "label": "Ancient Ruin Guardian (West Ruins)",
+      "alive": true,
+      "active": true,
+      "patrol": false,
+      "state": "Patrol",
+      "allowed": true
+    },
+    {
+      "label": "Ancient Ruin Guardian (East Ruins)",
+      "alive": true,
+      "active": true,
+      "patrol": false,
+      "state": "Patrol",
+      "allowed": true
+    },
+    {
+      "label": "Aquatic Spirit (Waterfall Crystals)",
+      "alive": true,
+      "active": true,
+      "patrol": false,
+      "state": "Patrol",
+      "allowed": true
+    },
+    {
+      "label": "Lake Golem (Deep Plunge Basin)",
+      "alive": true,
+      "active": true,
+      "patrol": false,
+      "state": "Patrol",
+      "allowed": true
+    }
+  ]
+}

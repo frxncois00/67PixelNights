@@ -1,0 +1,14 @@
+PASS Initial fuel/wallet
+PASS Consumption
+PASS Refuel spends once
+PASS Full fuel no spend
+PASS Extinguishes and clamps
+PASS Relight
+PASS Level 2 preserves fuel
+PASS Level 3
+PASS Max upgrade no spend
+PASS Empty wallet
+PASS Repeated relight stable
+PASS Out-of-range blocks spend
+PASS Safe-zone spatial query
+PASS Extinguished safe zone inactive

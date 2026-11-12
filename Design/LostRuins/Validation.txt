@@ -1,0 +1,68 @@
+PASS LostRuinsBiome exists
+PASS Existing ForestNavigation ground and safezone references exist
+PASS Biome contains sprite artwork (288 renderers)
+PASS No missing sprite references
+PASS All renderers use present, supported materials
+PASS No error/pink shader assigned
+PASS No missing scripts on biome objects
+PASS All sprite textures use Point filtering and valid pixels per unit
+PASS No nonuniform sprite stretching
+PASS Biome has enabled solid obstacle colliders (122)
+PASS Enabled composite colliders contain geometry and use static Rigidbody2D
+PASS Solid ruin obstacles are static and recognized by ForestNavigation
+PASS No active artwork pivots inside camp safezone
+PASS No missing sprite references in ordinary Tile assets
+INFO New tilemap cells outside original ground coverage: 9 (coastal water may intentionally extend outside land)
+INFO Material set: ForestDayNightLit
+INFO Sprite sorting: Objects:0=214, Ground:12=68, Objects:1=6
+PASS Exploration Waypoints group exists
+PASS At least five exploration destinations (15)
+PASS Main road entry is walkable at (20.00, -2.00)
+PASS Keep forecourt is walkable at (24.00, -12.25)
+PASS Gate passage is walkable at (24.00, -9.50)
+PASS Hidden inner ward is walkable at (24.00, -6.00)
+PASS Temple stair is walkable at (15.50, -19.25)
+PASS Hearthfall market lane is walkable at (23.00, -21.35)
+PASS Ossuary lantern walk is walkable at (9.00, -20.40)
+PASS Heartstone dais is walkable at (11.00, -26.50)
+PASS Southern pilgrims' landing is walkable at (7.50, -27.60)
+PASS Eastern crypt steps is walkable at (35.00, -9.00)
+PASS Eastern wall breach is walkable at (29.70, -14.97)
+PASS East road turning is walkable at (20.00, -2.50)
+PASS Broken causeway is walkable at (17.50, -10.00)
+PASS Outer ward entrance is walkable at (24.00, -14.75)
+PASS South road turning is walkable at (2.00, -18.00)
+PASS Woodland wayside chapel is walkable at (12.50, -14.25)
+PASS Route Main road entry -> Keep forecourt: 45 steps, 1.80 ms
+PASS Route Keep forecourt -> Gate passage: 4 steps, 0.04 ms
+PASS Route Gate passage -> Hidden inner ward: 6 steps, 0.04 ms
+PASS Route Keep forecourt -> Temple stair: 32 steps, 0.62 ms
+PASS Route Temple stair -> Hearthfall market lane: 19 steps, 0.19 ms
+PASS Route Temple stair -> Ossuary lantern walk: 15 steps, 0.15 ms
+PASS Route Ossuary lantern walk -> Heartstone dais: 31 steps, 0.72 ms
+PASS Route Heartstone dais -> Southern pilgrims' landing: 8 steps, 0.06 ms
+PASS Route Gate passage -> Eastern crypt steps: 42 steps, 1.01 ms
+PASS Route Keep forecourt -> Eastern wall breach: 16 steps, 0.06 ms
+PASS Route Main road entry -> East road turning: 1 steps, 0.01 ms
+PASS Route Gate passage -> Broken causeway: 31 steps, 0.21 ms
+PASS Route Keep forecourt -> Outer ward entrance: 5 steps, 0.01 ms
+PASS Route Ossuary lantern walk -> South road turning: 18 steps, 0.16 ms
+PASS Route Temple stair -> Woodland wayside chapel: 15 steps, 0.05 ms
+PASS Keep forecourt reachable from main road through waypoint network
+PASS Gate passage reachable from main road through waypoint network
+PASS Hidden inner ward reachable from main road through waypoint network
+PASS Temple stair reachable from main road through waypoint network
+PASS Hearthfall market lane reachable from main road through waypoint network
+PASS Ossuary lantern walk reachable from main road through waypoint network
+PASS Heartstone dais reachable from main road through waypoint network
+PASS Southern pilgrims' landing reachable from main road through waypoint network
+PASS Eastern crypt steps reachable from main road through waypoint network
+PASS Eastern wall breach reachable from main road through waypoint network
+PASS East road turning reachable from main road through waypoint network
+PASS Broken causeway reachable from main road through waypoint network
+PASS Outer ward entrance reachable from main road through waypoint network
+PASS South road turning reachable from main road through waypoint network
+PASS Woodland wayside chapel reachable from main road through waypoint network
+INFO Navigation current budget: 4ms; no navigation settings modified
+RESULT 0 failures; 331 biome objects, 4 tilemaps, 122 colliders. No scene/assets modified by this validator.
+

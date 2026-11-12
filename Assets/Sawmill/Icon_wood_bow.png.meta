@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 68b97c410eab1ef47847c55eed0b37ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4497485657458863662
+    second: Icon_wood_bow_0
+  - first:
+      213: 6955614551135020452
+    second: Icon_wood_bow_1
+  - first:
+      213: 2888506843690087719
+    second: Icon_wood_bow_2
+  - first:
+      213: -9054097095743534191
+    second: Icon_wood_bow_3
+  - first:
+      213: -5232966723655855192
+    second: Icon_wood_bow_4
+  - first:
+      213: 4734855636571164960
+    second: Icon_wood_bow_5
+  - first:
+      213: 7174308920607301295
+    second: Icon_wood_bow_6
+  - first:
+      213: -3523004578163600301
+    second: Icon_wood_bow_7
+  - first:
+      213: 4890628400512731894
+    second: Icon_wood_bow_8
+  - first:
+      213: 3155641700029892024
+    second: Icon_wood_bow_9
+  - first:
+      213: 3114781940510543169
+    second: Icon_wood_bow_10
+  - first:
+      213: -3080493060660286903
+    second: Icon_wood_bow_11
+  - first:
+      213: -6712900811136565860
+    second: Icon_wood_bow_12
+  - first:
+      213: 4727042167719653002
+    second: Icon_wood_bow_13
+  - first:
+      213: -7192279615888267904
+    second: Icon_wood_bow_14
+  - first:
+      213: -4357162443103222527
+    second: Icon_wood_bow_15
+  - first:
+      213: 3350334118135853522
+    second: Icon_wood_bow_16
+  - first:
+      213: 6508176023202443291
+    second: Icon_wood_bow_17
+  - first:
+      213: -4825510877961952318
+    second: wood_bow
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wood_bow
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c36b435c67580db0800000000000000
+      internalID: -4825510877961952318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_wood_bow_0: -4497485657458863662
+      Icon_wood_bow_1: 6955614551135020452
+      Icon_wood_bow_10: 3114781940510543169
+      Icon_wood_bow_11: -3080493060660286903
+      Icon_wood_bow_12: -6712900811136565860
+      Icon_wood_bow_13: 4727042167719653002
+      Icon_wood_bow_14: -7192279615888267904
+      Icon_wood_bow_15: -4357162443103222527
+      Icon_wood_bow_16: 3350334118135853522
+      Icon_wood_bow_17: 6508176023202443291
+      Icon_wood_bow_2: 2888506843690087719
+      Icon_wood_bow_3: -9054097095743534191
+      Icon_wood_bow_4: -5232966723655855192
+      Icon_wood_bow_5: 4734855636571164960
+      Icon_wood_bow_6: 7174308920607301295
+      Icon_wood_bow_7: -3523004578163600301
+      Icon_wood_bow_8: 4890628400512731894
+      Icon_wood_bow_9: 3155641700029892024
+      wood_bow: -4825510877961952318
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,19 @@
+FAIL Player loop advances
+FAIL W velocity=(0.00, 0.00)
+FAIL S velocity=(0.00, 0.00)
+FAIL A velocity=(0.00, 0.00)
+FAIL D velocity=(0.00, 0.00)
+FAIL UpArrow velocity=(0.00, 0.00)
+FAIL DownArrow velocity=(0.00, 0.00)
+FAIL LeftArrow velocity=(0.00, 0.00)
+FAIL RightArrow velocity=(0.00, 0.00)
+FAIL Diagonal normalized
+FAIL Walk_Right animation
+FAIL Animation frames advance
+PASS Release stops movement
+FAIL Idle preserves facing
+PASS Disabled stops velocity
+FAIL Camera follows smoothly
+PASS Camera Z unchanged
+FAIL Collision Tree_01
+FAIL Collision Shelter

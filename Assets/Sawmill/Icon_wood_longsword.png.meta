@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: abb6d3cef4630c240b132910b9a65782
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9018871363755907777
+    second: Icon_wood_longsword_0
+  - first:
+      213: -8206851081205125427
+    second: Icon_wood_longsword_1
+  - first:
+      213: -2690951538354468818
+    second: Icon_wood_longsword_2
+  - first:
+      213: -7108013147489885489
+    second: Icon_wood_longsword_3
+  - first:
+      213: -615566606436379067
+    second: Icon_wood_longsword_4
+  - first:
+      213: 7131034371185049346
+    second: Icon_wood_longsword_5
+  - first:
+      213: 2051538312491185965
+    second: Icon_wood_longsword_6
+  - first:
+      213: -4857688272629609299
+    second: Icon_wood_longsword_7
+  - first:
+      213: -5141729783471564629
+    second: Icon_wood_longsword_8
+  - first:
+      213: 4617277224782206337
+    second: Icon_wood_longsword_9
+  - first:
+      213: -1826066736866956808
+    second: Icon_wood_longsword_10
+  - first:
+      213: 6407186841025037587
+    second: Icon_wood_longsword_11
+  - first:
+      213: 1990757758436921545
+    second: Icon_wood_longsword_12
+  - first:
+      213: -4429693132134225335
+    second: Icon_wood_longsword_13
+  - first:
+      213: -5051676045405222580
+    second: Icon_wood_longsword_14
+  - first:
+      213: -8134798631054507137
+    second: Icon_wood_longsword_15
+  - first:
+      213: -5624707966353778803
+    second: Icon_wood_longsword_16
+  - first:
+      213: 4487348074123577632
+    second: Icon_wood_longsword_17
+  - first:
+      213: 4416289484310382901
+    second: wood_longsword
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wood_longsword
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5390d9133efc94d30800000000000000
+      internalID: 4416289484310382901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_wood_longsword_0: 9018871363755907777
+      Icon_wood_longsword_1: -8206851081205125427
+      Icon_wood_longsword_10: -1826066736866956808
+      Icon_wood_longsword_11: 6407186841025037587
+      Icon_wood_longsword_12: 1990757758436921545
+      Icon_wood_longsword_13: -4429693132134225335
+      Icon_wood_longsword_14: -5051676045405222580
+      Icon_wood_longsword_15: -8134798631054507137
+      Icon_wood_longsword_16: -5624707966353778803
+      Icon_wood_longsword_17: 4487348074123577632
+      Icon_wood_longsword_2: -2690951538354468818
+      Icon_wood_longsword_3: -7108013147489885489
+      Icon_wood_longsword_4: -615566606436379067
+      Icon_wood_longsword_5: 7131034371185049346
+      Icon_wood_longsword_6: 2051538312491185965
+      Icon_wood_longsword_7: -4857688272629609299
+      Icon_wood_longsword_8: -5141729783471564629
+      Icon_wood_longsword_9: 4617277224782206337
+      wood_longsword: 4416289484310382901
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

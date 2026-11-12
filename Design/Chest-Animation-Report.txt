@@ -1,0 +1,57 @@
+CHEST OPENING ANIMATION
+Completed: 8 November 2026
+Scene: Assets/Scenes/SampleScene.unity
+Unity: 6000.6.4f1
+
+IMPLEMENTED
+- Press E near an unopened loot chest to collect its contents and play a 0.65-second opening animation.
+- The lid lifts, five small golden pixel sparkles rise and fade, and the lid stays open afterward.
+- Empty chests retain the existing dimmed appearance. Chests with uncollected loot stay usable.
+- Loot remains in the chest when inventory space is unavailable. Returning later collects the remainder without rerolling rewards or replaying the first-open animation.
+- Player movement continues during the animation. No new input binding, gameplay pause, or animation package was added.
+- Disabling an animation/chest stops the transient effect and preserves its open state.
+- The effect only runs while opening; it has no idle Update loop and creates no objects per frame.
+
+CONFIGURED
+All five current LootChest instances and the reusable LootChest prefab:
+- Chest_Quarry
+- Chest_Camp
+- Chest_Ruins
+- Dark Forest Supply Chest (Wooden Cache Placeholder)
+- Abandoned Cabin Supply Chest (Wooden Cache Placeholder)
+
+The three outpost chests retain the original Cute Fantasy closed chest sprite. Its existing PNG is sliced into body/lid pieces for opening, with an interior and small sparkles. No replacement/composite PNG was generated. The two older supply caches animate their existing separate lid artwork.
+SortingGroup keeps each chest's body, lid and sparkles together while using the existing Objects sorting layer. Object locations, loot quantities and interaction range were not changed by this feature.
+
+FILES
+Created:
+- Assets/Scripts/Loot/ChestOpeningAnimation.cs (+ Unity .meta)
+- AgentScripts/ConfigureChestAnimation.cs (editor integration helper, outside runtime Assets)
+- AgentScripts/TestChestAnimation.cs (Play Mode validation helper, outside runtime Assets)
+- Design/Chest-Animation-Report.txt
+- Design/Chest-AnimationTests.txt
+- Design/Chest-Closed.png, Chest-Opening.png, Chest-Opened.png
+
+Modified:
+- Assets/Scripts/Loot/LootChest.cs: trigger/synchronize the visual effect while preserving reward transfer logic.
+- Assets/Prefabs/Exploration/LootChest.prefab: assigned animation, lid, sorting and sparkle references.
+- Assets/GoblinOutpost/Art/Chest.png.meta: appended four sprite slices; original closed-sprite ID retained. PNG pixels unchanged; Point filtering, 32 PPU and no compression retained.
+- Assets/Scenes/SampleScene.unity: five chest component/reference integrations.
+
+VALIDATION ACTUALLY RUN
+- Unity project compilation completed with no C# errors.
+- 48 Play Mode assertions passed (see Chest-AnimationTests.txt).
+- The quarry chest was opened through a virtual E key and the real PlayerInteractionController.LateUpdate input path.
+- All five chests were observed over real Play Mode frames: lid motion, settling, sparkle cleanup, loot transfer and no duplicate rewards.
+- PlayerMovement accepted movement during the opening animation.
+- A runtime-only test chest verified full inventory, repeated interactions, disable/re-enable and collecting remaining loot after freeing a slot.
+- Final validation run produced no new Console errors; current Console reported zero errors/warnings.
+- Closed, opening and opened images were rendered by the running Unity Editor, using the actual scene and animation. A temporary inspection-camera cleanup error was corrected before the final clean run.
+- Tests restored the player's temporary test inventory/position, and Play Mode was stopped. The saved scene has all five chests closed and ready for a fresh game.
+
+MANUAL SETUP
+None required. Open SampleScene, press Play, approach a chest and press E.
+The earlier removed Storage Chest crafting item was not restored; this feature applies to the existing world loot chests.
+
+BACKUP
+Design/Backups/ChestAnimation contains the pre-change scene, LootChest script/prefab and chest importer metadata.

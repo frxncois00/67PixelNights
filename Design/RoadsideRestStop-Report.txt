@@ -1,0 +1,99 @@
+ROADSIDE REST STOP
+Completed: 8 November 2026
+Project: C:/Users/Francis/My project
+Scene: Assets/Scenes/SampleScene.unity
+Unity: 6000.6.4f1, URP 17.6.0, Input System 1.20.0
+
+RESULT AND LOCATION
+Built and saved EnvironmentExpansion/RoadsideRestStop in the forest pocket east of the long vertical road, west of the Goblin Outpost and north of the ponds. The main clearing is around (10,20). The reference arrangement is mirrored: entry from the west/left, well to the northeast, cart to the southwest, bench to the southeast.
+Everything new is under RoadsideRestStop, including the terrain overlays, props, light and hidden chest. Existing objects were not moved, renamed or deleted.
+
+INSPECTION
+- Main Grid: rectangular, cell size (1,1,1), world origin (0,0,0), unit scale.
+- Existing secondary grids in HiddenPondClearing use 0.25 cells and remain unchanged.
+- Existing sorting layers: Default, Background, Ground, Objects, Foreground. Existing transparency sorting uses Custom Axis (0,1,0).
+- Existing Tiny Swords art is 64 PPU; Pixel Crawler/Cute Fantasy props are 32 PPU. Point filtering and uncompressed textures are preserved.
+- Existing tilemaps, their tile assets, collider configuration and materials were inspected before building. Full details: Design/Roadside-Inspection.txt.
+- Existing ForestDayNightLit material, outpost dirt tiles/material, animated loot chest setup and sprite assets were reused.
+
+CREATED
+- Stone Well at (12,21): individual masonry pieces, visible blue water, timber winch frame, hanging chain and water bucket; solid footprint collider.
+- Merchant Cart at (8,18): timber body/supports, red canvas cover, wheels, produce marker and supply props; solid footprint collider.
+- Two cargo crates near (7,18) and (7,19).
+- Trader NPC at (10,18), with an idle animation using the already-imported Tiny Swords blue pawn frame set.
+- Resting Bench at (12,18), with a footprint collider.
+- Warm Lantern Post at (9,21), with one local URP Light2D: warm amber, intensity 0.65, outer radius 3.5. The existing global light is unchanged.
+- Rest Stop Signpost at (2,18), pointing toward the clearing.
+- Hidden Supply Chest at (13,22), reusing the existing chest loot logic and opening animation.
+- Nine small flower patches and two trail-side stones.
+- A one-cell-wide dirt entry trail from the existing road at x=0, y=19 into the clearing, plus a small dirt landing between the furnishings. The narrow section uses individual half-height edge sprites from the existing Tiny Swords tileset; no composite image was created.
+- Four reusable new prefabs: StoneWell, MerchantCart, LanternPost and RestingBench.
+
+Final inventory: 128 GameObjects/transforms, 94 SpriteRenderers, 10 Collider2D components and one local Light2D. All new transforms have scale (1,1,1). The only animator added is the trader's native idle loop. No new runtime behavior scripts or packages were added.
+The trail's local Grid matches the original Grid's cell size, origin, rotation and layout, allowing all new terrain to remain parented under RoadsideRestStop. Original ground and road data were not changed.
+Exact names, positions and components: Design/Roadside-Objects.txt.
+
+REUSED VERSUS IMPORTED
+Reused:
+- Tiny Swords dirt tiles/texture, native stone decoration and existing pawn idle sprites.
+- Pixel Crawler building timber/masonry, bench/cart body, wheel and resource/decoration sprites already in Assets.
+- Existing Cute Fantasy flower/lantern artwork in the project's Decor sheet.
+- Existing lit material and outpost dirt material.
+- Existing animated LootChest setup, including its reward configuration.
+
+Imported one missing source sheet:
+- Assets/RoadsideRestStop/Art/Furniture.png
+  Source: Downloads/Unity Assets/Pixel Crawler - Free Pack 2.11/Pixel Crawler - Free Pack/Environment/Props/Static/Furniture.png
+  Used for buckets, water, chain and cargo boxes; 32 PPU, Point, no compression.
+
+Additional sprite rectangles were appended to these existing importer metadata files, retaining all original sprite IDs and PNG pixels:
+- Assets/PixelCrawler/Environment/HiddenPondClearing/BuildingProps.png.meta
+- Assets/PixelCrawler/Environment/HiddenPondClearing/Resources.png.meta
+- Assets/PixelCrawler/Environment/HiddenPondClearing/Tools.png.meta
+- Assets/PixelCrawler/Environment/HiddenPondClearing/Decor.png.meta
+- Assets/GoblinOutpost/Art/DungeonProps.png.meta
+- Assets/Tiny Swords/Terrain/Tileset/Tilemap_color4.png.meta
+New asset file list: Design/Roadside-AssetInventory.txt.
+Sprite reference audit: Design/Roadside-SpriteAudit.txt.
+
+PRESERVATION VERIFIED
+A pre-change scene and component/tile snapshot is saved in Design/Backups/RoadsideRestStop.
+Comparing 59,325 original records after completion found exactly 10 changed records: only the active flags of overlapping trees disabled for the clearing/entry. Their transforms, components and assets are retained.
+The ten trees are listed in Design/Roadside-ClearedTrees.txt. They were not deleted or moved.
+No other original scene records changed: Player, Canvas, GameSystems, existing camera, original tilemaps, Goblin Outpost, ponds, rocks and remaining forest are preserved.
+All existing files under Assets/Scripts match their original hashes. No existing runtime script was modified.
+
+TESTS ACTUALLY RUN
+Entered Unity Play Mode and ran 22 passing checks using the existing PlayerMovement Update/FixedUpdate methods, virtual WASD input and 881 Physics2D steps of 0.02 seconds.
+- Walked from the vertical road through the trail to the well.
+- Verified well, cart and bench stop the player.
+- Walked around the well to the hidden chest and opened it through the existing interaction system.
+- Verified the chest retains its opening animation.
+- Evaluated the trader's actual Animator and confirmed sprite-frame changes.
+- Verified matching Grid settings, non-blocking dirt, warm local light, one global light, unit scales, Point filtering, assigned sprite/component references and unchanged camera follow/zoom.
+- Inspected the area in daytime and nighttime in Unity; the lantern produces a localized warm pool of light at night.
+- Final Play Mode Console check: zero errors, zero warnings, no compilation failure.
+- Stopped Play Mode and saved SampleScene. Temporary test player/input state was restored; Play Mode test loot does not persist into the saved scene.
+Detailed results: Design/Roadside-PlayModeTests.txt and Design/Roadside-Console.json.
+
+ASSUMPTIONS AND LIMITS
+- The free source packs did not contain the reference's exact round well and covered merchant cart. The well and rustic cart were assembled from individual existing sprite pieces; they are an adaptation of the reference.
+- The trader is an animated scenery NPC. No trading menu, currency, dialogue, quest or shop system was requested or added.
+- The bench and well are solid scenery; sitting and drinking mechanics were not added.
+- The hidden chest is functional and uses the existing loot behavior.
+- No new safe zone or enemy-spawning rules were introduced. Existing night enemies can still use the surrounding world.
+- Validation was in the Unity Editor; no standalone player build or full-game balance playthrough was performed.
+- No manual Inspector setup is required.
+
+VISUAL EVIDENCE
+- Design/Roadside-Overview.png: finished area rendered by Unity.
+- Design/Roadside-SceneView.png: finished Unity Scene view.
+- Design/Roadside-GameView-Day.png and Roadside-GameView-Night.png: actual Play Mode views, captured during lighting verification before the final trail narrowing.
+- Design/Roadside-NightOverview.png: nighttime lighting inspection.
+Preview images are verification artifacts only; none are used as scene sprites.
+
+EDITOR HELPERS
+AgentScripts/InspectRoadside.cs, RoadsideCheckpoint.cs, RoadsideArtReview.cs,
+ImportRoadsideArt.cs, BuildRoadsideRestStop.cs, PolishRoadsideRestStop.cs,
+NarrowRoadsideTrail.cs, CaptureRoadsideRestStop.cs and TestRoadsideRestStop.cs.
+These are outside Assets and do not add runtime dependencies. The build helper is single-use; do not rerun it over the finished scene.

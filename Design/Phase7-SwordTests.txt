@@ -1,0 +1,3 @@
+PASS sword starts and duplicate rejected
+PASS animated hit applies 15
+PASS second animated hit defeats enemy

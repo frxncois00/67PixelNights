@@ -1,0 +1,48 @@
+PASS Night 1 roster count
+PASS Night 1 unlock eligibility
+PASS Night 2 roster count
+PASS Night 2 unlock eligibility
+PASS Night 3 roster count
+PASS Night 3 unlock eligibility
+PASS Night 5 roster count
+PASS Night 5 unlock eligibility
+PASS Night 7 roster count
+PASS Night 7 unlock eligibility
+PASS Night 10 roster count
+PASS Night 10 unlock eligibility
+PASS Night10 one Ancient
+PASS Nonfinite/negative archetype sanitization
+PASS Duplicate night callback does not enqueue again
+PASS forest_stalker configured HP
+PASS forest_stalker windup
+PASS forest_stalker exact hit damage
+PASS forest_stalker no duplicate hit
+PASS forest_stalker protection cancels attack
+PASS forest_stalker death cancels hit
+PASS shadow_wolf configured HP
+PASS shadow_wolf windup
+PASS shadow_wolf exact hit damage
+PASS shadow_wolf no duplicate hit
+PASS shadow_wolf protection cancels attack
+PASS shadow_wolf death cancels hit
+PASS night_crawler configured HP
+PASS night_crawler windup
+PASS night_crawler exact hit damage
+PASS night_crawler no duplicate hit
+PASS night_crawler protection cancels attack
+PASS night_crawler death cancels hit
+PASS forest_brute configured HP
+PASS forest_brute windup
+PASS forest_brute exact hit damage
+PASS forest_brute no duplicate hit
+PASS forest_brute protection cancels attack
+PASS forest_brute death cancels hit
+PASS ancient_stalker configured HP
+PASS ancient_stalker windup
+PASS ancient_stalker exact hit damage
+PASS ancient_stalker no duplicate hit
+PASS ancient_stalker protection cancels attack
+PASS ancient_stalker death cancels hit
+PASS Sunrise clears waves and enemies
+PASS Rapid phase changes no stale waves
+PASS Camera zoom preserved

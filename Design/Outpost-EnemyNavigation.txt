@@ -1,0 +1,11 @@
+(26.00, 8.00) enemy Walkable=True
+(24.00, 8.00) enemy Walkable=False
+(21.00, 12.00) enemy Walkable=False
+(18.00, 8.00) enemy Walkable=False
+Camp_Spawn_01 navigation to entrance=True
+Camp_Spawn_02 navigation to entrance=True
+Camp_Spawn_03 navigation to entrance=True
+Camp_Spawn_04 navigation to entrance=True
+Camp_Spawn_05 navigation to entrance=True
+Quarry_Patrol_Spawn navigation to entrance=True
+Playing=True frame=48709 time=109.9763

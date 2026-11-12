@@ -1,0 +1,6 @@
+NATIVE PIXEL CRAWLER CAMPFIRE — November 8, 2026
+Level1: Bonfire06 small log + Fire02. Level2: Bonfire05 pile + Fire01. Level3: Bonfire04 stump + Fire01. Full four-frame loops used for each base and effect. No fuel selects corresponding cold sprite from Bonfire atlas plus four-frame smoke; light turns off. Relighting restores flames.
+Added CampfireLevelVisual.cs and imported original Bonfire PNGs into Assets/PixelCrawler/Bonfire. Selected sprites sliced at32px frame widths;32PPU,Point,uncompressed. Source pack preserved.
+Modified CampfireLighting.cs to let native visuals control sprites while retaining fuel-based light. SampleScene retains existing Campfire root, collider, surrounding stone ring, log seats, lighting reference, fuel/upgrade/safety/cooking systems. Old flame renderers disabled; new child renderers Native Base and Native Flame and Smoke at unit scale.
+PASS compilation. PASS six Unity Play Mode frame/state/light checks in NativeCampfire-Tests.txt. Actual Unity screenshots reviewed: NativeCampfire-Cold.png and NativeCampfire-Burning.png. Saved production scene starts with level1; test upgrades/fuel discarded.
+Backup: Design/Backups/NativeCampfire. No manual Inspector setup needed.

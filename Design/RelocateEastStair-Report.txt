@@ -1,0 +1,4 @@
+PASS Bridge route (-12.00, 16.00)
+PASS Bridge route (-14.00, 19.00)
+PASS Bridge route (-25.50, 19.50)
+New east stair: x=-13,-12 y=13,14; old stair x=-15,-14 y=16,17 closed with native cliff faces. Lake and bridges unchanged.

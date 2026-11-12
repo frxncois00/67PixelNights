@@ -1,0 +1,15 @@
+PASS Campsite initially discovered
+PASS Five distinct regions
+PASS Revisits do not duplicate
+PASS Full inventory retains generated loot
+PASS Repeated full interaction does not reroll
+PASS Partial transfer accepts exactly one stone
+PASS Remaining loot transfers after space available
+PASS Empty chest cannot duplicate loot
+PASS Other chest state independent
+PASS Expanded map Night 1 spawn count
+PASS Expanded enemy spawn connected to player
+PASS Expanded enemy spawn connected to player
+PASS Sunrise removes expanded-region enemies
+PASS Zoom unchanged
+PASS Expanded resource nodes registered

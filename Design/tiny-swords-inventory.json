@@ -1,0 +1,2052 @@
+[
+  {
+    "path": "Assets/Tiny Swords/Particle FX/Dust_01.png",
+    "w": 512,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Particle FX/Dust_02.png",
+    "w": 640,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Particle FX/Explosion_01.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Particle FX/Explosion_02.png",
+    "w": 1920,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Particle FX/Fire_01.png",
+    "w": 512,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Particle FX/Fire_02.png",
+    "w": 640,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Particle FX/Fire_03.png",
+    "w": 768,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Particle FX/Water Splash.png",
+    "w": 1728,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Archer/Archer_Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Archer/Archer_Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Archer/Archer_Shoot.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Archer/Arrow.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_DownRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_DownRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_Down_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_Down_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_Idle.png",
+    "w": 3840,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_Right_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_Right_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_Run.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_UpRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_UpRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_Up_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Lancer/Lancer_Up_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Monk/Heal.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Monk/Heal_Effect.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Monk/Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Monk/Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Idle Axe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Idle Gold.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Idle Hammer.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Idle Knife.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Idle Meat.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Idle Pickaxe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Idle Wood.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Interact Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Interact Hammer.png",
+    "w": 576,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Interact Knife.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Interact Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Run Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Run Gold.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Run Hammer.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Run Knife.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Run Meat.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Run Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Run Wood.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Pawn/Pawn_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Warrior/Warrior_Attack1.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Warrior/Warrior_Attack2.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Warrior/Warrior_Guard.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Warrior/Warrior_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Yellow Units/Warrior/Warrior_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Archer/Archer_Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Archer/Archer_Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Archer/Archer_Shoot.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Archer/Arrow.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_DownRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_DownRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_Down_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_Down_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_Idle.png",
+    "w": 3840,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_Right_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_Right_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_Run.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_UpRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_UpRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_Up_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Lancer/Lancer_Up_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Monk/Heal.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Monk/Heal_Effect.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Monk/Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Monk/Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Idle Axe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Idle Gold.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Idle Hammer.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Idle Knife.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Idle Meat.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Idle Pickaxe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Idle Wood.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Interact Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Interact Hammer.png",
+    "w": 576,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Interact Knife.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Interact Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Run Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Run Gold.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Run Hammer.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Run Knife.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Run Meat.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Run Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Run Wood.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Pawn/Pawn_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Warrior/Warrior_Attack1.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Warrior/Warrior_Attack2.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Warrior/Warrior_Guard.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Warrior/Warrior_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Red Units/Warrior/Warrior_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Archer/Archer_Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Archer/Archer_Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Archer/Archer_Shoot.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Archer/Arrow.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_DownRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_DownRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_Down_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_Down_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_Idle.png",
+    "w": 3840,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_Right_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_Right_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_Run.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_UpRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_UpRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_Up_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Lancer/Lancer_Up_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Monk/Heal.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Monk/Heal_Effect.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Monk/Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Monk/Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Idle Axe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Idle Gold.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Idle Hammer.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Idle Knife.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Idle Meat.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Idle Pickaxe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Idle Wood.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Interact Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Interact Hammer.png",
+    "w": 576,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Interact Knife.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Interact Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Run Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Run Gold.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Run Hammer.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Run Knife.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Run Meat.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Run Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Run Wood.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Pawn/Pawn_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Warrior/Warrior_Attack1.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Warrior/Warrior_Attack2.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Warrior/Warrior_Guard.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Warrior/Warrior_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Purple Units/Warrior/Warrior_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Archer/Archer_Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Archer/Archer_Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Archer/Archer_Shoot.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Archer/Arrow.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_DownRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_DownRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_Down_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_Down_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_Idle.png",
+    "w": 3840,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_Right_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_Right_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_Run.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_UpRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_UpRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_Up_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Lancer/Lancer_Up_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Monk/Heal.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Monk/Heal_Effect.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Monk/Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Monk/Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Idle Axe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Idle Gold.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Idle Hammer.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Idle Knife.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Idle Meat.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Idle Pickaxe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Idle Wood.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Interact Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Interact Hammer.png",
+    "w": 576,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Interact Knife.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Interact Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Run Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Run Gold.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Run Hammer.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Run Knife.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Run Meat.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Run Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Run Wood.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Pawn/Pawn_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Warrior/Warrior_Attack1.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Warrior/Warrior_Attack2.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Warrior/Warrior_Guard.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Warrior/Warrior_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Blue Units/Warrior/Warrior_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Archer/Archer_Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Archer/Archer_Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Archer/Archer_Shoot.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Archer/Arrow.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_DownRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_DownRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_Down_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_Down_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_Idle.png",
+    "w": 3840,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_Right_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_Right_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_Run.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_UpRight_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_UpRight_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_Up_Attack.png",
+    "w": 960,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Lancer/Lancer_Up_Defence.png",
+    "w": 1920,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Monk/Heal.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Monk/Heal_Effect.png",
+    "w": 2112,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Monk/Idle.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Monk/Run.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Idle Axe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Idle Gold.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Idle Hammer.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Idle Knife.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Idle Meat.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Idle Pickaxe.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Idle Wood.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Interact Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Interact Hammer.png",
+    "w": 576,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Interact Knife.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Interact Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Run Axe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Run Gold.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Run Hammer.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Run Knife.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Run Meat.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Run Pickaxe.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Run Wood.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Pawn/Pawn_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Warrior/Warrior_Attack1.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Warrior/Warrior_Attack2.png",
+    "w": 768,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Warrior/Warrior_Guard.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Warrior/Warrior_Idle.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Units/Black Units/Warrior/Warrior_Run.png",
+    "w": 1152,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Banners/Banner.png",
+    "w": 448,
+    "h": 448
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Banners/Banner_Slots.png",
+    "w": 192,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Bars/BigBar_Base.png",
+    "w": 320,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Bars/BigBar_Fill.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Bars/SmallBar_Base.png",
+    "w": 320,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Bars/SmallBar_Fill.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/BigBlueButton_Pressed.png",
+    "w": 320,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/BigBlueButton_Regular.png",
+    "w": 320,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/BigRedButton_Pressed.png",
+    "w": 320,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/BigRedButton_Regular.png",
+    "w": 320,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/SmallBlueRoundButton_Pressed.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/SmallBlueRoundButton_Regular.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/SmallBlueSquareButton_Pressed.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/SmallBlueSquareButton_Regular.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/SmallRedRoundButton_Pressed.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/SmallRedRoundButton_Regular.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/SmallRedSquareButton_Pressed.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/SmallRedSquareButton_Regular.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/TinyRoundBlueButton.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/TinyRoundRedButton.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/TinySquareBlueButton.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Buttons/TinySquareRedButton.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Cursors/Cursor_01.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Cursors/Cursor_02.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Cursors/Cursor_03.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Cursors/Cursor_04.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_01.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_02.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_03.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_04.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_05.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_06.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_07.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_08.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_09.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_10.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_11.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_12.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_13.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_14.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_15.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_16.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_17.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_18.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_19.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_20.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_21.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_22.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_23.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_24.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Human Avatars/Avatars_25.png",
+    "w": 256,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_01.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_02.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_03.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_04.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_05.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_06.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_07.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_08.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_09.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_10.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_11.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Icons/Icon_12.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Papers/RegularPaper.png",
+    "w": 320,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Papers/SpecialPaper.png",
+    "w": 320,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Ribbons/BigRibbons.png",
+    "w": 448,
+    "h": 640
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Ribbons/SmallRibbons.png",
+    "w": 320,
+    "h": 640
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Swords/Swords.png",
+    "w": 448,
+    "h": 640
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Wood Table/WoodTable.png",
+    "w": 448,
+    "h": 448
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Elements/Wood Table/WoodTable_Slots.png",
+    "w": 192,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Banners from the store page/Banner/Banner.png",
+    "w": 704,
+    "h": 512
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Banners from the store page/Banner/Slots.png",
+    "w": 320,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Banners from the store page/Ribbons/Ribbon_Black.png",
+    "w": 960,
+    "h": 576
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Banners from the store page/Ribbons/Ribbon_Blue.png",
+    "w": 960,
+    "h": 576
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Banners from the store page/Ribbons/Ribbon_Purple.png",
+    "w": 960,
+    "h": 576
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Banners from the store page/Ribbons/Ribbon_Red.png",
+    "w": 960,
+    "h": 576
+  },
+  {
+    "path": "Assets/Tiny Swords/UI Elements/UI Banners from the store page/Ribbons/Ribbon_Yellow.png",
+    "w": 960,
+    "h": 576
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Tileset/Shadow.png",
+    "w": 192,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Tileset/Tilemap_color1.png",
+    "w": 576,
+    "h": 384
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Tileset/Tilemap_color2.png",
+    "w": 576,
+    "h": 384
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Tileset/Tilemap_color3.png",
+    "w": 576,
+    "h": 384
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Tileset/Tilemap_color4.png",
+    "w": 576,
+    "h": 384
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Tileset/Tilemap_color5.png",
+    "w": 576,
+    "h": 384
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Tileset/Water Background color.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Tileset/Water Foam.png",
+    "w": 3072,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Tools/Tool_01.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Tools/Tool_02.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Tools/Tool_03.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Tools/Tool_04.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Stump 1.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Stump 2.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Stump 3.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Stump 4.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree1.png",
+    "w": 1536,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree2.png",
+    "w": 1536,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree3.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Wood/Trees/Tree4.png",
+    "w": 1536,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Wood/Wood Resource/Wood Resource.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Meat/Meat Resource/Meat Resource.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Meat/Sheep/Sheep_Grass.png",
+    "w": 1536,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Meat/Sheep/Sheep_Idle.png",
+    "w": 768,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Meat/Sheep/Sheep_Move.png",
+    "w": 512,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Resource/Gold_Resource.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Resource/Gold_Resource_Highlight.png",
+    "w": 768,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 1.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 1_Highlight.png",
+    "w": 768,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 2.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 2_Highlight.png",
+    "w": 768,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 3.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 3_Highlight.png",
+    "w": 768,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 4.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 4_Highlight.png",
+    "w": 768,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 5.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 5_Highlight.png",
+    "w": 768,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 6.png",
+    "w": 128,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Resources/Gold/Gold Stones/Gold Stone 6_Highlight.png",
+    "w": 768,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe1.png",
+    "w": 1024,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe2.png",
+    "w": 1024,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe3.png",
+    "w": 1024,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Bushes/Bushe4.png",
+    "w": 1024,
+    "h": 128
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Clouds/Clouds_01.png",
+    "w": 576,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Clouds/Clouds_02.png",
+    "w": 576,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Clouds/Clouds_03.png",
+    "w": 576,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Clouds/Clouds_04.png",
+    "w": 576,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Clouds/Clouds_05.png",
+    "w": 576,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Clouds/Clouds_06.png",
+    "w": 576,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Clouds/Clouds_07.png",
+    "w": 576,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Clouds/Clouds_08.png",
+    "w": 576,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock1.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock2.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock3.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Rocks/Rock4.png",
+    "w": 64,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Rocks in the Water/Water Rocks_01.png",
+    "w": 1024,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png",
+    "w": 1024,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Rocks in the Water/Water Rocks_03.png",
+    "w": 1024,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Rocks in the Water/Water Rocks_04.png",
+    "w": 1024,
+    "h": 64
+  },
+  {
+    "path": "Assets/Tiny Swords/Terrain/Decorations/Rubber Duck/Rubber duck.png",
+    "w": 96,
+    "h": 32
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Black Buildings/Archery.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Black Buildings/Barracks.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Black Buildings/Castle.png",
+    "w": 320,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Black Buildings/House1.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Black Buildings/House2.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Black Buildings/House3.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Black Buildings/Monastery.png",
+    "w": 192,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Black Buildings/Tower.png",
+    "w": 128,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Blue Buildings/Archery.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Blue Buildings/Barracks.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Blue Buildings/Castle.png",
+    "w": 320,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Blue Buildings/House1.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Blue Buildings/House2.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Blue Buildings/House3.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Blue Buildings/Monastery.png",
+    "w": 192,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Blue Buildings/Tower.png",
+    "w": 128,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Purple Buildings/Archery.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Purple Buildings/Barracks.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Purple Buildings/Castle.png",
+    "w": 320,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Purple Buildings/House1.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Purple Buildings/House2.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Purple Buildings/House3.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Purple Buildings/Monastery.png",
+    "w": 192,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Purple Buildings/Tower.png",
+    "w": 128,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Red Buildings/Archery.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Red Buildings/Barracks.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Red Buildings/Castle.png",
+    "w": 320,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Red Buildings/House1.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Red Buildings/House2.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Red Buildings/House3.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Red Buildings/Monastery.png",
+    "w": 192,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Red Buildings/Tower.png",
+    "w": 128,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Yellow Buildings/Archery.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Yellow Buildings/Barracks.png",
+    "w": 192,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Yellow Buildings/Castle.png",
+    "w": 320,
+    "h": 256
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Yellow Buildings/House1.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Yellow Buildings/House2.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Yellow Buildings/House3.png",
+    "w": 128,
+    "h": 192
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Yellow Buildings/Monastery.png",
+    "w": 192,
+    "h": 320
+  },
+  {
+    "path": "Assets/Tiny Swords/Buildings/Yellow Buildings/Tower.png",
+    "w": 128,
+    "h": 256
+  }
+]

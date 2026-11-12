@@ -1,0 +1,7 @@
+PASS Full container deposit retains source
+PASS Full player inventory withdraw retains source
+PASS Invalid oversized removal preserves inventory
+PASS Partial withdrawal moves exactly available capacity
+PASS Invalid slot indices rejected
+PASS Structure modal blocks world actions
+PASS Disable clears modal and placement lock

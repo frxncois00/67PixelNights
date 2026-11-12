@@ -1,0 +1,55 @@
+PASS Started axe direction 0
+PASS Target-facing tool and upright pose 0
+PASS Swing completes once and restores movement 0
+PASS Started axe direction 1
+PASS Target-facing tool and upright pose 1
+PASS Swing completes once and restores movement 1
+PASS Started axe direction 2
+PASS Target-facing tool and upright pose 2
+PASS Swing completes once and restores movement 2
+PASS Started axe direction 3
+PASS Target-facing tool and upright pose 3
+PASS Swing completes once and restores movement 3
+PASS Started axe direction 4
+PASS Target-facing tool and upright pose 4
+PASS Swing completes once and restores movement 4
+PASS Started axe direction 5
+PASS Target-facing tool and upright pose 5
+PASS Swing completes once and restores movement 5
+PASS Started axe direction 6
+PASS Target-facing tool and upright pose 6
+PASS Swing completes once and restores movement 6
+PASS Started axe direction 7
+PASS Target-facing tool and upright pose 7
+PASS Swing completes once and restores movement 7
+PASS Started pickaxe direction 0
+PASS Target-facing tool and upright pose 8
+PASS Swing completes once and restores movement 8
+PASS Started pickaxe direction 1
+PASS Target-facing tool and upright pose 9
+PASS Swing completes once and restores movement 9
+PASS Started pickaxe direction 2
+PASS Target-facing tool and upright pose 10
+PASS Swing completes once and restores movement 10
+PASS Started pickaxe direction 3
+PASS Target-facing tool and upright pose 11
+PASS Swing completes once and restores movement 11
+PASS Started pickaxe direction 4
+PASS Target-facing tool and upright pose 12
+PASS Swing completes once and restores movement 12
+PASS Started pickaxe direction 5
+PASS Target-facing tool and upright pose 13
+PASS Swing completes once and restores movement 13
+PASS Started pickaxe direction 6
+PASS Target-facing tool and upright pose 14
+PASS Swing completes once and restores movement 14
+PASS Started pickaxe direction 7
+PASS Target-facing tool and upright pose 15
+PASS Swing completes once and restores movement 15
+PASS Eating starts and blocks a duplicate use
+PASS Food visibly raised to mouth
+PASS Eating spends once and cleans up
+PASS Cooking starts
+PASS Roasting food and steam visible
+PASS Extinguished fire pauses roasting and steam
+PASS Cooking cancellation hides visual

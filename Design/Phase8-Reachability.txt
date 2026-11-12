@@ -1,0 +1,5 @@
+Campsite reachable=True nodes=9
+Dense Forest reachable=True nodes=47
+Rocky Region reachable=True nodes=57
+Abandoned Cabin reachable=True nodes=39
+Dark Forest reachable=True nodes=57

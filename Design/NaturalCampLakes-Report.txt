@@ -1,0 +1,1 @@
+Reshaped camp lakes: 97 water cells retained; 19 old water cells filled as grassy inlets; 32 outer-bank cells carved. Replaced 120 old shoreline barriers with water collision matching new contours. Added 4 native water-rock accents. PASS water blocked and all four road crossings retained. HiddenPondClearing protected.

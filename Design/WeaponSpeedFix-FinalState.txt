@@ -1,0 +1,1 @@
+Scene=Assets/Scenes/SampleScene.unity; PlayMode=False; Dirty=False; TimeScale=1; MovementEnabled=True; AnimatorEnabled=True; TemporaryAttackRigs=0; WeaponParticles=0

@@ -1,0 +1,21 @@
+PHASE 7 HARDENING CHECKPOINT — 2026-11-07
+Implemented bounded cardinal navigation with cached static-obstacle/ground
+samples, no diagonal corner cutting, .8-second route reuse and one-second cell
+expiry for tree depletion/regrowth. Spawning now requires a path to the player's
+connected terrain region (ignoring protection only for connectivity validation).
+Actual enemy routes avoid active protection. Relight retreat searches reachable
+unprotected terrain; after 12 seconds still trapped in protection, the enemy is
+deactivated/destroyed, never teleported. Attack validation remains authoritative.
+Fixed detection repeatedly chasing protected players.
+PASS compilation and 18 existing Phase 7 runtime logic checks rerun before map
+expansion. PASS two Night 1 enemies had verified paths of 39/45 navigation nodes
+to the player's region. Evidence: Phase7-Hardening-Tests.txt and Phase7-Tests.txt.
+UNVERIFIED extended obstacle pursuit, physical input, full relight/upgrade/windup
+matrix, player death and endurance. No claim of full Phase 7 acceptance.
+Map construction proceeds independently; added paths will be validated by the
+same obstacle-aware search. Navigation remains bounded and fails closed.
+Additional post-expansion validation: six direct runtime attack checks passed
+(Phase8-AttackTests.txt): windup, one ten-damage strike, recovery prevents repeated
+hit, enlarged active protection cancels attacks/starts retreat, dead enemy cannot
+attack, sunrise cleanup after death. These used private hit-deadline adjustment
+in a paused test and do not verify wall-clock cooldown or physical input.

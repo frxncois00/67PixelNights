@@ -1,0 +1,314 @@
+PASS six sawmill weapons assigned
+PASS wood_knife held/walk found (1.00, 0.00)
+PASS wood_knife distinct assigned frames (1.00, 0.00) walk=False
+PASS wood_knife facing (1.00, 0.00)
+PASS wood_knife held/walk found (1.00, 0.00)
+PASS wood_knife distinct assigned frames (1.00, 0.00) walk=True
+PASS wood_knife facing (1.00, 0.00)
+PASS wood_knife separate floating weapon hidden
+PASS wood_knife held/walk found (0.00, 1.00)
+PASS wood_knife distinct assigned frames (0.00, 1.00) walk=False
+PASS wood_knife facing (0.00, 1.00)
+PASS wood_knife held/walk found (0.00, 1.00)
+PASS wood_knife distinct assigned frames (0.00, 1.00) walk=True
+PASS wood_knife facing (0.00, 1.00)
+PASS wood_knife separate floating weapon hidden
+PASS wood_knife held/walk found (-1.00, 0.00)
+PASS wood_knife distinct assigned frames (-1.00, 0.00) walk=False
+PASS wood_knife facing (-1.00, 0.00)
+PASS wood_knife held/walk found (-1.00, 0.00)
+PASS wood_knife distinct assigned frames (-1.00, 0.00) walk=True
+PASS wood_knife facing (-1.00, 0.00)
+PASS wood_knife separate floating weapon hidden
+PASS wood_knife held/walk found (0.00, -1.00)
+PASS wood_knife distinct assigned frames (0.00, -1.00) walk=False
+PASS wood_knife facing (0.00, -1.00)
+PASS wood_knife held/walk found (0.00, -1.00)
+PASS wood_knife distinct assigned frames (0.00, -1.00) walk=True
+PASS wood_knife facing (0.00, -1.00)
+PASS wood_knife separate floating weapon hidden
+PASS wood_spear held/walk found (1.00, 0.00)
+PASS wood_spear distinct assigned frames (1.00, 0.00) walk=False
+PASS wood_spear facing (1.00, 0.00)
+PASS wood_spear held/walk found (1.00, 0.00)
+PASS wood_spear distinct assigned frames (1.00, 0.00) walk=True
+PASS wood_spear facing (1.00, 0.00)
+PASS wood_spear separate floating weapon hidden
+PASS wood_spear held/walk found (0.00, 1.00)
+PASS wood_spear distinct assigned frames (0.00, 1.00) walk=False
+PASS wood_spear facing (0.00, 1.00)
+PASS wood_spear held/walk found (0.00, 1.00)
+PASS wood_spear distinct assigned frames (0.00, 1.00) walk=True
+PASS wood_spear facing (0.00, 1.00)
+PASS wood_spear separate floating weapon hidden
+PASS wood_spear held/walk found (-1.00, 0.00)
+PASS wood_spear distinct assigned frames (-1.00, 0.00) walk=False
+PASS wood_spear facing (-1.00, 0.00)
+PASS wood_spear held/walk found (-1.00, 0.00)
+PASS wood_spear distinct assigned frames (-1.00, 0.00) walk=True
+PASS wood_spear facing (-1.00, 0.00)
+PASS wood_spear separate floating weapon hidden
+PASS wood_spear held/walk found (0.00, -1.00)
+PASS wood_spear distinct assigned frames (0.00, -1.00) walk=False
+PASS wood_spear facing (0.00, -1.00)
+PASS wood_spear held/walk found (0.00, -1.00)
+PASS wood_spear distinct assigned frames (0.00, -1.00) walk=True
+PASS wood_spear facing (0.00, -1.00)
+PASS wood_spear separate floating weapon hidden
+PASS wood_shovel held/walk found (1.00, 0.00)
+PASS wood_shovel distinct assigned frames (1.00, 0.00) walk=False
+PASS wood_shovel facing (1.00, 0.00)
+PASS wood_shovel held/walk found (1.00, 0.00)
+PASS wood_shovel distinct assigned frames (1.00, 0.00) walk=True
+PASS wood_shovel facing (1.00, 0.00)
+PASS wood_shovel separate floating weapon hidden
+PASS wood_shovel held/walk found (0.00, 1.00)
+PASS wood_shovel distinct assigned frames (0.00, 1.00) walk=False
+PASS wood_shovel facing (0.00, 1.00)
+PASS wood_shovel held/walk found (0.00, 1.00)
+PASS wood_shovel distinct assigned frames (0.00, 1.00) walk=True
+PASS wood_shovel facing (0.00, 1.00)
+PASS wood_shovel separate floating weapon hidden
+PASS wood_shovel held/walk found (-1.00, 0.00)
+PASS wood_shovel distinct assigned frames (-1.00, 0.00) walk=False
+PASS wood_shovel facing (-1.00, 0.00)
+PASS wood_shovel held/walk found (-1.00, 0.00)
+PASS wood_shovel distinct assigned frames (-1.00, 0.00) walk=True
+PASS wood_shovel facing (-1.00, 0.00)
+PASS wood_shovel separate floating weapon hidden
+PASS wood_shovel held/walk found (0.00, -1.00)
+PASS wood_shovel distinct assigned frames (0.00, -1.00) walk=False
+PASS wood_shovel facing (0.00, -1.00)
+PASS wood_shovel held/walk found (0.00, -1.00)
+PASS wood_shovel distinct assigned frames (0.00, -1.00) walk=True
+PASS wood_shovel facing (0.00, -1.00)
+PASS wood_shovel separate floating weapon hidden
+PASS wood_longsword held/walk found (1.00, 0.00)
+PASS wood_longsword distinct assigned frames (1.00, 0.00) walk=False
+PASS wood_longsword facing (1.00, 0.00)
+PASS wood_longsword held/walk found (1.00, 0.00)
+PASS wood_longsword distinct assigned frames (1.00, 0.00) walk=True
+PASS wood_longsword facing (1.00, 0.00)
+PASS wood_longsword separate floating weapon hidden
+PASS wood_longsword held/walk found (0.00, 1.00)
+PASS wood_longsword distinct assigned frames (0.00, 1.00) walk=False
+PASS wood_longsword facing (0.00, 1.00)
+PASS wood_longsword held/walk found (0.00, 1.00)
+PASS wood_longsword distinct assigned frames (0.00, 1.00) walk=True
+PASS wood_longsword facing (0.00, 1.00)
+PASS wood_longsword separate floating weapon hidden
+PASS wood_longsword held/walk found (-1.00, 0.00)
+PASS wood_longsword distinct assigned frames (-1.00, 0.00) walk=False
+PASS wood_longsword facing (-1.00, 0.00)
+PASS wood_longsword held/walk found (-1.00, 0.00)
+PASS wood_longsword distinct assigned frames (-1.00, 0.00) walk=True
+PASS wood_longsword facing (-1.00, 0.00)
+PASS wood_longsword separate floating weapon hidden
+PASS wood_longsword held/walk found (0.00, -1.00)
+PASS wood_longsword distinct assigned frames (0.00, -1.00) walk=False
+PASS wood_longsword facing (0.00, -1.00)
+PASS wood_longsword held/walk found (0.00, -1.00)
+PASS wood_longsword distinct assigned frames (0.00, -1.00) walk=True
+PASS wood_longsword facing (0.00, -1.00)
+PASS wood_longsword separate floating weapon hidden
+PASS wood_hammer held/walk found (1.00, 0.00)
+PASS wood_hammer distinct assigned frames (1.00, 0.00) walk=False
+PASS wood_hammer facing (1.00, 0.00)
+PASS wood_hammer held/walk found (1.00, 0.00)
+PASS wood_hammer distinct assigned frames (1.00, 0.00) walk=True
+PASS wood_hammer facing (1.00, 0.00)
+PASS wood_hammer separate floating weapon hidden
+PASS wood_hammer held/walk found (0.00, 1.00)
+PASS wood_hammer distinct assigned frames (0.00, 1.00) walk=False
+PASS wood_hammer facing (0.00, 1.00)
+PASS wood_hammer held/walk found (0.00, 1.00)
+PASS wood_hammer distinct assigned frames (0.00, 1.00) walk=True
+PASS wood_hammer facing (0.00, 1.00)
+PASS wood_hammer separate floating weapon hidden
+PASS wood_hammer held/walk found (-1.00, 0.00)
+PASS wood_hammer distinct assigned frames (-1.00, 0.00) walk=False
+PASS wood_hammer facing (-1.00, 0.00)
+PASS wood_hammer held/walk found (-1.00, 0.00)
+PASS wood_hammer distinct assigned frames (-1.00, 0.00) walk=True
+PASS wood_hammer facing (-1.00, 0.00)
+PASS wood_hammer separate floating weapon hidden
+PASS wood_hammer held/walk found (0.00, -1.00)
+PASS wood_hammer distinct assigned frames (0.00, -1.00) walk=False
+PASS wood_hammer facing (0.00, -1.00)
+PASS wood_hammer held/walk found (0.00, -1.00)
+PASS wood_hammer distinct assigned frames (0.00, -1.00) walk=True
+PASS wood_hammer facing (0.00, -1.00)
+PASS wood_hammer separate floating weapon hidden
+PASS wood_bow held/walk found (1.00, 0.00)
+PASS wood_bow distinct assigned frames (1.00, 0.00) walk=False
+PASS wood_bow facing (1.00, 0.00)
+PASS wood_bow held/walk found (1.00, 0.00)
+PASS wood_bow distinct assigned frames (1.00, 0.00) walk=True
+PASS wood_bow facing (1.00, 0.00)
+PASS wood_bow separate floating weapon hidden
+PASS wood_bow held/walk found (0.00, 1.00)
+PASS wood_bow distinct assigned frames (0.00, 1.00) walk=False
+PASS wood_bow facing (0.00, 1.00)
+PASS wood_bow held/walk found (0.00, 1.00)
+PASS wood_bow distinct assigned frames (0.00, 1.00) walk=True
+PASS wood_bow facing (0.00, 1.00)
+PASS wood_bow separate floating weapon hidden
+PASS wood_bow held/walk found (-1.00, 0.00)
+PASS wood_bow distinct assigned frames (-1.00, 0.00) walk=False
+PASS wood_bow facing (-1.00, 0.00)
+PASS wood_bow held/walk found (-1.00, 0.00)
+PASS wood_bow distinct assigned frames (-1.00, 0.00) walk=True
+PASS wood_bow facing (-1.00, 0.00)
+PASS wood_bow separate floating weapon hidden
+PASS wood_bow held/walk found (0.00, -1.00)
+PASS wood_bow distinct assigned frames (0.00, -1.00) walk=False
+PASS wood_bow facing (0.00, -1.00)
+PASS wood_bow held/walk found (0.00, -1.00)
+PASS wood_bow distinct assigned frames (0.00, -1.00) walk=True
+PASS wood_bow facing (0.00, -1.00)
+PASS wood_bow separate floating weapon hidden
+PASS wood_knife attack starts (1.00, 0.00)
+PASS wood_knife impact once (1.00, 0.00)
+PASS wood_knife advances authored frames (1.00, 0.00): 6
+PASS wood_knife restores movement and Animator
+PASS wood_knife normal speed
+PASS wood_knife no body transform drift
+PASS wood_knife attack starts (0.00, 1.00)
+PASS wood_knife impact once (0.00, 1.00)
+PASS wood_knife advances authored frames (0.00, 1.00): 8
+PASS wood_knife restores movement and Animator
+PASS wood_knife normal speed
+PASS wood_knife no body transform drift
+PASS wood_knife attack starts (-1.00, 0.00)
+PASS wood_knife impact once (-1.00, 0.00)
+PASS wood_knife advances authored frames (-1.00, 0.00): 8
+PASS wood_knife restores movement and Animator
+PASS wood_knife normal speed
+PASS wood_knife no body transform drift
+PASS wood_knife attack starts (0.00, -1.00)
+PASS wood_knife impact once (0.00, -1.00)
+PASS wood_knife advances authored frames (0.00, -1.00): 8
+PASS wood_knife restores movement and Animator
+PASS wood_knife normal speed
+PASS wood_knife no body transform drift
+PASS wood_spear attack starts (1.00, 0.00)
+PASS wood_spear impact once (1.00, 0.00)
+PASS wood_spear advances authored frames (1.00, 0.00): 7
+PASS wood_spear restores movement and Animator
+PASS wood_spear normal speed
+PASS wood_spear no body transform drift
+PASS wood_spear attack starts (0.00, 1.00)
+PASS wood_spear impact once (0.00, 1.00)
+PASS wood_spear advances authored frames (0.00, 1.00): 8
+PASS wood_spear restores movement and Animator
+PASS wood_spear normal speed
+PASS wood_spear no body transform drift
+PASS wood_spear attack starts (-1.00, 0.00)
+PASS wood_spear impact once (-1.00, 0.00)
+PASS wood_spear advances authored frames (-1.00, 0.00): 8
+PASS wood_spear restores movement and Animator
+PASS wood_spear normal speed
+PASS wood_spear no body transform drift
+PASS wood_spear attack starts (0.00, -1.00)
+PASS wood_spear impact once (0.00, -1.00)
+PASS wood_spear advances authored frames (0.00, -1.00): 8
+PASS wood_spear restores movement and Animator
+PASS wood_spear normal speed
+PASS wood_spear no body transform drift
+PASS wood_shovel attack starts (1.00, 0.00)
+PASS wood_shovel impact once (1.00, 0.00)
+PASS wood_shovel advances authored frames (1.00, 0.00): 7
+PASS wood_shovel restores movement and Animator
+PASS wood_shovel normal speed
+PASS wood_shovel no body transform drift
+PASS wood_shovel attack starts (0.00, 1.00)
+PASS wood_shovel impact once (0.00, 1.00)
+PASS wood_shovel advances authored frames (0.00, 1.00): 8
+PASS wood_shovel restores movement and Animator
+PASS wood_shovel normal speed
+PASS wood_shovel no body transform drift
+PASS wood_shovel attack starts (-1.00, 0.00)
+PASS wood_shovel impact once (-1.00, 0.00)
+PASS wood_shovel advances authored frames (-1.00, 0.00): 8
+PASS wood_shovel restores movement and Animator
+PASS wood_shovel normal speed
+PASS wood_shovel no body transform drift
+PASS wood_shovel attack starts (0.00, -1.00)
+PASS wood_shovel impact once (0.00, -1.00)
+PASS wood_shovel advances authored frames (0.00, -1.00): 8
+PASS wood_shovel restores movement and Animator
+PASS wood_shovel normal speed
+PASS wood_shovel no body transform drift
+PASS wood_longsword attack starts (1.00, 0.00)
+PASS wood_longsword impact once (1.00, 0.00)
+PASS wood_longsword advances authored frames (1.00, 0.00): 7
+PASS wood_longsword restores movement and Animator
+PASS wood_longsword normal speed
+PASS wood_longsword no body transform drift
+PASS wood_longsword attack starts (0.00, 1.00)
+PASS wood_longsword impact once (0.00, 1.00)
+PASS wood_longsword advances authored frames (0.00, 1.00): 8
+PASS wood_longsword restores movement and Animator
+PASS wood_longsword normal speed
+PASS wood_longsword no body transform drift
+PASS wood_longsword attack starts (-1.00, 0.00)
+PASS wood_longsword impact once (-1.00, 0.00)
+PASS wood_longsword advances authored frames (-1.00, 0.00): 8
+PASS wood_longsword restores movement and Animator
+PASS wood_longsword normal speed
+PASS wood_longsword no body transform drift
+PASS wood_longsword attack starts (0.00, -1.00)
+PASS wood_longsword impact once (0.00, -1.00)
+PASS wood_longsword advances authored frames (0.00, -1.00): 8
+PASS wood_longsword restores movement and Animator
+PASS wood_longsword normal speed
+PASS wood_longsword no body transform drift
+PASS wood_hammer attack starts (1.00, 0.00)
+PASS wood_hammer impact once (1.00, 0.00)
+PASS wood_hammer advances authored frames (1.00, 0.00): 8
+PASS wood_hammer restores movement and Animator
+PASS wood_hammer normal speed
+PASS wood_hammer no body transform drift
+PASS wood_hammer attack starts (0.00, 1.00)
+PASS wood_hammer impact once (0.00, 1.00)
+PASS wood_hammer advances authored frames (0.00, 1.00): 8
+PASS wood_hammer restores movement and Animator
+PASS wood_hammer normal speed
+PASS wood_hammer no body transform drift
+PASS wood_hammer attack starts (-1.00, 0.00)
+PASS wood_hammer impact once (-1.00, 0.00)
+PASS wood_hammer advances authored frames (-1.00, 0.00): 8
+PASS wood_hammer restores movement and Animator
+PASS wood_hammer normal speed
+PASS wood_hammer no body transform drift
+PASS wood_hammer attack starts (0.00, -1.00)
+PASS wood_hammer impact once (0.00, -1.00)
+PASS wood_hammer advances authored frames (0.00, -1.00): 8
+PASS wood_hammer restores movement and Animator
+PASS wood_hammer normal speed
+PASS wood_hammer no body transform drift
+PASS wood_bow attack starts (1.00, 0.00)
+PASS wood_bow impact once (1.00, 0.00)
+PASS wood_bow advances authored frames (1.00, 0.00): 8
+PASS wood_bow restores movement and Animator
+PASS wood_bow normal speed
+PASS wood_bow no body transform drift
+PASS wood_bow attack starts (0.00, 1.00)
+PASS wood_bow impact once (0.00, 1.00)
+PASS wood_bow advances authored frames (0.00, 1.00): 8
+PASS wood_bow restores movement and Animator
+PASS wood_bow normal speed
+PASS wood_bow no body transform drift
+PASS wood_bow attack starts (-1.00, 0.00)
+PASS wood_bow impact once (-1.00, 0.00)
+PASS wood_bow advances authored frames (-1.00, 0.00): 8
+PASS wood_bow restores movement and Animator
+PASS wood_bow normal speed
+PASS wood_bow no body transform drift
+PASS wood_bow attack starts (0.00, -1.00)
+PASS wood_bow impact once (0.00, -1.00)
+PASS wood_bow advances authored frames (0.00, -1.00): 8
+PASS wood_bow restores movement and Animator
+PASS wood_bow normal speed
+PASS wood_bow no body transform drift
+Totals: 313 passed / 0 failed.
